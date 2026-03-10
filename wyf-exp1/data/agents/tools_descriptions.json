@@ -1,0 +1,191 @@
+{
+  "agents": [
+    {
+      "name": "选股智能体",
+      "description": "根据用户条件筛选符合条件的股票",
+      "tools": [
+        {
+          "name": "search_stocks_by_condition",
+          "description": "根据技术指标、基本面条件筛选股票，支持多条件组合查询",
+          "parameters": ["conditions", "limit"]
+        },
+        {
+          "name": "get_hot_sectors",
+          "description": "获取当前热门板块和概念板块排行",
+          "parameters": ["period", "top_k"]
+        }
+      ]
+    },
+    {
+      "name": "诊股智能体",
+      "description": "分析单只股票的基本面、技术面、资金面",
+      "tools": [
+        {
+          "name": "analyze_stock",
+          "description": "对指定股票进行全面分析，包括财务状况、技术走势、主力资金等",
+          "parameters": ["stock_code", "analysis_type"]
+        },
+        {
+          "name": "get_stock_fundamentals",
+          "description": "获取股票基本面数据，如市盈率、市净率、营收等",
+          "parameters": ["stock_code"]
+        }
+      ]
+    },
+    {
+      "name": "预测智能体",
+      "description": "预测股票未来走势和价格变动",
+      "tools": [
+        {
+          "name": "predict_trend",
+          "description": "基于技术分析和量价关系预测股票短期走势",
+          "parameters": ["stock_code", "time_horizon"]
+        },
+        {
+          "name": "predict_price_target",
+          "description": "预测股票的支撑位、压力位和目标价位",
+          "parameters": ["stock_code"]
+        }
+      ]
+    },
+    {
+      "name": "知识库智能体",
+      "description": "解答股票软件使用、交易规则、投资知识等问题",
+      "tools": [
+        {
+          "name": "search_knowledge",
+          "description": "从知识库中检索相关知识点和概念解释",
+          "parameters": ["query", "category"]
+        },
+        {
+          "name": "explain_concept",
+          "description": "解释金融投资相关概念和术语",
+          "parameters": ["concept"]
+        }
+      ]
+    },
+    {
+      "name": "新闻智能体",
+      "description": "提供财经新闻、公告、市场动态等信息",
+      "tools": [
+        {
+          "name": "get_news",
+          "description": "获取最新的财经新闻和市场动态",
+          "parameters": ["category", "limit"]
+        },
+        {
+          "name": "get_stock_news",
+          "description": "获取特定股票的相关新闻和公告",
+          "parameters": ["stock_code", "days"]
+        }
+      ]
+    },
+    {
+      "name": "通用智能体",
+      "description": "处理闲聊、情感交流、通用对话",
+      "tools": [
+        {
+          "name": "general_chat",
+          "description": "进行通用对话和闲聊",
+          "parameters": ["message"]
+        }
+      ]
+    },
+    {
+      "name": "推荐智能体",
+      "description": "根据用户需求推荐股票或操作策略",
+      "tools": [
+        {
+          "name": "recommend_stocks",
+          "description": "根据用户风险偏好和投资目标推荐股票",
+          "parameters": ["risk_level", "investment_style"]
+        },
+        {
+          "name": "recommend_strategy",
+          "description": "推荐适合当前市场的操作策略",
+          "parameters": ["market_condition"]
+        }
+      ]
+    },
+    {
+      "name": "策略智能体",
+      "description": "解释和使用各种投资策略、战法",
+      "tools": [
+        {
+          "name": "explain_strategy",
+          "description": "解释投资策略的原理和使用方法",
+          "parameters": ["strategy_name"]
+        },
+        {
+          "name": "apply_strategy",
+          "description": "将策略应用到当前选股或操作中",
+          "parameters": ["strategy_name", "params"]
+        }
+      ]
+    },
+    {
+      "name": "指标查询智能体",
+      "description": "查询股票的各种技术指标和财务指标",
+      "tools": [
+        {
+          "name": "query_indicator",
+          "description": "查询特定指标的数值和含义",
+          "parameters": ["stock_code", "indicator_name"]
+        },
+        {
+          "name": "get_indicator_ranking",
+          "description": "获取指标排行数据",
+          "parameters": ["indicator_name", "top_k"]
+        }
+      ]
+    },
+    {
+      "name": "身份智能体",
+      "description": "处理关于AI助手身份、转人工等请求",
+      "tools": [
+        {
+          "name": "handle_identity_query",
+          "description": "回答关于自身身份的问题",
+          "parameters": ["query_type"]
+        },
+        {
+          "name": "transfer_to_human",
+          "description": "转接到人工客服",
+          "parameters": []
+        }
+      ]
+    },
+    {
+      "name": "分时图智能体",
+      "description": "展示和分析股票分时图",
+      "tools": [
+        {
+          "name": "show_intraday_chart",
+          "description": "显示股票的分时走势图",
+          "parameters": ["stock_code", "date"]
+        },
+        {
+          "name": "analyze_intraday",
+          "description": "分析分时图的技术特征",
+          "parameters": ["stock_code"]
+        }
+      ]
+    },
+    {
+      "name": "K线图智能体",
+      "description": "展示和分析股票K线图",
+      "tools": [
+        {
+          "name": "show_kline_chart",
+          "description": "显示股票的K线图",
+          "parameters": ["stock_code", "period", "indicators"]
+        },
+        {
+          "name": "analyze_kline",
+          "description": "分析K线形态和技术特征",
+          "parameters": ["stock_code", "pattern_type"]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+# 核心依赖
+openai>=1.0.0
+numpy>=1.24.0
+pandas>=2.0.0
+scikit-learn>=1.3.0
+
+# 可视化和日志
+tqdm>=4.65.0
+matplotlib>=3.7.0
+seaborn>=0.12.0
+
+# 数据处理和HTTP
+requests>=2.31.0

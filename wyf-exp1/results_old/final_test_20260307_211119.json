@@ -1,0 +1,176 @@
+{
+  "source_result": "results/mve_result_20260307_205847.json",
+  "test_dataset": "data/GOLDEN_TEST.csv",
+  "test_size": 325,
+  "results": {
+    "accuracy": 0.7292307692307692,
+    "boundary_accuracy": 0.46774193548387094,
+    "average_margin": 0.6899711117172135,
+    "average_length": 125.16666666666667,
+    "fitness": 0.7292307692307692,
+    "total_samples": 325,
+    "boundary_samples": 62
+  },
+  "bad_cases": [
+    {
+      "query": "成分骨有哪些",
+      "expected_intent": "选股类",
+      "expected_agent": "选股智能体",
+      "predicted_agent": "知识库智能体",
+      "confidence": 1.0,
+      "margin": 1.0
+    },
+    {
+      "query": "K线图上蓝色和紫色K线是什么意思",
+      "expected_intent": "知识库类",
+      "expected_agent": "知识库智能体",
+      "predicted_agent": "K线图智能体",
+      "confidence": 0.9,
+      "margin": 0.8
+    },
+    {
+      "query": "K线中圈中定是什么意思",
+      "expected_intent": "知识库类",
+      "expected_agent": "知识库智能体",
+      "predicted_agent": "K线图智能体",
+      "confidence": 0.9,
+      "margin": 0.85
+    },
+    {
+      "query": "因用股票",
+      "expected_intent": "选股类",
+      "expected_agent": "选股智能体",
+      "predicted_agent": "通用智能体",
+      "confidence": 0.9,
+      "margin": 0.8
+    },
+    {
+      "query": "Ai企业应用落地方面股票",
+      "expected_intent": "选股类",
+      "expected_agent": "选股智能体",
+      "predicted_agent": "知识库智能体",
+      "confidence": 0.8,
+      "margin": 0.7000000000000001
+    },
+    {
+      "query": "指南针K綫图中园圈战是什么意思",
+      "expected_intent": "知识库类",
+      "expected_agent": "知识库智能体",
+      "predicted_agent": "K线图智能体",
+      "confidence": 0.8,
+      "margin": 0.7000000000000001
+    },
+    {
+      "query": "航空发展往后怎么走，是走还是留",
+      "expected_intent": "预测类",
+      "expected_agent": "预测智能体",
+      "predicted_agent": "新闻智能体",
+      "confidence": 0.8,
+      "margin": 0.7000000000000001
+    },
+    {
+      "query": "筹码集中度高说明什么",
+      "expected_intent": "知识库类",
+      "expected_agent": "知识库智能体",
+      "predicted_agent": "诊股智能体",
+      "confidence": 0.8,
+      "margin": 0.7000000000000001
+    },
+    {
+      "query": "明日有哪些股票值得关注？",
+      "expected_intent": "推荐类",
+      "expected_agent": "推荐智能体",
+      "predicted_agent": "选股智能体",
+      "confidence": 0.8,
+      "margin": 0.7000000000000001
+    },
+    {
+      "query": "603228交易策略。",
+      "expected_intent": "知识库类",
+      "expected_agent": "知识库智能体",
+      "predicted_agent": "策略智能体",
+      "confidence": 0.8,
+      "margin": 0.7000000000000001
+    },
+    {
+      "query": "如何判断筹码峰的股票涨跌态势",
+      "expected_intent": "知识库类",
+      "expected_agent": "知识库智能体",
+      "predicted_agent": "预测智能体",
+      "confidence": 0.8,
+      "margin": 0.7000000000000001
+    },
+    {
+      "query": "筹码分布中的重合度有什么意义",
+      "expected_intent": "知识库类",
+      "expected_agent": "知识库智能体",
+      "predicted_agent": "诊股智能体",
+      "confidence": 0.8,
+      "margin": 0.7000000000000001
+    },
+    {
+      "query": "在哪里查看游资买入资金量",
+      "expected_intent": "知识库类",
+      "expected_agent": "知识库智能体",
+      "predicted_agent": "诊股智能体",
+      "confidence": 0.8,
+      "margin": 0.7000000000000001
+    },
+    {
+      "query": "601949趋势",
+      "expected_intent": "诊股类",
+      "expected_agent": "诊股智能体",
+      "predicted_agent": "预测智能体",
+      "confidence": 0.8,
+      "margin": 0.65
+    },
+    {
+      "query": "000560走势分析",
+      "expected_intent": "诊股类",
+      "expected_agent": "诊股智能体",
+      "predicted_agent": "K线图智能体",
+      "confidence": 0.8,
+      "margin": 0.7000000000000001
+    },
+    {
+      "query": "怎么查北向资金动向",
+      "expected_intent": "知识库类",
+      "expected_agent": "知识库智能体",
+      "predicted_agent": "诊股智能体",
+      "confidence": 0.8,
+      "margin": 0.65
+    },
+    {
+      "query": "擒龙平台是当天选出来，明天买入吗，还是当天买入",
+      "expected_intent": "知识库类",
+      "expected_agent": "知识库智能体",
+      "predicted_agent": "推荐智能体",
+      "confidence": 0.8,
+      "margin": 0.65
+    },
+    {
+      "query": "你能帮我做些什么？",
+      "expected_intent": "身份类",
+      "expected_agent": "身份智能体",
+      "predicted_agent": "通用智能体",
+      "confidence": 0.8,
+      "margin": 0.6000000000000001
+    },
+    {
+      "query": "90%筹码和30%筹码有什么意义",
+      "expected_intent": "知识库类",
+      "expected_agent": "知识库智能体",
+      "predicted_agent": "预测智能体",
+      "confidence": 0.8,
+      "margin": 0.7000000000000001
+    },
+    {
+      "query": "现在的主线是什么",
+      "expected_intent": "新闻类",
+      "expected_agent": "新闻智能体",
+      "predicted_agent": "选股智能体",
+      "confidence": 0.8,
+      "margin": 0.7000000000000001
+    }
+  ]
+}

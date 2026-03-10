@@ -1,0 +1,29 @@
+project:
+  type: website
+  output-dir: _site
+  preview:
+    port: 4200
+  render:
+    - "argument/*.qmd"
+
+website:
+  title: "Intention Experiment 1"
+  navbar:
+    left:
+      - href: 研究思路头脑风暴.qmd
+        text: 研究思路
+
+format:
+  html:
+    theme: cosmo
+    toc: true
+    toc-depth: 3
+    code-fold: true
+    code-tools: true
+    highlight-style: github
+
+execute:
+  freeze: auto
+  cache: true
+
+lang: zh-CN

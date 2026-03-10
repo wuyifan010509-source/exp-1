@@ -1,0 +1,826 @@
+{
+  "config": {
+    "use_mock": true,
+    "api_url": "mock",
+    "model": "Qwen2.5-32B-Instruct",
+    "test_samples": 325,
+    "boundary_samples": 62,
+    "timestamp": "20260307_234417"
+  },
+  "results": [
+    {
+      "accuracy": 0.08,
+      "accuracy_percent": "8.00%",
+      "boundary_accuracy": 0.1129,
+      "boundary_accuracy_percent": "11.29%",
+      "boundary_samples": 62,
+      "precision_weighted": 0.192,
+      "recall_weighted": 0.08,
+      "f1_weighted": 0.097,
+      "precision_macro": 0.0876,
+      "recall_macro": 0.1172,
+      "f1_macro": 0.0687,
+      "average_margin": -0.0742,
+      "confusion_matrix": [
+        [
+          5,
+          10,
+          11,
+          3,
+          6,
+          11,
+          5,
+          2,
+          6,
+          5,
+          5,
+          4
+        ],
+        [
+          9,
+          10,
+          10,
+          3,
+          9,
+          5,
+          10,
+          12,
+          6,
+          9,
+          8,
+          7
+        ],
+        [
+          3,
+          3,
+          1,
+          3,
+          4,
+          8,
+          2,
+          2,
+          4,
+          5,
+          2,
+          0
+        ],
+        [
+          2,
+          5,
+          7,
+          3,
+          5,
+          9,
+          2,
+          6,
+          4,
+          3,
+          3,
+          6
+        ],
+        [
+          0,
+          0,
+          2,
+          2,
+          0,
+          0,
+          2,
+          1,
+          2,
+          1,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          2,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1,
+          1,
+          3,
+          2
+        ],
+        [
+          1,
+          0,
+          1,
+          1,
+          1,
+          5,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          1,
+          1,
+          0,
+          1,
+          0,
+          1,
+          2,
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          1,
+          2,
+          0,
+          1,
+          1,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          1,
+          0,
+          1,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          1,
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          2
+        ]
+      ],
+      "per_class_metrics": {
+        "选股类": {
+          "precision": 0.2273,
+          "recall": 0.0685,
+          "f1": 0.1053,
+          "support": 73
+        },
+        "新闻类": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 11
+        },
+        "知识库类": {
+          "precision": 0.1667,
+          "recall": 0.0545,
+          "f1": 0.0822,
+          "support": 55
+        },
+        "推荐类": {
+          "precision": 0.04,
+          "recall": 0.1,
+          "f1": 0.0571,
+          "support": 10
+        },
+        "通用类": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 10
+        },
+        "身份类": {
+          "precision": 0.0385,
+          "recall": 0.2,
+          "f1": 0.0645,
+          "support": 5
+        },
+        "K线图类": {
+          "precision": 0.0909,
+          "recall": 0.4,
+          "f1": 0.1481,
+          "support": 5
+        },
+        "诊股类": {
+          "precision": 0.3448,
+          "recall": 0.102,
+          "f1": 0.1575,
+          "support": 98
+        },
+        "指标查询类": {
+          "precision": 0.037,
+          "recall": 0.1429,
+          "f1": 0.0588,
+          "support": 7
+        },
+        "预测类": {
+          "precision": 0.027,
+          "recall": 0.027,
+          "f1": 0.027,
+          "support": 37
+        },
+        "分时图类": {
+          "precision": 0.0385,
+          "recall": 0.2,
+          "f1": 0.0645,
+          "support": 5
+        },
+        "策略类": {
+          "precision": 0.04,
+          "recall": 0.1111,
+          "f1": 0.0588,
+          "support": 9
+        }
+      },
+      "total_samples": 325,
+      "correct_samples": 26,
+      "error_samples": 299,
+      "bad_cases": [
+        {
+          "query": "龙溪股份明天的走势",
+          "expected": "预测类",
+          "predicted": "选股类",
+          "confidence": 0.18366331165881428,
+          "margin": 0.02102768028193233
+        },
+        {
+          "query": "你是哪家公司开发的大模型助手？",
+          "expected": "身份类",
+          "predicted": "分时图类",
+          "confidence": 0.1780833418594497,
+          "margin": 0.05088760380967444
+        },
+        {
+          "query": "帮我分析一下索通发展",
+          "expected": "诊股类",
+          "predicted": "选股类",
+          "confidence": 0.17090595799893799,
+          "margin": 0.012539235127495885
+        },
+        {
+          "query": "沪市的高成长高毛利率低估值绩优科技股",
+          "expected": "选股类",
+          "predicted": "知识库类",
+          "confidence": 0.1704603527002633,
+          "margin": -0.008429110434443832
+        },
+        {
+          "query": "华西股份",
+          "expected": "诊股类",
+          "predicted": "身份类",
+          "confidence": 0.16892598301803194,
+          "margin": -0.0012211808814209801
+        },
+        {
+          "query": "ai+概念股",
+          "expected": "选股类",
+          "predicted": "诊股类",
+          "confidence": 0.1642844551919916,
+          "margin": 0.030288957939075684
+        },
+        {
+          "query": "三七互娱怎么看",
+          "expected": "诊股类",
+          "predicted": "策略类",
+          "confidence": 0.16190217219869,
+          "margin": -0.01480062634466875
+        },
+        {
+          "query": "山子高科未来走势",
+          "expected": "预测类",
+          "predicted": "新闻类",
+          "confidence": 0.15783967730526444,
+          "margin": 0.00021597450254351447
+        },
+        {
+          "query": "ETF基金是不是当天买当天可以卖",
+          "expected": "知识库类",
+          "predicted": "K线图类",
+          "confidence": 0.15375706189217744,
+          "margin": 0.007089617213646482
+        },
+        {
+          "query": "怎么查北向资金动向",
+          "expected": "知识库类",
+          "predicted": "预测类",
+          "confidence": 0.15369543730857593,
+          "margin": -0.0025910680635193584
+        },
+        {
+          "query": "明日有哪些股票值得关注？",
+          "expected": "推荐类",
+          "predicted": "通用类",
+          "confidence": 0.15282078492365206,
+          "margin": 0.011010714950733996
+        },
+        {
+          "query": "永鼎股份今天回落的原因",
+          "expected": "诊股类",
+          "predicted": "通用类",
+          "confidence": 0.1523827774527922,
+          "margin": -0.06503271154501919
+        },
+        {
+          "query": "大宗交易买入的股票有锁定期吗？",
+          "expected": "知识库类",
+          "predicted": "诊股类",
+          "confidence": 0.15109636013177452,
+          "margin": 0.01251821356351654
+        },
+        {
+          "query": "股市中GEO概念指的是哪方面",
+          "expected": "知识库类",
+          "predicted": "策略类",
+          "confidence": 0.1493461113549992,
+          "margin": -0.03600844721141663
+        },
+        {
+          "query": "中坚科技112买入的，一直跌，继续持有还是卖掉？",
+          "expected": "诊股类",
+          "predicted": "K线图类",
+          "confidence": 0.14886748529019248,
+          "margin": -0.02226360653163395
+        },
+        {
+          "query": "手机版指南针软件如何操作",
+          "expected": "知识库类",
+          "predicted": "新闻类",
+          "confidence": 0.14828745097079296,
+          "margin": -0.016256908149684335
+        },
+        {
+          "query": "上升三法策略是什么？",
+          "expected": "策略类",
+          "predicted": "身份类",
+          "confidence": 0.14756241316502516,
+          "margin": 0.010523856655422936
+        },
+        {
+          "query": "海立股份B转A完成了吗",
+          "expected": "诊股类",
+          "predicted": "选股类",
+          "confidence": 0.1470062209679904,
+          "margin": -0.004158955762115196
+        },
+        {
+          "query": "603228交易策略。",
+          "expected": "知识库类",
+          "predicted": "指标查询类",
+          "confidence": 0.14567165658086453,
+          "margin": -0.023094183487011977
+        },
+        {
+          "query": "你太笨了，",
+          "expected": "通用类",
+          "predicted": "新闻类",
+          "confidence": 0.14482954493742403,
+          "margin": -0.020721283935144275
+        }
+      ],
+      "bad_cases_count": 20,
+      "method": "人工完整Prompt (Mock)",
+      "paradigm": "end-to-end",
+      "note": "Mock模式结果仅供参考"
+    },
+    {
+      "accuracy": 0.08,
+      "accuracy_percent": "8.00%",
+      "boundary_accuracy": 0.1129,
+      "boundary_accuracy_percent": "11.29%",
+      "boundary_samples": 62,
+      "precision_weighted": 0.192,
+      "recall_weighted": 0.08,
+      "f1_weighted": 0.097,
+      "precision_macro": 0.0876,
+      "recall_macro": 0.1172,
+      "f1_macro": 0.0687,
+      "average_margin": -0.0742,
+      "confusion_matrix": [
+        [
+          5,
+          10,
+          11,
+          3,
+          6,
+          11,
+          5,
+          2,
+          6,
+          5,
+          5,
+          4
+        ],
+        [
+          9,
+          10,
+          10,
+          3,
+          9,
+          5,
+          10,
+          12,
+          6,
+          9,
+          8,
+          7
+        ],
+        [
+          3,
+          3,
+          1,
+          3,
+          4,
+          8,
+          2,
+          2,
+          4,
+          5,
+          2,
+          0
+        ],
+        [
+          2,
+          5,
+          7,
+          3,
+          5,
+          9,
+          2,
+          6,
+          4,
+          3,
+          3,
+          6
+        ],
+        [
+          0,
+          0,
+          2,
+          2,
+          0,
+          0,
+          2,
+          1,
+          2,
+          1,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          2,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1,
+          1,
+          3,
+          2
+        ],
+        [
+          1,
+          0,
+          1,
+          1,
+          1,
+          5,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          1,
+          1,
+          0,
+          1,
+          0,
+          1,
+          2,
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          1,
+          2,
+          0,
+          1,
+          1,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          1,
+          0,
+          1,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          1,
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          2
+        ]
+      ],
+      "per_class_metrics": {
+        "选股类": {
+          "precision": 0.2273,
+          "recall": 0.0685,
+          "f1": 0.1053,
+          "support": 73
+        },
+        "新闻类": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 11
+        },
+        "知识库类": {
+          "precision": 0.1667,
+          "recall": 0.0545,
+          "f1": 0.0822,
+          "support": 55
+        },
+        "推荐类": {
+          "precision": 0.04,
+          "recall": 0.1,
+          "f1": 0.0571,
+          "support": 10
+        },
+        "通用类": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 10
+        },
+        "身份类": {
+          "precision": 0.0385,
+          "recall": 0.2,
+          "f1": 0.0645,
+          "support": 5
+        },
+        "K线图类": {
+          "precision": 0.0909,
+          "recall": 0.4,
+          "f1": 0.1481,
+          "support": 5
+        },
+        "诊股类": {
+          "precision": 0.3448,
+          "recall": 0.102,
+          "f1": 0.1575,
+          "support": 98
+        },
+        "指标查询类": {
+          "precision": 0.037,
+          "recall": 0.1429,
+          "f1": 0.0588,
+          "support": 7
+        },
+        "预测类": {
+          "precision": 0.027,
+          "recall": 0.027,
+          "f1": 0.027,
+          "support": 37
+        },
+        "分时图类": {
+          "precision": 0.0385,
+          "recall": 0.2,
+          "f1": 0.0645,
+          "support": 5
+        },
+        "策略类": {
+          "precision": 0.04,
+          "recall": 0.1111,
+          "f1": 0.0588,
+          "support": 9
+        }
+      },
+      "total_samples": 325,
+      "correct_samples": 26,
+      "error_samples": 299,
+      "bad_cases": [
+        {
+          "query": "龙溪股份明天的走势",
+          "expected": "预测类",
+          "predicted": "选股类",
+          "confidence": 0.18366331165881428,
+          "margin": 0.02102768028193233
+        },
+        {
+          "query": "你是哪家公司开发的大模型助手？",
+          "expected": "身份类",
+          "predicted": "分时图类",
+          "confidence": 0.1780833418594497,
+          "margin": 0.05088760380967444
+        },
+        {
+          "query": "帮我分析一下索通发展",
+          "expected": "诊股类",
+          "predicted": "选股类",
+          "confidence": 0.17090595799893799,
+          "margin": 0.012539235127495885
+        },
+        {
+          "query": "沪市的高成长高毛利率低估值绩优科技股",
+          "expected": "选股类",
+          "predicted": "知识库类",
+          "confidence": 0.1704603527002633,
+          "margin": -0.008429110434443832
+        },
+        {
+          "query": "华西股份",
+          "expected": "诊股类",
+          "predicted": "身份类",
+          "confidence": 0.16892598301803194,
+          "margin": -0.0012211808814209801
+        },
+        {
+          "query": "ai+概念股",
+          "expected": "选股类",
+          "predicted": "诊股类",
+          "confidence": 0.1642844551919916,
+          "margin": 0.030288957939075684
+        },
+        {
+          "query": "三七互娱怎么看",
+          "expected": "诊股类",
+          "predicted": "策略类",
+          "confidence": 0.16190217219869,
+          "margin": -0.01480062634466875
+        },
+        {
+          "query": "山子高科未来走势",
+          "expected": "预测类",
+          "predicted": "新闻类",
+          "confidence": 0.15783967730526444,
+          "margin": 0.00021597450254351447
+        },
+        {
+          "query": "ETF基金是不是当天买当天可以卖",
+          "expected": "知识库类",
+          "predicted": "K线图类",
+          "confidence": 0.15375706189217744,
+          "margin": 0.007089617213646482
+        },
+        {
+          "query": "怎么查北向资金动向",
+          "expected": "知识库类",
+          "predicted": "预测类",
+          "confidence": 0.15369543730857593,
+          "margin": -0.0025910680635193584
+        },
+        {
+          "query": "明日有哪些股票值得关注？",
+          "expected": "推荐类",
+          "predicted": "通用类",
+          "confidence": 0.15282078492365206,
+          "margin": 0.011010714950733996
+        },
+        {
+          "query": "永鼎股份今天回落的原因",
+          "expected": "诊股类",
+          "predicted": "通用类",
+          "confidence": 0.1523827774527922,
+          "margin": -0.06503271154501919
+        },
+        {
+          "query": "大宗交易买入的股票有锁定期吗？",
+          "expected": "知识库类",
+          "predicted": "诊股类",
+          "confidence": 0.15109636013177452,
+          "margin": 0.01251821356351654
+        },
+        {
+          "query": "股市中GEO概念指的是哪方面",
+          "expected": "知识库类",
+          "predicted": "策略类",
+          "confidence": 0.1493461113549992,
+          "margin": -0.03600844721141663
+        },
+        {
+          "query": "中坚科技112买入的，一直跌，继续持有还是卖掉？",
+          "expected": "诊股类",
+          "predicted": "K线图类",
+          "confidence": 0.14886748529019248,
+          "margin": -0.02226360653163395
+        },
+        {
+          "query": "手机版指南针软件如何操作",
+          "expected": "知识库类",
+          "predicted": "新闻类",
+          "confidence": 0.14828745097079296,
+          "margin": -0.016256908149684335
+        },
+        {
+          "query": "上升三法策略是什么？",
+          "expected": "策略类",
+          "predicted": "身份类",
+          "confidence": 0.14756241316502516,
+          "margin": 0.010523856655422936
+        },
+        {
+          "query": "海立股份B转A完成了吗",
+          "expected": "诊股类",
+          "predicted": "选股类",
+          "confidence": 0.1470062209679904,
+          "margin": -0.004158955762115196
+        },
+        {
+          "query": "603228交易策略。",
+          "expected": "知识库类",
+          "predicted": "指标查询类",
+          "confidence": 0.14567165658086453,
+          "margin": -0.023094183487011977
+        },
+        {
+          "query": "你太笨了，",
+          "expected": "通用类",
+          "predicted": "新闻类",
+          "confidence": 0.14482954493742403,
+          "margin": -0.020721283935144275
+        }
+      ],
+      "bad_cases_count": 20,
+      "method": "IntentGPT完整Prompt (Mock)",
+      "paradigm": "end-to-end",
+      "note": "Mock模式结果仅供参考"
+    }
+  ]
+}

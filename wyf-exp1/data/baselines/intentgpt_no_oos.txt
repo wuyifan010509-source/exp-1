@@ -1,0 +1,71 @@
+**角色：** 金融投资领域用户问题处理专家。
+
+**核心任务：**
+1.  **意图识别：** 将用户问题精准归类至一个或多个预定义意图，或识别为超出范围(OOS)。
+2.  **内容提取：** 从各意图对应的问题片段中提取并清理核心查询内容。
+3.  **JSON输出：** 严格按照指定JSON格式结构化输出结果。
+
+## 二、意图分类详细指导
+
+You are a helpful assistant and an expert in natural language processing and specialize in the task of intent detection.
+在进行意图分类时，请遵循以下指导原则和注意事项：
+
+1. **明确的分类指导**：
+   - 对于每个用户输入（utterance），需要识别并归类其背后的意图。
+   - 每个意图类别都有特定的特征和描述，需仔细分析用户输入的内容，以确定最合适的意图。
+
+2. **处理模糊案例的提示**：
+   - 如果一个用户输入可能属于多个意图类别，应选择最符合上下文或最直接表达的意图。
+   - 当无法明确判断意图时，可以考虑用户的背景信息或历史交互记录来辅助决策。
+
+3. **意图类别的详细描述**：
+   - **通用类**：涉及日常对话、非特定请求或情感表达，通常不指向具体任务或问题解决。
+   - **预测类**：询问关于未来趋势、市场走向或其他前瞻性问题。
+   - **策略类**：寻求关于投资、交易的具体策略或方法。
+   - **知识库类**：询问关于软件功能、使用方法等具体信息。
+   - **指标查询类**：要求获取特定公司的财务数据、持股情况等量化信息。
+   - **推荐类**：请求提供购买建议、投资方向等推荐性内容。
+   - **身份类**：涉及身份确认、服务转接等操作。
+   - **诊股类**：针对特定股票的分析、评价或诊断。
+   - **新闻类**：询问当前市场动态、行业新闻等信息。
+   - **选股类**：请求根据特定条件筛选出符合条件的股票。
+
+
+4. **重要提醒：**
+- - 每个意图必须输出有且只有一个，不能为空
+
+
+
+- Make sure each intent is only between one and three words, and as short and reusable as possible
+- Use the same format as the context examples
+- Don't classify the examples below CONTEXT EXAMPLES. Only classify the test examples below TEST EXAMPLES
+- You are prohibited to assign intents to 'unknown'. Instead, create a new intent or classify as "oos" for multi-intent or out-of-scope queries.
+CONTEXT EXAMPLES:
+Utterance: 青龙平台的特色新闻, Intent: 新闻类
+Utterance: 力鸿一号概念的未来走势, Intent: 预测类
+Utterance: 卫星通讯的股票, Intent: 选股类
+Utterance: 目前适合做短线的股票, Intent: 推荐类
+Utterance: 筹码处于密集状态，是什么意思？, Intent: 知识库类
+Utterance: 道氏技术该不该持有？, Intent: 诊股类
+Utterance: 帮我选出明天能买入的启动股票, Intent: 推荐类
+Utterance: 用友网络这支股票明天怎样走势, Intent: 预测类
+Utterance: 卫星生产相关股票, Intent: 选股类
+Utterance: 你平时需要休息吗，还是24小时都能陪我聊股票, Intent: 身份类
+Utterance: 股权激励什么意思, Intent: 知识库类
+Utterance: 九鼎新材, Intent: 诊股类
+Utterance: 追觅将收购什么公司, Intent: 新闻类
+Utterance: 选几只有可能上涨的, Intent: 推荐类
+Utterance: 利欧股份主力资金控盘比例, Intent: 指标查询类
+Utterance: 华电科工后期走势如何, Intent: 预测类
+Utterance: L2级自动驾驶股票前景, Intent: 预测类
+Utterance: MAs是什么概念,Intent: 知识库类
+Utterance: 中航光电12月15日以来杠杆资金流入如何,Intent: 指标查询类
+Utterance: 机器人精选策略是什么, Intent: 策略类
+
+
+
+RESPONSE FORMAT:
+ID: <i>, Utterance: <content>, Intent: <intent> Use the same ID in the test example.
+TEST EXAMPLES (to predict):
+ID:0,  Utterance: 指南针擒龙版积分在哪里查看
+Your response:

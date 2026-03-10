@@ -1,0 +1,390 @@
+{
+  "generation": 1,
+  "population": [
+    {
+      "fitness": 0.74,
+      "profiles": {
+        "选股智能体": {
+          "agent_name": "选股智能体",
+          "core_capability": "依据技术指标与基本面多条件组合筛选个股，并同步提供热门板块排行，辅助用户进行股票初选与机会挖掘。",
+          "boundary": "",
+          "rejection_scope": ""
+        },
+        "诊股智能体": {
+          "agent_name": "诊股智能体",
+          "core_capability": "本智能体专注于单只股票的深度剖析，综合运用基本面、技术面及资金面分析工具，提供财务状况、市场走势与主力动向的全面评估。",
+          "boundary": "",
+          "rejection_scope": ""
+        },
+        "预测智能体": {
+          "agent_name": "预测智能体",
+          "core_capability": "基于技术分析与量价关系，预测股票短期走势，并提供支撑位、压力位及目标价位等关键价格点位分析。",
+          "boundary": "",
+          "rejection_scope": ""
+        },
+        "知识库智能体": {
+          "agent_name": "知识库智能体",
+          "core_capability": "解答股票软件操作、交易规则与投资知识疑问，通过检索知识库与阐释金融术语提供专业支持。",
+          "boundary": "",
+          "rejection_scope": ""
+        },
+        "新闻智能体": {
+          "agent_name": "新闻智能体",
+          "core_capability": "提供实时财经新闻、市场动态及个股公告，支持获取泛财经资讯与特定股票相关信息，助力用户把握市场脉搏。",
+          "boundary": "",
+          "rejection_scope": ""
+        },
+        "通用智能体": {
+          "agent_name": "通用智能体",
+          "core_capability": "专注于通用对话与日常闲聊，通过自然语言交互提供情感支持与陪伴，适用于广泛的非定向交流场景。",
+          "boundary": "",
+          "rejection_scope": ""
+        },
+        "推荐智能体": {
+          "agent_name": "推荐智能体",
+          "core_capability": "依据用户风险偏好与投资目标，提供个性化股票推荐及适配当前市场环境的操作策略建议。",
+          "boundary": "",
+          "rejection_scope": ""
+        },
+        "策略智能体": {
+          "agent_name": "策略智能体",
+          "core_capability": "本智能体专精于投资策略的解析与应用，能阐释各类策略与战法的原理及用法，并辅助将其适配于具体的选股与操作场景。",
+          "boundary": "",
+          "rejection_scope": ""
+        },
+        "指标查询智能体": {
+          "agent_name": "指标查询智能体",
+          "core_capability": "提供股票技术指标与财务指标的精准查询服务，并支持基于特定指标的排行数据获取，辅助投资分析与决策。",
+          "boundary": "",
+          "rejection_scope": ""
+        },
+        "身份智能体": {
+          "agent_name": "身份智能体",
+          "core_capability": "负责处理用户关于AI助手身份属性的查询，并能在必要时将服务请求转接至人工客服坐席。",
+          "boundary": "",
+          "rejection_scope": ""
+        },
+        "分时图智能体": {
+          "agent_name": "分时图智能体",
+          "core_capability": "负责股票分时图的实时展示与深度技术分析，通过可视化呈现与特征解析，辅助日内交易决策。",
+          "boundary": "",
+          "rejection_scope": ""
+        },
+        "K线图智能体": {
+          "agent_name": "K线图智能体",
+          "core_capability": "负责股票K线图的展示与专业分析，通过可视化呈现及技术形态解析，辅助用户进行市场研判。",
+          "boundary": "",
+          "rejection_scope": ""
+        }
+      }
+    },
+    {
+      "fitness": 0.62,
+      "profiles": {
+        "选股智能体": {
+          "agent_name": "选股智能体",
+          "core_capability": "基于技术指标与基本面条件进行多维度股票筛选，并结合实时热门板块分析，为用户提供精准的选股组合建议。",
+          "boundary": "",
+          "rejection_scope": ""
+        },
+        "诊股智能体": {
+          "agent_name": "诊股智能体",
+          "core_capability": "本智能体专注于单只股票的深度剖析，通过整合基本面指标、技术走势与资金动向，提供多维度的投资决策支持。",
+          "boundary": "",
+          "rejection_scope": ""
+        },
+        "预测智能体": {
+          "agent_name": "预测智能体",
+          "core_capability": "基于技术分析与量价关系，预测股票短期走势，并提供关键价位（支撑位、压力位及目标价位）的研判。",
+          "boundary": "",
+          "rejection_scope": ""
+        },
+        "知识库智能体": {
+          "agent_name": "知识库智能体",
+          "core_capability": "解答股票软件操作、交易规则与投资知识疑问，通过检索知识库与解析金融术语提供专业支持。",
+          "boundary": "",
+          "rejection_scope": ""
+        },
+        "新闻智能体": {
+          "agent_name": "新闻智能体",
+          "core_capability": "专注提供实时财经新闻、市场动态及个股公告，通过专业工具精准获取并整合金融资讯，助力用户把握市场脉搏。",
+          "boundary": "",
+          "rejection_scope": ""
+        },
+        "通用智能体": {
+          "agent_name": "通用智能体",
+          "core_capability": "负责通用对话与日常闲聊，通过自然语言交互处理开放式话题，提供情感支持与陪伴式交流。",
+          "boundary": "",
+          "rejection_scope": ""
+        },
+        "推荐智能体": {
+          "agent_name": "推荐智能体",
+          "core_capability": "依据用户风险偏好与投资目标推荐适配股票，并结合市场状况提供专业操作策略建议。",
+          "boundary": "",
+          "rejection_scope": ""
+        },
+        "策略智能体": {
+          "agent_name": "策略智能体",
+          "core_capability": "本智能体专精于投资策略的阐释与实践，能解析各类策略原理，并辅助用户将其应用于具体的选股与交易场景中。",
+          "boundary": "",
+          "rejection_scope": ""
+        },
+        "指标查询智能体": {
+          "agent_name": "指标查询智能体",
+          "core_capability": "提供股票技术及财务指标的精准查询与排行数据，支持用户快速获取关键数值、解读含义并掌握市场排序信息。",
+          "boundary": "",
+          "rejection_scope": ""
+        },
+        "身份智能体": {
+          "agent_name": "身份智能体",
+          "core_capability": "负责处理用户对AI助手身份的查询，并根据需要将对话转接至人工客服，以提供准确的身份信息与顺畅的服务衔接。",
+          "boundary": "",
+          "rejection_scope": ""
+        },
+        "分时图智能体": {
+          "agent_name": "分时图智能体",
+          "core_capability": "本智能体专注于股票分时图的实时展示与深度技术分析，通过可视化图表与专业特征解析，辅助用户把握盘中动态与短期交易机会。",
+          "boundary": "",
+          "rejection_scope": ""
+        },
+        "K线图智能体": {
+          "agent_name": "K线图智能体",
+          "core_capability": "负责股票K线图的展示与专业分析，通过可视化图表及技术形态识别，辅助用户进行市场走势研判。",
+          "boundary": "",
+          "rejection_scope": ""
+        }
+      }
+    },
+    {
+      "fitness": 0.6,
+      "profiles": {
+        "选股智能体": {
+          "agent_name": "选股智能体",
+          "core_capability": "依据技术指标与基本面条件组合筛选个股，并同步提供热门板块排行，辅助用户进行股票初选与机会挖掘。",
+          "boundary": "",
+          "rejection_scope": ""
+        },
+        "诊股智能体": {
+          "agent_name": "诊股智能体",
+          "core_capability": "本智能体专注于单只股票的深度剖析，综合运用基本面、技术面与资金面分析工具，提供财务状况、市场走势及主力动向等多维度专业评估。",
+          "boundary": "",
+          "rejection_scope": ""
+        },
+        "预测智能体": {
+          "agent_name": "预测智能体",
+          "core_capability": "基于技术分析与量价关系，预测股票短期走势，并提供关键价位（支撑位、压力位及目标价位）的研判。",
+          "boundary": "",
+          "rejection_scope": ""
+        },
+        "知识库智能体": {
+          "agent_name": "知识库智能体",
+          "core_capability": "解答股票软件操作、交易规则与投资知识疑问，通过检索知识库与解析金融术语提供专业支持。",
+          "boundary": "",
+          "rejection_scope": ""
+        },
+        "新闻智能体": {
+          "agent_name": "新闻智能体",
+          "core_capability": "本智能体专注于提供实时财经资讯，可获取全球市场动态、最新财经新闻及特定上市公司的相关公告与新闻报道。",
+          "boundary": "",
+          "rejection_scope": ""
+        },
+        "通用智能体": {
+          "agent_name": "通用智能体",
+          "core_capability": "专注于通用对话与情感交流，通过闲聊功能处理日常沟通，提供自然流畅的互动支持。",
+          "boundary": "",
+          "rejection_scope": ""
+        },
+        "推荐智能体": {
+          "agent_name": "推荐智能体",
+          "core_capability": "基于用户风险偏好与投资目标，提供个性化的股票推荐，并结合市场状况适配操作策略。",
+          "boundary": "",
+          "rejection_scope": ""
+        },
+        "策略智能体": {
+          "agent_name": "策略智能体",
+          "core_capability": "本智能体专精于投资策略的阐释与实践，能解析各类策略原理，并辅助用户将其应用于具体的选股与交易决策中。",
+          "boundary": "",
+          "rejection_scope": ""
+        },
+        "指标查询智能体": {
+          "agent_name": "指标查询智能体",
+          "core_capability": "提供股票技术指标与财务指标的精准查询，并支持基于特定指标的排行数据获取，辅助量化分析与投资决策。",
+          "boundary": "",
+          "rejection_scope": ""
+        },
+        "身份智能体": {
+          "agent_name": "身份智能体",
+          "core_capability": "负责处理用户关于AI助手身份的查询，并能在需要时提供转接人工客服的服务。",
+          "boundary": "",
+          "rejection_scope": ""
+        },
+        "分时图智能体": {
+          "agent_name": "分时图智能体",
+          "core_capability": "负责股票分时图的实时展示与深度技术分析，通过可视化走势与特征解析，辅助日内交易决策。",
+          "boundary": "",
+          "rejection_scope": ""
+        },
+        "K线图智能体": {
+          "agent_name": "K线图智能体",
+          "core_capability": "负责股票K线图的展示与专业分析，通过调用工具实现图表可视化及对K线形态、技术特征的深度解析。",
+          "boundary": "",
+          "rejection_scope": ""
+        }
+      }
+    },
+    {
+      "fitness": 0.56,
+      "profiles": {
+        "选股智能体": {
+          "agent_name": "选股智能体",
+          "core_capability": "依据技术指标与基本面条件组合筛选个股，并同步提供热门板块排行，辅助用户进行股票初选与机会挖掘。",
+          "boundary": "",
+          "rejection_scope": ""
+        },
+        "诊股智能体": {
+          "agent_name": "诊股智能体",
+          "core_capability": "本智能体专注于单只股票的深度剖析，通过整合基本面数据、技术指标及资金流向，提供多维度的投资价值评估与走势研判。",
+          "boundary": "",
+          "rejection_scope": ""
+        },
+        "预测智能体": {
+          "agent_name": "预测智能体",
+          "core_capability": "基于技术分析与量价关系，预测股票短期走势，并提供关键支撑位、压力位及目标价位。",
+          "boundary": "",
+          "rejection_scope": ""
+        },
+        "知识库智能体": {
+          "agent_name": "知识库智能体",
+          "core_capability": "解答股票软件操作、交易规则及投资知识疑问，通过检索知识库与解释金融术语提供专业支持。",
+          "boundary": "",
+          "rejection_scope": ""
+        },
+        "新闻智能体": {
+          "agent_name": "新闻智能体",
+          "core_capability": "专注于提供实时财经新闻、市场动态及个股公告，支持用户追踪最新资讯与特定股票信息。",
+          "boundary": "",
+          "rejection_scope": ""
+        },
+        "通用智能体": {
+          "agent_name": "通用智能体",
+          "core_capability": "专注于通用对话与日常闲聊，通过自然语言交互处理开放式话题，提供情感支持与陪伴式交流。",
+          "boundary": "",
+          "rejection_scope": ""
+        },
+        "推荐智能体": {
+          "agent_name": "推荐智能体",
+          "core_capability": "依据用户风险偏好与投资目标，提供个性化股票推荐及适配当前市场环境的操作策略建议。",
+          "boundary": "",
+          "rejection_scope": ""
+        },
+        "策略智能体": {
+          "agent_name": "策略智能体",
+          "core_capability": "本智能体专精于投资策略的阐释与实战应用，可解析各类策略原理，并辅助用户将其适配于具体选股及交易场景。",
+          "boundary": "",
+          "rejection_scope": ""
+        },
+        "指标查询智能体": {
+          "agent_name": "指标查询智能体",
+          "core_capability": "提供股票技术及财务指标的精准查询与数值解读，并支持基于特定指标的排行数据获取，辅助投资分析与决策。",
+          "boundary": "",
+          "rejection_scope": ""
+        },
+        "身份智能体": {
+          "agent_name": "身份智能体",
+          "core_capability": "负责处理用户关于AI助手身份信息的查询，并在需要时提供转接人工客服的服务支持。",
+          "boundary": "",
+          "rejection_scope": ""
+        },
+        "分时图智能体": {
+          "agent_name": "分时图智能体",
+          "core_capability": "负责展示股票日内分时走势图，并对其技术特征进行专业分析，辅助用户把握盘中动态。",
+          "boundary": "",
+          "rejection_scope": ""
+        },
+        "K线图智能体": {
+          "agent_name": "K线图智能体",
+          "core_capability": "负责股票K线图的展示与专业分析，通过可视化图表及技术形态识别，辅助用户进行市场趋势研判。",
+          "boundary": "",
+          "rejection_scope": ""
+        }
+      }
+    },
+    {
+      "fitness": 0.54,
+      "profiles": {
+        "选股智能体": {
+          "agent_name": "选股智能体",
+          "core_capability": "基于技术指标与基本面条件组合筛选个股，并提供热门板块排行，辅助用户进行股票初选与机会挖掘。",
+          "boundary": "",
+          "rejection_scope": ""
+        },
+        "诊股智能体": {
+          "agent_name": "诊股智能体",
+          "core_capability": "对单只股票进行多维度综合评估，通过分析其基本面数据、技术走势及资金动向，提供全面的投资决策支持。",
+          "boundary": "",
+          "rejection_scope": ""
+        },
+        "预测智能体": {
+          "agent_name": "预测智能体",
+          "core_capability": "基于技术分析与量价关系，预测股票短期走势，并提供支撑位、压力位及目标价位等关键价格点位分析。",
+          "boundary": "",
+          "rejection_scope": ""
+        },
+        "知识库智能体": {
+          "agent_name": "知识库智能体",
+          "core_capability": "解答股票软件操作、交易规则及投资知识疑问，通过检索知识库与解释金融术语提供专业支持。",
+          "boundary": "",
+          "rejection_scope": ""
+        },
+        "新闻智能体": {
+          "agent_name": "新闻智能体",
+          "core_capability": "提供实时财经新闻、市场动态及个股公告，支持获取最新资讯与特定股票相关信息。",
+          "boundary": "",
+          "rejection_scope": ""
+        },
+        "通用智能体": {
+          "agent_name": "通用智能体",
+          "core_capability": "负责通用对话与日常闲聊，通过自然语言交互提供情感支持与信息交流，满足用户的基础社交与沟通需求。",
+          "boundary": "",
+          "rejection_scope": ""
+        },
+        "推荐智能体": {
+          "agent_name": "推荐智能体",
+          "core_capability": "基于用户风险偏好与投资目标，提供个性化的股票推荐及适配当前市场环境的操作策略建议。",
+          "boundary": "",
+          "rejection_scope": ""
+        },
+        "策略智能体": {
+          "agent_name": "策略智能体",
+          "core_capability": "解析各类投资策略的原理与适用场景，并支持将选定策略应用于实际选股与操作决策，辅助用户进行策略驱动的投资分析。",
+          "boundary": "",
+          "rejection_scope": ""
+        },
+        "指标查询智能体": {
+          "agent_name": "指标查询智能体",
+          "core_capability": "提供股票技术指标与财务指标的精准查询，并支持基于特定指标的排行数据获取，辅助投资分析与决策。",
+          "boundary": "",
+          "rejection_scope": ""
+        },
+        "身份智能体": {
+          "agent_name": "身份智能体",
+          "core_capability": "负责处理用户关于AI助手身份的查询，并根据需求将对话转接至人工客服。",
+          "boundary": "",
+          "rejection_scope": ""
+        },
+        "分时图智能体": {
+          "agent_name": "分时图智能体",
+          "core_capability": "负责股票分时图的实时展示与专业分析，通过调用工具实现走势可视化及盘中技术特征解析。",
+          "boundary": "",
+          "rejection_scope": ""
+        },
+        "K线图智能体": {
+          "agent_name": "K线图智能体",
+          "core_capability": "负责展示股票K线图，并分析其形态与技术特征，为投资决策提供可视化数据支持。",
+          "boundary": "",
+          "rejection_scope": ""
+        }
+      }
+    }
+  ]
+}

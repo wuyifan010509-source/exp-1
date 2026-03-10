@@ -1,0 +1,3191 @@
+{
+  "prompt_file": "/home/iilab9/scholar-papers/experiments/intention/exp-1/wyf-exp1/data/baselines/greedy.txt",
+  "test_file": "/home/iilab9/scholar-papers/experiments/intention/exp-1/wyf-exp1/data/GOLDEN_TEST.csv",
+  "total_samples": 325,
+  "correct": 272,
+  "accuracy": 0.8369230769230769,
+  "boundary_samples": 62,
+  "boundary_correct": 32,
+  "boundary_accuracy": 0.5161290322580645,
+  "macro_avg": {
+    "precision": 0.7524,
+    "recall": 0.8435,
+    "f1": 0.7801
+  },
+  "weighted_avg": {
+    "precision": 0.8658,
+    "recall": 0.8395,
+    "f1": 0.8448
+  },
+  "per_intent_stats": {
+    "选股类": {
+      "precision": 0.9231,
+      "recall": 0.8219,
+      "f1": 0.8696,
+      "support": 73
+    },
+    "诊股类": {
+      "precision": 0.9318,
+      "recall": 0.8367,
+      "f1": 0.8817,
+      "support": 98
+    },
+    "预测类": {
+      "precision": 0.925,
+      "recall": 1.0,
+      "f1": 0.961,
+      "support": 37
+    },
+    "知识库类": {
+      "precision": 0.8723,
+      "recall": 0.7593,
+      "f1": 0.8119,
+      "support": 54
+    },
+    "新闻类": {
+      "precision": 0.4348,
+      "recall": 0.9091,
+      "f1": 0.5882,
+      "support": 11
+    },
+    "通用类": {
+      "precision": 0.5294,
+      "recall": 0.9,
+      "f1": 0.6667,
+      "support": 10
+    },
+    "推荐类": {
+      "precision": 0.8333,
+      "recall": 1.0,
+      "f1": 0.9091,
+      "support": 10
+    },
+    "策略类": {
+      "precision": 0.75,
+      "recall": 0.6667,
+      "f1": 0.7059,
+      "support": 9
+    },
+    "指标查询类": {
+      "precision": 0.6,
+      "recall": 0.4286,
+      "f1": 0.5,
+      "support": 7
+    },
+    "身份类": {
+      "precision": 0.8,
+      "recall": 0.8,
+      "f1": 0.8,
+      "support": 5
+    },
+    "分时图类": {
+      "precision": 0.7143,
+      "recall": 1.0,
+      "f1": 0.8333,
+      "support": 5
+    },
+    "K线图类": {
+      "precision": 0.7143,
+      "recall": 1.0,
+      "f1": 0.8333,
+      "support": 5
+    }
+  },
+  "confusion_matrix": {
+    "选股类": {
+      "选股类": 60,
+      "诊股类": 0,
+      "预测类": 0,
+      "知识库类": 3,
+      "新闻类": 7,
+      "通用类": 3,
+      "推荐类": 0,
+      "策略类": 0,
+      "指标查询类": 0,
+      "身份类": 0,
+      "分时图类": 0,
+      "K线图类": 0
+    },
+    "诊股类": {
+      "选股类": 3,
+      "诊股类": 82,
+      "预测类": 2,
+      "知识库类": 0,
+      "新闻类": 4,
+      "通用类": 2,
+      "推荐类": 0,
+      "策略类": 0,
+      "指标查询类": 2,
+      "身份类": 0,
+      "分时图类": 1,
+      "K线图类": 2
+    },
+    "预测类": {
+      "选股类": 0,
+      "诊股类": 0,
+      "预测类": 37,
+      "知识库类": 0,
+      "新闻类": 0,
+      "通用类": 0,
+      "推荐类": 0,
+      "策略类": 0,
+      "指标查询类": 0,
+      "身份类": 0,
+      "分时图类": 0,
+      "K线图类": 0
+    },
+    "知识库类": {
+      "选股类": 1,
+      "诊股类": 3,
+      "预测类": 1,
+      "知识库类": 41,
+      "新闻类": 2,
+      "通用类": 2,
+      "推荐类": 1,
+      "策略类": 2,
+      "指标查询类": 0,
+      "身份类": 0,
+      "分时图类": 1,
+      "K线图类": 0
+    },
+    "新闻类": {
+      "选股类": 0,
+      "诊股类": 0,
+      "预测类": 0,
+      "知识库类": 0,
+      "新闻类": 10,
+      "通用类": 0,
+      "推荐类": 1,
+      "策略类": 0,
+      "指标查询类": 0,
+      "身份类": 0,
+      "分时图类": 0,
+      "K线图类": 0
+    },
+    "通用类": {
+      "选股类": 0,
+      "诊股类": 0,
+      "预测类": 0,
+      "知识库类": 0,
+      "新闻类": 0,
+      "通用类": 9,
+      "推荐类": 0,
+      "策略类": 0,
+      "指标查询类": 0,
+      "身份类": 1,
+      "分时图类": 0,
+      "K线图类": 0
+    },
+    "推荐类": {
+      "选股类": 0,
+      "诊股类": 0,
+      "预测类": 0,
+      "知识库类": 0,
+      "新闻类": 0,
+      "通用类": 0,
+      "推荐类": 10,
+      "策略类": 0,
+      "指标查询类": 0,
+      "身份类": 0,
+      "分时图类": 0,
+      "K线图类": 0
+    },
+    "策略类": {
+      "选股类": 0,
+      "诊股类": 0,
+      "预测类": 0,
+      "知识库类": 3,
+      "新闻类": 0,
+      "通用类": 0,
+      "推荐类": 0,
+      "策略类": 6,
+      "指标查询类": 0,
+      "身份类": 0,
+      "分时图类": 0,
+      "K线图类": 0
+    },
+    "指标查询类": {
+      "选股类": 1,
+      "诊股类": 3,
+      "预测类": 0,
+      "知识库类": 0,
+      "新闻类": 0,
+      "通用类": 0,
+      "推荐类": 0,
+      "策略类": 0,
+      "指标查询类": 3,
+      "身份类": 0,
+      "分时图类": 0,
+      "K线图类": 0
+    },
+    "身份类": {
+      "选股类": 0,
+      "诊股类": 0,
+      "预测类": 0,
+      "知识库类": 0,
+      "新闻类": 0,
+      "通用类": 1,
+      "推荐类": 0,
+      "策略类": 0,
+      "指标查询类": 0,
+      "身份类": 4,
+      "分时图类": 0,
+      "K线图类": 0
+    },
+    "分时图类": {
+      "选股类": 0,
+      "诊股类": 0,
+      "预测类": 0,
+      "知识库类": 0,
+      "新闻类": 0,
+      "通用类": 0,
+      "推荐类": 0,
+      "策略类": 0,
+      "指标查询类": 0,
+      "身份类": 0,
+      "分时图类": 5,
+      "K线图类": 0
+    },
+    "K线图类": {
+      "选股类": 0,
+      "诊股类": 0,
+      "预测类": 0,
+      "知识库类": 0,
+      "新闻类": 0,
+      "通用类": 0,
+      "推荐类": 0,
+      "策略类": 0,
+      "指标查询类": 0,
+      "身份类": 0,
+      "分时图类": 0,
+      "K线图类": 5
+    }
+  },
+  "detailed_results": [
+    {
+      "index": 1,
+      "query": "Ai企业应用落地方面股票",
+      "expected": "选股类",
+      "predicted": "选股类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "选股类"
+    },
+    {
+      "index": 2,
+      "query": "股票涨幅触发严重异动是啥意思",
+      "expected": "知识库类",
+      "predicted": "知识库类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "知识库智能体"
+    },
+    {
+      "index": 3,
+      "query": "成分骨有哪些",
+      "expected": "选股类",
+      "predicted": "通用类",
+      "correct": false,
+      "is_boundary": true,
+      "raw_response": "通用智能体"
+    },
+    {
+      "index": 4,
+      "query": "301299未来趋势",
+      "expected": "预测类",
+      "predicted": "预测类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "预测类"
+    },
+    {
+      "index": 5,
+      "query": "明天进哪个票",
+      "expected": "推荐类",
+      "predicted": "推荐类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "推荐类"
+    },
+    {
+      "index": 6,
+      "query": "核聚变核心股有那几个",
+      "expected": "选股类",
+      "predicted": "选股类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "选股类"
+    },
+    {
+      "index": 7,
+      "query": "旋极信息还会涨吗",
+      "expected": "预测类",
+      "predicted": "预测类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "预测类"
+    },
+    {
+      "index": 8,
+      "query": "指南针K綫图中园圈战是什么意思",
+      "expected": "知识库类",
+      "predicted": "知识库类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "知识库智能体"
+    },
+    {
+      "index": 9,
+      "query": "航空发展往后怎么走，是走还是留",
+      "expected": "预测类",
+      "predicted": "预测类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "预测类"
+    },
+    {
+      "index": 10,
+      "query": "筹码集中度高说明什么",
+      "expected": "知识库类",
+      "predicted": "知识库类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "知识库智能体"
+    },
+    {
+      "index": 11,
+      "query": "明日有哪些股票值得关注？",
+      "expected": "推荐类",
+      "predicted": "推荐类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "推荐类"
+    },
+    {
+      "index": 12,
+      "query": "破净股是什么意思",
+      "expected": "知识库类",
+      "predicted": "知识库类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "知识库智能体"
+    },
+    {
+      "index": 13,
+      "query": "景旺电子交易策略。",
+      "expected": "策略类",
+      "predicted": "策略类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "策略智能体"
+    },
+    {
+      "index": 14,
+      "query": "603228交易策略。",
+      "expected": "知识库类",
+      "predicted": "策略类",
+      "correct": false,
+      "is_boundary": false,
+      "raw_response": "策略智能体"
+    },
+    {
+      "index": 15,
+      "query": "如何判断筹码峰的股票涨跌态势",
+      "expected": "知识库类",
+      "predicted": "知识库类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "知识库智能体"
+    },
+    {
+      "index": 16,
+      "query": "多模态大模型相关股票有哪些",
+      "expected": "选股类",
+      "predicted": "选股类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "选股类"
+    },
+    {
+      "index": 17,
+      "query": "席位怎么调出",
+      "expected": "知识库类",
+      "predicted": "知识库类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "知识库智能体"
+    },
+    {
+      "index": 18,
+      "query": "603228交易策略。",
+      "expected": "策略类",
+      "predicted": "策略类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "策略智能体"
+    },
+    {
+      "index": 19,
+      "query": "帮我分析一下索通发展",
+      "expected": "诊股类",
+      "predicted": "诊股类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "诊股类"
+    },
+    {
+      "index": 20,
+      "query": "华西股份",
+      "expected": "诊股类",
+      "predicted": "诊股类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "诊股类"
+    },
+    {
+      "index": 21,
+      "query": "股票航天发展明天会崩盘嘛",
+      "expected": "预测类",
+      "predicted": "预测类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "预测类"
+    },
+    {
+      "index": 22,
+      "query": "楚江新林",
+      "expected": "诊股类",
+      "predicted": "诊股类",
+      "correct": true,
+      "is_boundary": true,
+      "raw_response": "诊股类"
+    },
+    {
+      "index": 23,
+      "query": "今日首板涨停的个股",
+      "expected": "选股类",
+      "predicted": "选股类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "选股类"
+    },
+    {
+      "index": 24,
+      "query": "航天板块资金流入多且涨幅小的股票列出来",
+      "expected": "选股类",
+      "predicted": "选股类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "选股类"
+    },
+    {
+      "index": 25,
+      "query": "陈小琴池庄的股票",
+      "expected": "选股类",
+      "predicted": "通用类",
+      "correct": false,
+      "is_boundary": false,
+      "raw_response": "通用智能体"
+    },
+    {
+      "index": 26,
+      "query": "300324明天走势分析",
+      "expected": "预测类",
+      "predicted": "预测类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "预测类"
+    },
+    {
+      "index": 27,
+      "query": "筹码分布中的重合度有什么意义",
+      "expected": "知识库类",
+      "predicted": "知识库类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "知识库智能体"
+    },
+    {
+      "index": 28,
+      "query": "帮我分析一下润和软件",
+      "expected": "诊股类",
+      "predicted": "诊股类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "诊股类"
+    },
+    {
+      "index": 29,
+      "query": "自选删除了还能不能恢复",
+      "expected": "知识库类",
+      "predicted": "通用类",
+      "correct": false,
+      "is_boundary": false,
+      "raw_response": "通用智能体"
+    },
+    {
+      "index": 30,
+      "query": "再升科技",
+      "expected": "诊股类",
+      "predicted": "诊股类",
+      "correct": true,
+      "is_boundary": true,
+      "raw_response": "诊股类"
+    },
+    {
+      "index": 31,
+      "query": "指南针股票软件的集合竞价分析如何用",
+      "expected": "知识库类",
+      "predicted": "知识库类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "知识库智能体"
+    },
+    {
+      "index": 32,
+      "query": "中国能建",
+      "expected": "诊股类",
+      "predicted": "诊股类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "诊股类"
+    },
+    {
+      "index": 33,
+      "query": "在哪里查看游资买入资金量",
+      "expected": "知识库类",
+      "predicted": "诊股类",
+      "correct": false,
+      "is_boundary": true,
+      "raw_response": "诊股类"
+    },
+    {
+      "index": 34,
+      "query": "深夜挂单有用吗",
+      "expected": "知识库类",
+      "predicted": "知识库类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "知识库智能体"
+    },
+    {
+      "index": 35,
+      "query": "帮我分析一下漫步者",
+      "expected": "诊股类",
+      "predicted": "诊股类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "诊股类"
+    },
+    {
+      "index": 36,
+      "query": "指南针擒龙版积分在哪里查看",
+      "expected": "知识库类",
+      "predicted": "知识库类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "知识库智能体"
+    },
+    {
+      "index": 37,
+      "query": "601949趋势",
+      "expected": "诊股类",
+      "predicted": "K线图类",
+      "correct": false,
+      "is_boundary": true,
+      "raw_response": "K线图智能体"
+    },
+    {
+      "index": 38,
+      "query": "000560走势分析",
+      "expected": "诊股类",
+      "predicted": "诊股类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "诊股类"
+    },
+    {
+      "index": 39,
+      "query": "明日买什么",
+      "expected": "推荐类",
+      "predicted": "推荐类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "推荐类"
+    },
+    {
+      "index": 40,
+      "query": "三七互娱怎么看",
+      "expected": "诊股类",
+      "predicted": "诊股类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "诊股类"
+    },
+    {
+      "index": 41,
+      "query": "博纳影业",
+      "expected": "诊股类",
+      "predicted": "诊股类",
+      "correct": true,
+      "is_boundary": true,
+      "raw_response": "诊股类"
+    },
+    {
+      "index": 42,
+      "query": "给我简单介绍一下你自己",
+      "expected": "身份类",
+      "predicted": "身份类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "身份智能体"
+    },
+    {
+      "index": 43,
+      "query": "怎么查北向资金动向",
+      "expected": "知识库类",
+      "predicted": "诊股类",
+      "correct": false,
+      "is_boundary": true,
+      "raw_response": "诊股类"
+    },
+    {
+      "index": 44,
+      "query": "我不想跟机器说话，你能帮我转接人工吗？",
+      "expected": "身份类",
+      "predicted": "身份类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "身份智能体"
+    },
+    {
+      "index": 45,
+      "query": "擒龙平台是当天选出来，明天买入吗，还是当天买入",
+      "expected": "知识库类",
+      "predicted": "推荐类",
+      "correct": false,
+      "is_boundary": true,
+      "raw_response": "推荐类"
+    },
+    {
+      "index": 46,
+      "query": "你是谁？",
+      "expected": "身份类",
+      "predicted": "身份类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "身份智能体"
+    },
+    {
+      "index": 47,
+      "query": "锁定因子在股市中的作用",
+      "expected": "知识库类",
+      "predicted": "知识库类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "知识库智能体"
+    },
+    {
+      "index": 48,
+      "query": "你能帮我做些什么？",
+      "expected": "身份类",
+      "predicted": "通用类",
+      "correct": false,
+      "is_boundary": false,
+      "raw_response": "通用智能体"
+    },
+    {
+      "index": 49,
+      "query": "你是哪家公司开发的大模型助手？",
+      "expected": "身份类",
+      "predicted": "身份类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "身份智能体"
+    },
+    {
+      "index": 50,
+      "query": "90%筹码和30%筹码有什么意义",
+      "expected": "知识库类",
+      "predicted": "知识库类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "知识库智能体"
+    },
+    {
+      "index": 51,
+      "query": "现在的主线是什么",
+      "expected": "新闻类",
+      "predicted": "推荐类",
+      "correct": false,
+      "is_boundary": false,
+      "raw_response": "推荐类"
+    },
+    {
+      "index": 52,
+      "query": "分析下华胜天成",
+      "expected": "诊股类",
+      "predicted": "诊股类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "诊股类"
+    },
+    {
+      "index": 53,
+      "query": "水晶光电",
+      "expected": "诊股类",
+      "predicted": "诊股类",
+      "correct": true,
+      "is_boundary": true,
+      "raw_response": "诊股类"
+    },
+    {
+      "index": 54,
+      "query": "乐凯胶片",
+      "expected": "诊股类",
+      "predicted": "指标查询类",
+      "correct": false,
+      "is_boundary": true,
+      "raw_response": "指标查询类"
+    },
+    {
+      "index": 55,
+      "query": "兴业股份",
+      "expected": "诊股类",
+      "predicted": "诊股类",
+      "correct": true,
+      "is_boundary": true,
+      "raw_response": "诊股类"
+    },
+    {
+      "index": 56,
+      "query": "上海电影未来趋势",
+      "expected": "预测类",
+      "predicted": "预测类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "预测类"
+    },
+    {
+      "index": 57,
+      "query": "北证股票是什么意思",
+      "expected": "知识库类",
+      "predicted": "知识库类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "知识库智能体"
+    },
+    {
+      "index": 58,
+      "query": "科大国创下一步走势？",
+      "expected": "预测类",
+      "predicted": "预测类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "预测类"
+    },
+    {
+      "index": 59,
+      "query": "近期热门概念板块前五名",
+      "expected": "选股类",
+      "predicted": "新闻类",
+      "correct": false,
+      "is_boundary": false,
+      "raw_response": "新闻类"
+    },
+    {
+      "index": 60,
+      "query": "AI应用有哪些个走走的强势",
+      "expected": "选股类",
+      "predicted": "知识库类",
+      "correct": false,
+      "is_boundary": false,
+      "raw_response": "知识库智能体"
+    },
+    {
+      "index": 61,
+      "query": "近期热门概念前5个",
+      "expected": "选股类",
+      "predicted": "新闻类",
+      "correct": false,
+      "is_boundary": false,
+      "raw_response": "新闻类"
+    },
+    {
+      "index": 62,
+      "query": "近期5日内主力资金净注入超过5千万，涨幅低于4%的，航天军工板块和计算机应用板块有哪些股票",
+      "expected": "选股类",
+      "predicted": "选股类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "选股类"
+    },
+    {
+      "index": 63,
+      "query": "怎么设置自动买卖",
+      "expected": "知识库类",
+      "predicted": "知识库类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "知识库智能体"
+    },
+    {
+      "index": 64,
+      "query": "盐湖股份",
+      "expected": "诊股类",
+      "predicted": "诊股类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "诊股类"
+    },
+    {
+      "index": 65,
+      "query": "海光信息最近为什么一直盘着",
+      "expected": "诊股类",
+      "predicted": "诊股类",
+      "correct": true,
+      "is_boundary": true,
+      "raw_response": "诊股类"
+    },
+    {
+      "index": 66,
+      "query": "002324可以继续持有吗",
+      "expected": "诊股类",
+      "predicted": "诊股类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "诊股类"
+    },
+    {
+      "index": 67,
+      "query": "股市中GEO概念指的是哪方面",
+      "expected": "知识库类",
+      "predicted": "知识库类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "知识库智能体"
+    },
+    {
+      "index": 68,
+      "query": "指南针怎么实现量化工具自动买卖点",
+      "expected": "知识库类",
+      "predicted": "知识库类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "知识库智能体"
+    },
+    {
+      "index": 69,
+      "query": "紫光股份",
+      "expected": "诊股类",
+      "predicted": "诊股类",
+      "correct": true,
+      "is_boundary": true,
+      "raw_response": "诊股类"
+    },
+    {
+      "index": 70,
+      "query": "星源材质未来趋势",
+      "expected": "预测类",
+      "predicted": "预测类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "预测类"
+    },
+    {
+      "index": 71,
+      "query": "核聚变有哪些行业，包括哪些板块",
+      "expected": "选股类",
+      "predicted": "知识库类",
+      "correct": false,
+      "is_boundary": true,
+      "raw_response": "知识库智能体"
+    },
+    {
+      "index": 72,
+      "query": "天融信有一波反弹吗",
+      "expected": "诊股类",
+      "predicted": "预测类",
+      "correct": false,
+      "is_boundary": true,
+      "raw_response": "预测类"
+    },
+    {
+      "index": 73,
+      "query": "莱宝高科",
+      "expected": "诊股类",
+      "predicted": "诊股类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "诊股类"
+    },
+    {
+      "index": 74,
+      "query": "谢谢啦",
+      "expected": "通用类",
+      "predicted": "通用类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "通用智能体"
+    },
+    {
+      "index": 75,
+      "query": "明天航天发展怎么逃",
+      "expected": "预测类",
+      "predicted": "预测类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "预测类"
+    },
+    {
+      "index": 76,
+      "query": "陈小群交易策略",
+      "expected": "策略类",
+      "predicted": "策略类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "策略智能体"
+    },
+    {
+      "index": 77,
+      "query": "擒龙平台里突破选股搜不到",
+      "expected": "知识库类",
+      "predicted": "选股类",
+      "correct": false,
+      "is_boundary": true,
+      "raw_response": "选股类"
+    },
+    {
+      "index": 78,
+      "query": "AI十能翻倍的股票",
+      "expected": "选股类",
+      "predicted": "选股类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "选股类"
+    },
+    {
+      "index": 79,
+      "query": "明天天气怎么样？",
+      "expected": "通用类",
+      "predicted": "通用类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "通用智能体"
+    },
+    {
+      "index": 80,
+      "query": "你太笨了，",
+      "expected": "通用类",
+      "predicted": "通用类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "通用智能体"
+    },
+    {
+      "index": 81,
+      "query": "今天股价在11.47的股票是什么",
+      "expected": "选股类",
+      "predicted": "选股类",
+      "correct": true,
+      "is_boundary": true,
+      "raw_response": "选股类"
+    },
+    {
+      "index": 82,
+      "query": "指南针软件自选删除了能不能恢复",
+      "expected": "知识库类",
+      "predicted": "知识库类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "知识库智能体"
+    },
+    {
+      "index": 83,
+      "query": "你与豆包有什么区别",
+      "expected": "通用类",
+      "predicted": "身份类",
+      "correct": false,
+      "is_boundary": false,
+      "raw_response": "身份智能体"
+    },
+    {
+      "index": 84,
+      "query": "那方面的股票能翻十倍",
+      "expected": "推荐类",
+      "predicted": "推荐类",
+      "correct": true,
+      "is_boundary": true,
+      "raw_response": "推荐类"
+    },
+    {
+      "index": 85,
+      "query": "陈小群持仓的股票",
+      "expected": "选股类",
+      "predicted": "选股类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "选股类"
+    },
+    {
+      "index": 86,
+      "query": "字体大点",
+      "expected": "通用类",
+      "predicted": "通用类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "通用智能体"
+    },
+    {
+      "index": 87,
+      "query": "90%筹码和70%筹码有什么意义",
+      "expected": "知识库类",
+      "predicted": "知识库类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "知识库智能体"
+    },
+    {
+      "index": 88,
+      "query": "京津冀一体化的标的股",
+      "expected": "选股类",
+      "predicted": "选股类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "选股类"
+    },
+    {
+      "index": 89,
+      "query": "创新医疗",
+      "expected": "诊股类",
+      "predicted": "诊股类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "诊股类"
+    },
+    {
+      "index": 90,
+      "query": "沪电股份",
+      "expected": "诊股类",
+      "predicted": "诊股类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "诊股类"
+    },
+    {
+      "index": 91,
+      "query": "603703能进吗",
+      "expected": "诊股类",
+      "predicted": "诊股类",
+      "correct": true,
+      "is_boundary": true,
+      "raw_response": "诊股类"
+    },
+    {
+      "index": 92,
+      "query": "雷电微力未来走势",
+      "expected": "预测类",
+      "predicted": "预测类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "预测类"
+    },
+    {
+      "index": 93,
+      "query": "中航西飞未来走势",
+      "expected": "预测类",
+      "predicted": "预测类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "预测类"
+    },
+    {
+      "index": 94,
+      "query": "中航机载要清仓吗",
+      "expected": "诊股类",
+      "predicted": "诊股类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "诊股类"
+    },
+    {
+      "index": 95,
+      "query": "中坚科技112买入的，一直跌，继续持有还是卖掉？",
+      "expected": "诊股类",
+      "predicted": "诊股类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "诊股类"
+    },
+    {
+      "index": 96,
+      "query": "三安光电未来走势",
+      "expected": "预测类",
+      "predicted": "预测类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "预测类"
+    },
+    {
+      "index": 97,
+      "query": "中行西飞未来走势",
+      "expected": "预测类",
+      "predicted": "预测类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "预测类"
+    },
+    {
+      "index": 98,
+      "query": "今日收盘首板，市值小于500亿，半年内涨停少于3次的不要，一年内爆涨超过40%以上的淘汰，有板块效益的股票有哪些",
+      "expected": "选股类",
+      "predicted": "选股类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "选股类"
+    },
+    {
+      "index": 99,
+      "query": "天下秀",
+      "expected": "诊股类",
+      "predicted": "诊股类",
+      "correct": true,
+      "is_boundary": true,
+      "raw_response": "诊股类"
+    },
+    {
+      "index": 100,
+      "query": "由可控核聚变和航天发展的股票有哪些？",
+      "expected": "选股类",
+      "predicted": "选股类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "选股类"
+    },
+    {
+      "index": 101,
+      "query": "近期13日内主力资金净注入超过一亿，涨幅低于9%的，航天军工板块和计算机应用板块有哪些股票",
+      "expected": "选股类",
+      "predicted": "选股类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "选股类"
+    },
+    {
+      "index": 102,
+      "query": "兖矿能源未来走势",
+      "expected": "预测类",
+      "predicted": "预测类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "预测类"
+    },
+    {
+      "index": 103,
+      "query": "分析一下张江高科",
+      "expected": "诊股类",
+      "predicted": "诊股类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "诊股类"
+    },
+    {
+      "index": 104,
+      "query": "股权投资的股票",
+      "expected": "选股类",
+      "predicted": "知识库类",
+      "correct": false,
+      "is_boundary": true,
+      "raw_response": "知识库智能体"
+    },
+    {
+      "index": 105,
+      "query": "海格通信",
+      "expected": "诊股类",
+      "predicted": "诊股类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "诊股类"
+    },
+    {
+      "index": 106,
+      "query": "GEO是什么",
+      "expected": "知识库类",
+      "predicted": "知识库类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "知识库智能体"
+    },
+    {
+      "index": 107,
+      "query": "近期13日内主力资金净注入超过1亿，涨幅低于4%的，有哪些股票",
+      "expected": "选股类",
+      "predicted": "选股类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "选股类"
+    },
+    {
+      "index": 108,
+      "query": "查找锁定因子LFS在60以上的股票",
+      "expected": "选股类",
+      "predicted": "选股类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "选股类"
+    },
+    {
+      "index": 109,
+      "query": "分析一下众兴菌业",
+      "expected": "诊股类",
+      "predicted": "诊股类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "诊股类"
+    },
+    {
+      "index": 110,
+      "query": "金风科技还会涨吗",
+      "expected": "预测类",
+      "predicted": "预测类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "预测类"
+    },
+    {
+      "index": 111,
+      "query": "当前公告业绩预增的股票",
+      "expected": "选股类",
+      "predicted": "新闻类",
+      "correct": false,
+      "is_boundary": true,
+      "raw_response": "新闻智能体"
+    },
+    {
+      "index": 112,
+      "query": "光通讯模块概念的总龙头是谁",
+      "expected": "选股类",
+      "predicted": "选股类",
+      "correct": true,
+      "is_boundary": true,
+      "raw_response": "选股类"
+    },
+    {
+      "index": 113,
+      "query": "竞价涨幅2—4主板股票",
+      "expected": "选股类",
+      "predicted": "选股类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "选股类"
+    },
+    {
+      "index": 114,
+      "query": "分析英利汽车",
+      "expected": "诊股类",
+      "predicted": "诊股类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "诊股类"
+    },
+    {
+      "index": 115,
+      "query": "股票严重异动对股票有什么影响",
+      "expected": "知识库类",
+      "predicted": "新闻类",
+      "correct": false,
+      "is_boundary": false,
+      "raw_response": "新闻类"
+    },
+    {
+      "index": 116,
+      "query": "海光信息未来可期吗",
+      "expected": "预测类",
+      "predicted": "预测类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "预测类"
+    },
+    {
+      "index": 117,
+      "query": "近期5日内主力资金净注入超过一亿，涨幅低于9%的，航天军工板块和计算机应用板块、原件板块、光学光电子板块、传媒板块有哪些股票",
+      "expected": "选股类",
+      "predicted": "选股类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "选股类"
+    },
+    {
+      "index": 118,
+      "query": "汇得科技怎样",
+      "expected": "诊股类",
+      "predicted": "诊股类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "诊股类"
+    },
+    {
+      "index": 119,
+      "query": "603011",
+      "expected": "诊股类",
+      "predicted": "诊股类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "诊股类"
+    },
+    {
+      "index": 120,
+      "query": "茺矿能源未来走势",
+      "expected": "预测类",
+      "predicted": "预测类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "预测类"
+    },
+    {
+      "index": 121,
+      "query": "K线图上蓝色和紫色K线是什么意思",
+      "expected": "知识库类",
+      "predicted": "知识库类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "知识库智能体"
+    },
+    {
+      "index": 122,
+      "query": "山子高科未来走势",
+      "expected": "预测类",
+      "predicted": "预测类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "预测类"
+    },
+    {
+      "index": 123,
+      "query": "查找锁定因子LFS在60以上的股票",
+      "expected": "选股类",
+      "predicted": "选股类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "选股类"
+    },
+    {
+      "index": 124,
+      "query": "锁定因子是什么",
+      "expected": "知识库类",
+      "predicted": "知识库类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "知识库智能体"
+    },
+    {
+      "index": 125,
+      "query": "分析一下920196",
+      "expected": "诊股类",
+      "predicted": "诊股类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "诊股类"
+    },
+    {
+      "index": 126,
+      "query": "碳酸锂期货为什么在9%是涨停",
+      "expected": "诊股类",
+      "predicted": "新闻类",
+      "correct": false,
+      "is_boundary": true,
+      "raw_response": "新闻智能体"
+    },
+    {
+      "index": 127,
+      "query": "分析一下璞泰来",
+      "expected": "诊股类",
+      "predicted": "诊股类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "诊股类"
+    },
+    {
+      "index": 128,
+      "query": "同时涉及航天和AI的股票",
+      "expected": "选股类",
+      "predicted": "选股类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "选股类"
+    },
+    {
+      "index": 129,
+      "query": "今日收盘首板，市值小于300亿，半年内涨停少于3次的不要，一年内爆涨超过40%以上的淘汰，有板块效益的股票有哪些",
+      "expected": "选股类",
+      "predicted": "选股类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "选股类"
+    },
+    {
+      "index": 130,
+      "query": "分析一下菲利华为什么连跌",
+      "expected": "诊股类",
+      "predicted": "诊股类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "诊股类"
+    },
+    {
+      "index": 131,
+      "query": "中兴通讯还可以持有吗",
+      "expected": "诊股类",
+      "predicted": "诊股类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "诊股类"
+    },
+    {
+      "index": 132,
+      "query": "岩山科技是龙头吗",
+      "expected": "诊股类",
+      "predicted": "诊股类",
+      "correct": true,
+      "is_boundary": true,
+      "raw_response": "诊股类"
+    },
+    {
+      "index": 133,
+      "query": "歌尔股份属于科技股吗",
+      "expected": "诊股类",
+      "predicted": "选股类",
+      "correct": false,
+      "is_boundary": true,
+      "raw_response": "选股类"
+    },
+    {
+      "index": 134,
+      "query": "000516趋势",
+      "expected": "诊股类",
+      "predicted": "诊股类",
+      "correct": true,
+      "is_boundary": true,
+      "raw_response": "诊股类"
+    },
+    {
+      "index": 135,
+      "query": "海特高新",
+      "expected": "诊股类",
+      "predicted": "诊股类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "诊股类"
+    },
+    {
+      "index": 136,
+      "query": "今天资金流入多的主线股票",
+      "expected": "选股类",
+      "predicted": "选股类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "选股类"
+    },
+    {
+      "index": 137,
+      "query": "查找锁定因子LFS在55以上股票",
+      "expected": "选股类",
+      "predicted": "选股类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "选股类"
+    },
+    {
+      "index": 138,
+      "query": "科大讯飞明天能进去吗",
+      "expected": "预测类",
+      "predicted": "预测类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "预测类"
+    },
+    {
+      "index": 139,
+      "query": "同时涉及航天军工和AI智能的股票",
+      "expected": "选股类",
+      "predicted": "选股类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "选股类"
+    },
+    {
+      "index": 140,
+      "query": "电气风电怎么样？",
+      "expected": "诊股类",
+      "predicted": "诊股类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "诊股类"
+    },
+    {
+      "index": 141,
+      "query": "明天可以入手可控核聚变哪些股票",
+      "expected": "推荐类",
+      "predicted": "推荐类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "推荐类"
+    },
+    {
+      "index": 142,
+      "query": "600184趋势",
+      "expected": "诊股类",
+      "predicted": "诊股类",
+      "correct": true,
+      "is_boundary": true,
+      "raw_response": "诊股类"
+    },
+    {
+      "index": 143,
+      "query": "近期5日内主力资金净注入超过6千万，涨幅低于9%的，航天军工板块和计算机应用板块、原件板块、光学光电子板块、传媒板块有哪些股票",
+      "expected": "选股类",
+      "predicted": "选股类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "选股类"
+    },
+    {
+      "index": 144,
+      "query": "海马汽车明天优势",
+      "expected": "预测类",
+      "predicted": "预测类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "预测类"
+    },
+    {
+      "index": 145,
+      "query": "基金的手续费是多少",
+      "expected": "知识库类",
+      "predicted": "知识库类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "知识库智能体"
+    },
+    {
+      "index": 146,
+      "query": "独角兽概念今天涨停的股票",
+      "expected": "选股类",
+      "predicted": "选股类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "选股类"
+    },
+    {
+      "index": 147,
+      "query": "IDc概念股",
+      "expected": "选股类",
+      "predicted": "选股类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "选股类"
+    },
+    {
+      "index": 148,
+      "query": "可以当天买当天卖吗",
+      "expected": "知识库类",
+      "predicted": "知识库类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "知识库智能体"
+    },
+    {
+      "index": 149,
+      "query": "今天首板股票",
+      "expected": "选股类",
+      "predicted": "选股类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "选股类"
+    },
+    {
+      "index": 150,
+      "query": "近期5日内主力资金净注入超过一亿，涨幅低于9%的，航天军工板块和计算机应用板块有哪些股票",
+      "expected": "选股类",
+      "predicted": "选股类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "选股类"
+    },
+    {
+      "index": 151,
+      "query": "科大讯飞",
+      "expected": "诊股类",
+      "predicted": "诊股类",
+      "correct": true,
+      "is_boundary": true,
+      "raw_response": "诊股类"
+    },
+    {
+      "index": 152,
+      "query": "Al+制造有那些股票",
+      "expected": "选股类",
+      "predicted": "选股类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "选股类"
+    },
+    {
+      "index": 153,
+      "query": "000917",
+      "expected": "诊股类",
+      "predicted": "诊股类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "诊股类"
+    },
+    {
+      "index": 154,
+      "query": "IDC行业是什么行业",
+      "expected": "知识库类",
+      "predicted": "知识库类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "知识库智能体"
+    },
+    {
+      "index": 155,
+      "query": "截止到1月12日陈小群持股情况",
+      "expected": "指标查询类",
+      "predicted": "指标查询类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "指标查询类"
+    },
+    {
+      "index": 156,
+      "query": "对股票什",
+      "expected": "诊股类",
+      "predicted": "通用类",
+      "correct": false,
+      "is_boundary": true,
+      "raw_response": "通用智能体"
+    },
+    {
+      "index": 157,
+      "query": "近期13日内主力资金净注入超过一亿，涨幅低于9%的，航天军工板块和计算机应用板块、原件板块、光学光电子板块、传媒板块有哪些股票",
+      "expected": "选股类",
+      "predicted": "选股类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "选股类"
+    },
+    {
+      "index": 158,
+      "query": "159218ETF",
+      "expected": "诊股类",
+      "predicted": "通用类",
+      "correct": false,
+      "is_boundary": true,
+      "raw_response": "通用智能体"
+    },
+    {
+      "index": 159,
+      "query": "近期5日内主力资金净注入超过1亿，涨幅低于4%，航天军工板块有哪些股票",
+      "expected": "选股类",
+      "predicted": "选股类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "选股类"
+    },
+    {
+      "index": 160,
+      "query": "业绩预增50％的股票",
+      "expected": "选股类",
+      "predicted": "选股类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "选股类"
+    },
+    {
+      "index": 161,
+      "query": "信捷电器",
+      "expected": "诊股类",
+      "predicted": "诊股类",
+      "correct": true,
+      "is_boundary": true,
+      "raw_response": "诊股类"
+    },
+    {
+      "index": 162,
+      "query": "海航控股",
+      "expected": "诊股类",
+      "predicted": "诊股类",
+      "correct": true,
+      "is_boundary": true,
+      "raw_response": "诊股类"
+    },
+    {
+      "index": 163,
+      "query": "603817怎么看",
+      "expected": "诊股类",
+      "predicted": "诊股类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "诊股类"
+    },
+    {
+      "index": 164,
+      "query": "万向钱潮股价快速回落，尾盘集合竞价大单买入",
+      "expected": "诊股类",
+      "predicted": "分时图类",
+      "correct": false,
+      "is_boundary": false,
+      "raw_response": "分时图智能体"
+    },
+    {
+      "index": 165,
+      "query": "高业航天有那些股票",
+      "expected": "选股类",
+      "predicted": "选股类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "选股类"
+    },
+    {
+      "index": 166,
+      "query": "海上回收概念股票",
+      "expected": "选股类",
+      "predicted": "选股类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "选股类"
+    },
+    {
+      "index": 167,
+      "query": "如何下载动态擒龙版PC版",
+      "expected": "知识库类",
+      "predicted": "知识库类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "知识库智能体"
+    },
+    {
+      "index": 168,
+      "query": "帮我分析一下，生益科技。",
+      "expected": "诊股类",
+      "predicted": "诊股类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "诊股类"
+    },
+    {
+      "index": 169,
+      "query": "帮我分析一下东田微",
+      "expected": "诊股类",
+      "predicted": "诊股类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "诊股类"
+    },
+    {
+      "index": 170,
+      "query": "帮忙分析一下太钢不锈走势",
+      "expected": "诊股类",
+      "predicted": "诊股类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "诊股类"
+    },
+    {
+      "index": 171,
+      "query": "三六零",
+      "expected": "诊股类",
+      "predicted": "诊股类",
+      "correct": true,
+      "is_boundary": true,
+      "raw_response": "诊股类"
+    },
+    {
+      "index": 172,
+      "query": "帮我分析一下中京电子",
+      "expected": "诊股类",
+      "predicted": "诊股类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "诊股类"
+    },
+    {
+      "index": 173,
+      "query": "商业航天上游股票",
+      "expected": "选股类",
+      "predicted": "选股类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "选股类"
+    },
+    {
+      "index": 174,
+      "query": "商业航天低位股票分析下",
+      "expected": "诊股类",
+      "predicted": "选股类",
+      "correct": false,
+      "is_boundary": true,
+      "raw_response": "选股类"
+    },
+    {
+      "index": 175,
+      "query": "北矿检测",
+      "expected": "诊股类",
+      "predicted": "诊股类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "诊股类"
+    },
+    {
+      "index": 176,
+      "query": "预测一下明天潍柴重机的走势",
+      "expected": "预测类",
+      "predicted": "预测类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "预测类"
+    },
+    {
+      "index": 177,
+      "query": "Al应用有那些股票",
+      "expected": "选股类",
+      "predicted": "选股类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "选股类"
+    },
+    {
+      "index": 178,
+      "query": "如何制定我的交易计划",
+      "expected": "知识库类",
+      "predicted": "策略类",
+      "correct": false,
+      "is_boundary": true,
+      "raw_response": "策略智能体"
+    },
+    {
+      "index": 179,
+      "query": "今天底位首板股票",
+      "expected": "选股类",
+      "predicted": "选股类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "选股类"
+    },
+    {
+      "index": 180,
+      "query": "近期13日内主力资金净注入超过1亿，涨幅低于4%的股票",
+      "expected": "选股类",
+      "predicted": "选股类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "选股类"
+    },
+    {
+      "index": 181,
+      "query": "力鸿一号飞行成功 背后的意义是什么",
+      "expected": "新闻类",
+      "predicted": "新闻类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "新闻智能体"
+    },
+    {
+      "index": 182,
+      "query": "航天工程昨夜有什么变动没有",
+      "expected": "选股类",
+      "predicted": "新闻类",
+      "correct": false,
+      "is_boundary": false,
+      "raw_response": "新闻类"
+    },
+    {
+      "index": 183,
+      "query": "苹果笔记本怎么使用指南针炒股软件",
+      "expected": "知识库类",
+      "predicted": "知识库类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "知识库智能体"
+    },
+    {
+      "index": 184,
+      "query": "航天工程昨夜有什么变动没有",
+      "expected": "新闻类",
+      "predicted": "新闻类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "新闻类"
+    },
+    {
+      "index": 185,
+      "query": "所有帐户都可交易基金吗",
+      "expected": "知识库类",
+      "predicted": "知识库类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "知识库智能体"
+    },
+    {
+      "index": 186,
+      "query": "TCL科技并购重组了吗？",
+      "expected": "新闻类",
+      "predicted": "新闻类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "新闻智能体"
+    },
+    {
+      "index": 187,
+      "query": "商业卫星有那些股票",
+      "expected": "选股类",
+      "predicted": "选股类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "选股类"
+    },
+    {
+      "index": 188,
+      "query": "拓尔思有调研报告吗",
+      "expected": "新闻类",
+      "predicted": "新闻类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "新闻智能体"
+    },
+    {
+      "index": 189,
+      "query": "卧龙电驱后期走势",
+      "expected": "预测类",
+      "predicted": "预测类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "预测类"
+    },
+    {
+      "index": 190,
+      "query": "关于完成工商变更登记的公吿有哪些",
+      "expected": "新闻类",
+      "predicted": "新闻类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "新闻智能体"
+    },
+    {
+      "index": 191,
+      "query": "可控核聚变成分股有哪些？",
+      "expected": "选股类",
+      "predicted": "选股类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "选股类"
+    },
+    {
+      "index": 192,
+      "query": "估值空间怎么调出",
+      "expected": "知识库类",
+      "predicted": "知识库类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "知识库智能体"
+    },
+    {
+      "index": 193,
+      "query": "上证基金和深证基金手续费有差别吗？比股票少吗？",
+      "expected": "知识库类",
+      "predicted": "知识库类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "知识库智能体"
+    },
+    {
+      "index": 194,
+      "query": "为什么预测上榜的股票，涨幅>7%才列入该股票池？",
+      "expected": "知识库类",
+      "predicted": "预测类",
+      "correct": false,
+      "is_boundary": true,
+      "raw_response": "预测类"
+    },
+    {
+      "index": 195,
+      "query": "游资交易数据哪里看",
+      "expected": "知识库类",
+      "predicted": "诊股类",
+      "correct": false,
+      "is_boundary": false,
+      "raw_response": "诊股类"
+    },
+    {
+      "index": 196,
+      "query": "ai+概念股",
+      "expected": "选股类",
+      "predicted": "选股类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "选股类"
+    },
+    {
+      "index": 197,
+      "query": "美国加征关税政策对国内股市有什么影响吗",
+      "expected": "新闻类",
+      "predicted": "新闻类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "新闻类"
+    },
+    {
+      "index": 198,
+      "query": "利欧股份股票停牌什么时间复牌",
+      "expected": "新闻类",
+      "predicted": "新闻类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "新闻智能体"
+    },
+    {
+      "index": 199,
+      "query": "六大战区中有发生了大事",
+      "expected": "新闻类",
+      "predicted": "新闻类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "新闻类"
+    },
+    {
+      "index": 200,
+      "query": "炒基金是T十0吗",
+      "expected": "知识库类",
+      "predicted": "知识库类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "知识库智能体"
+    },
+    {
+      "index": 201,
+      "query": "上海机场有利好消息吗？",
+      "expected": "新闻类",
+      "predicted": "新闻类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "新闻智能体"
+    },
+    {
+      "index": 202,
+      "query": "卫星ETF明天走势",
+      "expected": "预测类",
+      "predicted": "预测类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "预测类"
+    },
+    {
+      "index": 203,
+      "query": "帮我分析一下诲峡环保",
+      "expected": "诊股类",
+      "predicted": "诊股类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "诊股类"
+    },
+    {
+      "index": 204,
+      "query": "火箭回收船概念龙头股",
+      "expected": "选股类",
+      "predicted": "选股类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "选股类"
+    },
+    {
+      "index": 205,
+      "query": "商业航天卫星供电概念股",
+      "expected": "选股类",
+      "predicted": "选股类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "选股类"
+    },
+    {
+      "index": 206,
+      "query": "6000498是那一板块的",
+      "expected": "诊股类",
+      "predicted": "选股类",
+      "correct": false,
+      "is_boundary": true,
+      "raw_response": "选股类"
+    },
+    {
+      "index": 207,
+      "query": "明天买什么票比较好",
+      "expected": "推荐类",
+      "predicted": "推荐类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "推荐类"
+    },
+    {
+      "index": 208,
+      "query": "今年电子半导体概念和板块是不是国家扶持政策和补贴政策呢",
+      "expected": "新闻类",
+      "predicted": "新闻类",
+      "correct": true,
+      "is_boundary": true,
+      "raw_response": "新闻类"
+    },
+    {
+      "index": 209,
+      "query": "预测上榜的理由是什么？",
+      "expected": "预测类",
+      "predicted": "预测类",
+      "correct": true,
+      "is_boundary": true,
+      "raw_response": "预测类"
+    },
+    {
+      "index": 210,
+      "query": "海立股份B转A完成了吗",
+      "expected": "诊股类",
+      "predicted": "新闻类",
+      "correct": false,
+      "is_boundary": true,
+      "raw_response": "新闻智能体"
+    },
+    {
+      "index": 211,
+      "query": "制造卫星的有哪几家公司",
+      "expected": "选股类",
+      "predicted": "新闻类",
+      "correct": false,
+      "is_boundary": true,
+      "raw_response": "新闻智能体"
+    },
+    {
+      "index": 212,
+      "query": "Al玩具股票",
+      "expected": "选股类",
+      "predicted": "选股类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "选股类"
+    },
+    {
+      "index": 213,
+      "query": "明天直接强势股",
+      "expected": "推荐类",
+      "predicted": "推荐类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "推荐类"
+    },
+    {
+      "index": 214,
+      "query": "大宗交易买入的股票有锁定期吗？",
+      "expected": "知识库类",
+      "predicted": "知识库类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "知识库智能体"
+    },
+    {
+      "index": 215,
+      "query": "快憶电悌明天行情会上涨吗？",
+      "expected": "预测类",
+      "predicted": "预测类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "预测类"
+    },
+    {
+      "index": 216,
+      "query": "分析天汽模",
+      "expected": "诊股类",
+      "predicted": "诊股类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "诊股类"
+    },
+    {
+      "index": 217,
+      "query": "龙溪股份明天的走势",
+      "expected": "预测类",
+      "predicted": "预测类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "预测类"
+    },
+    {
+      "index": 218,
+      "query": "航天电子未来一年走势",
+      "expected": "预测类",
+      "predicted": "预测类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "预测类"
+    },
+    {
+      "index": 219,
+      "query": "ETF基金是不是当天买当天可以卖",
+      "expected": "知识库类",
+      "predicted": "知识库类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "知识库智能体"
+    },
+    {
+      "index": 220,
+      "query": "全信股份",
+      "expected": "诊股类",
+      "predicted": "诊股类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "诊股类"
+    },
+    {
+      "index": 221,
+      "query": "帮我分析一下北方稀土",
+      "expected": "诊股类",
+      "predicted": "诊股类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "诊股类"
+    },
+    {
+      "index": 222,
+      "query": "制造卫星的公司哪家业绩最好",
+      "expected": "选股类",
+      "predicted": "选股类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "选股类"
+    },
+    {
+      "index": 223,
+      "query": "电子半导体材料股票有那些",
+      "expected": "选股类",
+      "predicted": "选股类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "选股类"
+    },
+    {
+      "index": 224,
+      "query": "帮我分析一下南网科技",
+      "expected": "诊股类",
+      "predicted": "诊股类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "诊股类"
+    },
+    {
+      "index": 225,
+      "query": "怎么开",
+      "expected": "知识库类",
+      "predicted": "通用类",
+      "correct": false,
+      "is_boundary": true,
+      "raw_response": "通用智能体"
+    },
+    {
+      "index": 226,
+      "query": "丰信生物",
+      "expected": "诊股类",
+      "predicted": "诊股类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "诊股类"
+    },
+    {
+      "index": 227,
+      "query": "永鼎股份今天回落的原因",
+      "expected": "诊股类",
+      "predicted": "诊股类",
+      "correct": true,
+      "is_boundary": true,
+      "raw_response": "诊股类"
+    },
+    {
+      "index": 228,
+      "query": "哎，只能提",
+      "expected": "通用类",
+      "predicted": "通用类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "通用智能体"
+    },
+    {
+      "index": 229,
+      "query": "常山北明今天的表现不错帮我分析下原因",
+      "expected": "诊股类",
+      "predicted": "诊股类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "诊股类"
+    },
+    {
+      "index": 230,
+      "query": "选一只航天短现股票",
+      "expected": "选股类",
+      "predicted": "选股类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "选股类"
+    },
+    {
+      "index": 231,
+      "query": "level2怎么开",
+      "expected": "知识库类",
+      "predicted": "知识库类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "知识库智能体"
+    },
+    {
+      "index": 232,
+      "query": "002151趋势",
+      "expected": "诊股类",
+      "predicted": "诊股类",
+      "correct": true,
+      "is_boundary": true,
+      "raw_response": "诊股类"
+    },
+    {
+      "index": 233,
+      "query": "分时图上出现机构扫货的线那个指标以后是什么意思",
+      "expected": "知识库类",
+      "predicted": "分时图类",
+      "correct": false,
+      "is_boundary": false,
+      "raw_response": "分时图智能体"
+    },
+    {
+      "index": 234,
+      "query": "九丰能源明天走势会怎样",
+      "expected": "预测类",
+      "predicted": "预测类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "预测类"
+    },
+    {
+      "index": 235,
+      "query": "高成长高毛利率绩优科技股",
+      "expected": "选股类",
+      "predicted": "选股类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "选股类"
+    },
+    {
+      "index": 236,
+      "query": "火箭海上回收的股票有几个？",
+      "expected": "选股类",
+      "predicted": "选股类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "选股类"
+    },
+    {
+      "index": 237,
+      "query": "你问，你问什么",
+      "expected": "通用类",
+      "predicted": "通用类",
+      "correct": true,
+      "is_boundary": true,
+      "raw_response": "通用智能体"
+    },
+    {
+      "index": 238,
+      "query": "沪市的高成长高毛利率绩优科技股",
+      "expected": "选股类",
+      "predicted": "选股类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "选股类"
+    },
+    {
+      "index": 239,
+      "query": "手机版指南针软件如何操作",
+      "expected": "知识库类",
+      "predicted": "知识库类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "知识库智能体"
+    },
+    {
+      "index": 240,
+      "query": "无穷线是什么意思",
+      "expected": "知识库类",
+      "predicted": "知识库类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "知识库智能体"
+    },
+    {
+      "index": 241,
+      "query": "分时图上出现那个潜伏吸筹的黄色柱状代表什么意思",
+      "expected": "知识库类",
+      "predicted": "知识库类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "知识库智能体"
+    },
+    {
+      "index": 242,
+      "query": "沪市的高成长高毛利率低估值绩优科技股",
+      "expected": "选股类",
+      "predicted": "选股类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "选股类"
+    },
+    {
+      "index": 243,
+      "query": "捷成股份明天会高开直线拉升涨停吗",
+      "expected": "预测类",
+      "predicted": "预测类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "预测类"
+    },
+    {
+      "index": 244,
+      "query": "600570股票资金流入情况",
+      "expected": "诊股类",
+      "predicted": "诊股类",
+      "correct": true,
+      "is_boundary": true,
+      "raw_response": "诊股类"
+    },
+    {
+      "index": 245,
+      "query": "K线中圈中定是什么意思",
+      "expected": "知识库类",
+      "predicted": "知识库类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "知识库智能体"
+    },
+    {
+      "index": 246,
+      "query": "帮我分析一下视觉中国",
+      "expected": "诊股类",
+      "predicted": "诊股类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "诊股类"
+    },
+    {
+      "index": 247,
+      "query": "尾盘抢筹+主力资金的股票",
+      "expected": "选股类",
+      "predicted": "选股类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "选股类"
+    },
+    {
+      "index": 248,
+      "query": "中远海发",
+      "expected": "诊股类",
+      "predicted": "新闻类",
+      "correct": false,
+      "is_boundary": true,
+      "raw_response": "新闻智能体"
+    },
+    {
+      "index": 249,
+      "query": "帮我分析一下中远海能",
+      "expected": "诊股类",
+      "predicted": "诊股类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "诊股类"
+    },
+    {
+      "index": 250,
+      "query": "帮我分析一下东方钽业",
+      "expected": "诊股类",
+      "predicted": "诊股类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "诊股类"
+    },
+    {
+      "index": 251,
+      "query": "帮我分析一下三六零",
+      "expected": "诊股类",
+      "predicted": "诊股类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "诊股类"
+    },
+    {
+      "index": 252,
+      "query": "浙富控股后市行情如何",
+      "expected": "预测类",
+      "predicted": "预测类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "预测类"
+    },
+    {
+      "index": 253,
+      "query": "帮我分析一下凯盛科技",
+      "expected": "诊股类",
+      "predicted": "诊股类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "诊股类"
+    },
+    {
+      "index": 254,
+      "query": "推荐明天买入的股票",
+      "expected": "推荐类",
+      "predicted": "推荐类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "推荐类"
+    },
+    {
+      "index": 255,
+      "query": "烽火通信今天涨停的原因",
+      "expected": "诊股类",
+      "predicted": "新闻类",
+      "correct": false,
+      "is_boundary": true,
+      "raw_response": "新闻智能体"
+    },
+    {
+      "index": 256,
+      "query": "今天九丰能源今天未能封板的原因是什么",
+      "expected": "诊股类",
+      "predicted": "诊股类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "诊股类"
+    },
+    {
+      "index": 257,
+      "query": "宁波华翔后市如何",
+      "expected": "预测类",
+      "predicted": "预测类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "预测类"
+    },
+    {
+      "index": 258,
+      "query": "捷超股份明天会高开直线拉升涨停吗",
+      "expected": "预测类",
+      "predicted": "预测类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "预测类"
+    },
+    {
+      "index": 259,
+      "query": "来一只超短股票",
+      "expected": "推荐类",
+      "predicted": "推荐类",
+      "correct": true,
+      "is_boundary": true,
+      "raw_response": "推荐类"
+    },
+    {
+      "index": 260,
+      "query": "高成长高毛利率低估值绩优科技股",
+      "expected": "选股类",
+      "predicted": "选股类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "选股类"
+    },
+    {
+      "index": 261,
+      "query": "火箭海上发射的公司有几个",
+      "expected": "选股类",
+      "predicted": "新闻类",
+      "correct": false,
+      "is_boundary": true,
+      "raw_response": "新闻智能体"
+    },
+    {
+      "index": 262,
+      "query": "卫星充电电源概念股",
+      "expected": "选股类",
+      "predicted": "选股类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "选股类"
+    },
+    {
+      "index": 263,
+      "query": "分析一下北矿检测未来的发展趋势。",
+      "expected": "预测类",
+      "predicted": "预测类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "预测类"
+    },
+    {
+      "index": 264,
+      "query": "指南针的股民日记在哪里",
+      "expected": "知识库类",
+      "predicted": "新闻类",
+      "correct": false,
+      "is_boundary": true,
+      "raw_response": "新闻智能体"
+    },
+    {
+      "index": 265,
+      "query": "风险等级问题",
+      "expected": "知识库类",
+      "predicted": "知识库类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "知识库智能体"
+    },
+    {
+      "index": 266,
+      "query": "中电鑫龙后面会怎么样的走势",
+      "expected": "预测类",
+      "predicted": "预测类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "预测类"
+    },
+    {
+      "index": 267,
+      "query": "国内期货白天和夜盘怎么看",
+      "expected": "知识库类",
+      "predicted": "知识库类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "知识库智能体"
+    },
+    {
+      "index": 268,
+      "query": "你真呆",
+      "expected": "通用类",
+      "predicted": "通用类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "通用智能体"
+    },
+    {
+      "index": 269,
+      "query": "机器就是机器",
+      "expected": "通用类",
+      "predicted": "通用类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "通用智能体"
+    },
+    {
+      "index": 270,
+      "query": "明日润和软件如何操作？",
+      "expected": "预测类",
+      "predicted": "预测类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "预测类"
+    },
+    {
+      "index": 271,
+      "query": "大盘量能",
+      "expected": "知识库类",
+      "predicted": "大盘分析智能体",
+      "correct": false,
+      "is_boundary": true,
+      "raw_response": "大盘分析智能体"
+    },
+    {
+      "index": 272,
+      "query": "具体有那些股票",
+      "expected": "选股类",
+      "predicted": "选股类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "选股类"
+    },
+    {
+      "index": 273,
+      "query": "康龙化成。腰骨",
+      "expected": "诊股类",
+      "predicted": "诊股类",
+      "correct": true,
+      "is_boundary": true,
+      "raw_response": "诊股类"
+    },
+    {
+      "index": 274,
+      "query": "600150的走势",
+      "expected": "诊股类",
+      "predicted": "K线图类",
+      "correct": false,
+      "is_boundary": true,
+      "raw_response": "K线图智能体"
+    },
+    {
+      "index": 275,
+      "query": "方正电机利润为什么涨几千倍",
+      "expected": "诊股类",
+      "predicted": "诊股类",
+      "correct": true,
+      "is_boundary": true,
+      "raw_response": "诊股类"
+    },
+    {
+      "index": 276,
+      "query": "分析一下润和软件",
+      "expected": "诊股类",
+      "predicted": "诊股类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "诊股类"
+    },
+    {
+      "index": 277,
+      "query": "德固特分析一下",
+      "expected": "诊股类",
+      "predicted": "诊股类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "诊股类"
+    },
+    {
+      "index": 278,
+      "query": "风险等级A5是最高的吗？",
+      "expected": "知识库类",
+      "predicted": "知识库类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "知识库智能体"
+    },
+    {
+      "index": 279,
+      "query": "一日资金增长在百分之四以上的股票",
+      "expected": "选股类",
+      "predicted": "选股类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "选股类"
+    },
+    {
+      "index": 280,
+      "query": "300170能帮我分析一下",
+      "expected": "诊股类",
+      "predicted": "诊股类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "诊股类"
+    },
+    {
+      "index": 281,
+      "query": "你真笨",
+      "expected": "通用类",
+      "predicted": "通用类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "通用智能体"
+    },
+    {
+      "index": 282,
+      "query": "分析一下富瑞特装",
+      "expected": "诊股类",
+      "predicted": "诊股类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "诊股类"
+    },
+    {
+      "index": 283,
+      "query": "芒果超媒",
+      "expected": "诊股类",
+      "predicted": "诊股类",
+      "correct": true,
+      "is_boundary": true,
+      "raw_response": "诊股类"
+    },
+    {
+      "index": 284,
+      "query": "帮我分析下银轮股份",
+      "expected": "诊股类",
+      "predicted": "诊股类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "诊股类"
+    },
+    {
+      "index": 285,
+      "query": "与火箭发射成绩有关的股票",
+      "expected": "选股类",
+      "predicted": "选股类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "选股类"
+    },
+    {
+      "index": 286,
+      "query": "行业核心是什么意思",
+      "expected": "知识库类",
+      "predicted": "知识库类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "知识库智能体"
+    },
+    {
+      "index": 287,
+      "query": "赵延鑫要晚上挂单量是多少",
+      "expected": "指标查询类",
+      "predicted": "指标查询类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "指标查询类"
+    },
+    {
+      "index": 288,
+      "query": "豪能股份",
+      "expected": "诊股类",
+      "predicted": "诊股类",
+      "correct": true,
+      "is_boundary": true,
+      "raw_response": "诊股类"
+    },
+    {
+      "index": 289,
+      "query": "601992股票资金流入还是流出",
+      "expected": "诊股类",
+      "predicted": "诊股类",
+      "correct": true,
+      "is_boundary": true,
+      "raw_response": "诊股类"
+    },
+    {
+      "index": 290,
+      "query": "金发科技可以继续持有吗",
+      "expected": "诊股类",
+      "predicted": "诊股类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "诊股类"
+    },
+    {
+      "index": 291,
+      "query": "康龙华真的大股东",
+      "expected": "诊股类",
+      "predicted": "指标查询类",
+      "correct": false,
+      "is_boundary": true,
+      "raw_response": "指标查询智能体"
+    },
+    {
+      "index": 292,
+      "query": "明日热门股",
+      "expected": "推荐类",
+      "predicted": "推荐类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "推荐类"
+    },
+    {
+      "index": 293,
+      "query": "帮我分析一下京东方a",
+      "expected": "诊股类",
+      "predicted": "诊股类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "诊股类"
+    },
+    {
+      "index": 294,
+      "query": "帮我分析一下药明康德",
+      "expected": "诊股类",
+      "predicted": "诊股类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "诊股类"
+    },
+    {
+      "index": 295,
+      "query": "乐普医疗明天适合买吗",
+      "expected": "预测类",
+      "predicted": "预测类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "预测类"
+    },
+    {
+      "index": 296,
+      "query": "刚刚强势走强的板块有哪些",
+      "expected": "选股类",
+      "predicted": "新闻类",
+      "correct": false,
+      "is_boundary": true,
+      "raw_response": "新闻类"
+    },
+    {
+      "index": 297,
+      "query": "600536未来的走势",
+      "expected": "预测类",
+      "predicted": "预测类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "预测类"
+    },
+    {
+      "index": 298,
+      "query": "福安药业",
+      "expected": "诊股类",
+      "predicted": "诊股类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "诊股类"
+    },
+    {
+      "index": 299,
+      "query": "值在25以上的个股找出来",
+      "expected": "选股类",
+      "predicted": "选股类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "选股类"
+    },
+    {
+      "index": 300,
+      "query": "600282趋势",
+      "expected": "诊股类",
+      "predicted": "诊股类",
+      "correct": true,
+      "is_boundary": true,
+      "raw_response": "诊股类"
+    },
+    {
+      "index": 301,
+      "query": "与火箭发射场地有关的股票",
+      "expected": "选股类",
+      "predicted": "选股类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "选股类"
+    },
+    {
+      "index": 302,
+      "query": "可以继续持吗",
+      "expected": "诊股类",
+      "predicted": "诊股类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "诊股类"
+    },
+    {
+      "index": 303,
+      "query": "洛阳钼业现在可以加仓吗",
+      "expected": "诊股类",
+      "predicted": "预测类",
+      "correct": false,
+      "is_boundary": false,
+      "raw_response": "预测类"
+    },
+    {
+      "index": 304,
+      "query": "因用股票",
+      "expected": "选股类",
+      "predicted": "通用类",
+      "correct": false,
+      "is_boundary": false,
+      "raw_response": "通用智能体"
+    },
+    {
+      "index": 305,
+      "query": "小米精选策略是什么？",
+      "expected": "策略类",
+      "predicted": "策略类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "策略智能体"
+    },
+    {
+      "index": 306,
+      "query": "高管增持策略是什么？",
+      "expected": "策略类",
+      "predicted": "知识库类",
+      "correct": false,
+      "is_boundary": false,
+      "raw_response": "知识库智能体"
+    },
+    {
+      "index": 307,
+      "query": "费雪创业板低估策略是什么？",
+      "expected": "策略类",
+      "predicted": "策略类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "策略智能体"
+    },
+    {
+      "index": 308,
+      "query": "社保大量持仓策略是什么？",
+      "expected": "策略类",
+      "predicted": "策略类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "策略智能体"
+    },
+    {
+      "index": 309,
+      "query": "上升三法策略是什么？",
+      "expected": "策略类",
+      "predicted": "知识库类",
+      "correct": false,
+      "is_boundary": false,
+      "raw_response": "知识库智能体"
+    },
+    {
+      "index": 310,
+      "query": "戴维斯风格策略是什么？",
+      "expected": "策略类",
+      "predicted": "知识库类",
+      "correct": false,
+      "is_boundary": false,
+      "raw_response": "知识库智能体"
+    },
+    {
+      "index": 311,
+      "query": "600570股票资金流入情况",
+      "expected": "指标查询类",
+      "predicted": "诊股类",
+      "correct": false,
+      "is_boundary": false,
+      "raw_response": "诊股类"
+    },
+    {
+      "index": 312,
+      "query": "博纳影业1日多空资金有多少",
+      "expected": "指标查询类",
+      "predicted": "诊股类",
+      "correct": false,
+      "is_boundary": false,
+      "raw_response": "诊股类"
+    },
+    {
+      "index": 313,
+      "query": "300803的概念板块是什么",
+      "expected": "指标查询类",
+      "predicted": "选股类",
+      "correct": false,
+      "is_boundary": false,
+      "raw_response": "选股类"
+    },
+    {
+      "index": 314,
+      "query": "301299名字是什么？",
+      "expected": "指标查询类",
+      "predicted": "诊股类",
+      "correct": false,
+      "is_boundary": false,
+      "raw_response": "诊股类"
+    },
+    {
+      "index": 315,
+      "query": "华西股份发行价格是多少",
+      "expected": "指标查询类",
+      "predicted": "指标查询类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "指标查询类"
+    },
+    {
+      "index": 316,
+      "query": "帮我调一下比亚迪最近三个月的日K线图。",
+      "expected": "K线图类",
+      "predicted": "K线图类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "K线图智能体"
+    },
+    {
+      "index": 317,
+      "query": "我想看下上证指数去年下半年的历史走势图。",
+      "expected": "K线图类",
+      "predicted": "K线图类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "K线图智能体"
+    },
+    {
+      "index": 318,
+      "query": "能给我看一下腾讯控股的周K线走势吗？",
+      "expected": "K线图类",
+      "predicted": "K线图类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "K线图智能体"
+    },
+    {
+      "index": 319,
+      "query": "发我一下东方财富今年以来的K线图。",
+      "expected": "K线图类",
+      "predicted": "K线图类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "K线图智能体"
+    },
+    {
+      "index": 320,
+      "query": "帮我拉一下苹果公司过去五年的月K线形态图。",
+      "expected": "K线图类",
+      "predicted": "K线图类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "K线图智能体"
+    },
+    {
+      "index": 321,
+      "query": "看看贵州茅台今天的分时图",
+      "expected": "分时图类",
+      "predicted": "分时图类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "分时图智能体"
+    },
+    {
+      "index": 322,
+      "query": "帮我调出特斯拉昨天开盘到收盘的分时走势。",
+      "expected": "分时图类",
+      "predicted": "分时图类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "分时图智能体"
+    },
+    {
+      "index": 323,
+      "query": "我想看一下宁德时代现在的分时图情况。",
+      "expected": "分时图类",
+      "predicted": "分时图类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "分时图智能体"
+    },
+    {
+      "index": 324,
+      "query": "能给我调一下招商银行今天上午的分时波动图吗？",
+      "expected": "分时图类",
+      "predicted": "分时图类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "分时图智能体"
+    },
+    {
+      "index": 325,
+      "query": "发一下深证成指今日最新的分时图。",
+      "expected": "分时图类",
+      "predicted": "分时图类",
+      "correct": true,
+      "is_boundary": false,
+      "raw_response": "分时图智能体"
+    }
+  ]
+}

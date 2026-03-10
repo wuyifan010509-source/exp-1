@@ -1,0 +1,909 @@
+{
+  "config": {
+    "use_mock": false,
+    "api_url": "http://172.17.160.46:8080/v1",
+    "model": "Qwen2.5-32B-Instruct",
+    "test_samples": 334,
+    "oos_samples": 9,
+    "boundary_samples": 62,
+    "timestamp": "20260308_003509"
+  },
+  "results": [
+    {
+      "accuracy": 0.7096,
+      "accuracy_percent": "70.96%",
+      "boundary_accuracy": 0.6129,
+      "boundary_accuracy_percent": "61.29%",
+      "boundary_samples": 62,
+      "precision_weighted": 0.8126,
+      "recall_weighted": 0.7096,
+      "f1_weighted": 0.7323,
+      "precision_macro": 0.5681,
+      "recall_macro": 0.5877,
+      "f1_macro": 0.5506,
+      "average_margin": 0.9731,
+      "confusion_matrix": [
+        [
+          54,
+          0,
+          0,
+          0,
+          4,
+          0,
+          3,
+          0,
+          0,
+          0,
+          0,
+          0,
+          12
+        ],
+        [
+          0,
+          89,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          2
+        ],
+        [
+          0,
+          19,
+          16,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2
+        ],
+        [
+          1,
+          3,
+          0,
+          36,
+          0,
+          0,
+          1,
+          1,
+          1,
+          3,
+          0,
+          0,
+          9
+        ],
+        [
+          0,
+          2,
+          0,
+          0,
+          6,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          3
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          9
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          9,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          9,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          5,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          5,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          5,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          5,
+          0,
+          0,
+          0,
+          0,
+          0,
+          3
+        ]
+      ],
+      "per_class_metrics": {
+        "通用类": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 10
+        },
+        "分时图类": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 5
+        },
+        "预测类": {
+          "precision": 1.0,
+          "recall": 0.4324,
+          "f1": 0.6038,
+          "support": 37
+        },
+        "指标查询类": {
+          "precision": 0.625,
+          "recall": 0.7143,
+          "f1": 0.6667,
+          "support": 7
+        },
+        "K线图类": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 5
+        },
+        "知识库类": {
+          "precision": 1.0,
+          "recall": 0.6545,
+          "f1": 0.7912,
+          "support": 55
+        },
+        "选股类": {
+          "precision": 0.9818,
+          "recall": 0.7397,
+          "f1": 0.8438,
+          "support": 73
+        },
+        "策略类": {
+          "precision": 0.9,
+          "recall": 1.0,
+          "f1": 0.9474,
+          "support": 9
+        },
+        "诊股类": {
+          "precision": 0.7739,
+          "recall": 0.9082,
+          "f1": 0.8357,
+          "support": 98
+        },
+        "身份类": {
+          "precision": 0.5556,
+          "recall": 1.0,
+          "f1": 0.7143,
+          "support": 5
+        },
+        "推荐类": {
+          "precision": 0.5,
+          "recall": 0.9,
+          "f1": 0.6429,
+          "support": 10
+        },
+        "oos": {
+          "precision": 0.0714,
+          "recall": 0.3333,
+          "f1": 0.1176,
+          "support": 9
+        },
+        "新闻类": {
+          "precision": 0.5455,
+          "recall": 0.5455,
+          "f1": 0.5455,
+          "support": 11
+        }
+      },
+      "total_samples": 334,
+      "correct_samples": 237,
+      "error_samples": 97,
+      "bad_cases": [
+        {
+          "query": "成分骨有哪些",
+          "expected": "选股类",
+          "predicted": "oos",
+          "confidence": 1.0,
+          "margin": 1.0
+        },
+        {
+          "query": "旋极信息还会涨吗",
+          "expected": "预测类",
+          "predicted": "诊股类",
+          "confidence": 1.0,
+          "margin": 1.0
+        },
+        {
+          "query": "航空发展往后怎么走，是走还是留",
+          "expected": "预测类",
+          "predicted": "oos",
+          "confidence": 1.0,
+          "margin": 1.0
+        },
+        {
+          "query": "603228交易策略。",
+          "expected": "知识库类",
+          "predicted": "策略类",
+          "confidence": 1.0,
+          "margin": 1.0
+        },
+        {
+          "query": "如何判断筹码峰的股票涨跌态势",
+          "expected": "知识库类",
+          "predicted": "诊股类",
+          "confidence": 1.0,
+          "margin": 1.0
+        },
+        {
+          "query": "股票航天发展明天会崩盘嘛",
+          "expected": "预测类",
+          "predicted": "诊股类",
+          "confidence": 1.0,
+          "margin": 1.0
+        },
+        {
+          "query": "陈小琴池庄的股票",
+          "expected": "选股类",
+          "predicted": "oos",
+          "confidence": 1.0,
+          "margin": 1.0
+        },
+        {
+          "query": "300324明天走势分析",
+          "expected": "预测类",
+          "predicted": "诊股类",
+          "confidence": 1.0,
+          "margin": 1.0
+        },
+        {
+          "query": "自选删除了还能不能恢复",
+          "expected": "知识库类",
+          "predicted": "oos",
+          "confidence": 1.0,
+          "margin": 1.0
+        },
+        {
+          "query": "深夜挂单有用吗",
+          "expected": "知识库类",
+          "predicted": "oos",
+          "confidence": 1.0,
+          "margin": 1.0
+        },
+        {
+          "query": "怎么查北向资金动向",
+          "expected": "知识库类",
+          "predicted": "指标查询类",
+          "confidence": 1.0,
+          "margin": 1.0
+        },
+        {
+          "query": "现在的主线是什么",
+          "expected": "新闻类",
+          "predicted": "oos",
+          "confidence": 1.0,
+          "margin": 1.0
+        },
+        {
+          "query": "上海电影未来趋势",
+          "expected": "预测类",
+          "predicted": "诊股类",
+          "confidence": 1.0,
+          "margin": 1.0
+        },
+        {
+          "query": "科大国创下一步走势？",
+          "expected": "预测类",
+          "predicted": "诊股类",
+          "confidence": 1.0,
+          "margin": 1.0
+        },
+        {
+          "query": "近期热门概念板块前五名",
+          "expected": "选股类",
+          "predicted": "新闻类",
+          "confidence": 1.0,
+          "margin": 1.0
+        },
+        {
+          "query": "AI应用有哪些个走走的强势",
+          "expected": "选股类",
+          "predicted": "oos",
+          "confidence": 1.0,
+          "margin": 1.0
+        },
+        {
+          "query": "近期热门概念前5个",
+          "expected": "选股类",
+          "predicted": "新闻类",
+          "confidence": 1.0,
+          "margin": 1.0
+        },
+        {
+          "query": "怎么设置自动买卖",
+          "expected": "知识库类",
+          "predicted": "oos",
+          "confidence": 1.0,
+          "margin": 1.0
+        },
+        {
+          "query": "核聚变有哪些行业，包括哪些板块",
+          "expected": "选股类",
+          "predicted": "推荐类",
+          "confidence": 1.0,
+          "margin": 1.0
+        },
+        {
+          "query": "谢谢啦",
+          "expected": "通用类",
+          "predicted": "oos",
+          "confidence": 1.0,
+          "margin": 1.0
+        }
+      ],
+      "bad_cases_count": 20,
+      "oos_accuracy": 0.3333,
+      "oos_accuracy_percent": "33.33%",
+      "oos_correct": 3,
+      "oos_total": 9,
+      "non_oos_accuracy": 0.72,
+      "non_oos_accuracy_percent": "72.00%",
+      "non_oos_correct": 234,
+      "non_oos_total": 325,
+      "method": "人工完整Prompt (端到端)",
+      "paradigm": "end-to-end",
+      "prompt_length": 3386
+    },
+    {
+      "accuracy": 0.7575,
+      "accuracy_percent": "75.75%",
+      "boundary_accuracy": 0.6774,
+      "boundary_accuracy_percent": "67.74%",
+      "boundary_samples": 62,
+      "precision_weighted": 0.8138,
+      "recall_weighted": 0.7575,
+      "f1_weighted": 0.7692,
+      "precision_macro": 0.5495,
+      "recall_macro": 0.6376,
+      "f1_macro": 0.5655,
+      "average_margin": 0.979,
+      "confusion_matrix": [
+        [
+          55,
+          3,
+          0,
+          1,
+          3,
+          0,
+          2,
+          1,
+          0,
+          0,
+          0,
+          0,
+          8
+        ],
+        [
+          0,
+          87,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          3,
+          0,
+          0,
+          0,
+          4
+        ],
+        [
+          0,
+          10,
+          27,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          2,
+          0,
+          39,
+          1,
+          0,
+          1,
+          1,
+          3,
+          7,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          3,
+          0,
+          0,
+          6,
+          0,
+          1,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          9
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          10,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          9,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          6,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          5,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          5,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          4,
+          0,
+          0,
+          0,
+          0,
+          0,
+          4
+        ]
+      ],
+      "per_class_metrics": {
+        "通用类": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 10
+        },
+        "分时图类": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 5
+        },
+        "预测类": {
+          "precision": 0.931,
+          "recall": 0.7297,
+          "f1": 0.8182,
+          "support": 37
+        },
+        "指标查询类": {
+          "precision": 0.4615,
+          "recall": 0.8571,
+          "f1": 0.6,
+          "support": 7
+        },
+        "K线图类": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 5
+        },
+        "知识库类": {
+          "precision": 0.975,
+          "recall": 0.7091,
+          "f1": 0.8211,
+          "support": 55
+        },
+        "选股类": {
+          "precision": 1.0,
+          "recall": 0.7534,
+          "f1": 0.8594,
+          "support": 73
+        },
+        "策略类": {
+          "precision": 0.8182,
+          "recall": 1.0,
+          "f1": 0.9,
+          "support": 9
+        },
+        "诊股类": {
+          "precision": 0.8131,
+          "recall": 0.8878,
+          "f1": 0.8488,
+          "support": 98
+        },
+        "身份类": {
+          "precision": 0.3846,
+          "recall": 1.0,
+          "f1": 0.5556,
+          "support": 5
+        },
+        "推荐类": {
+          "precision": 0.5556,
+          "recall": 1.0,
+          "f1": 0.7143,
+          "support": 10
+        },
+        "oos": {
+          "precision": 0.1538,
+          "recall": 0.4444,
+          "f1": 0.2286,
+          "support": 9
+        },
+        "新闻类": {
+          "precision": 0.6,
+          "recall": 0.5455,
+          "f1": 0.5714,
+          "support": 11
+        }
+      },
+      "total_samples": 334,
+      "correct_samples": 253,
+      "error_samples": 81,
+      "bad_cases": [
+        {
+          "query": "成分骨有哪些",
+          "expected": "选股类",
+          "predicted": "oos",
+          "confidence": 1.0,
+          "margin": 1.0
+        },
+        {
+          "query": "旋极信息还会涨吗",
+          "expected": "预测类",
+          "predicted": "诊股类",
+          "confidence": 1.0,
+          "margin": 1.0
+        },
+        {
+          "query": "603228交易策略。",
+          "expected": "知识库类",
+          "predicted": "策略类",
+          "confidence": 1.0,
+          "margin": 1.0
+        },
+        {
+          "query": "如何判断筹码峰的股票涨跌态势",
+          "expected": "知识库类",
+          "predicted": "诊股类",
+          "confidence": 1.0,
+          "margin": 1.0
+        },
+        {
+          "query": "陈小琴池庄的股票",
+          "expected": "选股类",
+          "predicted": "诊股类",
+          "confidence": 1.0,
+          "margin": 1.0
+        },
+        {
+          "query": "300324明天走势分析",
+          "expected": "预测类",
+          "predicted": "诊股类",
+          "confidence": 1.0,
+          "margin": 1.0
+        },
+        {
+          "query": "在哪里查看游资买入资金量",
+          "expected": "知识库类",
+          "predicted": "指标查询类",
+          "confidence": 1.0,
+          "margin": 1.0
+        },
+        {
+          "query": "指南针擒龙版积分在哪里查看",
+          "expected": "知识库类",
+          "predicted": "身份类",
+          "confidence": 1.0,
+          "margin": 1.0
+        },
+        {
+          "query": "怎么查北向资金动向",
+          "expected": "知识库类",
+          "predicted": "指标查询类",
+          "confidence": 1.0,
+          "margin": 1.0
+        },
+        {
+          "query": "现在的主线是什么",
+          "expected": "新闻类",
+          "predicted": "推荐类",
+          "confidence": 1.0,
+          "margin": 1.0
+        },
+        {
+          "query": "近期热门概念板块前五名",
+          "expected": "选股类",
+          "predicted": "新闻类",
+          "confidence": 1.0,
+          "margin": 1.0
+        },
+        {
+          "query": "AI应用有哪些个走走的强势",
+          "expected": "选股类",
+          "predicted": "oos",
+          "confidence": 1.0,
+          "margin": 1.0
+        },
+        {
+          "query": "近期热门概念前5个",
+          "expected": "选股类",
+          "predicted": "新闻类",
+          "confidence": 1.0,
+          "margin": 1.0
+        },
+        {
+          "query": "核聚变有哪些行业，包括哪些板块",
+          "expected": "选股类",
+          "predicted": "新闻类",
+          "confidence": 1.0,
+          "margin": 1.0
+        },
+        {
+          "query": "谢谢啦",
+          "expected": "通用类",
+          "predicted": "oos",
+          "confidence": 1.0,
+          "margin": 1.0
+        },
+        {
+          "query": "AI十能翻倍的股票",
+          "expected": "选股类",
+          "predicted": "推荐类",
+          "confidence": 1.0,
+          "margin": 1.0
+        },
+        {
+          "query": "明天天气怎么样？",
+          "expected": "通用类",
+          "predicted": "oos",
+          "confidence": 1.0,
+          "margin": 1.0
+        },
+        {
+          "query": "你太笨了，",
+          "expected": "通用类",
+          "predicted": "oos",
+          "confidence": 1.0,
+          "margin": 1.0
+        },
+        {
+          "query": "指南针软件自选删除了能不能恢复",
+          "expected": "知识库类",
+          "predicted": "身份类",
+          "confidence": 1.0,
+          "margin": 1.0
+        },
+        {
+          "query": "你与豆包有什么区别",
+          "expected": "通用类",
+          "predicted": "身份类",
+          "confidence": 1.0,
+          "margin": 1.0
+        }
+      ],
+      "bad_cases_count": 20,
+      "oos_accuracy": 0.4444,
+      "oos_accuracy_percent": "44.44%",
+      "oos_correct": 4,
+      "oos_total": 9,
+      "non_oos_accuracy": 0.7662,
+      "non_oos_accuracy_percent": "76.62%",
+      "non_oos_correct": 249,
+      "non_oos_total": 325,
+      "method": "IntentGPT完整Prompt (Few-shot端到端)",
+      "paradigm": "end-to-end",
+      "prompt_length": 4178
+    }
+  ]
+}

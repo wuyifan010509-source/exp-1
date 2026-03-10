@@ -1,0 +1,48 @@
+{
+  "notebooks": {
+    "\u7814\u7a76\u751f\u8bba\u6587\u6307\u5bfc\u4f1a\u8bae\u8bb0\u5f55": {
+      "id": "\u7814\u7a76\u751f\u8bba\u6587\u6307\u5bfc\u4f1a\u8bae\u8bb0\u5f55",
+      "url": "https://notebooklm.google.com/notebook/fda19e83-0d12-492e-8727-6b519b23611e",
+      "name": "\u7814\u7a76\u751f\u8bba\u6587\u6307\u5bfc\u4f1a\u8bae\u8bb0\u5f55",
+      "description": "\u7814\u7a76\u751f\u8bba\u6587\u548c\u6bd5\u4e1a\u9879\u76ee\u6307\u5bfc\u4f1a\u8bae\u7684\u8f6c\u5f55\u8bb0\u5f55\uff0c\u4e13\u6ce8\u4e8e\u4f7f\u7528\u5927\u8bed\u8a00\u6a21\u578b(LLM)\u7684\u5e94\u7528\u7814\u7a76",
+      "topics": [
+        "\u8bba\u6587\u65b9\u6cd5\u8bba",
+        "\u53d6max",
+        "\u53d6sum",
+        "LLM Prompt\u4f18\u5316",
+        "\u57fa\u7ebf\u5efa\u7acb",
+        "\u9879\u76ee\u7ba1\u7406",
+        "\u56e2\u961f\u6c9f\u901a"
+      ],
+      "content_types": [],
+      "use_cases": [],
+      "tags": [],
+      "created_at": "2026-03-04T11:55:15.825121",
+      "updated_at": "2026-03-04T11:55:15.825125",
+      "use_count": 0,
+      "last_used": null
+    },
+    "optimal-task-allocation-in-hybrid-human-ai-agent-systems": {
+      "id": "optimal-task-allocation-in-hybrid-human-ai-agent-systems",
+      "url": "https://notebooklm.google.com/notebook/397a0d53-1318-4ec8-a411-8c83e7cc867a",
+      "name": "Optimal Task Allocation in Hybrid Human-AI Agent Systems",
+      "description": "Research on optimal task allocation strategies in hybrid human-AI agent systems",
+      "topics": [
+        "task allocation",
+        "human-AI collaboration",
+        "hybrid systems",
+        "agent systems",
+        "optimization"
+      ],
+      "content_types": [],
+      "use_cases": [],
+      "tags": [],
+      "created_at": "2026-03-05T15:00:33.928084",
+      "updated_at": "2026-03-05T15:00:33.928097",
+      "use_count": 0,
+      "last_used": null
+    }
+  },
+  "active_notebook_id": "optimal-task-allocation-in-hybrid-human-ai-agent-systems",
+  "updated_at": "2026-03-05T15:00:43.302530"
+}

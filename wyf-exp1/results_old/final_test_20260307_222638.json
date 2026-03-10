@@ -1,0 +1,176 @@
+{
+  "source_result": "results/mve_fixed_20260307_215345.json",
+  "test_dataset": "data/GOLDEN_TEST.csv",
+  "test_size": 325,
+  "results": {
+    "accuracy": 0.7261538461538461,
+    "boundary_accuracy": 0.41935483870967744,
+    "average_margin": 0.6974385875662779,
+    "average_length": 121.58333333333333,
+    "fitness": 0.7261538461538461,
+    "total_samples": 325,
+    "boundary_samples": 62
+  },
+  "bad_cases": [
+    {
+      "query": "截止到1月12日陈小群持股情况",
+      "expected_intent": "指标查询类",
+      "expected_agent": "指标查询智能体",
+      "predicted_agent": "诊股智能体",
+      "confidence": 1.0,
+      "margin": 1.0
+    },
+    {
+      "query": "159218ETF",
+      "expected_intent": "诊股类",
+      "expected_agent": "诊股智能体",
+      "predicted_agent": "知识库智能体",
+      "confidence": 1.0,
+      "margin": 1.0
+    },
+    {
+      "query": "赵延鑫要晚上挂单量是多少",
+      "expected_intent": "指标查询类",
+      "expected_agent": "指标查询智能体",
+      "predicted_agent": "知识库智能体",
+      "confidence": 1.0,
+      "margin": 1.0
+    },
+    {
+      "query": "成分骨有哪些",
+      "expected_intent": "选股类",
+      "expected_agent": "选股智能体",
+      "predicted_agent": "通用智能体",
+      "confidence": 0.9,
+      "margin": 0.8
+    },
+    {
+      "query": "K线图上蓝色和紫色K线是什么意思",
+      "expected_intent": "知识库类",
+      "expected_agent": "知识库智能体",
+      "predicted_agent": "K线图智能体",
+      "confidence": 0.9,
+      "margin": 0.8
+    },
+    {
+      "query": "分时图上出现那个潜伏吸筹的黄色柱状代表什么意思",
+      "expected_intent": "知识库类",
+      "expected_agent": "知识库智能体",
+      "predicted_agent": "分时图智能体",
+      "confidence": 0.9,
+      "margin": 0.85
+    },
+    {
+      "query": "K线中圈中定是什么意思",
+      "expected_intent": "知识库类",
+      "expected_agent": "知识库智能体",
+      "predicted_agent": "K线图智能体",
+      "confidence": 0.9,
+      "margin": 0.8
+    },
+    {
+      "query": "因用股票",
+      "expected_intent": "选股类",
+      "expected_agent": "选股智能体",
+      "predicted_agent": "通用智能体",
+      "confidence": 0.9,
+      "margin": 0.8
+    },
+    {
+      "query": "海光信息最近为什么一直盘着",
+      "expected_intent": "诊股类",
+      "expected_agent": "诊股智能体",
+      "predicted_agent": "新闻智能体",
+      "confidence": 0.8421052631578947,
+      "margin": 0.7368421052631579
+    },
+    {
+      "query": "航天工程昨夜有什么变动没有",
+      "expected_intent": "选股类",
+      "expected_agent": "选股智能体",
+      "predicted_agent": "新闻智能体",
+      "confidence": 0.8421052631578947,
+      "margin": 0.7368421052631579
+    },
+    {
+      "query": "Ai企业应用落地方面股票",
+      "expected_intent": "选股类",
+      "expected_agent": "选股智能体",
+      "predicted_agent": "知识库智能体",
+      "confidence": 0.8,
+      "margin": 0.7000000000000001
+    },
+    {
+      "query": "股票涨幅触发严重异动是啥意思",
+      "expected_intent": "知识库类",
+      "expected_agent": "知识库智能体",
+      "predicted_agent": "新闻智能体",
+      "confidence": 0.8,
+      "margin": 0.65
+    },
+    {
+      "query": "指南针K綫图中园圈战是什么意思",
+      "expected_intent": "知识库类",
+      "expected_agent": "知识库智能体",
+      "predicted_agent": "K线图智能体",
+      "confidence": 0.8,
+      "margin": 0.7000000000000001
+    },
+    {
+      "query": "筹码集中度高说明什么",
+      "expected_intent": "知识库类",
+      "expected_agent": "知识库智能体",
+      "predicted_agent": "指标查询智能体",
+      "confidence": 0.8,
+      "margin": 0.7000000000000001
+    },
+    {
+      "query": "603228交易策略。",
+      "expected_intent": "知识库类",
+      "expected_agent": "知识库智能体",
+      "predicted_agent": "策略智能体",
+      "confidence": 0.8,
+      "margin": 0.7000000000000001
+    },
+    {
+      "query": "如何判断筹码峰的股票涨跌态势",
+      "expected_intent": "知识库类",
+      "expected_agent": "知识库智能体",
+      "predicted_agent": "预测智能体",
+      "confidence": 0.8,
+      "margin": 0.7000000000000001
+    },
+    {
+      "query": "筹码分布中的重合度有什么意义",
+      "expected_intent": "知识库类",
+      "expected_agent": "知识库智能体",
+      "predicted_agent": "指标查询智能体",
+      "confidence": 0.8,
+      "margin": 0.7000000000000001
+    },
+    {
+      "query": "中国能建",
+      "expected_intent": "诊股类",
+      "expected_agent": "诊股智能体",
+      "predicted_agent": "新闻智能体",
+      "confidence": 0.8,
+      "margin": 0.7000000000000001
+    },
+    {
+      "query": "在哪里查看游资买入资金量",
+      "expected_intent": "知识库类",
+      "expected_agent": "知识库智能体",
+      "predicted_agent": "诊股智能体",
+      "confidence": 0.8,
+      "margin": 0.7000000000000001
+    },
+    {
+      "query": "601949趋势",
+      "expected_intent": "诊股类",
+      "expected_agent": "诊股智能体",
+      "predicted_agent": "预测智能体",
+      "confidence": 0.8,
+      "margin": 0.65
+    }
+  ]
+}
