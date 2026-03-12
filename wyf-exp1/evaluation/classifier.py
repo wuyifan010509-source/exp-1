@@ -144,32 +144,55 @@ class QwenClassifier(IntentClassifier):
         
         return system_prompt + user_prompt
     
-    def classify(self, query: str, profiles: ProfileSet, use_json: bool = False) -> ClassifyResult:
-        """单条分类"""
-        if use_json:
-            prompt = self._build_json_prompt(query, profiles)
-        else:
-            prompt = self._build_prompt(query, profiles)
+    def classify(self, query: str, profiles: ProfileSet, use_json: bool = False, use_logprobs: bool = True) -> ClassifyResult:
+        """单条分类
+        
+        Args:
+            query: 查询文本
+            profiles: 智能体画像
+            use_json: 是否使用JSON格式输出（备用方案）
+            use_logprobs: 是否使用API的logprobs获取真实概率（推荐）
+        """
+        prompt = self._build_prompt(query, profiles)
         
         try:
+            # 构建请求参数
+            request_data = {
+                "model": self.model,
+                "messages": [
+                    {"role": "user", "content": prompt}
+                ],
+                "temperature": 0.0,
+                "max_tokens": 50,  # 只需要输出agent名称，不需要太多token
+            }
+            
+            # 如果使用logprobs，添加相关参数
+            if use_logprobs:
+                request_data["logprobs"] = True
+                request_data["top_logprobs"] = 20  # 获取Top 20个token的概率
+            
             response = requests.post(
                 f"{self.api_url}/chat/completions",
                 headers=self.headers,
-                json={
-                    "model": self.model,
-                    "messages": [
-                        {"role": "user", "content": prompt}
-                    ],
-                    "temperature": 0.0,
-                    "max_tokens": 500
-                },
+                json=request_data,
                 timeout=60
             )
             response.raise_for_status()
             result = response.json()
-            raw_response = result["choices"][0]["message"]["content"].strip()
             
-            # 解析JSON或纯文本
+            # 解析响应
+            choice = result["choices"][0]
+            raw_response = choice["message"]["content"].strip()
+            
+            # 如果使用logprobs，从token概率计算agent概率
+            if use_logprobs and "logprobs" in choice:
+                confidence_scores = self._extract_probs_from_logprobs(
+                    choice["logprobs"], raw_response, profiles
+                )
+                predicted_agent = max(confidence_scores.items(), key=lambda x: x[1])[0]
+                return ClassifyResult(predicted_agent, confidence_scores, raw_response)
+            
+            # 备用：JSON格式
             if use_json:
                 try:
                     parsed = json.loads(raw_response)
@@ -181,10 +204,9 @@ class QwenClassifier(IntentClassifier):
                         confidence_scores = {k: v/total for k, v in confidence_scores.items()}
                     return ClassifyResult(predicted_agent, confidence_scores, raw_response)
                 except json.JSONDecodeError:
-                    # JSON解析失败，使用文本匹配
                     pass
             
-            # 文本匹配方式
+            # 最后的备用：文本匹配
             predicted_agent = self._extract_agent_name(raw_response, profiles)
             confidence_scores = {name: 0.0 for name in profiles.profiles.keys()}
             if predicted_agent:
@@ -194,8 +216,92 @@ class QwenClassifier(IntentClassifier):
             
         except Exception as e:
             print(f"[Error] Classification failed: {e}")
+            import traceback
+            traceback.print_exc()
             # 返回空结果
             return ClassifyResult("", {}, str(e))
+    
+    def _extract_probs_from_logprobs(self, logprobs_data: dict, raw_response: str, profiles: ProfileSet) -> Dict[str, float]:
+        """从API返回的logprobs中提取agent概率（改进版）
+        
+        策略：
+        1. 从raw_response确定实际输出的agent
+        2. 从第一个token的top_logprobs获取各agent开头的概率
+        3. 基于这些信息估算各agent的整体概率
+        """
+        import math
+        
+        agent_names = list(profiles.profiles.keys())
+        agent_scores = {name: 0.0 for name in agent_names}
+        
+        try:
+            content_logprobs = logprobs_data.get("content", [])
+            
+            if not content_logprobs:
+                print("[Warning] No logprobs content found")
+                # 使用文本匹配方式
+                predicted = self._extract_agent_name(raw_response, profiles)
+                if predicted:
+                    agent_scores[predicted] = 1.0
+                return agent_scores
+            
+            # 第一步：从raw_response确定实际输出的agent
+            predicted_agent = self._extract_agent_name(raw_response, profiles)
+            
+            # 第二步：从第一个token的top_logprobs获取概率分布
+            first_token = content_logprobs[0]
+            top_logprobs = first_token.get("top_logprobs", [])
+            
+            # 构建token到概率的映射
+            token_probs = {}
+            for candidate in top_logprobs:
+                token = candidate.get("token", "").strip()
+                logprob = candidate.get("logprob", -float('inf'))
+                prob = math.exp(logprob)
+                token_probs[token] = prob
+            
+            # 调试打印（通过环境变量控制，默认不打印）
+            if os.environ.get('DEBUG_LOGPROBS'):
+                print(f"[Logprobs] First token candidates: {[(t, f'{p:.4f}') for t, p in list(token_probs.items())[:5]]}")
+            
+            # 第三步：将token概率映射到agent概率
+            # 策略：对于每个agent，检查其名称的第一个词是否在token_probs中
+            for agent_name in agent_names:
+                agent_short = agent_name.replace("智能体", "").strip()
+                
+                # 直接匹配完整名称
+                if agent_name in token_probs:
+                    agent_scores[agent_name] = token_probs[agent_name]
+                # 匹配简称（如"选股"）
+                elif agent_short in token_probs:
+                    agent_scores[agent_name] = token_probs[agent_short]
+                # 检查token是否包含在agent名称中
+                else:
+                    for token, prob in token_probs.items():
+                        if token in agent_name or token in agent_short:
+                            agent_scores[agent_name] = max(agent_scores[agent_name], prob)
+            
+            # 归一化
+            total = sum(agent_scores.values())
+            if total > 0:
+                agent_scores = {k: v/total for k, v in agent_scores.items()}
+            else:
+                # 如果没有匹配到，给预测agent 1.0
+                if predicted_agent:
+                    agent_scores[predicted_agent] = 1.0
+            
+            return agent_scores
+            
+        except Exception as e:
+            print(f"[Error] Failed to extract probs from logprobs: {e}")
+            import traceback
+            traceback.print_exc()
+            # 使用文本匹配方式作为fallback
+            predicted = self._extract_agent_name(raw_response, profiles)
+            agent_scores = {name: 0.0 for name in agent_names}
+            if predicted:
+                agent_scores[predicted] = 1.0
+            return agent_scores
     
     def classify_batch(self, queries: List[str], profiles: ProfileSet, batch_size: int = 10) -> List[ClassifyResult]:
         """批量分类（串行实现，vLLM会自动batch）"""

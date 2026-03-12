@@ -1,0 +1,79 @@
+{
+  "iteration": 1,
+  "fitness": 0.686,
+  "timestamp": "20260311_142842",
+  "profiles": {
+    "选股智能体": {
+      "agent_name": "选股智能体",
+      "core_capability": "根据用户条件筛选符合条件的股票",
+      "boundary": "包括股价活跃度由黄到红的股票。例如：“陈小群最新持股”、“监管票”、“当前最热门的概念”。",
+      "rejection_scope": "不包括'方正科技趋势'（实际诊股智能体）"
+    },
+    "诊股智能体": {
+      "agent_name": "诊股智能体",
+      "core_capability": "分析单只股票的基本面、技术面、资金面",
+      "boundary": "包括'帮我分析一下TCL短期走势？'",
+      "rejection_scope": "不包括'手机版怎么调出个股的'（实际知识库智能体）"
+    },
+    "预测智能体": {
+      "agent_name": "预测智能体",
+      "core_capability": "预测股票未来走势和价格变动",
+      "boundary": "包括'帮我分析一下南京熊猫未来风险'",
+      "rejection_scope": "不包括'明天股票推荐，买卖点'（实际推荐智能体）"
+    },
+    "知识库智能体": {
+      "agent_name": "知识库智能体",
+      "core_capability": "解答股票软件使用、交易规则、投资知识等问题",
+      "boundary": "包括股票K线形态等知识库查询。例如：“空心阳线和实心阳线的区别”、“有画线吗？”、“怎么退”、“严重异动提醒”。",
+      "rejection_scope": "不包括'模拟芯片有哪些股票'（实际选股智能体）"
+    },
+    "新闻智能体": {
+      "agent_name": "新闻智能体",
+      "core_capability": "提供财经新闻、公告、市场动态等信息",
+      "boundary": "包括'扩大内需'",
+      "rejection_scope": "不包括'指南针擒龙选股'（实际知识库智能体）"
+    },
+    "通用智能体": {
+      "agent_name": "通用智能体",
+      "core_capability": "处理闲聊、情感交流、通用对话",
+      "boundary": "包括'暂时不用了'",
+      "rejection_scope": "不包括'开仓、持仓、清仓、空'（实际知识库智能体）"
+    },
+    "推荐智能体": {
+      "agent_name": "推荐智能体",
+      "core_capability": "根据用户需求推荐股票或操作策略",
+      "boundary": "包括'定增有哪些个股短线可以布局'",
+      "rejection_scope": "不包括'连续 3日换手率5%'（实际选股智能体）"
+    },
+    "策略智能体": {
+      "agent_name": "策略智能体",
+      "core_capability": "解释和使用各种投资策略、战法",
+      "boundary": "包括'解释和使用各种投资策'",
+      "rejection_scope": "不包括'章盟主你了解多少'（实际知识库智能体）"
+    },
+    "指标查询智能体": {
+      "agent_name": "指标查询智能体",
+      "core_capability": "查询股票的各种技术指标和财务指标",
+      "boundary": "包括'指南针的资金流入情况'",
+      "rejection_scope": "不包括'计算机应用龙头股票'（实际选股智能体）"
+    },
+    "身份智能体": {
+      "agent_name": "身份智能体",
+      "core_capability": "处理关于AI助手身份、转人工等请求",
+      "boundary": "包括'你是专门负责解答股票问题的AI'",
+      "rejection_scope": "不包括'我现在重仓的股票未来'（实际预测智能体）"
+    },
+    "分时图智能体": {
+      "agent_name": "分时图智能体",
+      "core_capability": "展示和分析股票分时图",
+      "boundary": "包括'看看中芯国际今天尾盘跳水的分时'",
+      "rejection_scope": "不包括'使用智能条件单收费吗'（实际知识库智能体）"
+    },
+    "K线图智能体": {
+      "agent_name": "K线图智能体",
+      "core_capability": "展示和分析股票K线图",
+      "boundary": "包括'图形切到日线级别给我瞅瞅'",
+      "rejection_scope": "不包括'国际医学走势怎样'（实际诊股智能体）"
+    }
+  }
+}

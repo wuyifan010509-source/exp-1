@@ -1,6 +1,7 @@
 """
 测试 gen_10_no_oos.txt prompt 在 GOLDEN_TEST.csv 上的准确率
 输出每个题目的对错情况，包含 precision, recall, f1 和混淆矩阵
+支持并发测试以提高速度
 """
 import sys
 import os
@@ -9,20 +10,27 @@ sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 import json
 import pandas as pd
 import requests
+import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
 from datetime import datetime
 from collections import defaultdict
+from concurrent.futures import ThreadPoolExecutor, as_completed
+import time
 
 # 配置
-BACKBONE_API_URL = "http://172.17.160.46:8080/v1"
-BACKBONE_MODEL = "Qwen2.5-32B-Instruct"
+# BACKBONE_API_URL = "http://172.17.160.46:8080/v1"
+BACKBONE_API_URL="http://127.0.0.1:3002/v1"
+# BACKBONE_MODEL = "Qwen2.5-32B-Instruct"
+BACKBONE_MODEL = "/Data1/wz_workspace/Qwen2.5-32B-Instruct"
 GOLDEN_TEST_PATH = "/home/iilab9/scholar-papers/experiments/intention/exp-1/wyf-exp1/data/GOLDEN_TEST.csv"
-PROMPT_PATH = "/home/iilab9/scholar-papers/experiments/intention/exp-1/wyf-exp1/data/baselines/gen_10.txt"
+PROMPT_PATH = "/home/iilab9/scholar-papers/experiments/intention/exp-1/wyf-exp1/data/baselines/greedy_300.txt"
 
-# 意图类别
+# 意图类别（中英文对照）
 INTENT_CLASSES = [
-    "选股类", "诊股类", "预测类", "知识库类", "新闻类",
-    "通用类", "推荐类", "策略类", "指标查询类", "身份类",
-    "分时图类", "K线图类"
+    "Stock Selection", "Stock Diagnosis", "Forecast", "Knowledge Base", "News",
+    "General Chat", "Recommendation", "Strategy", "Indicator Query", "Identity",
+    "Time-sharing", "K-line"
 ]
 
 
@@ -33,19 +41,38 @@ def load_prompt():
 
 
 def load_test_data():
-    """加载测试数据,去除oos"""
+    """加载测试数据，将中文意图映射为英文"""
+    # 中文到英文的意图映射
+    CHINESE_TO_ENGLISH = {
+        "选股类": "Stock Selection",
+        "诊股类": "Stock Diagnosis",
+        "预测类": "Forecast",
+        "知识库类": "Knowledge Base",
+        "新闻类": "News",
+        "通用类": "General Chat",
+        "推荐类": "Recommendation",
+        "策略类": "Strategy",
+        "指标查询类": "Indicator Query",
+        "身份类": "Identity",
+        "分时图类": "Time-sharing",
+        "K线图类": "K-line"
+    }
+    
     df = pd.read_csv(GOLDEN_TEST_PATH)
     df = df[df['预期意图'] != 'oos']  # 去除oos
     
     queries = df['问题'].tolist()
-    intents = df['预期意图'].tolist()
+    # 将中文意图转换为英文
+    intents = [CHINESE_TO_ENGLISH.get(intent, intent) for intent in df['预期意图'].tolist()]
     is_boundary = df['是否处于意图边界'].fillna('否').map(lambda x: str(x).strip() == '是').tolist()
     
     return queries, intents, is_boundary
 
 
-def classify_query(api_url, model, system_prompt, query):
-    """使用prompt对单个query进行分类"""
+def classify_query_single(args):
+    """单个query分类（用于并发）"""
+    idx, query, true_intent, is_bound, api_url, model, system_prompt = args
+    
     headers = {
         "Content-Type": "application/json",
         "Authorization": "Bearer dummy"
@@ -53,11 +80,14 @@ def classify_query(api_url, model, system_prompt, query):
     
     full_user_prompt = f"""{system_prompt}
 
-用户问题：{query}
+User Query: {query}
 
-请直接输出意图类别（只输出类别名称，如"选股类"、"诊股类"等，不要解释）："""
+Please output the intent class name directly (only output the class name, e.g., "Stock Selection", "Stock Diagnosis", etc., no explanation):
+
+Intent Class:"""
     
     try:
+        start_time = time.time()
         response = requests.post(
             f"{api_url}/chat/completions",
             headers=headers,
@@ -74,30 +104,122 @@ def classify_query(api_url, model, system_prompt, query):
         response.raise_for_status()
         result = response.json()
         raw_response = result["choices"][0]["message"]["content"].strip()
+        end_time = time.time()
         
-        # 提取意图
+        latency = end_time - start_time
         predicted = extract_intent(raw_response)
         
-        return predicted, raw_response
+        return {
+            'index': idx + 1,
+            'query': query,
+            'expected': true_intent,
+            'predicted': predicted,
+            'raw_response': raw_response,
+            'latency': latency,
+            'success': True
+        }
         
     except Exception as e:
-        print(f"[Error] API call failed: {e}")
-        return "", str(e)
+        return {
+            'index': idx + 1,
+            'query': query,
+            'expected': true_intent,
+            'predicted': "",
+            'raw_response': str(e),
+            'latency': 0.0,
+            'success': False
+        }
+
+
+def classify_queries_concurrent(queries, intents, is_boundary, api_url, model, system_prompt, max_workers=10):
+    """
+    并发分类所有query
+    
+    Args:
+        max_workers: 并发线程数（默认10）
+    """
+    results = [None] * len(queries)
+    
+    # 准备参数
+    args_list = [
+        (i, queries[i], intents[i], is_boundary[i], api_url, model, system_prompt)
+        for i in range(len(queries))
+    ]
+    
+    print(f"\n[Concurrent] Starting concurrent classification with {max_workers} workers...")
+    print(f"[Concurrent] Total queries: {len(queries)}")
+    
+    completed = 0
+    with ThreadPoolExecutor(max_workers=max_workers) as executor:
+        # 提交所有任务
+        future_to_idx = {
+            executor.submit(classify_query_single, args): args[0] 
+            for args in args_list
+        }
+        
+        # 收集结果
+        for future in as_completed(future_to_idx):
+            result = future.result()
+            idx = result['index'] - 1
+            results[idx] = result
+            
+            completed += 1
+            if completed % 10 == 0 or completed == len(queries):
+                print(f"[Progress] {completed}/{len(queries)} completed ({completed/len(queries)*100:.1f}%)")
+    
+    return results
 
 
 def extract_intent(text):
     """从响应中提取意图类别"""
     text = text.strip()
     
+    # 直接匹配英文类别
     for intent in INTENT_CLASSES:
         if intent in text:
             return intent
     
+    # 中文到英文的映射（如果模型输出中文）
+    CHINESE_TO_ENGLISH = {
+        "选股类": "Stock Selection",
+        "诊股类": "Stock Diagnosis",
+        "预测类": "Forecast",
+        "知识库类": "Knowledge Base",
+        "新闻类": "News",
+        "通用类": "General Chat",
+        "推荐类": "Recommendation",
+        "策略类": "Strategy",
+        "指标查询类": "Indicator Query",
+        "身份类": "Identity",
+        "分时图类": "Time-sharing",
+        "K线图类": "K-line"
+    }
+    
+    # 尝试直接匹配中文类别
+    for cn_intent, en_intent in CHINESE_TO_ENGLISH.items():
+        if cn_intent in text:
+            return en_intent
+    
     # 尝试匹配简写形式
-    for intent in INTENT_CLASSES:
-        short_name = intent.replace("类", "")
-        if short_name in text:
-            return intent
+    chinese_mapping = {
+        "Stock Selection": ["选股"],
+        "Stock Diagnosis": ["诊股"],
+        "Forecast": ["预测"],
+        "Knowledge Base": ["知识库"],
+        "News": ["新闻"],
+        "General Chat": ["通用"],
+        "Recommendation": ["推荐"],
+        "Strategy": ["策略"],
+        "Indicator Query": ["指标查询", "指标"],
+        "Identity": ["身份"],
+        "Time-sharing": ["分时图", "分时"],
+        "K-line": ["K线图", "K线"]
+    }
+    
+    for intent, chinese_names in chinese_mapping.items():
+        for cn_name in chinese_names:
+            if cn_name in text:
+                return intent
     
     return text[:20] if len(text) > 20 else text
 
@@ -171,27 +293,45 @@ def calculate_metrics(all_predictions, all_labels):
     }
 
 
-def evaluate_prompt():
-    """评估prompt"""
+def evaluate_prompt(max_workers=10):
+    """
+    Evaluate prompt with concurrent requests
+    
+    Args:
+        max_workers: Number of concurrent threads (default: 10)
+    """
     print("=" * 80)
-    print("测试 gen_10_no_oos.txt prompt")
+    print("Testing Prompt on GOLDEN_TEST (Concurrent Mode)")
     print("=" * 80)
+    print(f"[Config] Concurrent workers: {max_workers}")
     
     # 1. 加载数据
-    print("\n[1/3] 加载测试数据...")
+    print("\n[1/3] Loading test data...")
     queries, intents, is_boundary = load_test_data()
-    print(f"  测试样本: {len(queries)}条 (已去除oos)")
-    print(f"  边界样本: {sum(is_boundary)}条")
+    print(f"  Test samples: {len(queries)} (oos removed)")
+    print(f"  Boundary samples: {sum(is_boundary)}")
     
     # 2. 加载prompt
-    print("\n[2/3] 加载prompt...")
+    print("\n[2/3] Loading prompt...")
     system_prompt = load_prompt()
-    print(f"  Prompt长度: {len(system_prompt)}字符")
+    print(f"  Prompt length: {len(system_prompt)} chars")
     
-    # 3. 评估
-    print("\n[3/3] 开始评估...")
+    # 3. 并发评估
+    print("\n[3/3] Starting concurrent evaluation...")
     print("=" * 80)
     
+    start_time = time.time()
+    
+    # 使用并发分类所有query
+    raw_results = classify_queries_concurrent(
+        queries, intents, is_boundary,
+        BACKBONE_API_URL, BACKBONE_MODEL, system_prompt,
+        max_workers=max_workers
+    )
+    
+    total_elapsed = time.time() - start_time
+    
+    # 处理结果
     correct = 0
     boundary_correct = 0
     total = len(queries)
@@ -200,9 +340,17 @@ def evaluate_prompt():
     results = []
     all_predictions = []
     all_labels = []
+    latency_list = []
     
-    for i, (query, true_intent, is_bound) in enumerate(zip(queries, intents, is_boundary)):
-        predicted, raw = classify_query(BACKBONE_API_URL, BACKBONE_MODEL, system_prompt, query)
+    print("\n[Results] Processing results...")
+    for result in raw_results:
+        idx = result['index']
+        predicted = result['predicted']
+        true_intent = result['expected']
+        is_bound = is_boundary[idx - 1]
+        query = result['query']
+        raw = result['raw_response']
+        latency = result['latency']
         
         is_correct = (predicted == true_intent)
         if is_correct:
@@ -210,28 +358,27 @@ def evaluate_prompt():
             if is_bound:
                 boundary_correct += 1
         
-        results.append({
-            'index': i + 1,
-            'query': query,
-            'expected': true_intent,
-            'predicted': predicted,
-            'correct': is_correct,
-            'is_boundary': is_bound,
-            'raw_response': raw[:100] if len(raw) > 100 else raw
-        })
+        # 更新结果字典
+        result['correct'] = is_correct
+        result['is_boundary'] = is_bound
+        result['raw_response'] = raw[:100] if len(raw) > 100 else raw
+        result['latency'] = round(latency, 3)
         
+        results.append(result)
         all_predictions.append(predicted)
         all_labels.append(true_intent)
+        latency_list.append(latency)
         
-        # 实时输出每个题目的结果
-        status = "✓" if is_correct else "✗"
-        boundary_mark = "[边界]" if is_bound else ""
-        print(f"{i+1:3d}. {status} {boundary_mark}")
-        print(f"     问题: {query[:50]}{'...' if len(query) > 50 else ''}")
-        print(f"     期望: {true_intent} -> 预测: {predicted}")
+        # 实时输出（可选，只打印错误的）
         if not is_correct:
-            print(f"     原始输出: {raw[:80]}{'...' if len(raw) > 80 else ''}")
-        print()
+            status = "✗"
+            boundary_mark = "[Boundary]" if is_bound else ""
+            print(f"{idx:3d}. {status} {boundary_mark}")
+            print(f"     Query: {query[:50]}{'...' if len(query) > 50 else ''}")
+            print(f"     Expected: {true_intent} -> Predicted: {predicted}")
+            print(f"     Raw output: {raw[:80]}{'...' if len(raw) > 80 else ''}")
+    
+    print(f"\n[Speed] Total time: {total_elapsed:.1f}s ({total/total_elapsed:.1f} queries/sec)")
     
     # 统计结果
     accuracy = correct / total if total > 0 else 0
@@ -240,11 +387,24 @@ def evaluate_prompt():
     # 计算详细指标
     detailed_metrics = calculate_metrics(all_predictions, all_labels)
     
+    # 计算推理延迟统计
+    total_latency = sum(latency_list) if latency_list else 0
+    avg_latency = total_latency / total if total > 0 else 0
+    min_latency = min(latency_list) if latency_list else 0
+    max_latency = max(latency_list) if latency_list else 0
+    
     print("=" * 80)
-    print("评估结果汇总")
+    print("Evaluation Results Summary")
     print("=" * 80)
-    print(f"\n总体准确率: {accuracy:.2%} ({correct}/{total})")
-    print(f"边界准确率: {boundary_accuracy:.2%} ({boundary_correct}/{boundary_total})")
+    print(f"\nOverall Accuracy: {accuracy:.2%} ({correct}/{total})")
+    print(f"Boundary Accuracy: {boundary_accuracy:.2%} ({boundary_correct}/{boundary_total})")
+    
+    # 输出推理延迟统计
+    print(f"\n[Inference Latency]")
+    print(f"  Average: {avg_latency:.3f}s")
+    print(f"  Min:     {min_latency:.3f}s")
+    print(f"  Max:     {max_latency:.3f}s")
+    print(f"  Total:   {total_latency:.3f}s (wall clock)")
     
     # 输出 Macro Average
     print(f"\n[Macro Average]")
@@ -259,19 +419,19 @@ def evaluate_prompt():
     print(f"  F1-Score:  {detailed_metrics['weighted_avg']['f1']:.4f}")
     
     # 统计各类别表现
-    print("\n各类别详细指标:")
-    print(f"{'类别':<12} {'Support':<8} {'Precision':<10} {'Recall':<10} {'F1-Score':<10}")
-    print("-" * 55)
+    print("\nPer-Class Detailed Metrics:")
+    print(f"{'Class':<20} {'Support':<8} {'Precision':<10} {'Recall':<10} {'F1-Score':<10}")
+    print("-" * 65)
     
     intent_stats = {}
     for intent in INTENT_CLASSES:
         metrics = detailed_metrics['per_class'][intent]
         if metrics['support'] > 0:
             intent_stats[intent] = metrics
-            print(f"{intent:<12} {metrics['support']:<8} {metrics['precision']:<10.4f} {metrics['recall']:<10.4f} {metrics['f1']:<10.4f}")
+            print(f"{intent:<20} {metrics['support']:<8} {metrics['precision']:<10.4f} {metrics['recall']:<10.4f} {metrics['f1']:<10.4f}")
     
     # 输出混淆矩阵（简化版 - 只显示主要混淆）
-    print("\n混淆矩阵 - 主要错误分类:")
+    print("\nConfusion Matrix - Top Misclassifications:")
     cm = detailed_metrics['confusion_matrix']
     confusion_pairs = []
     for true_intent in cm:
@@ -281,10 +441,10 @@ def evaluate_prompt():
     
     # 按混淆数量排序
     confusion_pairs.sort(key=lambda x: x[2], reverse=True)
-    print(f"{'真实类别':<12} -> {'预测类别':<12} {'数量':<6}")
-    print("-" * 35)
+    print(f"{'True Class':<20} -> {'Predicted Class':<20} {'Count':<6}")
+    print("-" * 55)
     for true_intent, pred_intent, count in confusion_pairs[:15]:
-        print(f"{true_intent:<12} -> {pred_intent:<12} {count:<6}")
+        print(f"{true_intent:<20} -> {pred_intent:<20} {count:<6}")
     
     # 保存详细结果
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
@@ -299,6 +459,12 @@ def evaluate_prompt():
         'boundary_samples': boundary_total,
         'boundary_correct': boundary_correct,
         'boundary_accuracy': boundary_accuracy,
+        'latency_stats': {
+            'average': round(avg_latency, 3),
+            'min': round(min_latency, 3),
+            'max': round(max_latency, 3),
+            'total': round(total_latency, 3)
+        },
         'macro_avg': detailed_metrics['macro_avg'],
         'weighted_avg': detailed_metrics['weighted_avg'],
         'per_intent_stats': intent_stats,
@@ -309,10 +475,78 @@ def evaluate_prompt():
     with open(output_file, 'w', encoding='utf-8') as f:
         json.dump(output_data, f, ensure_ascii=False, indent=2)
     
-    print(f"\n详细结果已保存: {output_file}")
+    print(f"\nDetailed results saved: {output_file}")
+    
+    # Plot confusion matrix heatmap
+    plot_confusion_heatmap(cm, output_file.replace('.json', '_confusion_matrix.png'))
     
     return results
 
 
+def plot_confusion_heatmap(confusion_matrix, output_path):
+    """Plot confusion matrix heatmap (absolute counts, diagonal masked)"""
+    print("\nPlotting confusion matrix heatmap (absolute counts, diagonal masked)...")
+    
+    # Build confusion matrix array (raw counts)
+    cm_array = np.zeros((len(INTENT_CLASSES), len(INTENT_CLASSES)))
+    for i, true_intent in enumerate(INTENT_CLASSES):
+        for j, pred_intent in enumerate(INTENT_CLASSES):
+            cm_array[i, j] = confusion_matrix[true_intent][pred_intent]
+    
+    # Create mask for diagonal (hide diagonal color)
+    mask = np.eye(len(INTENT_CLASSES), dtype=bool)
+    
+    # Create figure
+    plt.figure(figsize=(16, 14))
+    
+    # Draw heatmap with diagonal masked (no color on diagonal)
+    ax = sns.heatmap(cm_array, 
+                     mask=mask,  # Hide diagonal
+                     annot=True,  # Show values
+                     fmt='g',     # Integer format
+                     cmap='Blues',  # Blue gradient
+                     xticklabels=INTENT_CLASSES,
+                     yticklabels=INTENT_CLASSES,
+                     cbar_kws={'label': 'Count', 'shrink': 0.8},
+                     square=True,
+                     linewidths=0.5,  # Add grid lines
+                     linecolor='white',
+                     vmin=0,  # Set color scale minimum
+                     vmax=cm_array.max())  # Set color scale maximum
+    
+    # Add diagonal values manually (black text, no color)
+    for i in range(len(INTENT_CLASSES)):
+        value = int(cm_array[i, i])
+        ax.text(i + 0.5, i + 0.5, str(value), 
+                ha='center', va='center', 
+                fontsize=10, fontweight='bold', color='black')
+    
+    plt.xlabel('Predicted Class', fontsize=14, fontweight='bold')
+    plt.ylabel('True Class', fontsize=14, fontweight='bold')
+    plt.title('Intent Classification Confusion Matrix\n(Absolute Counts, Diagonal Masked)', 
+              fontsize=16, fontweight='bold', pad=20)
+    
+    # Rotate labels to avoid overlap
+    plt.xticks(rotation=45, ha='right', fontsize=10)
+    plt.yticks(rotation=0, fontsize=10)
+    
+    # Adjust layout
+    plt.tight_layout()
+    
+    # Save image
+    plt.savefig(output_path, dpi=300, bbox_inches='tight', facecolor='white')
+    print(f"Heatmap saved: {output_path}")
+    
+    # Also save raw data as CSV
+    csv_path = output_path.replace('.png', '_counts.csv')
+    cm_df = pd.DataFrame(cm_array,
+                         index=INTENT_CLASSES,
+                         columns=INTENT_CLASSES)
+    cm_df.to_csv(csv_path)
+    print(f"Raw count data saved: {csv_path}")
+    
+    plt.close()
+
+
 if __name__ == "__main__":
-    evaluate_prompt()
+    evaluate_prompt(max_workers=5)

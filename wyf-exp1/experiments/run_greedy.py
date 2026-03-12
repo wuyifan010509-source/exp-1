@@ -15,6 +15,10 @@ from config import (
 from structured_profile import ProfileSet
 from evaluation.classifier import QwenClassifier, MockClassifier
 from evaluation import EvaluationPipeline
+from evaluation.core_question_integration import (
+    setup_core_question_evaluation,
+    CoreQuestionEvaluator
+)
 from whitebox_init import generate_initial_population
 from evolution import LLMMutator
 from greedy import GreedyOptimizer
@@ -26,9 +30,13 @@ PATIENCE = 10
 TRAIN_SIZE = 100  # 每轮固定100条数据
 
 
-def run_greedy_experiment(use_mock: bool = False):
+def run_greedy_experiment(use_mock: bool = False, allowed_slots: list = None):
     """
     运行贪心算法实验
+    
+    Args:
+        use_mock: 是否使用Mock分类器
+        allowed_slots: 允许优化的槽位列表，如 ['C','B','R'], ['B','R'] 等
     """
     print("=" * 80)
     print("贪心算法优化实验（高效版本）")
@@ -82,13 +90,31 @@ def run_greedy_experiment(use_mock: bool = False):
     print(f"[4/4] 滑动窗口: 最近3轮平均作为基线，改进需超阈值0.001")
     print(f"[4/4] 候选策略: 每槽位只生成1个候选（LLM调用最少化）")
     print(f"[4/4] 评估策略: 改完3个槽位后统一评估1次（而非3次）")
+    # 【槽位生成策略配置】
+    # allowed_slots 参数控制允许生成的槽位组合：
+    #   - ['C', 'B', 'R'] : 同时生成 C(核心能力)、B(处理边界)、R(拒绝范围) - 全优化
+    #   - ['B', 'R']      : 只生成 B 和 R（默认，C固定不变）
+    #   - ['C', 'B']      : 只生成 C 和 B
+    #   - ['C', 'R']      : 只生成 C 和 R
+    #   - ['C']           : 只优化 C（核心能力）
+    #   - ['B']           : 只优化 B（处理边界）
+    #   - ['R']           : 只优化 R（拒绝范围）
+    if allowed_slots is None:
+        allowed_slots = ['B', 'R']  # 默认：不优化C，只优化B和R
+    
+    print(f"\n[Config] 槽位生成策略: {allowed_slots}")
+    slot_name_map = {'C': '核心能力', 'B': '处理边界', 'R': '拒绝范围'}
+    for slot in allowed_slots:
+        print(f"  - {slot}: {slot_name_map[slot]}")
+    
     optimizer = GreedyOptimizer(
         max_iterations=MAX_ITERATIONS,
         candidates_per_slot=CANDIDATES_PER_SLOT,
         patience=PATIENCE,
-        slots_per_iteration=2,  # 每轮只优化2个槽位（B和R，C不迭代）
+        slots_per_iteration=2,  # 每轮只优化2个槽位
         window_size=3,  # 滑动窗口大小
-        improvement_threshold=0.001  # 改进阈值
+        improvement_threshold=0.001,  # 改进阈值
+        allowed_slots=allowed_slots  # 槽位生成策略
     )
     
     # 加载训练数据用于获取正例
@@ -113,27 +139,31 @@ def run_greedy_experiment(use_mock: bool = False):
     
     mutator = LLMMutator(positive_examples_func=get_positive_examples)
     
-    # 加载黄金测试集（用于评估准确率）
-    import pandas as pd
-    golden_df = pd.read_csv(GOLDEN_TEST_PATH)
-    golden_queries = golden_df['问题'].tolist()
-    golden_intents = golden_df['预期意图'].tolist()
-    golden_is_boundary = golden_df['是否处于意图边界'].fillna('否').map(lambda x: str(x).strip() == '是').tolist()
+    # 【核心问题评估】使用从历史数据中提取的核心问题替代黄金测试集
+    print("\n" + "="*80)
+    print("初始化核心问题评估集")
+    print("="*80)
+    evaluator = setup_core_question_evaluation(
+        classifier=classifier,
+        profiles=initial_profile,
+        force_regenerate=True,   # 强制重新生成（使用新的logprobs逻辑）
+        total_size=500           # 核心问题总数
+    )
     
-    print(f"[Setup] 加载黄金测试集: {len(golden_queries)} 条")
+    # 获取核心问题统计
+    stats = evaluator.get_stats()
+    print(f"\n[CoreQuestion] 评估集统计:")
+    print(f"  总数: {stats.get('total', 0)}")
+    print(f"  不确定: {stats.get('uncertain', 0)} (Margin < 0.1)")
+    print(f"  错误: {stats.get('errors', 0)} (用于挖掘改进空间)")
     
-    # 加载历史数据集（用于挖掘错误案例）
-    historical_df = pd.read_csv(HISTORICAL_LOGS_PATH)
-    historical_df = historical_df[historical_df['预期意图'] != 'oos']
-    
-    print(f"[Setup] 加载历史数据集: {len(historical_df)} 条")
-    
-    # 【评估函数】使用黄金测试集计算准确率
+    # 【评估函数】使用核心问题计算准确率
     def fitness_func(profile_set: ProfileSet, test_data=None) -> float:
-        """使用黄金测试集评估准确率"""
+        """使用核心问题评估准确率"""
         try:
-            # 始终使用黄金测试集
-            result = pipeline.evaluate(profile_set, test_data=(golden_queries, golden_intents, golden_is_boundary))
+            # 使用核心问题评估（替代黄金测试集）
+            queries, intents, is_boundary = evaluator.get_evaluation_data()
+            result = pipeline.evaluate(profile_set, test_data=(queries, intents, is_boundary))
             
             fitness = result['fitness']
             print(f"    Fitness: {fitness:.4f} (Acc: {result['accuracy']:.2%}, Boundary Acc: {result.get('boundary_accuracy', 0):.2%})")
@@ -144,27 +174,18 @@ def run_greedy_experiment(use_mock: bool = False):
             traceback.print_exc()
             return 0.0
     
-    # 【错误案例获取函数】从历史数据集采样并分类
-    def get_bad_cases_func(profile_set: ProfileSet, sample_size: int = 200) -> list:
-        """从历史数据集中采样并返回分类结果（用于挖掘错误案例）"""
+    # 【错误案例获取函数】使用固定的核心问题集（500条）
+    core_queries, core_intents, _ = evaluator.get_evaluation_data()
+    print(f"[Setup] 加载核心问题集用于错误挖掘: {len(core_queries)} 条")
+    
+    def get_bad_cases_func(profile_set: ProfileSet, sample_size: int = None) -> list:
+        """使用固定的核心问题集返回分类结果（用于挖掘错误案例）"""
         try:
-            # 从历史数据集分层采样
-            unique_intents = historical_df['预期意图'].unique()
-            samples_per_intent = max(1, sample_size // len(unique_intents))
+            # 使用固定的核心问题集（500条），不再采样
+            queries = core_queries
+            intents = core_intents
             
-            sampled_dfs = []
-            for intent in unique_intents:
-                intent_df = historical_df[historical_df['预期意图'] == intent]
-                n = min(samples_per_intent, len(intent_df))
-                if n > 0:
-                    sampled_dfs.append(intent_df.sample(n=n))
-            
-            sampled_df = pd.concat(sampled_dfs).head(sample_size)
-            
-            queries = sampled_df['问题'].tolist()
-            intents = sampled_df['预期意图'].tolist()
-            
-            print(f"[Bad Cases] 从历史数据集采样 {len(queries)} 条")
+            print(f"[Bad Cases] 使用核心问题集 {len(queries)} 条（固定）")
             
             # 分类这些样本
             results = pipeline.classifier.classify_batch(queries, profile_set)
@@ -193,27 +214,6 @@ def run_greedy_experiment(use_mock: bool = False):
             import traceback
             traceback.print_exc()
             return []
-    
-    # 获取每轮历史数据采样（用于生成bad cases）
-    def get_historical_sample_func(sample_size: int = 100):
-        """从历史数据集采样（用于生成bad cases）"""
-        unique_intents = historical_df['预期意图'].unique()
-        samples_per_intent = max(1, sample_size // len(unique_intents))
-        
-        sampled_dfs = []
-        for intent in unique_intents:
-            intent_df = historical_df[historical_df['预期意图'] == intent]
-            n = min(samples_per_intent, len(intent_df))
-            if n > 0:
-                sampled_dfs.append(intent_df.sample(n=n))
-        
-        sampled_df = pd.concat(sampled_dfs).head(sample_size)
-        
-        queries = sampled_df['问题'].tolist()
-        intents = sampled_df['预期意图'].tolist()
-        is_boundary = [False] * len(queries)  # 历史数据没有边界标记
-        
-        return queries, intents, is_boundary
     
     # 运行贪心优化
     print(f"\n开始贪心优化 (最大{MAX_ITERATIONS}轮)...")
@@ -292,10 +292,24 @@ def run_greedy_experiment(use_mock: bool = False):
 def main():
     parser = argparse.ArgumentParser(description='贪心算法优化实验')
     parser.add_argument('--mock', action='store_true', help='使用Mock分类器')
+    parser.add_argument('--slots', type=str, default='BR', 
+                       help='槽位生成策略: CBR(全优化), BR(默认,不优化C), CB, CR, C, B, R')
     
     args = parser.parse_args()
     
-    result_file = run_greedy_experiment(use_mock=args.mock)
+    # 解析槽位参数
+    slot_map = {
+        'CBR': ['C', 'B', 'R'],
+        'BR': ['B', 'R'],
+        'CB': ['C', 'B'],
+        'CR': ['C', 'R'],
+        'C': ['C'],
+        'B': ['B'],
+        'R': ['R']
+    }
+    allowed_slots = slot_map.get(args.slots.upper(), ['B', 'R'])
+    
+    result_file = run_greedy_experiment(use_mock=args.mock, allowed_slots=allowed_slots)
     
     if result_file:
         print("\n✓ 实验完成！")

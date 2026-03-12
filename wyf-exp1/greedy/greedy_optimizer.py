@@ -48,7 +48,8 @@ class GreedyOptimizer:
                  enable_logging: bool = True,
                  slots_per_iteration: int = 3,
                  window_size: int = 3,
-                 improvement_threshold: float = 0.001):
+                 improvement_threshold: float = 0.001,
+                 allowed_slots: List[str] = None):
         """
         Args:
             max_iterations: 最大迭代次数
@@ -58,6 +59,8 @@ class GreedyOptimizer:
             slots_per_iteration: 每轮优化的槽位数量（选择性优化）
             window_size: 滑动窗口大小（用于计算基线适应度）
             improvement_threshold: 接受改进的最小阈值
+            allowed_slots: 允许优化的槽位列表，如 ['C','B','R'], ['B','R'], ['C'], 等
+                          默认为 ['B', 'R']（不优化C）
         """
         self.max_iterations = max_iterations
         self.candidates_per_slot = candidates_per_slot
@@ -65,10 +68,19 @@ class GreedyOptimizer:
         self.slots_per_iteration = slots_per_iteration
         self.window_size = window_size
         self.improvement_threshold = improvement_threshold
+        self.allowed_slots = allowed_slots if allowed_slots is not None else ['B', 'R']
         self.logger = LLMInteractionLogger() if enable_logging else None
         self.iteration = 0  # 当前迭代计数
         self.slot_selection_history = {}  # 记录槽位被选中次数：{(agent, slot): count}
         self.round_prompts = []  # 记录每轮的所有prompts
+        
+        # 验证allowed_slots参数
+        valid_slots = {'C', 'B', 'R'}
+        invalid_slots = set(self.allowed_slots) - valid_slots
+        if invalid_slots:
+            raise ValueError(f"Invalid slots in allowed_slots: {invalid_slots}. Must be subset of {{'C', 'B', 'R'}}")
+        
+        print(f"[GreedyOptimizer] Initialized with allowed_slots: {self.allowed_slots}")
         
     def optimize(self,
                  initial_profile_set: ProfileSet,
@@ -271,58 +283,87 @@ class GreedyOptimizer:
     def _select_worst_slots(self, 
                            profile_set: ProfileSet,
                            all_cases: Optional[List[Dict]],
-                           top_k: int = 2) -> List[Tuple[str, str]]:
+                           top_k: int = 2,
+                           beta: float = 3.0) -> List[Tuple[str, str]]:
         """
         选择最差的top_k个槽位进行优化
         
+        优先级得分公式：Priority Score = 错误次数 - β * 历史被改动次数
+        
         策略：
         1. 只优化 B（处理边界）和 R（拒绝范围），不优化 C（核心能力）
-        2. 只根据修改历史选择（修改次数越少优先级越高）
-        3. 同一个智能体每轮最多只选一个槽位
+        2. 基于错误归因：统计每个槽位导致的分类错误次数
+        3. 结合轮询：惩罚经常被修改的槽位（避免总是改同一个）
+        4. 选择得分最高的top_k个槽位
+        
+        Args:
+            all_cases: 包含is_correct, expected_agent, predicted_agent的错误案例
+            top_k: 选择槽位数量
+            beta: 历史改动次数的惩罚系数（默认2.0）
         
         Returns:
             List of (agent_name, slot_code) tuples
         """
-        agent_slot_scores = {}
+        # Step 1: 统计每个槽位的错误次数
+        slot_error_counts = {}
         
-        # 为每个智能体的 B 和 R 槽位计算得分（C槽位不迭代）
+        # 初始化所有允许槽位的错误计数为0
         for agent_name in profile_set.profiles.keys():
-            # 只考虑 B 和 R 槽位（不优化 C）
-            for slot_code in ['B', 'R']:
+            for slot_code in self.allowed_slots:
                 slot_key = (agent_name, slot_code)
-                selection_count = self.slot_selection_history.get(slot_key, 0)
-                # 修改次数越少得分越高（负数）
-                agent_slot_scores[(agent_name, slot_code)] = -selection_count
+                slot_error_counts[slot_key] = 0
         
-        # 按智能体分组，每个智能体只选修改次数最少的一个槽位
-        agent_slots = {}
-        for (agent_name, slot_code), score in agent_slot_scores.items():
-            if agent_name not in agent_slots:
-                agent_slots[agent_name] = []
-            agent_slots[agent_name].append((slot_code, score))
+        # 遍历所有案例，统计错误
+        if all_cases:
+            for case in all_cases:
+                if not case.get('is_correct', True):  # 只统计错误案例
+                    expected_agent = case.get('expected_agent')
+                    predicted_agent = case.get('predicted_agent')
+                    
+                    # 错误归因逻辑：
+                    # 1. 预期agent的B/C槽位不够清晰（导致本该分对的没分对）
+                    # 2. 预测agent的R槽位不够清晰（导致不该分对的却分对了）
+                    if expected_agent:
+                        if 'B' in self.allowed_slots:
+                            slot_error_counts[(expected_agent, 'B')] += 1
+                        if 'C' in self.allowed_slots:
+                            slot_error_counts[(expected_agent, 'C')] += 0.5  # C槽位错误归因权重较低
+                    if predicted_agent and 'R' in self.allowed_slots:
+                        slot_error_counts[(predicted_agent, 'R')] += 1
         
-        # 为每个智能体选择修改次数最少的槽位
-        selected = []
-        for agent_name, slots in agent_slots.items():
-            # 按得分排序（修改次数少的在前）
-            slots.sort(key=lambda x: x[1], reverse=True)
-            selected_slot = slots[0][0]  # 选得分最高的（修改次数最少的）
-            selected.append((agent_name, selected_slot))
+        # Step 2: 计算优先级得分 = 错误次数 - β * 历史改动次数
+        slot_priority_scores = {}
         
-        # 从所有智能体中按修改次数选择top_k个（修改次数少的优先）
-        selected.sort(key=lambda x: agent_slot_scores[x], reverse=True)
-        selected = selected[:top_k]
+        for agent_name in profile_set.profiles.keys():
+            for slot_code in self.allowed_slots:
+                slot_key = (agent_name, slot_code)
+                error_count = slot_error_counts.get(slot_key, 0)
+                history_count = self.slot_selection_history.get(slot_key, 0)
+                
+                # Priority Score = 错误次数 - β * 历史被改动次数
+                priority_score = error_count - beta * history_count
+                slot_priority_scores[slot_key] = priority_score
         
-        # 更新选中历史
+        # Step 3: 选择得分最高的top_k个槽位
+        sorted_slots = sorted(slot_priority_scores.items(), 
+                             key=lambda x: x[1], reverse=True)
+        selected = [slot for slot, score in sorted_slots[:top_k]]
+        
+        # Step 4: 更新选中历史
         for agent, slot in selected:
             slot_key = (agent, slot)
             self.slot_selection_history[slot_key] = self.slot_selection_history.get(slot_key, 0) + 1
         
-        print(f"\n[Greedy] Selected top {len(selected)} slots for optimization (B/R only, C frozen):")
+        # 打印选择结果
+        print(f"\n[Greedy] Selected top {len(selected)} slots (β={beta}, allowed: {self.allowed_slots}):")
         slot_name_map = {'C': '核心能力', 'B': '处理边界', 'R': '拒绝范围'}
         for i, (agent, slot) in enumerate(selected, 1):
-            history_count = self.slot_selection_history.get((agent, slot), 0)
-            print(f"  {i}. {agent} - {slot_name_map[slot]} (modified {history_count} times)")
+            slot_key = (agent, slot)
+            errors = slot_error_counts.get(slot_key, 0)
+            history = self.slot_selection_history.get(slot_key, 0) - 1  # 减1因为刚刚加了
+            score = slot_priority_scores[slot_key]
+            print(f"  {i}. {agent} - {slot_name_map.get(slot, slot)}")
+            print(f"     错误次数: {errors}, 历史改动: {history}, 优先级得分: {score:.1f}")
         
         return selected
     
