@@ -1,0 +1,262 @@
+[
+  {
+    "original_query": "机器就是机器",
+    "matched_rule": "无"
+  },
+  {
+    "original_query": "帮我分析一下中远海能",
+    "matched_rule": "无"
+  },
+  {
+    "original_query": "603228交易策略。",
+    "matched_rule": "规则 5：策略类 - 策略查询"
+  },
+  {
+    "original_query": "洛阳钼业现在可以加仓吗",
+    "matched_rule": "无"
+  },
+  {
+    "original_query": "三七互娱怎么看",
+    "matched_rule": "规则 1：诊股类 - 纯标的映射"
+  },
+  {
+    "original_query": "近期13日内主力资金净注入超过一亿，涨幅低于9%的，航天军工板块和计算机应用板块、原件板块、光学光电子板块、传媒板块有哪些股票",
+    "matched_rule": "规则 4：选股类 - 裸条件映射"
+  },
+  {
+    "original_query": "查找锁定因子LFS在55以上股票",
+    "matched_rule": "规则 4：选股类 - 裸条件映射"
+  },
+  {
+    "original_query": "与火箭发射场地有关的股票",
+    "matched_rule": "规则 2：选股类 - 纯板块映射"
+  },
+  {
+    "original_query": "海航控股",
+    "matched_rule": "规则 1：诊股类 - 纯标的映射"
+  },
+  {
+    "original_query": "乐普医疗明天适合买吗",
+    "matched_rule": "规则 3：预测类 - 时空穿梭映射"
+  },
+  {
+    "original_query": "600282趋势",
+    "matched_rule": "无"
+  },
+  {
+    "original_query": "火箭回收船概念龙头股",
+    "matched_rule": "规则 2：选股类 - 纯板块映射"
+  },
+  {
+    "original_query": "你真笨",
+    "matched_rule": "无"
+  },
+  {
+    "original_query": "尾盘抢筹+主力资金的股票",
+    "matched_rule": "规则 4：选股类 - 裸条件映射"
+  },
+  {
+    "original_query": "明日热门股",
+    "matched_rule": "无"
+  },
+  {
+    "original_query": "中坚科技112买入的，一直跌，继续持有还是卖掉？",
+    "matched_rule": "无"
+  },
+  {
+    "original_query": "破净股是什么意思",
+    "matched_rule": "规则 7：知识库类 - 概念询问"
+  },
+  {
+    "original_query": "601992股票资金流入还是流出",
+    "matched_rule": "规则 6：指标查询类 - 指标查询"
+  },
+  {
+    "original_query": "近期热门概念板块前五名",
+    "matched_rule": "规则 2：选股类 - 纯板块映射"
+  },
+  {
+    "original_query": "000516趋势",
+    "matched_rule": "无"
+  },
+  {
+    "original_query": "九丰能源明天走势会怎样",
+    "matched_rule": "规则 3：预测类 - 时空穿梭映射"
+  },
+  {
+    "original_query": "海特高新",
+    "matched_rule": "规则 1：诊股类 - 纯标的映射"
+  },
+  {
+    "original_query": "000560走势分析",
+    "matched_rule": "规则 1：诊股类 - 纯标的映射"
+  },
+  {
+    "original_query": "如何判断筹码峰的股票涨跌态势",
+    "matched_rule": "无"
+  },
+  {
+    "original_query": "怎么开",
+    "matched_rule": "无"
+  },
+  {
+    "original_query": "茺矿能源未来走势",
+    "matched_rule": "规则 3：预测类 - 时空穿梭映射"
+  },
+  {
+    "original_query": "擒龙平台里突破选股搜不到",
+    "matched_rule": "规则 8：知识库类 - 软件操作"
+  },
+  {
+    "original_query": "TCL科技并购重组了吗？",
+    "matched_rule": "无"
+  },
+  {
+    "original_query": "谢谢啦",
+    "matched_rule": "无"
+  },
+  {
+    "original_query": "全信股份",
+    "matched_rule": "规则 1：诊股类 - 纯标的映射"
+  },
+  {
+    "original_query": "分析英利汽车",
+    "matched_rule": "规则 1：诊股类 - 纯标的映射"
+  },
+  {
+    "original_query": "赵延鑫要晚上挂单量是多少",
+    "matched_rule": "无"
+  },
+  {
+    "original_query": "在哪里查看游资买入资金量",
+    "matched_rule": "规则 8：知识库类 - 软件操作"
+  },
+  {
+    "original_query": "大盘量能",
+    "matched_rule": "规则 7：知识库类 - 概念询问"
+  },
+  {
+    "original_query": "利欧股份股票停牌什么时间复牌",
+    "matched_rule": "无"
+  },
+  {
+    "original_query": "今天九丰能源今天未能封板的原因是什么",
+    "matched_rule": "无"
+  },
+  {
+    "original_query": "乐凯胶片",
+    "matched_rule": "规则 1：诊股类 - 纯标的映射"
+  },
+  {
+    "original_query": "一日资金增长在百分之四以上的股票",
+    "matched_rule": "规则 4：选股类 - 裸条件映射"
+  },
+  {
+    "original_query": "查找锁定因子LFS在60以上的股票",
+    "matched_rule": "规则 4：选股类 - 裸条件映射"
+  },
+  {
+    "original_query": "今天底位首板股票",
+    "matched_rule": "规则 4：选股类 - 裸条件映射"
+  },
+  {
+    "original_query": "锁定因子是什么",
+    "matched_rule": "规则 7：知识库类 - 概念询问"
+  },
+  {
+    "original_query": "分时图上出现那个潜伏吸筹的黄色柱状代表什么意思",
+    "matched_rule": "规则 7：知识库类 - 概念询问"
+  },
+  {
+    "original_query": "旋极信息还会涨吗",
+    "matched_rule": "规则 3：预测类 - 时空穿梭映射"
+  },
+  {
+    "original_query": "中电鑫龙后面会怎么样的走势",
+    "matched_rule": "规则 3：预测类 - 时空穿梭映射"
+  },
+  {
+    "original_query": "航空发展往后怎么走，是走还是留",
+    "matched_rule": "规则 3：预测类 - 时空穿梭映射"
+  },
+  {
+    "original_query": "Al+制造有那些股票",
+    "matched_rule": "规则 2：选股类 - 纯板块映射"
+  },
+  {
+    "original_query": "陈小群交易策略",
+    "matched_rule": "规则 5：策略类 - 策略查询"
+  },
+  {
+    "original_query": "所有帐户都可交易基金吗",
+    "matched_rule": "无"
+  },
+  {
+    "original_query": "IDc概念股",
+    "matched_rule": "规则 2：选股类 - 纯板块映射"
+  },
+  {
+    "original_query": "现在的主线是什么",
+    "matched_rule": "无"
+  },
+  {
+    "original_query": "汇得科技怎样",
+    "matched_rule": "规则 1：诊股类 - 纯标的映射"
+  },
+  {
+    "original_query": "看看贵州茅台今天的分时图",
+    "matched_rule": "无"
+  },
+  {
+    "original_query": "帮我分析一下诲峡环保",
+    "matched_rule": "规则 1：诊股类 - 纯标的映射"
+  },
+  {
+    "original_query": "明日有哪些股票值得关注？",
+    "matched_rule": "无"
+  },
+  {
+    "original_query": "AI应用有哪些个走走的强势",
+    "matched_rule": "规则 4：选股类 - 裸条件映射"
+  },
+  {
+    "original_query": "发一下深证成指今日最新的分时图。",
+    "matched_rule": "无"
+  },
+  {
+    "original_query": "三安光电未来走势",
+    "matched_rule": "规则 3：预测类 - 时空穿梭映射"
+  },
+  {
+    "original_query": "博纳影业1日多空资金有多少",
+    "matched_rule": "规则 6：指标查询类 - 指标查询"
+  },
+  {
+    "original_query": "帮我分析一下北方稀土",
+    "matched_rule": "无"
+  },
+  {
+    "original_query": "同时涉及航天军工和AI智能的股票",
+    "matched_rule": "规则 4：选股类 - 裸条件映射"
+  },
+  {
+    "original_query": "博纳影业",
+    "matched_rule": "规则 1：诊股类 - 纯标的映射"
+  },
+  {
+    "original_query": "烽火通信今天涨停的原因",
+    "matched_rule": "无"
+  },
+  {
+    "original_query": "603817怎么看",
+    "matched_rule": "规则 1：诊股类 - 纯标的映射"
+  },
+  {
+    "original_query": "明天天气怎么样？",
+    "matched_rule": "无"
+  },
+  {
+    "original_query": "指南针软件自选删除了能不能恢复",
+    "matched_rule": "无"
+  }
+]

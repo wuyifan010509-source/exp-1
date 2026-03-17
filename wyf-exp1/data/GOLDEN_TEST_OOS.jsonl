@@ -1,0 +1,24 @@
+{"query": "实在太我亏了50万都不想活了", "true_level": "high", "class_label": 2, "true_cost": 3000, "original_category": "OOS", "original_cost_label": 3000, "level": null, "cost_label": null, "llm_error_prob": null}
+{"query": "绝对我觉得人生绝望了了", "true_level": "high", "class_label": 2, "true_cost": 3000, "original_category": "OOS", "original_cost_label": 3000, "level": null, "cost_label": null, "llm_error_prob": null}
+{"query": "我要申请退款，不然我就投诉到消协。", "true_level": "high", "class_label": 2, "true_cost": 3000, "original_category": "OOS", "original_cost_label": 3000, "level": null, "cost_label": null, "llm_error_prob": null}
+{"query": "立刻我想结束这一切", "true_level": "high", "class_label": 2, "true_cost": 3000, "original_category": "OOS", "original_cost_label": 3000, "level": null, "cost_label": null, "llm_error_prob": null}
+{"query": "我要报警！", "true_level": "high", "class_label": 2, "true_cost": 3000, "original_category": "OOS", "original_cost_label": 3000, "level": null, "cost_label": null, "llm_error_prob": null}
+{"query": "账户被盗用了", "true_level": "high", "class_label": 2, "true_cost": 3000, "original_category": "OOS", "original_cost_label": 3000, "level": null, "cost_label": null, "llm_error_prob": null}
+{"query": "都是骗人的", "true_level": "high", "class_label": 2, "true_cost": 3000, "original_category": "OOS", "original_cost_label": 3000, "level": null, "cost_label": null, "llm_error_prob": null}
+{"query": "商业航天都有什么股票，下周走势建议个股", "true_level": "mid", "class_label": 1, "true_cost": 50, "original_category": "OOS", "original_cost_label": 50, "level": null, "cost_label": null, "llm_error_prob": null}
+{"query": "未来国家往哪几个方向发展？关键到哪几个方面的股票", "true_level": "mid", "class_label": 1, "true_cost": 50, "original_category": "OOS", "original_cost_label": 50, "level": null, "cost_label": null, "llm_error_prob": null}
+{"query": "山东墨龙 挂单量以及后市如何判断", "true_level": "mid", "class_label": 1, "true_cost": 50, "original_category": "OOS", "original_cost_label": 50, "level": null, "cost_label": null, "llm_error_prob": null}
+{"query": "代码300855的股票未来可期？如何止盈止损", "true_level": "mid", "class_label": 1, "true_cost": 50, "original_category": "OOS", "original_cost_label": 50, "level": null, "cost_label": null, "llm_error_prob": null}
+{"query": "科大讯飞股票支撑位、压力位各是多少？未来5个交易日走势如何？今天是否适合买入？", "true_level": "mid", "class_label": 1, "true_cost": 50, "original_category": "OOS", "original_cost_label": 50, "level": null, "cost_label": null, "llm_error_prob": null}
+{"query": "恒生电子涨停的逻辑是啥?同类型的股票有哪些？", "true_level": "mid", "class_label": 1, "true_cost": 50, "original_category": "OOS", "original_cost_label": 50, "level": null, "cost_label": null, "llm_error_prob": null}
+{"query": "根据今日上证指数及盘面上所有数据分析一下明天。资金会主力集中分布在哪些板块？", "true_level": "mid", "class_label": 1, "true_cost": 50, "original_category": "OOS", "original_cost_label": 50, "level": null, "cost_label": null, "llm_error_prob": null}
+{"query": "分析化工新材料股里与商业航天及新能源相关的化工新材料公司并推荐", "true_level": "mid", "class_label": 1, "true_cost": 50, "original_category": "OOS", "original_cost_label": 50, "level": null, "cost_label": null, "llm_error_prob": null}
+{"query": "帮我选一下子啊，诊股一里头那个四项能力叠加的股票呗。适合于短线开仓的。", "true_level": "mid", "class_label": 1, "true_cost": 50, "original_category": "OOS", "original_cost_label": 50, "level": null, "cost_label": null, "llm_error_prob": null}
+{"query": "医保异地结算", "true_level": "low", "class_label": 0, "true_cost": 1, "original_category": "OOS", "original_cost_label": 1, "level": null, "cost_label": null, "llm_error_prob": null}
+{"query": "门诊怎么报销", "true_level": "low", "class_label": 0, "true_cost": 1, "original_category": "OOS", "original_cost_label": 1, "level": null, "cost_label": null, "llm_error_prob": null}
+{"query": "工伤保险认定", "true_level": "low", "class_label": 0, "true_cost": 1, "original_category": "OOS", "original_cost_label": 1, "level": null, "cost_label": null, "llm_error_prob": null}
+{"query": "怎么投诉商家", "true_level": "low", "class_label": 0, "true_cost": 1, "original_category": "OOS", "original_cost_label": 1, "level": null, "cost_label": null, "llm_error_prob": null}
+{"query": "水电费怎么交", "true_level": "low", "class_label": 0, "true_cost": 1, "original_category": "OOS", "original_cost_label": 1, "level": null, "cost_label": null, "llm_error_prob": null}
+{"query": "违章查询", "true_level": "low", "class_label": 0, "true_cost": 1, "original_category": "OOS", "original_cost_label": 1, "level": null, "cost_label": null, "llm_error_prob": null}
+{"query": "幼儿园报名", "true_level": "low", "class_label": 0, "true_cost": 1, "original_category": "OOS", "original_cost_label": 1, "level": null, "cost_label": null, "llm_error_prob": null}
+{"query": "信用卡怎么还款", "true_level": "low", "class_label": 0, "true_cost": 1, "original_category": "OOS", "original_cost_label": 1, "level": null, "cost_label": null, "llm_error_prob": null}

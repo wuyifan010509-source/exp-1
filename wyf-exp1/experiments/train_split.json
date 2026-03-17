@@ -1,0 +1,1042 @@
+[
+  {
+    "original_query": "沪市的高成长高毛利率低估值绩优科技股",
+    "matched_rule": "规则 4：选股类 - 裸条件映射"
+  },
+  {
+    "original_query": "你真呆",
+    "matched_rule": "无"
+  },
+  {
+    "original_query": "分析一下璞泰来",
+    "matched_rule": "规则 1：诊股类 - 纯标的映射"
+  },
+  {
+    "original_query": "帮我分析一下凯盛科技",
+    "matched_rule": "无"
+  },
+  {
+    "original_query": "选一只航天短现股票",
+    "matched_rule": "无"
+  },
+  {
+    "original_query": "擒龙平台是当天选出来，明天买入吗，还是当天买入",
+    "matched_rule": "规则 8：知识库类 - 软件操作"
+  },
+  {
+    "original_query": "301299名字是什么？",
+    "matched_rule": "规则 6：指标查询类 - 指标查询"
+  },
+  {
+    "original_query": "你与豆包有什么区别",
+    "matched_rule": "无"
+  },
+  {
+    "original_query": "帮我调出特斯拉昨天开盘到收盘的分时走势。",
+    "matched_rule": "无"
+  },
+  {
+    "original_query": "Ai企业应用落地方面股票",
+    "matched_rule": "规则 2：选股类 - 纯板块映射"
+  },
+  {
+    "original_query": "可以继续持吗",
+    "matched_rule": "无"
+  },
+  {
+    "original_query": "山子高科未来走势",
+    "matched_rule": "规则 3：预测类 - 时空穿梭映射"
+  },
+  {
+    "original_query": "中行西飞未来走势",
+    "matched_rule": "规则 3：预测类 - 时空穿梭映射"
+  },
+  {
+    "original_query": "帮我分析一下润和软件",
+    "matched_rule": "规则 1：诊股类 - 纯标的映射"
+  },
+  {
+    "original_query": "方正电机利润为什么涨几千倍",
+    "matched_rule": "无"
+  },
+  {
+    "original_query": "我想看一下宁德时代现在的分时图情况。",
+    "matched_rule": "无"
+  },
+  {
+    "original_query": "如何下载动态擒龙版PC版",
+    "matched_rule": "规则 8：知识库类 - 软件操作"
+  },
+  {
+    "original_query": "海马汽车明天优势",
+    "matched_rule": "规则 3：预测类 - 时空穿梭映射"
+  },
+  {
+    "original_query": "300170能帮我分析一下",
+    "matched_rule": "规则 1：诊股类 - 纯标的映射"
+  },
+  {
+    "original_query": "金风科技还会涨吗",
+    "matched_rule": "规则 3：预测类 - 时空穿梭映射"
+  },
+  {
+    "original_query": "康龙华真的大股东",
+    "matched_rule": "无"
+  },
+  {
+    "original_query": "创新医疗",
+    "matched_rule": "规则 1：诊股类 - 纯标的映射"
+  },
+  {
+    "original_query": "ETF基金是不是当天买当天可以卖",
+    "matched_rule": "无"
+  },
+  {
+    "original_query": "戴维斯风格策略是什么？",
+    "matched_rule": "规则 5：策略类 - 策略查询"
+  },
+  {
+    "original_query": "制造卫星的公司哪家业绩最好",
+    "matched_rule": "无"
+  },
+  {
+    "original_query": "航天工程昨夜有什么变动没有",
+    "matched_rule": "无"
+  },
+  {
+    "original_query": "竞价涨幅2—4主板股票",
+    "matched_rule": "规则 4：选股类 - 裸条件映射"
+  },
+  {
+    "original_query": "豪能股份",
+    "matched_rule": "规则 1：诊股类 - 纯标的映射"
+  },
+  {
+    "original_query": "科大讯飞明天能进去吗",
+    "matched_rule": "规则 3：预测类 - 时空穿梭映射"
+  },
+  {
+    "original_query": "哎，只能提",
+    "matched_rule": "无"
+  },
+  {
+    "original_query": "国内期货白天和夜盘怎么看",
+    "matched_rule": "无"
+  },
+  {
+    "original_query": "雷电微力未来走势",
+    "matched_rule": "规则 3：预测类 - 时空穿梭映射"
+  },
+  {
+    "original_query": "制造卫星的有哪几家公司",
+    "matched_rule": "无"
+  },
+  {
+    "original_query": "明天买什么票比较好",
+    "matched_rule": "无"
+  },
+  {
+    "original_query": "费雪创业板低估策略是什么？",
+    "matched_rule": "规则 5：策略类 - 策略查询"
+  },
+  {
+    "original_query": "601949趋势",
+    "matched_rule": "无"
+  },
+  {
+    "original_query": "指南针怎么实现量化工具自动买卖点",
+    "matched_rule": "无"
+  },
+  {
+    "original_query": "指南针擒龙版积分在哪里查看",
+    "matched_rule": "规则 8：知识库类 - 软件操作"
+  },
+  {
+    "original_query": "大宗交易买入的股票有锁定期吗？",
+    "matched_rule": "无"
+  },
+  {
+    "original_query": "碳酸锂期货为什么在9%是涨停",
+    "matched_rule": "无"
+  },
+  {
+    "original_query": "中远海发",
+    "matched_rule": "规则 1：诊股类 - 纯标的映射"
+  },
+  {
+    "original_query": "六大战区中有发生了大事",
+    "matched_rule": "无"
+  },
+  {
+    "original_query": "浙富控股后市行情如何",
+    "matched_rule": "规则 3：预测类 - 时空穿梭映射"
+  },
+  {
+    "original_query": "今天资金流入多的主线股票",
+    "matched_rule": "规则 4：选股类 - 裸条件映射"
+  },
+  {
+    "original_query": "兖矿能源未来走势",
+    "matched_rule": "规则 3：预测类 - 时空穿梭映射"
+  },
+  {
+    "original_query": "分析一下张江高科",
+    "matched_rule": "规则 1：诊股类 - 纯标的映射"
+  },
+  {
+    "original_query": "近期13日内主力资金净注入超过一亿，涨幅低于9%的，航天军工板块和计算机应用板块有哪些股票",
+    "matched_rule": "规则 4：选股类 - 裸条件映射"
+  },
+  {
+    "original_query": "金发科技可以继续持有吗",
+    "matched_rule": "无"
+  },
+  {
+    "original_query": "预测一下明天潍柴重机的走势",
+    "matched_rule": "规则 3：预测类 - 时空穿梭映射"
+  },
+  {
+    "original_query": "具体有那些股票",
+    "matched_rule": "无"
+  },
+  {
+    "original_query": "90%筹码和30%筹码有什么意义",
+    "matched_rule": "规则 7：知识库类 - 概念询问"
+  },
+  {
+    "original_query": "预测上榜的理由是什么？",
+    "matched_rule": "无"
+  },
+  {
+    "original_query": "近期13日内主力资金净注入超过1亿，涨幅低于4%的，有哪些股票",
+    "matched_rule": "规则 4：选股类 - 裸条件映射"
+  },
+  {
+    "original_query": "可控核聚变成分股有哪些？",
+    "matched_rule": "规则 2：选股类 - 纯板块映射"
+  },
+  {
+    "original_query": "卫星充电电源概念股",
+    "matched_rule": "规则 2：选股类 - 纯板块映射"
+  },
+  {
+    "original_query": "如何制定我的交易计划",
+    "matched_rule": "无"
+  },
+  {
+    "original_query": "宁波华翔后市如何",
+    "matched_rule": "规则 3：预测类 - 时空穿梭映射"
+  },
+  {
+    "original_query": "002151趋势",
+    "matched_rule": "无"
+  },
+  {
+    "original_query": "分析一下菲利华为什么连跌",
+    "matched_rule": "无"
+  },
+  {
+    "original_query": "席位怎么调出",
+    "matched_rule": "无"
+  },
+  {
+    "original_query": "你问，你问什么",
+    "matched_rule": "无"
+  },
+  {
+    "original_query": "自选删除了还能不能恢复",
+    "matched_rule": "无"
+  },
+  {
+    "original_query": "帮我分析一下漫步者",
+    "matched_rule": "无"
+  },
+  {
+    "original_query": "90%筹码和70%筹码有什么意义",
+    "matched_rule": "规则 7：知识库类 - 概念询问"
+  },
+  {
+    "original_query": "近期13日内主力资金净注入超过1亿，涨幅低于4%的股票",
+    "matched_rule": "规则 4：选股类 - 裸条件映射"
+  },
+  {
+    "original_query": "600570股票资金流入情况",
+    "matched_rule": "规则 6：指标查询类 - 指标查询"
+  },
+  {
+    "original_query": "紫光股份",
+    "matched_rule": "规则 1：诊股类 - 纯标的映射"
+  },
+  {
+    "original_query": "帮我分析一下中京电子",
+    "matched_rule": "无"
+  },
+  {
+    "original_query": "近期5日内主力资金净注入超过6千万，涨幅低于9%的，航天军工板块和计算机应用板块、原件板块、光学光电子板块、传媒板块有哪些股票",
+    "matched_rule": "规则 4：选股类 - 裸条件映射"
+  },
+  {
+    "original_query": "指南针股票软件的集合竞价分析如何用",
+    "matched_rule": "规则 8：知识库类 - 软件操作"
+  },
+  {
+    "original_query": "当前公告业绩预增的股票",
+    "matched_rule": "规则 4：选股类 - 裸条件映射"
+  },
+  {
+    "original_query": "发我一下东方财富今年以来的K线图。",
+    "matched_rule": "无"
+  },
+  {
+    "original_query": "分析天汽模",
+    "matched_rule": "规则 1：诊股类 - 纯标的映射"
+  },
+  {
+    "original_query": "600536未来的走势",
+    "matched_rule": "规则 3：预测类 - 时空穿梭映射"
+  },
+  {
+    "original_query": "指南针的股民日记在哪里",
+    "matched_rule": "无"
+  },
+  {
+    "original_query": "高成长高毛利率绩优科技股",
+    "matched_rule": "规则 4：选股类 - 裸条件映射"
+  },
+  {
+    "original_query": "K线中圈中定是什么意思",
+    "matched_rule": "规则 7：知识库类 - 概念询问"
+  },
+  {
+    "original_query": "手机版指南针软件如何操作",
+    "matched_rule": "规则 8：知识库类 - 软件操作"
+  },
+  {
+    "original_query": "商业卫星有那些股票",
+    "matched_rule": "规则 2：选股类 - 纯板块映射"
+  },
+  {
+    "original_query": "帮我分析下银轮股份",
+    "matched_rule": "规则 1：诊股类 - 纯标的映射"
+  },
+  {
+    "original_query": "分析一下众兴菌业",
+    "matched_rule": "规则 1：诊股类 - 纯标的映射"
+  },
+  {
+    "original_query": "卫星ETF明天走势",
+    "matched_rule": "规则 3：预测类 - 时空穿梭映射"
+  },
+  {
+    "original_query": "力鸿一号飞行成功 背后的意义是什么",
+    "matched_rule": "无"
+  },
+  {
+    "original_query": "行业核心是什么意思",
+    "matched_rule": "规则 7：知识库类 - 概念询问"
+  },
+  {
+    "original_query": "近期5日内主力资金净注入超过一亿，涨幅低于9%的，航天军工板块和计算机应用板块有哪些股票",
+    "matched_rule": "规则 4：选股类 - 裸条件映射"
+  },
+  {
+    "original_query": "苹果笔记本怎么使用指南针炒股软件",
+    "matched_rule": "规则 8：知识库类 - 软件操作"
+  },
+  {
+    "original_query": "帮我分析一下南网科技",
+    "matched_rule": "无"
+  },
+  {
+    "original_query": "商业航天低位股票分析下",
+    "matched_rule": "规则 1：诊股类 - 纯标的映射"
+  },
+  {
+    "original_query": "歌尔股份属于科技股吗",
+    "matched_rule": "无"
+  },
+  {
+    "original_query": "近期5日内主力资金净注入超过5千万，涨幅低于4%的，航天军工板块和计算机应用板块有哪些股票",
+    "matched_rule": "规则 4：选股类 - 裸条件映射"
+  },
+  {
+    "original_query": "可以当天买当天卖吗",
+    "matched_rule": "无"
+  },
+  {
+    "original_query": "北证股票是什么意思",
+    "matched_rule": "规则 7：知识库类 - 概念询问"
+  },
+  {
+    "original_query": "近期5日内主力资金净注入超过一亿，涨幅低于9%的，航天军工板块和计算机应用板块、原件板块、光学光电子板块、传媒板块有哪些股票",
+    "matched_rule": "规则 4：选股类 - 裸条件映射"
+  },
+  {
+    "original_query": "ai+概念股",
+    "matched_rule": "规则 2：选股类 - 纯板块映射"
+  },
+  {
+    "original_query": "帮我分析一下三六零",
+    "matched_rule": "规则 1：诊股类 - 纯标的映射"
+  },
+  {
+    "original_query": "159218ETF",
+    "matched_rule": "规则 1：诊股类 - 纯标的映射"
+  },
+  {
+    "original_query": "水晶光电",
+    "matched_rule": "规则 1：诊股类 - 纯标的映射"
+  },
+  {
+    "original_query": "值在25以上的个股找出来",
+    "matched_rule": "规则 4：选股类 - 裸条件映射"
+  },
+  {
+    "original_query": "股权投资的股票",
+    "matched_rule": "规则 2：选股类 - 纯板块映射"
+  },
+  {
+    "original_query": "今日收盘首板，市值小于500亿，半年内涨停少于3次的不要，一年内爆涨超过40%以上的淘汰，有板块效益的股票有哪些",
+    "matched_rule": "规则 4：选股类 - 裸条件映射"
+  },
+  {
+    "original_query": "300324明天走势分析",
+    "matched_rule": "规则 3：预测类 - 时空穿梭映射"
+  },
+  {
+    "original_query": "同时涉及航天和AI的股票",
+    "matched_rule": "规则 2：选股类 - 纯板块映射"
+  },
+  {
+    "original_query": "帮我调一下比亚迪最近三个月的日K线图。",
+    "matched_rule": "无"
+  },
+  {
+    "original_query": "华西股份发行价格是多少",
+    "matched_rule": "无"
+  },
+  {
+    "original_query": "6000498是那一板块的",
+    "matched_rule": "规则 6：指标查询类 - 指标查询"
+  },
+  {
+    "original_query": "龙溪股份明天的走势",
+    "matched_rule": "规则 3：预测类 - 时空穿梭映射"
+  },
+  {
+    "original_query": "明日润和软件如何操作？",
+    "matched_rule": "规则 3：预测类 - 时空穿梭映射"
+  },
+  {
+    "original_query": "刚刚强势走强的板块有哪些",
+    "matched_rule": "规则 4：选股类 - 裸条件映射"
+  },
+  {
+    "original_query": "电子半导体材料股票有那些",
+    "matched_rule": "规则 2：选股类 - 纯板块映射"
+  },
+  {
+    "original_query": "独角兽概念今天涨停的股票",
+    "matched_rule": "规则 4：选股类 - 裸条件映射"
+  },
+  {
+    "original_query": "关于完成工商变更登记的公吿有哪些",
+    "matched_rule": "无"
+  },
+  {
+    "original_query": "分时图上出现机构扫货的线那个指标以后是什么意思",
+    "matched_rule": "规则 7：知识库类 - 概念询问"
+  },
+  {
+    "original_query": "核聚变有哪些行业，包括哪些板块",
+    "matched_rule": "规则 7：知识库类 - 概念询问"
+  },
+  {
+    "original_query": "基金的手续费是多少",
+    "matched_rule": "无"
+  },
+  {
+    "original_query": "002324可以继续持有吗",
+    "matched_rule": "无"
+  },
+  {
+    "original_query": "301299未来趋势",
+    "matched_rule": "规则 3：预测类 - 时空穿梭映射"
+  },
+  {
+    "original_query": "那方面的股票能翻十倍",
+    "matched_rule": "无"
+  },
+  {
+    "original_query": "K线图上蓝色和紫色K线是什么意思",
+    "matched_rule": "规则 7：知识库类 - 概念询问"
+  },
+  {
+    "original_query": "天融信有一波反弹吗",
+    "matched_rule": "无"
+  },
+  {
+    "original_query": "股票严重异动对股票有什么影响",
+    "matched_rule": "无"
+  },
+  {
+    "original_query": "帮我分析一下药明康德",
+    "matched_rule": "规则 1：诊股类 - 纯标的映射"
+  },
+  {
+    "original_query": "海上回收概念股票",
+    "matched_rule": "规则 2：选股类 - 纯板块映射"
+  },
+  {
+    "original_query": "商业航天卫星供电概念股",
+    "matched_rule": "规则 2：选股类 - 纯板块映射"
+  },
+  {
+    "original_query": "沪市的高成长高毛利率绩优科技股",
+    "matched_rule": "规则 4：选股类 - 裸条件映射"
+  },
+  {
+    "original_query": "为什么预测上榜的股票，涨幅>7%才列入该股票池？",
+    "matched_rule": "无"
+  },
+  {
+    "original_query": "海立股份B转A完成了吗",
+    "matched_rule": "无"
+  },
+  {
+    "original_query": "603011",
+    "matched_rule": "规则 1：诊股类 - 纯标的映射"
+  },
+  {
+    "original_query": "三六零",
+    "matched_rule": "规则 1：诊股类 - 纯标的映射"
+  },
+  {
+    "original_query": "科大讯飞",
+    "matched_rule": "规则 1：诊股类 - 纯标的映射"
+  },
+  {
+    "original_query": "估值空间怎么调出",
+    "matched_rule": "无"
+  },
+  {
+    "original_query": "上证基金和深证基金手续费有差别吗？比股票少吗？",
+    "matched_rule": "无"
+  },
+  {
+    "original_query": "德固特分析一下",
+    "matched_rule": "规则 1：诊股类 - 纯标的映射"
+  },
+  {
+    "original_query": "Al应用有那些股票",
+    "matched_rule": "规则 2：选股类 - 纯板块映射"
+  },
+  {
+    "original_query": "丰信生物",
+    "matched_rule": "规则 1：诊股类 - 纯标的映射"
+  },
+  {
+    "original_query": "业绩预增50％的股票",
+    "matched_rule": "规则 4：选股类 - 裸条件映射"
+  },
+  {
+    "original_query": "600150的走势",
+    "matched_rule": "无"
+  },
+  {
+    "original_query": "康龙化成。腰骨",
+    "matched_rule": "无"
+  },
+  {
+    "original_query": "股票涨幅触发严重异动是啥意思",
+    "matched_rule": "规则 7：知识库类 - 概念询问"
+  },
+  {
+    "original_query": "永鼎股份今天回落的原因",
+    "matched_rule": "无"
+  },
+  {
+    "original_query": "查找锁定因子LFS在60以上的股票",
+    "matched_rule": "规则 4：选股类 - 裸条件映射"
+  },
+  {
+    "original_query": "风险等级问题",
+    "matched_rule": "规则 7：知识库类 - 概念询问"
+  },
+  {
+    "original_query": "风险等级A5是最高的吗？",
+    "matched_rule": "无"
+  },
+  {
+    "original_query": "陈小群持仓的股票",
+    "matched_rule": "规则 4：选股类 - 裸条件映射"
+  },
+  {
+    "original_query": "芒果超媒",
+    "matched_rule": "规则 1：诊股类 - 纯标的映射"
+  },
+  {
+    "original_query": "沪电股份",
+    "matched_rule": "规则 1：诊股类 - 纯标的映射"
+  },
+  {
+    "original_query": "怎么查北向资金动向",
+    "matched_rule": "规则 7：知识库类 - 概念询问"
+  },
+  {
+    "original_query": "由可控核聚变和航天发展的股票有哪些？",
+    "matched_rule": "规则 4：选股类 - 裸条件映射"
+  },
+  {
+    "original_query": "近期5日内主力资金净注入超过1亿，涨幅低于4%，航天军工板块有哪些股票",
+    "matched_rule": "规则 4：选股类 - 裸条件映射"
+  },
+  {
+    "original_query": "卧龙电驱后期走势",
+    "matched_rule": "规则 3：预测类 - 时空穿梭映射"
+  },
+  {
+    "original_query": "海光信息最近为什么一直盘着",
+    "matched_rule": "无"
+  },
+  {
+    "original_query": "推荐明天买入的股票",
+    "matched_rule": "无"
+  },
+  {
+    "original_query": "航天板块资金流入多且涨幅小的股票列出来",
+    "matched_rule": "规则 4：选股类 - 裸条件映射"
+  },
+  {
+    "original_query": "常山北明今天的表现不错帮我分析下原因",
+    "matched_rule": "无"
+  },
+  {
+    "original_query": "上海机场有利好消息吗？",
+    "matched_rule": "无"
+  },
+  {
+    "original_query": "300803的概念板块是什么",
+    "matched_rule": "规则 6：指标查询类 - 指标查询"
+  },
+  {
+    "original_query": "莱宝高科",
+    "matched_rule": "规则 1：诊股类 - 纯标的映射"
+  },
+  {
+    "original_query": "IDC行业是什么行业",
+    "matched_rule": "规则 7：知识库类 - 概念询问"
+  },
+  {
+    "original_query": "中国能建",
+    "matched_rule": "规则 1：诊股类 - 纯标的映射"
+  },
+  {
+    "original_query": "字体大点",
+    "matched_rule": "无"
+  },
+  {
+    "original_query": "福安药业",
+    "matched_rule": "规则 1：诊股类 - 纯标的映射"
+  },
+  {
+    "original_query": "今日收盘首板，市值小于300亿，半年内涨停少于3次的不要，一年内爆涨超过40%以上的淘汰，有板块效益的股票有哪些",
+    "matched_rule": "规则 4：选股类 - 裸条件映射"
+  },
+  {
+    "original_query": "今年电子半导体概念和板块是不是国家扶持政策和补贴政策呢",
+    "matched_rule": "无"
+  },
+  {
+    "original_query": "捷成股份明天会高开直线拉升涨停吗",
+    "matched_rule": "规则 3：预测类 - 时空穿梭映射"
+  },
+  {
+    "original_query": "华西股份",
+    "matched_rule": "规则 1：诊股类 - 纯标的映射"
+  },
+  {
+    "original_query": "603228交易策略。",
+    "matched_rule": "规则 5：策略类 - 策略查询"
+  },
+  {
+    "original_query": "对股票什",
+    "matched_rule": "无"
+  },
+  {
+    "original_query": "电气风电怎么样？",
+    "matched_rule": "无"
+  },
+  {
+    "original_query": "指南针K綫图中园圈战是什么意思",
+    "matched_rule": "规则 8：知识库类 - 软件操作"
+  },
+  {
+    "original_query": "上海电影未来趋势",
+    "matched_rule": "规则 3：预测类 - 时空穿梭映射"
+  },
+  {
+    "original_query": "分析一下北矿检测未来的发展趋势。",
+    "matched_rule": "规则 3：预测类 - 时空穿梭映射"
+  },
+  {
+    "original_query": "股市中GEO概念指的是哪方面",
+    "matched_rule": "规则 7：知识库类 - 概念询问"
+  },
+  {
+    "original_query": "京津冀一体化的标的股",
+    "matched_rule": "规则 2：选股类 - 纯板块映射"
+  },
+  {
+    "original_query": "再升科技",
+    "matched_rule": "规则 1：诊股类 - 纯标的映射"
+  },
+  {
+    "original_query": "帮我分析一下京东方a",
+    "matched_rule": "无"
+  },
+  {
+    "original_query": "AI十能翻倍的股票",
+    "matched_rule": "规则 4：选股类 - 裸条件映射"
+  },
+  {
+    "original_query": "岩山科技是龙头吗",
+    "matched_rule": "无"
+  },
+  {
+    "original_query": "截止到1月12日陈小群持股情况",
+    "matched_rule": "规则 6：指标查询类 - 指标查询"
+  },
+  {
+    "original_query": "社保大量持仓策略是什么？",
+    "matched_rule": "规则 5：策略类 - 策略查询"
+  },
+  {
+    "original_query": "你是哪家公司开发的大模型助手？",
+    "matched_rule": "无"
+  },
+  {
+    "original_query": "000917",
+    "matched_rule": "规则 1：诊股类 - 纯标的映射"
+  },
+  {
+    "original_query": "能给我看一下腾讯控股的周K线走势吗？",
+    "matched_rule": "无"
+  },
+  {
+    "original_query": "多模态大模型相关股票有哪些",
+    "matched_rule": "规则 2：选股类 - 纯板块映射"
+  },
+  {
+    "original_query": "天下秀",
+    "matched_rule": "规则 1：诊股类 - 纯标的映射"
+  },
+  {
+    "original_query": "与火箭发射成绩有关的股票",
+    "matched_rule": "规则 2：选股类 - 纯板块映射"
+  },
+  {
+    "original_query": "成分骨有哪些",
+    "matched_rule": "规则 2：选股类 - 纯板块映射"
+  },
+  {
+    "original_query": "我不想跟机器说话，你能帮我转接人工吗？",
+    "matched_rule": "无"
+  },
+  {
+    "original_query": "明日买什么",
+    "matched_rule": "无"
+  },
+  {
+    "original_query": "我想看下上证指数去年下半年的历史走势图。",
+    "matched_rule": "无"
+  },
+  {
+    "original_query": "捷超股份明天会高开直线拉升涨停吗",
+    "matched_rule": "规则 3：预测类 - 时空穿梭映射"
+  },
+  {
+    "original_query": "光通讯模块概念的总龙头是谁",
+    "matched_rule": "无"
+  },
+  {
+    "original_query": "万向钱潮股价快速回落，尾盘集合竞价大单买入",
+    "matched_rule": "无"
+  },
+  {
+    "original_query": "帮我分析一下，生益科技。",
+    "matched_rule": "规则 1：诊股类 - 纯标的映射"
+  },
+  {
+    "original_query": "603703能进吗",
+    "matched_rule": "无"
+  },
+  {
+    "original_query": "你是谁？",
+    "matched_rule": "无"
+  },
+  {
+    "original_query": "Al玩具股票",
+    "matched_rule": "规则 2：选股类 - 纯板块映射"
+  },
+  {
+    "original_query": "核聚变核心股有那几个",
+    "matched_rule": "规则 2：选股类 - 纯板块映射"
+  },
+  {
+    "original_query": "航天工程昨夜有什么变动没有",
+    "matched_rule": "无"
+  },
+  {
+    "original_query": "锁定因子在股市中的作用",
+    "matched_rule": "规则 7：知识库类 - 概念询问"
+  },
+  {
+    "original_query": "你能帮我做些什么？",
+    "matched_rule": "无"
+  },
+  {
+    "original_query": "海光信息未来可期吗",
+    "matched_rule": "规则 3：预测类 - 时空穿梭映射"
+  },
+  {
+    "original_query": "给我简单介绍一下你自己",
+    "matched_rule": "无"
+  },
+  {
+    "original_query": "股票航天发展明天会崩盘嘛",
+    "matched_rule": "规则 3：预测类 - 时空穿梭映射"
+  },
+  {
+    "original_query": "中航机载要清仓吗",
+    "matched_rule": "无"
+  },
+  {
+    "original_query": "商业航天上游股票",
+    "matched_rule": "规则 2：选股类 - 纯板块映射"
+  },
+  {
+    "original_query": "高管增持策略是什么？",
+    "matched_rule": "规则 5：策略类 - 策略查询"
+  },
+  {
+    "original_query": "火箭海上发射的公司有几个",
+    "matched_rule": "规则 4：选股类 - 裸条件映射"
+  },
+  {
+    "original_query": "筹码集中度高说明什么",
+    "matched_rule": "规则 7：知识库类 - 概念询问"
+  },
+  {
+    "original_query": "帮我分析一下索通发展",
+    "matched_rule": "规则 1：诊股类 - 纯标的映射"
+  },
+  {
+    "original_query": "高业航天有那些股票",
+    "matched_rule": "规则 2：选股类 - 纯板块映射"
+  },
+  {
+    "original_query": "楚江新林",
+    "matched_rule": "规则 1：诊股类 - 纯标的映射"
+  },
+  {
+    "original_query": "火箭海上回收的股票有几个？",
+    "matched_rule": "规则 4：选股类 - 裸条件映射"
+  },
+  {
+    "original_query": "因用股票",
+    "matched_rule": "规则 2：选股类 - 纯板块映射"
+  },
+  {
+    "original_query": "游资交易数据哪里看",
+    "matched_rule": "无"
+  },
+  {
+    "original_query": "中航西飞未来走势",
+    "matched_rule": "规则 3：预测类 - 时空穿梭映射"
+  },
+  {
+    "original_query": "你太笨了，",
+    "matched_rule": "无"
+  },
+  {
+    "original_query": "北矿检测",
+    "matched_rule": "规则 1：诊股类 - 纯标的映射"
+  },
+  {
+    "original_query": "无穷线是什么意思",
+    "matched_rule": "规则 7：知识库类 - 概念询问"
+  },
+  {
+    "original_query": "星源材质未来趋势",
+    "matched_rule": "规则 3：预测类 - 时空穿梭映射"
+  },
+  {
+    "original_query": "分析一下润和软件",
+    "matched_rule": "规则 1：诊股类 - 纯标的映射"
+  },
+  {
+    "original_query": "level2怎么开",
+    "matched_rule": "规则 8：知识库类 - 软件操作"
+  },
+  {
+    "original_query": "帮我拉一下苹果公司过去五年的月K线形态图。",
+    "matched_rule": "无"
+  },
+  {
+    "original_query": "中兴通讯还可以持有吗",
+    "matched_rule": "无"
+  },
+  {
+    "original_query": "帮我分析一下东田微",
+    "matched_rule": "无"
+  },
+  {
+    "original_query": "明天进哪个票",
+    "matched_rule": "无"
+  },
+  {
+    "original_query": "盐湖股份",
+    "matched_rule": "规则 1：诊股类 - 纯标的映射"
+  },
+  {
+    "original_query": "帮我分析一下东方钽业",
+    "matched_rule": "无"
+  },
+  {
+    "original_query": "科大国创下一步走势？",
+    "matched_rule": "规则 3：预测类 - 时空穿梭映射"
+  },
+  {
+    "original_query": "今日首板涨停的个股",
+    "matched_rule": "规则 4：选股类 - 裸条件映射"
+  },
+  {
+    "original_query": "明天航天发展怎么逃",
+    "matched_rule": "规则 3：预测类 - 时空穿梭映射"
+  },
+  {
+    "original_query": "明天直接强势股",
+    "matched_rule": "规则 4：选股类 - 裸条件映射"
+  },
+  {
+    "original_query": "明天可以入手可控核聚变哪些股票",
+    "matched_rule": "规则 4：选股类 - 裸条件映射"
+  },
+  {
+    "original_query": "兴业股份",
+    "matched_rule": "规则 1：诊股类 - 纯标的映射"
+  },
+  {
+    "original_query": "上升三法策略是什么？",
+    "matched_rule": "规则 5：策略类 - 策略查询"
+  },
+  {
+    "original_query": "今天首板股票",
+    "matched_rule": "规则 4：选股类 - 裸条件映射"
+  },
+  {
+    "original_query": "GEO是什么",
+    "matched_rule": "规则 7：知识库类 - 概念询问"
+  },
+  {
+    "original_query": "分析一下富瑞特装",
+    "matched_rule": "规则 1：诊股类 - 纯标的映射"
+  },
+  {
+    "original_query": "快憶电悌明天行情会上涨吗？",
+    "matched_rule": "规则 3：预测类 - 时空穿梭映射"
+  },
+  {
+    "original_query": "筹码分布中的重合度有什么意义",
+    "matched_rule": "规则 7：知识库类 - 概念询问"
+  },
+  {
+    "original_query": "美国加征关税政策对国内股市有什么影响吗",
+    "matched_rule": "无"
+  },
+  {
+    "original_query": "拓尔思有调研报告吗",
+    "matched_rule": "无"
+  },
+  {
+    "original_query": "炒基金是T十0吗",
+    "matched_rule": "无"
+  },
+  {
+    "original_query": "600570股票资金流入情况",
+    "matched_rule": "规则 6：指标查询类 - 指标查询"
+  },
+  {
+    "original_query": "分析一下920196",
+    "matched_rule": "规则 1：诊股类 - 纯标的映射"
+  },
+  {
+    "original_query": "海格通信",
+    "matched_rule": "规则 1：诊股类 - 纯标的映射"
+  },
+  {
+    "original_query": "能给我调一下招商银行今天上午的分时波动图吗？",
+    "matched_rule": "无"
+  },
+  {
+    "original_query": "分析下华胜天成",
+    "matched_rule": "规则 1：诊股类 - 纯标的映射"
+  },
+  {
+    "original_query": "深夜挂单有用吗",
+    "matched_rule": "无"
+  },
+  {
+    "original_query": "小米精选策略是什么？",
+    "matched_rule": "规则 5：策略类 - 策略查询"
+  },
+  {
+    "original_query": "近期热门概念前5个",
+    "matched_rule": "规则 2：选股类 - 纯板块映射"
+  },
+  {
+    "original_query": "高成长高毛利率低估值绩优科技股",
+    "matched_rule": "规则 4：选股类 - 裸条件映射"
+  },
+  {
+    "original_query": "航天电子未来一年走势",
+    "matched_rule": "规则 3：预测类 - 时空穿梭映射"
+  },
+  {
+    "original_query": "来一只超短股票",
+    "matched_rule": "无"
+  },
+  {
+    "original_query": "600184趋势",
+    "matched_rule": "无"
+  },
+  {
+    "original_query": "今天股价在11.47的股票是什么",
+    "matched_rule": "规则 4：选股类 - 裸条件映射"
+  },
+  {
+    "original_query": "帮我分析一下视觉中国",
+    "matched_rule": "无"
+  },
+  {
+    "original_query": "帮忙分析一下太钢不锈走势",
+    "matched_rule": "无"
+  },
+  {
+    "original_query": "陈小琴池庄的股票",
+    "matched_rule": "规则 2：选股类 - 纯板块映射"
+  },
+  {
+    "original_query": "信捷电器",
+    "matched_rule": "规则 1：诊股类 - 纯标的映射"
+  },
+  {
+    "original_query": "景旺电子交易策略。",
+    "matched_rule": "规则 5：策略类 - 策略查询"
+  },
+  {
+    "original_query": "怎么设置自动买卖",
+    "matched_rule": "无"
+  }
+]

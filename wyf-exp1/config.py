@@ -6,8 +6,8 @@ import os
 # ============ GPU模型配置 ============
 # 在您的GPU服务器上部署的模型
 BACKBONE_MODEL = "Qwen2.5-32B-Instruct"  # 或其他模型名称
-# BACKBONE_API_URL = "http://172.17.160.46:8080/v1"  # 修改为您的GPU服务器地址
-BACKBONE_API_URL="http://127.0.0.1:3002/v1"
+BACKBONE_API_URL = "http://172.17.160.46:8080/v1"  # 修改为您的GPU服务器地址
+# BACKBONE_API_URL="http://127.0.0.1:3002/v1"
 
 # ============ API配置 ============
 # DeepSeek API用于白盒初始化和变异

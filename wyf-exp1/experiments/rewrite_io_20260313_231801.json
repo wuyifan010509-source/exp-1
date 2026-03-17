@@ -1,0 +1,1952 @@
+[
+  {
+    "original_query": "Ai企业应用落地方面股票",
+    "rewritten_query": "请按条件筛选并列出 Ai企业应用落地方面 板块下的所有成分股名单。",
+    "matched_rule": "规则 2：选股类 - 纯板块映射",
+    "rewrite_raw": "{\n  \"matched_rule\": \"规则 2：选股类 - 纯板块映射\",\n  \"rewritten_query\": \"请按条件筛选并列出 Ai企业应用落地方面 板块下的所有成分股名单。\"\n}"
+  },
+  {
+    "original_query": "股票涨幅触发严重异动是啥意思",
+    "rewritten_query": "什么是股票涨幅触发严重异动",
+    "matched_rule": "规则 6：知识库类 - 概念询问",
+    "rewrite_raw": "{\n  \"matched_rule\": \"规则 6：知识库类 - 概念询问\",\n  \"rewritten_query\": \"什么是股票涨幅触发严重异动\"\n}"
+  },
+  {
+    "original_query": "成分骨有哪些",
+    "rewritten_query": "请按条件筛选并列出成份股板块下的所有成分股名单。",
+    "matched_rule": "规则 2：选股类 - 纯板块映射",
+    "rewrite_raw": "{\n  \"matched_rule\": \"规则 2：选股类 - 纯板块映射\",\n  \"rewritten_query\": \"请按条件筛选并列出成份股板块下的所有成分股名单。\"\n}"
+  },
+  {
+    "original_query": "301299未来趋势",
+    "rewritten_query": "请预测和推演301299未来的趋势。",
+    "matched_rule": "规则 3：预测类 - 时空穿梭映射",
+    "rewrite_raw": "{\n  \"matched_rule\": \"规则 3：预测类 - 时空穿梭映射\",\n  \"rewritten_query\": \"请预测和推演301299未来的趋势。\"\n}"
+  },
+  {
+    "original_query": "明天进哪个票",
+    "rewritten_query": "明天进哪个票",
+    "matched_rule": "",
+    "rewrite_raw": "{\n  \"matched_rule\": \"\",\n  \"rewritten_query\": \"明天进哪个票\"\n}"
+  },
+  {
+    "original_query": "核聚变核心股有那几个",
+    "rewritten_query": "请按条件筛选并列出核聚变核心板块下的所有成分股名单。",
+    "matched_rule": "规则 2：选股类 - 纯板块映射",
+    "rewrite_raw": "{\n  \"matched_rule\": \"规则 2：选股类 - 纯板块映射\",\n  \"rewritten_query\": \"请按条件筛选并列出核聚变核心板块下的所有成分股名单。\"\n}"
+  },
+  {
+    "original_query": "旋极信息还会涨吗",
+    "rewritten_query": "请预测和推演旋极信息下一步的前景。",
+    "matched_rule": "规则 3：预测类 - 时空穿梭映射",
+    "rewrite_raw": "{\n  \"matched_rule\": \"规则 3：预测类 - 时空穿梭映射\",\n  \"rewritten_query\": \"请预测和推演旋极信息下一步的前景。\"\n}"
+  },
+  {
+    "original_query": "指南针K綫图中园圈战是什么意思",
+    "rewritten_query": "什么是指南针K线图中的圆圈战",
+    "matched_rule": "规则 6：知识库类 - 概念询问",
+    "rewrite_raw": "{\n  \"matched_rule\": \"规则 6：知识库类 - 概念询问\",\n  \"rewritten_query\": \"什么是指南针K线图中的圆圈战\"\n}"
+  },
+  {
+    "original_query": "航空发展往后怎么走，是走还是留",
+    "rewritten_query": "请预测和推演航空发展往后的前景。",
+    "matched_rule": "规则 3：预测类 - 时空穿梭映射",
+    "rewrite_raw": "{\n  \"matched_rule\": \"规则 3：预测类 - 时空穿梭映射\",\n  \"rewritten_query\": \"请预测和推演航空发展往后的前景。\"\n}"
+  },
+  {
+    "original_query": "筹码集中度高说明什么",
+    "rewritten_query": "什么是筹码集中度高",
+    "matched_rule": "规则 6：知识库类 - 概念询问",
+    "rewrite_raw": "{\n  \"matched_rule\": \"规则 6：知识库类 - 概念询问\",\n  \"rewritten_query\": \"什么是筹码集中度高\"\n}"
+  },
+  {
+    "original_query": "明日有哪些股票值得关注？",
+    "rewritten_query": "明日有哪些股票值得关注？",
+    "matched_rule": "",
+    "rewrite_raw": "{\n  \"matched_rule\": \"\",\n  \"rewritten_query\": \"明日有哪些股票值得关注？\"\n}"
+  },
+  {
+    "original_query": "破净股是什么意思",
+    "rewritten_query": "什么是破净股",
+    "matched_rule": "规则 6：知识库类 - 概念询问",
+    "rewrite_raw": "{\n  \"matched_rule\": \"规则 6：知识库类 - 概念询问\",\n  \"rewritten_query\": \"什么是破净股\"\n}"
+  },
+  {
+    "original_query": "景旺电子交易策略。",
+    "rewritten_query": "请处理景旺电子交易策略的解析",
+    "matched_rule": "规则 4：策略类 - 策略查询",
+    "rewrite_raw": "{\n  \"matched_rule\": \"规则 4：策略类 - 策略查询\",\n  \"rewritten_query\": \"请处理景旺电子交易策略的解析\"\n}"
+  },
+  {
+    "original_query": "603228交易策略。",
+    "rewritten_query": "请处理603228交易策略的解析",
+    "matched_rule": "规则 4：策略类 - 策略查询",
+    "rewrite_raw": "{\n  \"matched_rule\": \"规则 4：策略类 - 策略查询\",\n  \"rewritten_query\": \"请处理603228交易策略的解析\"\n}"
+  },
+  {
+    "original_query": "如何判断筹码峰的股票涨跌态势",
+    "rewritten_query": "如何判断筹码峰的股票涨跌态势",
+    "matched_rule": "",
+    "rewrite_raw": "{\n  \"matched_rule\": \"\",\n  \"rewritten_query\": \"如何判断筹码峰的股票涨跌态势\"\n}"
+  },
+  {
+    "original_query": "多模态大模型相关股票有哪些",
+    "rewritten_query": "请按条件筛选并列出多模态大模型相关板块下的所有成分股名单。",
+    "matched_rule": "规则 2：选股类 - 纯板块映射",
+    "rewrite_raw": "{\n  \"matched_rule\": \"规则 2：选股类 - 纯板块映射\",\n  \"rewritten_query\": \"请按条件筛选并列出多模态大模型相关板块下的所有成分股名单。\"\n}"
+  },
+  {
+    "original_query": "席位怎么调出",
+    "rewritten_query": "席位怎么调出",
+    "matched_rule": null,
+    "rewrite_raw": "{\n  \"matched_rule\": null,\n  \"rewritten_query\": \"席位怎么调出\"\n}"
+  },
+  {
+    "original_query": "603228交易策略。",
+    "rewritten_query": "请处理603228交易策略的解析",
+    "matched_rule": "规则 4：策略类 - 策略查询",
+    "rewrite_raw": "{\n  \"matched_rule\": \"规则 4：策略类 - 策略查询\",\n  \"rewritten_query\": \"请处理603228交易策略的解析\"\n}"
+  },
+  {
+    "original_query": "帮我分析一下索通发展",
+    "rewritten_query": "帮我分析一下索通发展",
+    "matched_rule": "无",
+    "rewrite_raw": "{\n  \"matched_rule\": \"无\",\n  \"rewritten_query\": \"帮我分析一下索通发展\"\n}"
+  },
+  {
+    "original_query": "华西股份",
+    "rewritten_query": "请对华西股份这只股票进行综合评价、基本面和技术面的诊断。",
+    "matched_rule": "规则 1：诊股类 - 纯标的映射",
+    "rewrite_raw": "{\n  \"matched_rule\": \"规则 1：诊股类 - 纯标的映射\",\n  \"rewritten_query\": \"请对华西股份这只股票进行综合评价、基本面和技术面的诊断。\"\n}"
+  },
+  {
+    "original_query": "股票航天发展明天会崩盘嘛",
+    "rewritten_query": "请预测和推演航天发展明天的前景。",
+    "matched_rule": "规则 3：预测类 - 时空穿梭映射",
+    "rewrite_raw": "{\n  \"matched_rule\": \"规则 3：预测类 - 时空穿梭映射\",\n  \"rewritten_query\": \"请预测和推演航天发展明天的前景。\"\n}"
+  },
+  {
+    "original_query": "楚江新林",
+    "rewritten_query": "请对楚江新林这只股票进行综合评价、基本面和技术面的诊断。",
+    "matched_rule": "规则 1：诊股类 - 纯标的映射",
+    "rewrite_raw": "{\n  \"matched_rule\": \"规则 1：诊股类 - 纯标的映射\",\n  \"rewritten_query\": \"请对楚江新林这只股票进行综合评价、基本面和技术面的诊断。\"\n}"
+  },
+  {
+    "original_query": "今日首板涨停的个股",
+    "rewritten_query": "今日首板涨停的个股",
+    "matched_rule": "",
+    "rewrite_raw": "{\n  \"matched_rule\": \"\",\n  \"rewritten_query\": \"今日首板涨停的个股\"\n}"
+  },
+  {
+    "original_query": "航天板块资金流入多且涨幅小的股票列出来",
+    "rewritten_query": "请按条件筛选并列出航天板块下资金流入多且涨幅小的所有成分股名单。",
+    "matched_rule": "规则 2：选股类 - 纯板块映射",
+    "rewrite_raw": "{\n  \"matched_rule\": \"规则 2：选股类 - 纯板块映射\",\n  \"rewritten_query\": \"请按条件筛选并列出航天板块下资金流入多且涨幅小的所有成分股名单。\"\n}"
+  },
+  {
+    "original_query": "陈小琴池庄的股票",
+    "rewritten_query": "请按条件筛选并列出陈小琴池庄的股票板块下的所有成分股名单。",
+    "matched_rule": "规则 2：选股类 - 纯板块映射",
+    "rewrite_raw": "{\n  \"matched_rule\": \"规则 2：选股类 - 纯板块映射\",\n  \"rewritten_query\": \"请按条件筛选并列出陈小琴池庄的股票板块下的所有成分股名单。\"\n}"
+  },
+  {
+    "original_query": "300324明天走势分析",
+    "rewritten_query": "请预测和推演300324明天的走势、表现或前景。",
+    "matched_rule": "规则 3：预测类 - 时空穿梭映射",
+    "rewrite_raw": "{\n  \"matched_rule\": \"规则 3：预测类 - 时空穿梭映射\",\n  \"rewritten_query\": \"请预测和推演300324明天的走势、表现或前景。\"\n}"
+  },
+  {
+    "original_query": "筹码分布中的重合度有什么意义",
+    "rewritten_query": "什么是筹码分布中的重合度及其意义?",
+    "matched_rule": "规则 6：知识库类 - 概念询问",
+    "rewrite_raw": "{\n  \"matched_rule\": \"规则 6：知识库类 - 概念询问\",\n  \"rewritten_query\": \"什么是筹码分布中的重合度及其意义?\"\n}"
+  },
+  {
+    "original_query": "帮我分析一下润和软件",
+    "rewritten_query": "帮我分析一下润和软件",
+    "matched_rule": "无",
+    "rewrite_raw": "{\n  \"matched_rule\": \"无\",\n  \"rewritten_query\": \"帮我分析一下润和软件\"\n}"
+  },
+  {
+    "original_query": "自选删除了还能不能恢复",
+    "rewritten_query": "自选删除了还能不能恢复",
+    "matched_rule": "",
+    "rewrite_raw": "{\n  \"matched_rule\": \"\",\n  \"rewritten_query\": \"自选删除了还能不能恢复\"\n}"
+  },
+  {
+    "original_query": "再升科技",
+    "rewritten_query": "请对再升科技这只股票进行综合评价、基本面和技术面的诊断。",
+    "matched_rule": "规则 1：诊股类 - 纯标的映射",
+    "rewrite_raw": "{\n  \"matched_rule\": \"规则 1：诊股类 - 纯标的映射\",\n  \"rewritten_query\": \"请对再升科技这只股票进行综合评价、基本面和技术面的诊断。\"\n}"
+  },
+  {
+    "original_query": "指南针股票软件的集合竞价分析如何用",
+    "rewritten_query": "指南针股票软件的集合竞价分析如何用",
+    "matched_rule": "",
+    "rewrite_raw": "{\n  \"matched_rule\": \"\",\n  \"rewritten_query\": \"指南针股票软件的集合竞价分析如何用\"\n}"
+  },
+  {
+    "original_query": "中国能建",
+    "rewritten_query": "请对中国能建这只股票进行综合评价、基本面和技术面的诊断。",
+    "matched_rule": "规则 1：诊股类 - 纯标的映射",
+    "rewrite_raw": "{\n  \"matched_rule\": \"规则 1：诊股类 - 纯标的映射\",\n  \"rewritten_query\": \"请对中国能建这只股票进行综合评价、基本面和技术面的诊断。\"\n}"
+  },
+  {
+    "original_query": "在哪里查看游资买入资金量",
+    "rewritten_query": "在哪里查看游资买入资金量",
+    "matched_rule": "",
+    "rewrite_raw": "{\n  \"matched_rule\": \"\",\n  \"rewritten_query\": \"在哪里查看游资买入资金量\"\n}"
+  },
+  {
+    "original_query": "深夜挂单有用吗",
+    "rewritten_query": "深夜挂单有用吗",
+    "matched_rule": "",
+    "rewrite_raw": "{\n  \"matched_rule\": \"\",\n  \"rewritten_query\": \"深夜挂单有用吗\"\n}"
+  },
+  {
+    "original_query": "帮我分析一下漫步者",
+    "rewritten_query": "请对漫步者这只股票进行综合评价、基本面和技术面的诊断。",
+    "matched_rule": "规则 1：诊股类 - 纯标的映射",
+    "rewrite_raw": "{\n  \"matched_rule\": \"规则 1：诊股类 - 纯标的映射\",\n  \"rewritten_query\": \"请对漫步者这只股票进行综合评价、基本面和技术面的诊断。\"\n}"
+  },
+  {
+    "original_query": "指南针擒龙版积分在哪里查看",
+    "rewritten_query": "指南针擒龙版积分在哪里查看",
+    "matched_rule": "",
+    "rewrite_raw": "{\n  \"matched_rule\": \"\",\n  \"rewritten_query\": \"指南针擒龙版积分在哪里查看\"\n}"
+  },
+  {
+    "original_query": "601949趋势",
+    "rewritten_query": "601949趋势",
+    "matched_rule": "",
+    "rewrite_raw": "{\n  \"matched_rule\": \"\",\n  \"rewritten_query\": \"601949趋势\"\n}"
+  },
+  {
+    "original_query": "000560走势分析",
+    "rewritten_query": "请对 000560 这只股票进行综合评价、基本面和技术面的诊断。",
+    "matched_rule": "规则 1：诊股类 - 纯标的映射",
+    "rewrite_raw": "{\n  \"matched_rule\": \"规则 1：诊股类 - 纯标的映射\",\n  \"rewritten_query\": \"请对 000560 这只股票进行综合评价、基本面和技术面的诊断。\"\n}"
+  },
+  {
+    "original_query": "明日买什么",
+    "rewritten_query": "明日买什么",
+    "matched_rule": "",
+    "rewrite_raw": "{\n  \"matched_rule\": \"\",\n  \"rewritten_query\": \"明日买什么\"\n}"
+  },
+  {
+    "original_query": "三七互娱怎么看",
+    "rewritten_query": "请对三七互娱这只股票进行综合评价、基本面和技术面的诊断。",
+    "matched_rule": "规则 1：诊股类 - 纯标的映射",
+    "rewrite_raw": "{\n  \"matched_rule\": \"规则 1：诊股类 - 纯标的映射\",\n  \"rewritten_query\": \"请对三七互娱这只股票进行综合评价、基本面和技术面的诊断。\"\n}"
+  },
+  {
+    "original_query": "博纳影业",
+    "rewritten_query": "请对博纳影业这只股票进行综合评价、基本面和技术面的诊断。",
+    "matched_rule": "规则 1：诊股类 - 纯标的映射",
+    "rewrite_raw": "{\n  \"matched_rule\": \"规则 1：诊股类 - 纯标的映射\",\n  \"rewritten_query\": \"请对博纳影业这只股票进行综合评价、基本面和技术面的诊断。\"\n}"
+  },
+  {
+    "original_query": "给我简单介绍一下你自己",
+    "rewritten_query": "给我简单介绍一下你自己",
+    "matched_rule": "",
+    "rewrite_raw": "{\n  \"matched_rule\": \"\",\n  \"rewritten_query\": \"给我简单介绍一下你自己\"\n}"
+  },
+  {
+    "original_query": "怎么查北向资金动向",
+    "rewritten_query": "怎么查北向资金动向",
+    "matched_rule": null,
+    "rewrite_raw": "{\n  \"matched_rule\": null,\n  \"rewritten_query\": \"怎么查北向资金动向\"\n}"
+  },
+  {
+    "original_query": "我不想跟机器说话，你能帮我转接人工吗？",
+    "rewritten_query": "我不想跟机器说话，你能帮我转接人工吗？",
+    "matched_rule": "",
+    "rewrite_raw": "{\n  \"matched_rule\": \"\",\n  \"rewritten_query\": \"我不想跟机器说话，你能帮我转接人工吗？\"\n}"
+  },
+  {
+    "original_query": "擒龙平台是当天选出来，明天买入吗，还是当天买入",
+    "rewritten_query": "擒龙平台是当天选出来，明天买入吗，还是当天买入",
+    "matched_rule": "",
+    "rewrite_raw": "{\n  \"matched_rule\": \"\",\n  \"rewritten_query\": \"擒龙平台是当天选出来，明天买入吗，还是当天买入\"\n}"
+  },
+  {
+    "original_query": "你是谁？",
+    "rewritten_query": "你是谁？",
+    "matched_rule": "",
+    "rewrite_raw": "{\n  \"matched_rule\": \"\",\n  \"rewritten_query\": \"你是谁？\"\n}"
+  },
+  {
+    "original_query": "锁定因子在股市中的作用",
+    "rewritten_query": "什么是锁定因子在股市中的作用",
+    "matched_rule": "规则 6：知识库类 - 概念询问",
+    "rewrite_raw": "{\n  \"matched_rule\": \"规则 6：知识库类 - 概念询问\",\n  \"rewritten_query\": \"什么是锁定因子在股市中的作用\"\n}"
+  },
+  {
+    "original_query": "你能帮我做些什么？",
+    "rewritten_query": "你能帮我做些什么？",
+    "matched_rule": "",
+    "rewrite_raw": "{\n  \"matched_rule\": \"\",\n  \"rewritten_query\": \"你能帮我做些什么？\"\n}"
+  },
+  {
+    "original_query": "你是哪家公司开发的大模型助手？",
+    "rewritten_query": "你是哪家公司开发的大模型助手？",
+    "matched_rule": "",
+    "rewrite_raw": "{\n  \"matched_rule\": \"\",\n  \"rewritten_query\": \"你是哪家公司开发的大模型助手？\"\n}"
+  },
+  {
+    "original_query": "90%筹码和30%筹码有什么意义",
+    "rewritten_query": "什么是90%筹码和30%筹码",
+    "matched_rule": "规则 6：知识库类 - 概念询问",
+    "rewrite_raw": "{\n  \"matched_rule\": \"规则 6：知识库类 - 概念询问\",\n  \"rewritten_query\": \"什么是90%筹码和30%筹码\"\n}"
+  },
+  {
+    "original_query": "现在的主线是什么",
+    "rewritten_query": "现在的主线是什么",
+    "matched_rule": "",
+    "rewrite_raw": "{\n  \"matched_rule\": \"\",\n  \"rewritten_query\": \"现在的主线是什么\"\n}"
+  },
+  {
+    "original_query": "分析下华胜天成",
+    "rewritten_query": "请对华胜天成这只股票进行综合评价、基本面和技术面的诊断。",
+    "matched_rule": "规则 1：诊股类 - 纯标的映射",
+    "rewrite_raw": "{\n  \"matched_rule\": \"规则 1：诊股类 - 纯标的映射\",\n  \"rewritten_query\": \"请对华胜天成这只股票进行综合评价、基本面和技术面的诊断。\"\n}"
+  },
+  {
+    "original_query": "水晶光电",
+    "rewritten_query": "请对水晶光电这只股票进行综合评价、基本面和技术面的诊断。",
+    "matched_rule": "规则 1：诊股类 - 纯标的映射",
+    "rewrite_raw": "{\n  \"matched_rule\": \"规则 1：诊股类 - 纯标的映射\",\n  \"rewritten_query\": \"请对水晶光电这只股票进行综合评价、基本面和技术面的诊断。\"\n}"
+  },
+  {
+    "original_query": "乐凯胶片",
+    "rewritten_query": "请对乐凯胶片这只股票进行综合评价、基本面和技术面的诊断。",
+    "matched_rule": "规则 1：诊股类 - 纯标的映射",
+    "rewrite_raw": "{\n  \"matched_rule\": \"规则 1：诊股类 - 纯标的映射\",\n  \"rewritten_query\": \"请对乐凯胶片这只股票进行综合评价、基本面和技术面的诊断。\"\n}"
+  },
+  {
+    "original_query": "兴业股份",
+    "rewritten_query": "请对兴业股份这只股票进行综合评价、基本面和技术面的诊断。",
+    "matched_rule": "规则 1：诊股类 - 纯标的映射",
+    "rewrite_raw": "{\n  \"matched_rule\": \"规则 1：诊股类 - 纯标的映射\",\n  \"rewritten_query\": \"请对兴业股份这只股票进行综合评价、基本面和技术面的诊断。\"\n}"
+  },
+  {
+    "original_query": "上海电影未来趋势",
+    "rewritten_query": "上海电影未来趋势",
+    "matched_rule": "无",
+    "rewrite_raw": "{\n  \"matched_rule\": \"无\",\n  \"rewritten_query\": \"上海电影未来趋势\"\n}"
+  },
+  {
+    "original_query": "北证股票是什么意思",
+    "rewritten_query": "什么是北证股票",
+    "matched_rule": "规则 6：知识库类 - 概念询问",
+    "rewrite_raw": "{\n  \"matched_rule\": \"规则 6：知识库类 - 概念询问\",\n  \"rewritten_query\": \"什么是北证股票\"\n}"
+  },
+  {
+    "original_query": "科大国创下一步走势？",
+    "rewritten_query": "请预测和推演科大国创下一步的前景。",
+    "matched_rule": "规则 3：预测类 - 时空穿梭映射",
+    "rewrite_raw": "{\n  \"matched_rule\": \"规则 3：预测类 - 时空穿梭映射\",\n  \"rewritten_query\": \"请预测和推演科大国创下一步的前景。\"\n}"
+  },
+  {
+    "original_query": "近期热门概念板块前五名",
+    "rewritten_query": "请按条件筛选并列出近期热门概念板块下的所有成分股名单。",
+    "matched_rule": "规则 2：选股类 - 纯板块映射",
+    "rewrite_raw": "{\n  \"matched_rule\": \"规则 2：选股类 - 纯板块映射\",\n  \"rewritten_query\": \"请按条件筛选并列出近期热门概念板块下的所有成分股名单。\"\n}"
+  },
+  {
+    "original_query": "AI应用有哪些个走走的强势",
+    "rewritten_query": "什么是AI应用的强势概念?",
+    "matched_rule": "规则 6：知识库类 - 概念询问",
+    "rewrite_raw": "{\n  \"matched_rule\": \"规则 6：知识库类 - 概念询问\",\n  \"rewritten_query\": \"什么是AI应用的强势概念?\"\n}"
+  },
+  {
+    "original_query": "近期热门概念前5个",
+    "rewritten_query": "请按条件筛选并列出近期热门概念板块下的所有成分股名单。",
+    "matched_rule": "规则 2：选股类 - 纯板块映射",
+    "rewrite_raw": "{\n  \"matched_rule\": \"规则 2：选股类 - 纯板块映射\",\n  \"rewritten_query\": \"请按条件筛选并列出近期热门概念板块下的所有成分股名单。\"\n}"
+  },
+  {
+    "original_query": "近期5日内主力资金净注入超过5千万，涨幅低于4%的，航天军工板块和计算机应用板块有哪些股票",
+    "rewritten_query": "近期5日内主力资金净注入超过5千万，涨幅低于4%的，航天军工板块和计算机应用板块有哪些股票",
+    "matched_rule": "",
+    "rewrite_raw": "{\n  \"matched_rule\": \"\",\n  \"rewritten_query\": \"近期5日内主力资金净注入超过5千万，涨幅低于4%的，航天军工板块和计算机应用板块有哪些股票\"\n}"
+  },
+  {
+    "original_query": "怎么设置自动买卖",
+    "rewritten_query": "怎么设置自动买卖",
+    "matched_rule": "",
+    "rewrite_raw": "{\n  \"matched_rule\": \"\",\n  \"rewritten_query\": \"怎么设置自动买卖\"\n}"
+  },
+  {
+    "original_query": "盐湖股份",
+    "rewritten_query": "请对盐湖股份这只股票进行综合评价、基本面和技术面的诊断。",
+    "matched_rule": "规则 1：诊股类 - 纯标的映射",
+    "rewrite_raw": "{\n  \"matched_rule\": \"规则 1：诊股类 - 纯标的映射\",\n  \"rewritten_query\": \"请对盐湖股份这只股票进行综合评价、基本面和技术面的诊断。\"\n}"
+  },
+  {
+    "original_query": "海光信息最近为什么一直盘着",
+    "rewritten_query": "海光信息最近为什么一直盘着",
+    "matched_rule": "无",
+    "rewrite_raw": "{\n  \"matched_rule\": \"无\",\n  \"rewritten_query\": \"海光信息最近为什么一直盘着\"\n}"
+  },
+  {
+    "original_query": "002324可以继续持有吗",
+    "rewritten_query": "002324可以继续持有吗",
+    "matched_rule": "",
+    "rewrite_raw": "{\n  \"matched_rule\": \"\",\n  \"rewritten_query\": \"002324可以继续持有吗\"\n}"
+  },
+  {
+    "original_query": "股市中GEO概念指的是哪方面",
+    "rewritten_query": "什么是GEO概念",
+    "matched_rule": "规则 6：知识库类 - 概念询问",
+    "rewrite_raw": "{\n  \"matched_rule\": \"规则 6：知识库类 - 概念询问\",\n  \"rewritten_query\": \"什么是GEO概念\"\n}"
+  },
+  {
+    "original_query": "指南针怎么实现量化工具自动买卖点",
+    "rewritten_query": "指南针怎么实现量化工具自动买卖点",
+    "matched_rule": "",
+    "rewrite_raw": "{\n  \"matched_rule\": \"\",\n  \"rewritten_query\": \"指南针怎么实现量化工具自动买卖点\"\n}"
+  },
+  {
+    "original_query": "紫光股份",
+    "rewritten_query": "请对紫光股份这只股票进行综合评价、基本面和技术面的诊断。",
+    "matched_rule": "规则 1：诊股类 - 纯标的映射",
+    "rewrite_raw": "{\n  \"matched_rule\": \"规则 1：诊股类 - 纯标的映射\",\n  \"rewritten_query\": \"请对紫光股份这只股票进行综合评价、基本面和技术面的诊断。\"\n}"
+  },
+  {
+    "original_query": "星源材质未来趋势",
+    "rewritten_query": "请预测和推演星源材质未来的前景。",
+    "matched_rule": "规则 3：预测类 - 时空穿梭映射",
+    "rewrite_raw": "{\n  \"matched_rule\": \"规则 3：预测类 - 时空穿梭映射\",\n  \"rewritten_query\": \"请预测和推演星源材质未来的前景。\"\n}"
+  },
+  {
+    "original_query": "核聚变有哪些行业，包括哪些板块",
+    "rewritten_query": "什么是核聚变相关的行业及板块?",
+    "matched_rule": "规则 6：知识库类 - 概念询问",
+    "rewrite_raw": "{\n  \"matched_rule\": \"规则 6：知识库类 - 概念询问\",\n  \"rewritten_query\": \"什么是核聚变相关的行业及板块?\"\n}"
+  },
+  {
+    "original_query": "天融信有一波反弹吗",
+    "rewritten_query": "请预测和推演天融信下一步的前景。",
+    "matched_rule": "规则 3：预测类 - 时空穿梭映射",
+    "rewrite_raw": "{\n  \"matched_rule\": \"规则 3：预测类 - 时空穿梭映射\",\n  \"rewritten_query\": \"请预测和推演天融信下一步的前景。\"\n}"
+  },
+  {
+    "original_query": "莱宝高科",
+    "rewritten_query": "请对莱宝高科这只股票进行综合评价、基本面和技术面的诊断。",
+    "matched_rule": "规则 1：诊股类 - 纯标的映射",
+    "rewrite_raw": "{\n  \"matched_rule\": \"规则 1：诊股类 - 纯标的映射\",\n  \"rewritten_query\": \"请对莱宝高科这只股票进行综合评价、基本面和技术面的诊断。\"\n}"
+  },
+  {
+    "original_query": "谢谢啦",
+    "rewritten_query": "谢谢啦",
+    "matched_rule": "",
+    "rewrite_raw": "{\n  \"matched_rule\": \"\",\n  \"rewritten_query\": \"谢谢啦\"\n}"
+  },
+  {
+    "original_query": "明天航天发展怎么逃",
+    "rewritten_query": "请预测和推演航天发展明天的前景。",
+    "matched_rule": "规则 3：预测类 - 时空穿梭映射",
+    "rewrite_raw": "{\n  \"matched_rule\": \"规则 3：预测类 - 时空穿梭映射\",\n  \"rewritten_query\": \"请预测和推演航天发展明天的前景。\"\n}"
+  },
+  {
+    "original_query": "陈小群交易策略",
+    "rewritten_query": "请处理陈小群交易策略的解析",
+    "matched_rule": "规则 4：策略类 - 策略查询",
+    "rewrite_raw": "{\n  \"matched_rule\": \"规则 4：策略类 - 策略查询\",\n  \"rewritten_query\": \"请处理陈小群交易策略的解析\"\n}"
+  },
+  {
+    "original_query": "擒龙平台里突破选股搜不到",
+    "rewritten_query": "擒龙平台里突破选股搜不到",
+    "matched_rule": "",
+    "rewrite_raw": "{\n  \"matched_rule\": \"\",\n  \"rewritten_query\": \"擒龙平台里突破选股搜不到\"\n}"
+  },
+  {
+    "original_query": "AI十能翻倍的股票",
+    "rewritten_query": "请按条件筛选并列出 AI 十能翻倍的股票名单。",
+    "matched_rule": "规则 2：选股类 - 纯板块映射",
+    "rewrite_raw": "{\n  \"matched_rule\": \"规则 2：选股类 - 纯板块映射\",\n  \"rewritten_query\": \"请按条件筛选并列出 AI 十能翻倍的股票名单。\"\n}"
+  },
+  {
+    "original_query": "明天天气怎么样？",
+    "rewritten_query": "明天天气怎么样？",
+    "matched_rule": "",
+    "rewrite_raw": "{\n  \"matched_rule\": \"\",\n  \"rewritten_query\": \"明天天气怎么样？\"\n}"
+  },
+  {
+    "original_query": "你太笨了，",
+    "rewritten_query": "你太笨了，",
+    "matched_rule": "",
+    "rewrite_raw": "{\n  \"matched_rule\": \"\",\n  \"rewritten_query\": \"你太笨了，\"\n}"
+  },
+  {
+    "original_query": "今天股价在11.47的股票是什么",
+    "rewritten_query": "今天股价在11.47的股票是什么",
+    "matched_rule": "",
+    "rewrite_raw": "{\n  \"matched_rule\": \"\",\n  \"rewritten_query\": \"今天股价在11.47的股票是什么\"\n}"
+  },
+  {
+    "original_query": "指南针软件自选删除了能不能恢复",
+    "rewritten_query": "指南针软件自选删除了能不能恢复",
+    "matched_rule": "",
+    "rewrite_raw": "{\n  \"matched_rule\": \"\",\n  \"rewritten_query\": \"指南针软件自选删除了能不能恢复\"\n}"
+  },
+  {
+    "original_query": "你与豆包有什么区别",
+    "rewritten_query": "你与豆包有什么区别",
+    "matched_rule": null,
+    "rewrite_raw": "{\n  \"matched_rule\": null,\n  \"rewritten_query\": \"你与豆包有什么区别\"\n}"
+  },
+  {
+    "original_query": "那方面的股票能翻十倍",
+    "rewritten_query": "那方面的股票能翻十倍",
+    "matched_rule": "",
+    "rewrite_raw": "{\n  \"matched_rule\": \"\",\n  \"rewritten_query\": \"那方面的股票能翻十倍\"\n}"
+  },
+  {
+    "original_query": "陈小群持仓的股票",
+    "rewritten_query": "请按条件筛选并列出陈小群持仓的股票名单。",
+    "matched_rule": "规则 2：选股类 - 纯板块映射",
+    "rewrite_raw": "{\n  \"matched_rule\": \"规则 2：选股类 - 纯板块映射\",\n  \"rewritten_query\": \"请按条件筛选并列出陈小群持仓的股票名单。\"\n}"
+  },
+  {
+    "original_query": "字体大点",
+    "rewritten_query": "字体大点",
+    "matched_rule": null,
+    "rewrite_raw": "{\n  \"matched_rule\": null,\n  \"rewritten_query\": \"字体大点\"\n}"
+  },
+  {
+    "original_query": "90%筹码和70%筹码有什么意义",
+    "rewritten_query": "什么是90%筹码和70%筹码",
+    "matched_rule": "规则 6：知识库类 - 概念询问",
+    "rewrite_raw": "{\n  \"matched_rule\": \"规则 6：知识库类 - 概念询问\",\n  \"rewritten_query\": \"什么是90%筹码和70%筹码\"\n}"
+  },
+  {
+    "original_query": "京津冀一体化的标的股",
+    "rewritten_query": "请按条件筛选并列出京津冀一体化板块下的所有成分股名单。",
+    "matched_rule": "规则 2：选股类 - 纯板块映射",
+    "rewrite_raw": "{\n  \"matched_rule\": \"规则 2：选股类 - 纯板块映射\",\n  \"rewritten_query\": \"请按条件筛选并列出京津冀一体化板块下的所有成分股名单。\"\n}"
+  },
+  {
+    "original_query": "创新医疗",
+    "rewritten_query": "请对创新医疗这只股票进行综合评价、基本面和技术面的诊断。",
+    "matched_rule": "规则 1：诊股类 - 纯标的映射",
+    "rewrite_raw": "{\n  \"matched_rule\": \"规则 1：诊股类 - 纯标的映射\",\n  \"rewritten_query\": \"请对创新医疗这只股票进行综合评价、基本面和技术面的诊断。\"\n}"
+  },
+  {
+    "original_query": "沪电股份",
+    "rewritten_query": "请对沪电股份这只股票进行综合评价、基本面和技术面的诊断。",
+    "matched_rule": "规则 1：诊股类 - 纯标的映射",
+    "rewrite_raw": "{\n  \"matched_rule\": \"规则 1：诊股类 - 纯标的映射\",\n  \"rewritten_query\": \"请对沪电股份这只股票进行综合评价、基本面和技术面的诊断。\"\n}"
+  },
+  {
+    "original_query": "603703能进吗",
+    "rewritten_query": "请预测和推演603703下一步的前景。",
+    "matched_rule": "规则 3：预测类 - 时空穿梭映射",
+    "rewrite_raw": "{\n  \"matched_rule\": \"规则 3：预测类 - 时空穿梭映射\",\n  \"rewritten_query\": \"请预测和推演603703下一步的前景。\"\n}"
+  },
+  {
+    "original_query": "雷电微力未来走势",
+    "rewritten_query": "请预测和推演雷电微力未来走势的前景。",
+    "matched_rule": "规则 3：预测类 - 时空穿梭映射",
+    "rewrite_raw": "{\n  \"matched_rule\": \"规则 3：预测类 - 时空穿梭映射\",\n  \"rewritten_query\": \"请预测和推演雷电微力未来走势的前景。\"\n}"
+  },
+  {
+    "original_query": "中航西飞未来走势",
+    "rewritten_query": "请预测和推演中航西飞未来走势的前景。",
+    "matched_rule": "规则 3：预测类 - 时空穿梭映射",
+    "rewrite_raw": "{\n  \"matched_rule\": \"规则 3：预测类 - 时空穿梭映射\",\n  \"rewritten_query\": \"请预测和推演中航西飞未来走势的前景。\"\n}"
+  },
+  {
+    "original_query": "中航机载要清仓吗",
+    "rewritten_query": "中航机载要清仓吗",
+    "matched_rule": "",
+    "rewrite_raw": "{\n  \"matched_rule\": \"\",\n  \"rewritten_query\": \"中航机载要清仓吗\"\n}"
+  },
+  {
+    "original_query": "中坚科技112买入的，一直跌，继续持有还是卖掉？",
+    "rewritten_query": "中坚科技112买入的，一直跌，继续持有还是卖掉？",
+    "matched_rule": "",
+    "rewrite_raw": "{\n  \"matched_rule\": \"\",\n  \"rewritten_query\": \"中坚科技112买入的，一直跌，继续持有还是卖掉？\"\n}"
+  },
+  {
+    "original_query": "三安光电未来走势",
+    "rewritten_query": "请预测和推演三安光电未来走势的前景。",
+    "matched_rule": "规则 3：预测类 - 时空穿梭映射",
+    "rewrite_raw": "{\n  \"matched_rule\": \"规则 3：预测类 - 时空穿梭映射\",\n  \"rewritten_query\": \"请预测和推演三安光电未来走势的前景。\"\n}"
+  },
+  {
+    "original_query": "中行西飞未来走势",
+    "rewritten_query": "请预测和推演中行西飞未来走势的前景。",
+    "matched_rule": "规则 3：预测类 - 时空穿梭映射",
+    "rewrite_raw": "{\n  \"matched_rule\": \"规则 3：预测类 - 时空穿梭映射\",\n  \"rewritten_query\": \"请预测和推演中行西飞未来走势的前景。\"\n}"
+  },
+  {
+    "original_query": "今日收盘首板，市值小于500亿，半年内涨停少于3次的不要，一年内爆涨超过40%以上的淘汰，有板块效益的股票有哪些",
+    "rewritten_query": "今日收盘首板，市值小于500亿，半年内涨停少于3次的不要，一年内爆涨超过40%以上的淘汰，有板块效益的股票有哪些",
+    "matched_rule": "",
+    "rewrite_raw": "{\n  \"matched_rule\": \"\",\n  \"rewritten_query\": \"今日收盘首板，市值小于500亿，半年内涨停少于3次的不要，一年内爆涨超过40%以上的淘汰，有板块效益的股票有哪些\"\n}"
+  },
+  {
+    "original_query": "天下秀",
+    "rewritten_query": "请对天下秀这只股票进行综合评价、基本面和技术面的诊断。",
+    "matched_rule": "规则 1：诊股类 - 纯标的映射",
+    "rewrite_raw": "{\n  \"matched_rule\": \"规则 1：诊股类 - 纯标的映射\",\n  \"rewritten_query\": \"请对天下秀这只股票进行综合评价、基本面和技术面的诊断。\"\n}"
+  },
+  {
+    "original_query": "由可控核聚变和航天发展的股票有哪些？",
+    "rewritten_query": "请按条件筛选并列出由可控核聚变和航天发展构成的概念板块下的所有成分股名单。",
+    "matched_rule": "规则 2：选股类 - 纯板块映射",
+    "rewrite_raw": "{\n  \"matched_rule\": \"规则 2：选股类 - 纯板块映射\",\n  \"rewritten_query\": \"请按条件筛选并列出由可控核聚变和航天发展构成的概念板块下的所有成分股名单。\"\n}"
+  },
+  {
+    "original_query": "近期13日内主力资金净注入超过一亿，涨幅低于9%的，航天军工板块和计算机应用板块有哪些股票",
+    "rewritten_query": "近期13日内主力资金净注入超过一亿，涨幅低于9%的，航天军工板块和计算机应用板块有哪些股票",
+    "matched_rule": "",
+    "rewrite_raw": "{\n  \"matched_rule\": \"\",\n  \"rewritten_query\": \"近期13日内主力资金净注入超过一亿，涨幅低于9%的，航天军工板块和计算机应用板块有哪些股票\"\n}"
+  },
+  {
+    "original_query": "兖矿能源未来走势",
+    "rewritten_query": "请预测和推演兖矿能源未来走势的前景。",
+    "matched_rule": "规则 3：预测类 - 时空穿梭映射",
+    "rewrite_raw": "{\n  \"matched_rule\": \"规则 3：预测类 - 时空穿梭映射\",\n  \"rewritten_query\": \"请预测和推演兖矿能源未来走势的前景。\"\n}"
+  },
+  {
+    "original_query": "分析一下张江高科",
+    "rewritten_query": "请对张江高科这只股票进行综合评价、基本面和技术面的诊断。",
+    "matched_rule": "规则 1：诊股类 - 纯标的映射",
+    "rewrite_raw": "{\n  \"matched_rule\": \"规则 1：诊股类 - 纯标的映射\",\n  \"rewritten_query\": \"请对张江高科这只股票进行综合评价、基本面和技术面的诊断。\"\n}"
+  },
+  {
+    "original_query": "股权投资的股票",
+    "rewritten_query": "请按条件筛选并列出股权投资板块下的所有成分股名单。",
+    "matched_rule": "规则 2：选股类 - 纯板块映射",
+    "rewrite_raw": "{\n  \"matched_rule\": \"规则 2：选股类 - 纯板块映射\",\n  \"rewritten_query\": \"请按条件筛选并列出股权投资板块下的所有成分股名单。\"\n}"
+  },
+  {
+    "original_query": "海格通信",
+    "rewritten_query": "请对海格通信这只股票进行综合评价、基本面和技术面的诊断。",
+    "matched_rule": "规则 1：诊股类 - 纯标的映射",
+    "rewrite_raw": "{\n  \"matched_rule\": \"规则 1：诊股类 - 纯标的映射\",\n  \"rewritten_query\": \"请对海格通信这只股票进行综合评价、基本面和技术面的诊断。\"\n}"
+  },
+  {
+    "original_query": "GEO是什么",
+    "rewritten_query": "什么是GEO",
+    "matched_rule": "规则 6：知识库类 - 概念询问",
+    "rewrite_raw": "{\n  \"matched_rule\": \"规则 6：知识库类 - 概念询问\",\n  \"rewritten_query\": \"什么是GEO\"\n}"
+  },
+  {
+    "original_query": "近期13日内主力资金净注入超过1亿，涨幅低于4%的，有哪些股票",
+    "rewritten_query": "近期13日内主力资金净注入超过1亿，涨幅低于4%的，有哪些股票",
+    "matched_rule": null,
+    "rewrite_raw": "{\n  \"matched_rule\": null,\n  \"rewritten_query\": \"近期13日内主力资金净注入超过1亿，涨幅低于4%的，有哪些股票\"\n}"
+  },
+  {
+    "original_query": "查找锁定因子LFS在60以上的股票",
+    "rewritten_query": "查找锁定因子LFS在60以上的股票",
+    "matched_rule": "",
+    "rewrite_raw": "{\n  \"matched_rule\": \"\",\n  \"rewritten_query\": \"查找锁定因子LFS在60以上的股票\"\n}"
+  },
+  {
+    "original_query": "分析一下众兴菌业",
+    "rewritten_query": "请对众兴菌业这只股票进行综合评价、基本面和技术面的诊断。",
+    "matched_rule": "规则 1：诊股类 - 纯标的映射",
+    "rewrite_raw": "{\n  \"matched_rule\": \"规则 1：诊股类 - 纯标的映射\",\n  \"rewritten_query\": \"请对众兴菌业这只股票进行综合评价、基本面和技术面的诊断。\"\n}"
+  },
+  {
+    "original_query": "金风科技还会涨吗",
+    "rewritten_query": "请预测和推演金风科技未来的前景。",
+    "matched_rule": "规则 3：预测类 - 时空穿梭映射",
+    "rewrite_raw": "{\n  \"matched_rule\": \"规则 3：预测类 - 时空穿梭映射\",\n  \"rewritten_query\": \"请预测和推演金风科技未来的前景。\"\n}"
+  },
+  {
+    "original_query": "当前公告业绩预增的股票",
+    "rewritten_query": "请按条件筛选并列出当前公告业绩预增的股票名单。",
+    "matched_rule": "规则 2：选股类 - 纯板块映射",
+    "rewrite_raw": "{\n  \"matched_rule\": \"规则 2：选股类 - 纯板块映射\",\n  \"rewritten_query\": \"请按条件筛选并列出当前公告业绩预增的股票名单。\"\n}"
+  },
+  {
+    "original_query": "光通讯模块概念的总龙头是谁",
+    "rewritten_query": "光通讯模块概念的总龙头是谁",
+    "matched_rule": "无",
+    "rewrite_raw": "{\n  \"matched_rule\": \"无\",\n  \"rewritten_query\": \"光通讯模块概念的总龙头是谁\"\n}"
+  },
+  {
+    "original_query": "竞价涨幅2—4主板股票",
+    "rewritten_query": "请按条件筛选并列出竞价涨幅2—4主板股票板块下的所有成分股名单。",
+    "matched_rule": "规则 2：选股类 - 纯板块映射",
+    "rewrite_raw": "{\n  \"matched_rule\": \"规则 2：选股类 - 纯板块映射\",\n  \"rewritten_query\": \"请按条件筛选并列出竞价涨幅2—4主板股票板块下的所有成分股名单。\"\n}"
+  },
+  {
+    "original_query": "分析英利汽车",
+    "rewritten_query": "请对英利汽车这只股票进行综合评价、基本面和技术面的诊断。",
+    "matched_rule": "规则 1：诊股类 - 纯标的映射",
+    "rewrite_raw": "{\n  \"matched_rule\": \"规则 1：诊股类 - 纯标的映射\",\n  \"rewritten_query\": \"请对英利汽车这只股票进行综合评价、基本面和技术面的诊断。\"\n}"
+  },
+  {
+    "original_query": "股票严重异动对股票有什么影响",
+    "rewritten_query": "股票严重异动对股票有什么影响",
+    "matched_rule": "",
+    "rewrite_raw": "{\n  \"matched_rule\": \"\",\n  \"rewritten_query\": \"股票严重异动对股票有什么影响\"\n}"
+  },
+  {
+    "original_query": "海光信息未来可期吗",
+    "rewritten_query": "请预测和推演海光信息未来可期的前景。",
+    "matched_rule": "规则 3：预测类 - 时空穿梭映射",
+    "rewrite_raw": "{\n  \"matched_rule\": \"规则 3：预测类 - 时空穿梭映射\",\n  \"rewritten_query\": \"请预测和推演海光信息未来可期的前景。\"\n}"
+  },
+  {
+    "original_query": "近期5日内主力资金净注入超过一亿，涨幅低于9%的，航天军工板块和计算机应用板块、原件板块、光学光电子板块、传媒板块有哪些股票",
+    "rewritten_query": "近期5日内主力资金净注入超过一亿，涨幅低于9%的，航天军工板块和计算机应用板块、原件板块、光学光电子板块、传媒板块有哪些股票",
+    "matched_rule": "",
+    "rewrite_raw": "{\n  \"matched_rule\": \"\",\n  \"rewritten_query\": \"近期5日内主力资金净注入超过一亿，涨幅低于9%的，航天军工板块和计算机应用板块、原件板块、光学光电子板块、传媒板块有哪些股票\"\n}"
+  },
+  {
+    "original_query": "汇得科技怎样",
+    "rewritten_query": "请对汇得科技这只股票进行综合评价、基本面和技术面的诊断。",
+    "matched_rule": "规则 1：诊股类 - 纯标的映射",
+    "rewrite_raw": "{\n  \"matched_rule\": \"规则 1：诊股类 - 纯标的映射\",\n  \"rewritten_query\": \"请对汇得科技这只股票进行综合评价、基本面和技术面的诊断。\"\n}"
+  },
+  {
+    "original_query": "603011",
+    "rewritten_query": "请对 603011 这只股票进行综合评价、基本面和技术面的诊断。",
+    "matched_rule": "规则 1：诊股类 - 纯标的映射",
+    "rewrite_raw": "{\n  \"matched_rule\": \"规则 1：诊股类 - 纯标的映射\",\n  \"rewritten_query\": \"请对 603011 这只股票进行综合评价、基本面和技术面的诊断。\"\n}"
+  },
+  {
+    "original_query": "茺矿能源未来走势",
+    "rewritten_query": "请预测和推演茺矿能源未来走势的前景。",
+    "matched_rule": "规则 3：预测类 - 时空穿梭映射",
+    "rewrite_raw": "{\n  \"matched_rule\": \"规则 3：预测类 - 时空穿梭映射\",\n  \"rewritten_query\": \"请预测和推演茺矿能源未来走势的前景。\"\n}"
+  },
+  {
+    "original_query": "K线图上蓝色和紫色K线是什么意思",
+    "rewritten_query": "什么是K线图上的蓝色和紫色K线",
+    "matched_rule": "规则 6：知识库类 - 概念询问",
+    "rewrite_raw": "{\n  \"matched_rule\": \"规则 6：知识库类 - 概念询问\",\n  \"rewritten_query\": \"什么是K线图上的蓝色和紫色K线\"\n}"
+  },
+  {
+    "original_query": "山子高科未来走势",
+    "rewritten_query": "请预测和推演山子高科未来走势的前景。",
+    "matched_rule": "规则 3：预测类 - 时空穿梭映射",
+    "rewrite_raw": "{\n  \"matched_rule\": \"规则 3：预测类 - 时空穿梭映射\",\n  \"rewritten_query\": \"请预测和推演山子高科未来走势的前景。\"\n}"
+  },
+  {
+    "original_query": "查找锁定因子LFS在60以上的股票",
+    "rewritten_query": "查找锁定因子LFS在60以上的股票",
+    "matched_rule": "",
+    "rewrite_raw": "{\n  \"matched_rule\": \"\",\n  \"rewritten_query\": \"查找锁定因子LFS在60以上的股票\"\n}"
+  },
+  {
+    "original_query": "锁定因子是什么",
+    "rewritten_query": "什么是锁定因子",
+    "matched_rule": "规则 6：知识库类 - 概念询问",
+    "rewrite_raw": "{\n  \"matched_rule\": \"规则 6：知识库类 - 概念询问\",\n  \"rewritten_query\": \"什么是锁定因子\"\n}"
+  },
+  {
+    "original_query": "分析一下920196",
+    "rewritten_query": "请对920196这只股票进行综合评价、基本面和技术面的诊断。",
+    "matched_rule": "规则 1：诊股类 - 纯标的映射",
+    "rewrite_raw": "{\n  \"matched_rule\": \"规则 1：诊股类 - 纯标的映射\",\n  \"rewritten_query\": \"请对920196这只股票进行综合评价、基本面和技术面的诊断。\"\n}"
+  },
+  {
+    "original_query": "碳酸锂期货为什么在9%是涨停",
+    "rewritten_query": "碳酸锂期货为什么在9%是涨停",
+    "matched_rule": "无",
+    "rewrite_raw": "{\n  \"matched_rule\": \"无\",\n  \"rewritten_query\": \"碳酸锂期货为什么在9%是涨停\"\n}"
+  },
+  {
+    "original_query": "分析一下璞泰来",
+    "rewritten_query": "请对璞泰来这只股票进行综合评价、基本面和技术面的诊断。",
+    "matched_rule": "规则 1：诊股类 - 纯标的映射",
+    "rewrite_raw": "{\n  \"matched_rule\": \"规则 1：诊股类 - 纯标的映射\",\n  \"rewritten_query\": \"请对璞泰来这只股票进行综合评价、基本面和技术面的诊断。\"\n}"
+  },
+  {
+    "original_query": "同时涉及航天和AI的股票",
+    "rewritten_query": "请按条件筛选并列出同时涉及航天和AI板块下的所有成分股名单。",
+    "matched_rule": "规则 2：选股类 - 纯板块映射",
+    "rewrite_raw": "{\n  \"matched_rule\": \"规则 2：选股类 - 纯板块映射\",\n  \"rewritten_query\": \"请按条件筛选并列出同时涉及航天和AI板块下的所有成分股名单。\"\n}"
+  },
+  {
+    "original_query": "今日收盘首板，市值小于300亿，半年内涨停少于3次的不要，一年内爆涨超过40%以上的淘汰，有板块效益的股票有哪些",
+    "rewritten_query": "今日收盘首板，市值小于300亿，半年内涨停少于3次的不要，一年内爆涨超过40%以上的淘汰，有板块效益的股票有哪些",
+    "matched_rule": "",
+    "rewrite_raw": "{\n  \"matched_rule\": \"\",\n  \"rewritten_query\": \"今日收盘首板，市值小于300亿，半年内涨停少于3次的不要，一年内爆涨超过40%以上的淘汰，有板块效益的股票有哪些\"\n}"
+  },
+  {
+    "original_query": "分析一下菲利华为什么连跌",
+    "rewritten_query": "分析一下菲利华为什么连跌",
+    "matched_rule": "无",
+    "rewrite_raw": "{\n  \"matched_rule\": \"无\",\n  \"rewritten_query\": \"分析一下菲利华为什么连跌\"\n}"
+  },
+  {
+    "original_query": "中兴通讯还可以持有吗",
+    "rewritten_query": "中兴通讯还可以持有吗",
+    "matched_rule": "",
+    "rewrite_raw": "{\n  \"matched_rule\": \"\",\n  \"rewritten_query\": \"中兴通讯还可以持有吗\"\n}"
+  },
+  {
+    "original_query": "岩山科技是龙头吗",
+    "rewritten_query": "岩山科技是龙头吗",
+    "matched_rule": "",
+    "rewrite_raw": "{\n  \"matched_rule\": \"\",\n  \"rewritten_query\": \"岩山科技是龙头吗\"\n}"
+  },
+  {
+    "original_query": "歌尔股份属于科技股吗",
+    "rewritten_query": "歌尔股份属于科技股吗",
+    "matched_rule": "",
+    "rewrite_raw": "{\n  \"matched_rule\": \"\",\n  \"rewritten_query\": \"歌尔股份属于科技股吗\"\n}"
+  },
+  {
+    "original_query": "000516趋势",
+    "rewritten_query": "000516趋势",
+    "matched_rule": "",
+    "rewrite_raw": "{\n  \"matched_rule\": \"\",\n  \"rewritten_query\": \"000516趋势\"\n}"
+  },
+  {
+    "original_query": "海特高新",
+    "rewritten_query": "请对海特高新这只股票进行综合评价、基本面和技术面的诊断。",
+    "matched_rule": "规则 1：诊股类 - 纯标的映射",
+    "rewrite_raw": "{\n  \"matched_rule\": \"规则 1：诊股类 - 纯标的映射\",\n  \"rewritten_query\": \"请对海特高新这只股票进行综合评价、基本面和技术面的诊断。\"\n}"
+  },
+  {
+    "original_query": "今天资金流入多的主线股票",
+    "rewritten_query": "今天资金流入多的主线股票",
+    "matched_rule": "",
+    "rewrite_raw": "{\n  \"matched_rule\": \"\",\n  \"rewritten_query\": \"今天资金流入多的主线股票\"\n}"
+  },
+  {
+    "original_query": "查找锁定因子LFS在55以上股票",
+    "rewritten_query": "查找锁定因子LFS在55以上的股票",
+    "matched_rule": "无",
+    "rewrite_raw": "{\n  \"matched_rule\": \"无\",\n  \"rewritten_query\": \"查找锁定因子LFS在55以上的股票\"\n}"
+  },
+  {
+    "original_query": "科大讯飞明天能进去吗",
+    "rewritten_query": "请预测和推演科大讯飞明天的前景。",
+    "matched_rule": "规则 3：预测类 - 时空穿梭映射",
+    "rewrite_raw": "{\n  \"matched_rule\": \"规则 3：预测类 - 时空穿梭映射\",\n  \"rewritten_query\": \"请预测和推演科大讯飞明天的前景。\"\n}"
+  },
+  {
+    "original_query": "同时涉及航天军工和AI智能的股票",
+    "rewritten_query": "请按条件筛选并列出同时涉及航天军工和AI智能概念板块下的所有成分股名单。",
+    "matched_rule": "规则 2：选股类 - 纯板块映射",
+    "rewrite_raw": "{\n  \"matched_rule\": \"规则 2：选股类 - 纯板块映射\",\n  \"rewritten_query\": \"请按条件筛选并列出同时涉及航天军工和AI智能概念板块下的所有成分股名单。\"\n}"
+  },
+  {
+    "original_query": "电气风电怎么样？",
+    "rewritten_query": "请对电气风电这只股票进行综合评价、基本面和技术面的诊断。",
+    "matched_rule": "规则 1：诊股类 - 纯标的映射",
+    "rewrite_raw": "{\n  \"matched_rule\": \"规则 1：诊股类 - 纯标的映射\",\n  \"rewritten_query\": \"请对电气风电这只股票进行综合评价、基本面和技术面的诊断。\"\n}"
+  },
+  {
+    "original_query": "明天可以入手可控核聚变哪些股票",
+    "rewritten_query": "明天可以入手可控核聚变哪些股票",
+    "matched_rule": "JSON解析失败",
+    "rewrite_raw": "{\n  \"matched_rule\": \"规则 5：指标查询类 - 指标查询\",\n  \"rewritten_query\": \"明天可以入手哪些涉及可控核聚变概念的股票？\"\n} \n\n**注：** 原始输入虽含有时间推演词汇“明天”，但因其未直接针对某一具体股票的未来表现，而是询问在特定主题下的股票选择，故更贴近于推荐类而非预测类。因此，这里并未严格按照给定规则进行改写，而是基于理解进行了适当的调整以更好地反映用户意图。然而，根据提供的规则，此情况并不完全符合任一规则的具体描述，因此理论上应保持原意不改写。上述输出是一种尝试性的解读，若需严格遵循规则，则应保持原意。"
+  },
+  {
+    "original_query": "600184趋势",
+    "rewritten_query": "600184趋势",
+    "matched_rule": "",
+    "rewrite_raw": "{\n  \"matched_rule\": \"\",\n  \"rewritten_query\": \"600184趋势\"\n}"
+  },
+  {
+    "original_query": "近期5日内主力资金净注入超过6千万，涨幅低于9%的，航天军工板块和计算机应用板块、原件板块、光学光电子板块、传媒板块有哪些股票",
+    "rewritten_query": "近期5日内主力资金净注入超过6千万，涨幅低于9%的，航天军工板块和计算机应用板块、原件板块、光学光电子板块、传媒板块有哪些股票",
+    "matched_rule": "",
+    "rewrite_raw": "{\n  \"matched_rule\": \"\",\n  \"rewritten_query\": \"近期5日内主力资金净注入超过6千万，涨幅低于9%的，航天军工板块和计算机应用板块、原件板块、光学光电子板块、传媒板块有哪些股票\"\n}"
+  },
+  {
+    "original_query": "海马汽车明天优势",
+    "rewritten_query": "请预测和推演海马汽车明天的优势。",
+    "matched_rule": "规则 3：预测类 - 时空穿梭映射",
+    "rewrite_raw": "{\n  \"matched_rule\": \"规则 3：预测类 - 时空穿梭映射\",\n  \"rewritten_query\": \"请预测和推演海马汽车明天的优势。\"\n}"
+  },
+  {
+    "original_query": "基金的手续费是多少",
+    "rewritten_query": "基金的手续费是多少",
+    "matched_rule": "",
+    "rewrite_raw": "{\n  \"matched_rule\": \"\",\n  \"rewritten_query\": \"基金的手续费是多少\"\n}"
+  },
+  {
+    "original_query": "独角兽概念今天涨停的股票",
+    "rewritten_query": "请按条件筛选并列出独角兽概念板块下的所有成分股名单。",
+    "matched_rule": "规则 2：选股类 - 纯板块映射",
+    "rewrite_raw": "{\n  \"matched_rule\": \"规则 2：选股类 - 纯板块映射\",\n  \"rewritten_query\": \"请按条件筛选并列出独角兽概念板块下的所有成分股名单。\"\n}"
+  },
+  {
+    "original_query": "IDc概念股",
+    "rewritten_query": "请按条件筛选并列出 IDC概念股板块下的所有成分股名单。",
+    "matched_rule": "规则 2：选股类 - 纯板块映射",
+    "rewrite_raw": "{\n  \"matched_rule\": \"规则 2：选股类 - 纯板块映射\",\n  \"rewritten_query\": \"请按条件筛选并列出 IDC概念股板块下的所有成分股名单。\"\n}"
+  },
+  {
+    "original_query": "可以当天买当天卖吗",
+    "rewritten_query": "可以当天买当天卖吗",
+    "matched_rule": "",
+    "rewrite_raw": "{\n  \"matched_rule\": \"\",\n  \"rewritten_query\": \"可以当天买当天卖吗\"\n}"
+  },
+  {
+    "original_query": "今天首板股票",
+    "rewritten_query": "今天首板股票",
+    "matched_rule": "",
+    "rewrite_raw": "{\n  \"matched_rule\": \"\",\n  \"rewritten_query\": \"今天首板股票\"\n}"
+  },
+  {
+    "original_query": "近期5日内主力资金净注入超过一亿，涨幅低于9%的，航天军工板块和计算机应用板块有哪些股票",
+    "rewritten_query": "近期5日内主力资金净注入超过一亿，涨幅低于9%的，航天军工板块和计算机应用板块有哪些股票",
+    "matched_rule": "",
+    "rewrite_raw": "{\n  \"matched_rule\": \"\",\n  \"rewritten_query\": \"近期5日内主力资金净注入超过一亿，涨幅低于9%的，航天军工板块和计算机应用板块有哪些股票\"\n}"
+  },
+  {
+    "original_query": "科大讯飞",
+    "rewritten_query": "请对科大讯飞这只股票进行综合评价、基本面和技术面的诊断。",
+    "matched_rule": "规则 1：诊股类 - 纯标的映射",
+    "rewrite_raw": "{\n  \"matched_rule\": \"规则 1：诊股类 - 纯标的映射\",\n  \"rewritten_query\": \"请对科大讯飞这只股票进行综合评价、基本面和技术面的诊断。\"\n}"
+  },
+  {
+    "original_query": "Al+制造有那些股票",
+    "rewritten_query": "请按条件筛选并列出 Al+制造 板块下的所有成分股名单。",
+    "matched_rule": "规则 2：选股类 - 纯板块映射",
+    "rewrite_raw": "{\n  \"matched_rule\": \"规则 2：选股类 - 纯板块映射\",\n  \"rewritten_query\": \"请按条件筛选并列出 Al+制造 板块下的所有成分股名单。\"\n}"
+  },
+  {
+    "original_query": "000917",
+    "rewritten_query": "请对 000917 这只股票进行综合评价、基本面和技术面的诊断。",
+    "matched_rule": "规则 1：诊股类 - 纯标的映射",
+    "rewrite_raw": "{\n  \"matched_rule\": \"规则 1：诊股类 - 纯标的映射\",\n  \"rewritten_query\": \"请对 000917 这只股票进行综合评价、基本面和技术面的诊断。\"\n}"
+  },
+  {
+    "original_query": "IDC行业是什么行业",
+    "rewritten_query": "什么是IDC行业",
+    "matched_rule": "规则 6：知识库类 - 概念询问",
+    "rewrite_raw": "{\n  \"matched_rule\": \"规则 6：知识库类 - 概念询问\",\n  \"rewritten_query\": \"什么是IDC行业\"\n}"
+  },
+  {
+    "original_query": "截止到1月12日陈小群持股情况",
+    "rewritten_query": "截止到1月12日陈小群持股情况",
+    "matched_rule": "无",
+    "rewrite_raw": "{\n  \"matched_rule\": \"无\",\n  \"rewritten_query\": \"截止到1月12日陈小群持股情况\"\n}"
+  },
+  {
+    "original_query": "对股票什",
+    "rewritten_query": "对股票什",
+    "matched_rule": null,
+    "rewrite_raw": "{\n  \"matched_rule\": null,\n  \"rewritten_query\": \"对股票什\"\n}"
+  },
+  {
+    "original_query": "近期13日内主力资金净注入超过一亿，涨幅低于9%的，航天军工板块和计算机应用板块、原件板块、光学光电子板块、传媒板块有哪些股票",
+    "rewritten_query": "近期13日内主力资金净注入超过一亿，涨幅低于9%的，航天军工板块和计算机应用板块、原件板块、光学光电子板块、传媒板块有哪些股票",
+    "matched_rule": "",
+    "rewrite_raw": "{\n  \"matched_rule\": \"\",\n  \"rewritten_query\": \"近期13日内主力资金净注入超过一亿，涨幅低于9%的，航天军工板块和计算机应用板块、原件板块、光学光电子板块、传媒板块有哪些股票\"\n}"
+  },
+  {
+    "original_query": "159218ETF",
+    "rewritten_query": "请对 159218ETF 这只股票进行综合评价、基本面和技术面的诊断。",
+    "matched_rule": "规则 1：诊股类 - 纯标的映射",
+    "rewrite_raw": "{\n  \"matched_rule\": \"规则 1：诊股类 - 纯标的映射\",\n  \"rewritten_query\": \"请对 159218ETF 这只股票进行综合评价、基本面和技术面的诊断。\"\n}"
+  },
+  {
+    "original_query": "近期5日内主力资金净注入超过1亿，涨幅低于4%，航天军工板块有哪些股票",
+    "rewritten_query": "近期5日内主力资金净注入超过1亿，涨幅低于4%，航天军工板块有哪些股票",
+    "matched_rule": "",
+    "rewrite_raw": "{\n  \"matched_rule\": \"\",\n  \"rewritten_query\": \"近期5日内主力资金净注入超过1亿，涨幅低于4%，航天军工板块有哪些股票\"\n}"
+  },
+  {
+    "original_query": "业绩预增50％的股票",
+    "rewritten_query": "请按条件筛选并列出业绩预增50％的股票名单。",
+    "matched_rule": "规则 2：选股类 - 纯板块映射",
+    "rewrite_raw": "{\n  \"matched_rule\": \"规则 2：选股类 - 纯板块映射\",\n  \"rewritten_query\": \"请按条件筛选并列出业绩预增50％的股票名单。\"\n}"
+  },
+  {
+    "original_query": "信捷电器",
+    "rewritten_query": "请对信捷电器这只股票进行综合评价、基本面和技术面的诊断。",
+    "matched_rule": "规则 1：诊股类 - 纯标的映射",
+    "rewrite_raw": "{\n  \"matched_rule\": \"规则 1：诊股类 - 纯标的映射\",\n  \"rewritten_query\": \"请对信捷电器这只股票进行综合评价、基本面和技术面的诊断。\"\n}"
+  },
+  {
+    "original_query": "海航控股",
+    "rewritten_query": "请对海航控股这只股票进行综合评价、基本面和技术面的诊断。",
+    "matched_rule": "规则 1：诊股类 - 纯标的映射",
+    "rewrite_raw": "{\n  \"matched_rule\": \"规则 1：诊股类 - 纯标的映射\",\n  \"rewritten_query\": \"请对海航控股这只股票进行综合评价、基本面和技术面的诊断。\"\n}"
+  },
+  {
+    "original_query": "603817怎么看",
+    "rewritten_query": "请对603817这只股票进行综合评价、基本面和技术面的诊断。",
+    "matched_rule": "规则 1：诊股类 - 纯标的映射",
+    "rewrite_raw": "{\n  \"matched_rule\": \"规则 1：诊股类 - 纯标的映射\",\n  \"rewritten_query\": \"请对603817这只股票进行综合评价、基本面和技术面的诊断。\"\n}"
+  },
+  {
+    "original_query": "万向钱潮股价快速回落，尾盘集合竞价大单买入",
+    "rewritten_query": "万向钱潮股价快速回落，尾盘集合竞价大单买入",
+    "matched_rule": "",
+    "rewrite_raw": "{\n  \"matched_rule\": \"\",\n  \"rewritten_query\": \"万向钱潮股价快速回落，尾盘集合竞价大单买入\"\n}"
+  },
+  {
+    "original_query": "高业航天有那些股票",
+    "rewritten_query": "请按条件筛选并列出高业航天板块下的所有成分股名单。",
+    "matched_rule": "规则 2：选股类 - 纯板块映射",
+    "rewrite_raw": "{\n  \"matched_rule\": \"规则 2：选股类 - 纯板块映射\",\n  \"rewritten_query\": \"请按条件筛选并列出高业航天板块下的所有成分股名单。\"\n}"
+  },
+  {
+    "original_query": "海上回收概念股票",
+    "rewritten_query": "请按条件筛选并列出海上回收概念板块下的所有成分股名单。",
+    "matched_rule": "规则 2：选股类 - 纯板块映射",
+    "rewrite_raw": "{\n  \"matched_rule\": \"规则 2：选股类 - 纯板块映射\",\n  \"rewritten_query\": \"请按条件筛选并列出海上回收概念板块下的所有成分股名单。\"\n}"
+  },
+  {
+    "original_query": "如何下载动态擒龙版PC版",
+    "rewritten_query": "如何下载动态擒龙版PC版",
+    "matched_rule": null,
+    "rewrite_raw": "{\n  \"matched_rule\": null,\n  \"rewritten_query\": \"如何下载动态擒龙版PC版\"\n}"
+  },
+  {
+    "original_query": "帮我分析一下，生益科技。",
+    "rewritten_query": "请对生益科技这只股票进行综合评价、基本面和技术面的诊断。",
+    "matched_rule": "规则 1：诊股类 - 纯标的映射",
+    "rewrite_raw": "{\n  \"matched_rule\": \"规则 1：诊股类 - 纯标的映射\",\n  \"rewritten_query\": \"请对生益科技这只股票进行综合评价、基本面和技术面的诊断。\"\n}"
+  },
+  {
+    "original_query": "帮我分析一下东田微",
+    "rewritten_query": "帮我分析一下东田微",
+    "matched_rule": "无",
+    "rewrite_raw": "{\n  \"matched_rule\": \"无\",\n  \"rewritten_query\": \"帮我分析一下东田微\"\n}"
+  },
+  {
+    "original_query": "帮忙分析一下太钢不锈走势",
+    "rewritten_query": "帮忙分析一下太钢不锈走势",
+    "matched_rule": "无",
+    "rewrite_raw": "{\n  \"matched_rule\": \"无\",\n  \"rewritten_query\": \"帮忙分析一下太钢不锈走势\"\n}"
+  },
+  {
+    "original_query": "三六零",
+    "rewritten_query": "请对三六零这只股票进行综合评价、基本面和技术面的诊断。",
+    "matched_rule": "规则 1：诊股类 - 纯标的映射",
+    "rewrite_raw": "{\n  \"matched_rule\": \"规则 1：诊股类 - 纯标的映射\",\n  \"rewritten_query\": \"请对三六零这只股票进行综合评价、基本面和技术面的诊断。\"\n}"
+  },
+  {
+    "original_query": "帮我分析一下中京电子",
+    "rewritten_query": "帮我分析一下中京电子",
+    "matched_rule": "无",
+    "rewrite_raw": "{\n  \"matched_rule\": \"无\",\n  \"rewritten_query\": \"帮我分析一下中京电子\"\n}"
+  },
+  {
+    "original_query": "商业航天上游股票",
+    "rewritten_query": "请按条件筛选并列出商业航天上游板块下的所有成分股名单。",
+    "matched_rule": "规则 2：选股类 - 纯板块映射",
+    "rewrite_raw": "{\n  \"matched_rule\": \"规则 2：选股类 - 纯板块映射\",\n  \"rewritten_query\": \"请按条件筛选并列出商业航天上游板块下的所有成分股名单。\"\n}"
+  },
+  {
+    "original_query": "商业航天低位股票分析下",
+    "rewritten_query": "请对商业航天低位股票进行综合评价、基本面和技术面的诊断。",
+    "matched_rule": "规则 1：诊股类 - 纯标的映射",
+    "rewrite_raw": "{\n  \"matched_rule\": \"规则 1：诊股类 - 纯标的映射\",\n  \"rewritten_query\": \"请对商业航天低位股票进行综合评价、基本面和技术面的诊断。\"\n}"
+  },
+  {
+    "original_query": "北矿检测",
+    "rewritten_query": "请对北矿检测这只股票进行综合评价、基本面和技术面的诊断。",
+    "matched_rule": "规则 1：诊股类 - 纯标的映射",
+    "rewrite_raw": "{\n  \"matched_rule\": \"规则 1：诊股类 - 纯标的映射\",\n  \"rewritten_query\": \"请对北矿检测这只股票进行综合评价、基本面和技术面的诊断。\"\n}"
+  },
+  {
+    "original_query": "预测一下明天潍柴重机的走势",
+    "rewritten_query": "请预测和推演潍柴重机明天的前景。",
+    "matched_rule": "规则 3：预测类 - 时空穿梭映射",
+    "rewrite_raw": "{\n  \"matched_rule\": \"规则 3：预测类 - 时空穿梭映射\",\n  \"rewritten_query\": \"请预测和推演潍柴重机明天的前景。\"\n}"
+  },
+  {
+    "original_query": "Al应用有那些股票",
+    "rewritten_query": "请按条件筛选并列出 Al应用板块下的所有成分股名单。",
+    "matched_rule": "规则 2：选股类 - 纯板块映射",
+    "rewrite_raw": "{\n  \"matched_rule\": \"规则 2：选股类 - 纯板块映射\",\n  \"rewritten_query\": \"请按条件筛选并列出 Al应用板块下的所有成分股名单。\"\n}"
+  },
+  {
+    "original_query": "如何制定我的交易计划",
+    "rewritten_query": "如何制定我的交易计划",
+    "matched_rule": "",
+    "rewrite_raw": "{\n  \"matched_rule\": \"\",\n  \"rewritten_query\": \"如何制定我的交易计划\"\n}"
+  },
+  {
+    "original_query": "今天底位首板股票",
+    "rewritten_query": "请按条件筛选并列出今天底位首板股票板块下的所有成分股名单。",
+    "matched_rule": "规则 2：选股类 - 纯板块映射",
+    "rewrite_raw": "{\n  \"matched_rule\": \"规则 2：选股类 - 纯板块映射\",\n  \"rewritten_query\": \"请按条件筛选并列出今天底位首板股票板块下的所有成分股名单。\"\n}"
+  },
+  {
+    "original_query": "近期13日内主力资金净注入超过1亿，涨幅低于4%的股票",
+    "rewritten_query": "近期13日内主力资金净注入超过1亿，涨幅低于4%的股票",
+    "matched_rule": null,
+    "rewrite_raw": "{\n  \"matched_rule\": null,\n  \"rewritten_query\": \"近期13日内主力资金净注入超过1亿，涨幅低于4%的股票\"\n}"
+  },
+  {
+    "original_query": "力鸿一号飞行成功 背后的意义是什么",
+    "rewritten_query": "力鸿一号飞行成功 背后的意义是什么",
+    "matched_rule": "",
+    "rewrite_raw": "{\n  \"matched_rule\": \"\",\n  \"rewritten_query\": \"力鸿一号飞行成功 背后的意义是什么\"\n}"
+  },
+  {
+    "original_query": "航天工程昨夜有什么变动没有",
+    "rewritten_query": "航天工程昨夜有什么变动没有",
+    "matched_rule": "无",
+    "rewrite_raw": "{\n  \"matched_rule\": \"无\",\n  \"rewritten_query\": \"航天工程昨夜有什么变动没有\"\n}"
+  },
+  {
+    "original_query": "苹果笔记本怎么使用指南针炒股软件",
+    "rewritten_query": "苹果笔记本怎么使用指南针炒股软件",
+    "matched_rule": null,
+    "rewrite_raw": "{\n  \"matched_rule\": null,\n  \"rewritten_query\": \"苹果笔记本怎么使用指南针炒股软件\"\n}"
+  },
+  {
+    "original_query": "航天工程昨夜有什么变动没有",
+    "rewritten_query": "航天工程昨夜有什么变动没有",
+    "matched_rule": "无",
+    "rewrite_raw": "{\n  \"matched_rule\": \"无\",\n  \"rewritten_query\": \"航天工程昨夜有什么变动没有\"\n}"
+  },
+  {
+    "original_query": "所有帐户都可交易基金吗",
+    "rewritten_query": "所有帐户都可交易基金吗",
+    "matched_rule": "",
+    "rewrite_raw": "{\n  \"matched_rule\": \"\",\n  \"rewritten_query\": \"所有帐户都可交易基金吗\"\n}"
+  },
+  {
+    "original_query": "TCL科技并购重组了吗？",
+    "rewritten_query": "TCL科技并购重组了吗？",
+    "matched_rule": "无",
+    "rewrite_raw": "{\n  \"matched_rule\": \"无\",\n  \"rewritten_query\": \"TCL科技并购重组了吗？\"\n}"
+  },
+  {
+    "original_query": "商业卫星有那些股票",
+    "rewritten_query": "请按条件筛选并列出商业卫星板块下的所有成分股名单。",
+    "matched_rule": "规则 2：选股类 - 纯板块映射",
+    "rewrite_raw": "{\n  \"matched_rule\": \"规则 2：选股类 - 纯板块映射\",\n  \"rewritten_query\": \"请按条件筛选并列出商业卫星板块下的所有成分股名单。\"\n}"
+  },
+  {
+    "original_query": "拓尔思有调研报告吗",
+    "rewritten_query": "拓尔思有调研报告吗",
+    "matched_rule": "",
+    "rewrite_raw": "{\n  \"matched_rule\": \"\",\n  \"rewritten_query\": \"拓尔思有调研报告吗\"\n}"
+  },
+  {
+    "original_query": "卧龙电驱后期走势",
+    "rewritten_query": "请预测和推演卧龙电驱后期的走势、表现或前景。",
+    "matched_rule": "规则 3：预测类 - 时空穿梭映射",
+    "rewrite_raw": "{\n  \"matched_rule\": \"规则 3：预测类 - 时空穿梭映射\",\n  \"rewritten_query\": \"请预测和推演卧龙电驱后期的走势、表现或前景。\"\n}"
+  },
+  {
+    "original_query": "关于完成工商变更登记的公吿有哪些",
+    "rewritten_query": "关于完成工商变更登记的公告有哪些",
+    "matched_rule": null,
+    "rewrite_raw": "{\n  \"matched_rule\": null,\n  \"rewritten_query\": \"关于完成工商变更登记的公告有哪些\"\n}"
+  },
+  {
+    "original_query": "可控核聚变成分股有哪些？",
+    "rewritten_query": "请按条件筛选并列出可控核聚变板块下的所有成分股名单。",
+    "matched_rule": "规则 2：选股类 - 纯板块映射",
+    "rewrite_raw": "{\n  \"matched_rule\": \"规则 2：选股类 - 纯板块映射\",\n  \"rewritten_query\": \"请按条件筛选并列出可控核聚变板块下的所有成分股名单。\"\n}"
+  },
+  {
+    "original_query": "估值空间怎么调出",
+    "rewritten_query": "估值空间怎么调出",
+    "matched_rule": "",
+    "rewrite_raw": "{\n  \"matched_rule\": \"\",\n  \"rewritten_query\": \"估值空间怎么调出\"\n}"
+  },
+  {
+    "original_query": "上证基金和深证基金手续费有差别吗？比股票少吗？",
+    "rewritten_query": "上证基金和深证基金手续费有差别吗？比股票少吗？",
+    "matched_rule": null,
+    "rewrite_raw": "{\n  \"matched_rule\": null,\n  \"rewritten_query\": \"上证基金和深证基金手续费有差别吗？比股票少吗？\"\n}"
+  },
+  {
+    "original_query": "为什么预测上榜的股票，涨幅>7%才列入该股票池？",
+    "rewritten_query": "为什么预测上榜的股票，涨幅>7%才列入该股票池？",
+    "matched_rule": null,
+    "rewrite_raw": "{\n  \"matched_rule\": null,\n  \"rewritten_query\": \"为什么预测上榜的股票，涨幅>7%才列入该股票池？\"\n}"
+  },
+  {
+    "original_query": "游资交易数据哪里看",
+    "rewritten_query": "游资交易数据哪里看",
+    "matched_rule": "",
+    "rewrite_raw": "{\n  \"matched_rule\": \"\",\n  \"rewritten_query\": \"游资交易数据哪里看\"\n}"
+  },
+  {
+    "original_query": "ai+概念股",
+    "rewritten_query": "请按条件筛选并列出 ai+概念股板块下的所有成分股名单。",
+    "matched_rule": "规则 2：选股类 - 纯板块映射",
+    "rewrite_raw": "{\n  \"matched_rule\": \"规则 2：选股类 - 纯板块映射\",\n  \"rewritten_query\": \"请按条件筛选并列出 ai+概念股板块下的所有成分股名单。\"\n}"
+  },
+  {
+    "original_query": "美国加征关税政策对国内股市有什么影响吗",
+    "rewritten_query": "美国加征关税政策对国内股市有什么影响吗",
+    "matched_rule": "",
+    "rewrite_raw": "{\n  \"matched_rule\": \"\",\n  \"rewritten_query\": \"美国加征关税政策对国内股市有什么影响吗\"\n}"
+  },
+  {
+    "original_query": "利欧股份股票停牌什么时间复牌",
+    "rewritten_query": "利欧股份股票停牌什么时间复牌",
+    "matched_rule": "无",
+    "rewrite_raw": "{\n  \"matched_rule\": \"无\",\n  \"rewritten_query\": \"利欧股份股票停牌什么时间复牌\"\n}"
+  },
+  {
+    "original_query": "六大战区中有发生了大事",
+    "rewritten_query": "六大战区中有发生了大事",
+    "matched_rule": null,
+    "rewrite_raw": "{\n  \"matched_rule\": null,\n  \"rewritten_query\": \"六大战区中有发生了大事\"\n}"
+  },
+  {
+    "original_query": "炒基金是T十0吗",
+    "rewritten_query": "炒基金是T十0吗",
+    "matched_rule": "",
+    "rewrite_raw": "{\n  \"matched_rule\": \"\",\n  \"rewritten_query\": \"炒基金是T十0吗\"\n}"
+  },
+  {
+    "original_query": "上海机场有利好消息吗？",
+    "rewritten_query": "上海机场有利好消息吗？",
+    "matched_rule": "",
+    "rewrite_raw": "{\n  \"matched_rule\": \"\",\n  \"rewritten_query\": \"上海机场有利好消息吗？\"\n}"
+  },
+  {
+    "original_query": "卫星ETF明天走势",
+    "rewritten_query": "请预测和推演卫星ETF明天的前景。",
+    "matched_rule": "规则 3：预测类 - 时空穿梭映射",
+    "rewrite_raw": "{\n  \"matched_rule\": \"规则 3：预测类 - 时空穿梭映射\",\n  \"rewritten_query\": \"请预测和推演卫星ETF明天的前景。\"\n}"
+  },
+  {
+    "original_query": "帮我分析一下诲峡环保",
+    "rewritten_query": "请对诲峡环保这只股票进行综合评价、基本面和技术面的诊断。",
+    "matched_rule": "规则 1：诊股类 - 纯标的映射",
+    "rewrite_raw": "{\n  \"matched_rule\": \"规则 1：诊股类 - 纯标的映射\",\n  \"rewritten_query\": \"请对诲峡环保这只股票进行综合评价、基本面和技术面的诊断。\"\n}"
+  },
+  {
+    "original_query": "火箭回收船概念龙头股",
+    "rewritten_query": "请按条件筛选并列出火箭回收船概念板块下的所有成分股名单。",
+    "matched_rule": "规则 2：选股类 - 纯板块映射",
+    "rewrite_raw": "{\n  \"matched_rule\": \"规则 2：选股类 - 纯板块映射\",\n  \"rewritten_query\": \"请按条件筛选并列出火箭回收船概念板块下的所有成分股名单。\"\n}"
+  },
+  {
+    "original_query": "商业航天卫星供电概念股",
+    "rewritten_query": "请按条件筛选并列出商业航天卫星供电概念股板块下的所有成分股名单。",
+    "matched_rule": "规则 2：选股类 - 纯板块映射",
+    "rewrite_raw": "{\n  \"matched_rule\": \"规则 2：选股类 - 纯板块映射\",\n  \"rewritten_query\": \"请按条件筛选并列出商业航天卫星供电概念股板块下的所有成分股名单。\"\n}"
+  },
+  {
+    "original_query": "6000498是那一板块的",
+    "rewritten_query": "请问查询6000498的概念板块是什么这一指标。",
+    "matched_rule": "规则 5：指标查询类 - 指标查询",
+    "rewrite_raw": "{\n  \"matched_rule\": \"规则 5：指标查询类 - 指标查询\",\n  \"rewritten_query\": \"请问查询6000498的概念板块是什么这一指标。\"\n}"
+  },
+  {
+    "original_query": "明天买什么票比较好",
+    "rewritten_query": "明天买什么票比较好",
+    "matched_rule": "",
+    "rewrite_raw": "{\n  \"matched_rule\": \"\",\n  \"rewritten_query\": \"明天买什么票比较好\"\n}"
+  },
+  {
+    "original_query": "今年电子半导体概念和板块是不是国家扶持政策和补贴政策呢",
+    "rewritten_query": "今年电子半导体概念和板块是不是国家扶持政策和补贴政策呢",
+    "matched_rule": "无",
+    "rewrite_raw": "{\n  \"matched_rule\": \"无\",\n  \"rewritten_query\": \"今年电子半导体概念和板块是不是国家扶持政策和补贴政策呢\"\n}"
+  },
+  {
+    "original_query": "预测上榜的理由是什么？",
+    "rewritten_query": "预测上榜的理由是什么？",
+    "matched_rule": "",
+    "rewrite_raw": "{\n  \"matched_rule\": \"\",\n  \"rewritten_query\": \"预测上榜的理由是什么？\"\n}"
+  },
+  {
+    "original_query": "海立股份B转A完成了吗",
+    "rewritten_query": "海立股份B转A完成了吗",
+    "matched_rule": "",
+    "rewrite_raw": "{\n  \"matched_rule\": \"\",\n  \"rewritten_query\": \"海立股份B转A完成了吗\"\n}"
+  },
+  {
+    "original_query": "制造卫星的有哪几家公司",
+    "rewritten_query": "制造卫星的有哪几家公司",
+    "matched_rule": "",
+    "rewrite_raw": "{\n  \"matched_rule\": \"\",\n  \"rewritten_query\": \"制造卫星的有哪几家公司\"\n}"
+  },
+  {
+    "original_query": "Al玩具股票",
+    "rewritten_query": "请按条件筛选并列出 Al玩具股票板块下的所有成分股名单。",
+    "matched_rule": "规则 2：选股类 - 纯板块映射",
+    "rewrite_raw": "{\n  \"matched_rule\": \"规则 2：选股类 - 纯板块映射\",\n  \"rewritten_query\": \"请按条件筛选并列出 Al玩具股票板块下的所有成分股名单。\"\n}"
+  },
+  {
+    "original_query": "明天直接强势股",
+    "rewritten_query": "请问查询明天直接强势股这一指标",
+    "matched_rule": "规则 5：指标查询类 - 指标查询",
+    "rewrite_raw": "{\n  \"matched_rule\": \"规则 5：指标查询类 - 指标查询\",\n  \"rewritten_query\": \"请问查询明天直接强势股这一指标\"\n}"
+  },
+  {
+    "original_query": "大宗交易买入的股票有锁定期吗？",
+    "rewritten_query": "大宗交易买入的股票有锁定期吗？",
+    "matched_rule": "",
+    "rewrite_raw": "{\n  \"matched_rule\": \"\",\n  \"rewritten_query\": \"大宗交易买入的股票有锁定期吗？\"\n}"
+  },
+  {
+    "original_query": "快憶电悌明天行情会上涨吗？",
+    "rewritten_query": "快憶电悌明天行情会上涨吗？",
+    "matched_rule": "JSON解析失败",
+    "rewrite_raw": "{\n  \"matched_rule\": \"规则 3：预测类 - 时空穿梭映射\",\n  \"rewritten_query\": \"请预测和推演快憶电悌明天的前景。\"\n} \n\n**注：** 原始输入中的“快憶电悌”应为“快意电气”的误输，但根据规则，我们不对非意图相关的错误进行修正。"
+  },
+  {
+    "original_query": "分析天汽模",
+    "rewritten_query": "请对天汽模这只股票进行综合评价、基本面和技术面的诊断。",
+    "matched_rule": "规则 1：诊股类 - 纯标的映射",
+    "rewrite_raw": "{\n  \"matched_rule\": \"规则 1：诊股类 - 纯标的映射\",\n  \"rewritten_query\": \"请对天汽模这只股票进行综合评价、基本面和技术面的诊断。\"\n}"
+  },
+  {
+    "original_query": "龙溪股份明天的走势",
+    "rewritten_query": "请预测和推演龙溪股份明天的前景。",
+    "matched_rule": "规则 3：预测类 - 时空穿梭映射",
+    "rewrite_raw": "{\n  \"matched_rule\": \"规则 3：预测类 - 时空穿梭映射\",\n  \"rewritten_query\": \"请预测和推演龙溪股份明天的前景。\"\n}"
+  },
+  {
+    "original_query": "航天电子未来一年走势",
+    "rewritten_query": "请预测和推演航天电子未来一年的前景。",
+    "matched_rule": "规则 3：预测类 - 时空穿梭映射",
+    "rewrite_raw": "{\n  \"matched_rule\": \"规则 3：预测类 - 时空穿梭映射\",\n  \"rewritten_query\": \"请预测和推演航天电子未来一年的前景。\"\n}"
+  },
+  {
+    "original_query": "ETF基金是不是当天买当天可以卖",
+    "rewritten_query": "ETF基金是不是当天买当天可以卖",
+    "matched_rule": "",
+    "rewrite_raw": "{\n  \"matched_rule\": \"\",\n  \"rewritten_query\": \"ETF基金是不是当天买当天可以卖\"\n}"
+  },
+  {
+    "original_query": "全信股份",
+    "rewritten_query": "请对全信股份这只股票进行综合评价、基本面和技术面的诊断。",
+    "matched_rule": "规则 1：诊股类 - 纯标的映射",
+    "rewrite_raw": "{\n  \"matched_rule\": \"规则 1：诊股类 - 纯标的映射\",\n  \"rewritten_query\": \"请对全信股份这只股票进行综合评价、基本面和技术面的诊断。\"\n}"
+  },
+  {
+    "original_query": "帮我分析一下北方稀土",
+    "rewritten_query": "帮我分析一下北方稀土",
+    "matched_rule": "无",
+    "rewrite_raw": "{\n  \"matched_rule\": \"无\",\n  \"rewritten_query\": \"帮我分析一下北方稀土\"\n}"
+  },
+  {
+    "original_query": "制造卫星的公司哪家业绩最好",
+    "rewritten_query": "制造卫星的公司哪家业绩最好",
+    "matched_rule": "",
+    "rewrite_raw": "{\n  \"matched_rule\": \"\",\n  \"rewritten_query\": \"制造卫星的公司哪家业绩最好\"\n}"
+  },
+  {
+    "original_query": "电子半导体材料股票有那些",
+    "rewritten_query": "请按条件筛选并列出电子半导体材料板块下的所有成分股名单。",
+    "matched_rule": "规则 2：选股类 - 纯板块映射",
+    "rewrite_raw": "{\n  \"matched_rule\": \"规则 2：选股类 - 纯板块映射\",\n  \"rewritten_query\": \"请按条件筛选并列出电子半导体材料板块下的所有成分股名单。\"\n}"
+  },
+  {
+    "original_query": "帮我分析一下南网科技",
+    "rewritten_query": "帮我分析一下南网科技",
+    "matched_rule": "无",
+    "rewrite_raw": "{\n  \"matched_rule\": \"无\",\n  \"rewritten_query\": \"帮我分析一下南网科技\"\n}"
+  },
+  {
+    "original_query": "怎么开",
+    "rewritten_query": "怎么开",
+    "matched_rule": null,
+    "rewrite_raw": "{\n  \"matched_rule\": null,\n  \"rewritten_query\": \"怎么开\"\n}"
+  },
+  {
+    "original_query": "丰信生物",
+    "rewritten_query": "请对丰信生物这只股票进行综合评价、基本面和技术面的诊断。",
+    "matched_rule": "规则 1：诊股类 - 纯标的映射",
+    "rewrite_raw": "{\n  \"matched_rule\": \"规则 1：诊股类 - 纯标的映射\",\n  \"rewritten_query\": \"请对丰信生物这只股票进行综合评价、基本面和技术面的诊断。\"\n}"
+  },
+  {
+    "original_query": "永鼎股份今天回落的原因",
+    "rewritten_query": "永鼎股份今天回落的原因",
+    "matched_rule": "无",
+    "rewrite_raw": "{\n  \"matched_rule\": \"无\",\n  \"rewritten_query\": \"永鼎股份今天回落的原因\"\n}"
+  },
+  {
+    "original_query": "哎，只能提",
+    "rewritten_query": "哎，只能提",
+    "matched_rule": "",
+    "rewrite_raw": "{\n  \"matched_rule\": \"\",\n  \"rewritten_query\": \"哎，只能提\"\n}"
+  },
+  {
+    "original_query": "常山北明今天的表现不错帮我分析下原因",
+    "rewritten_query": "常山北明今天的表现不错帮我分析下原因",
+    "matched_rule": "无",
+    "rewrite_raw": "{\n  \"matched_rule\": \"无\",\n  \"rewritten_query\": \"常山北明今天的表现不错帮我分析下原因\"\n}"
+  },
+  {
+    "original_query": "选一只航天短现股票",
+    "rewritten_query": "选一只航天短现股票",
+    "matched_rule": "",
+    "rewrite_raw": "{\n  \"matched_rule\": \"\",\n  \"rewritten_query\": \"选一只航天短现股票\"\n}"
+  },
+  {
+    "original_query": "level2怎么开",
+    "rewritten_query": "level2怎么开",
+    "matched_rule": null,
+    "rewrite_raw": "{\n  \"matched_rule\": null,\n  \"rewritten_query\": \"level2怎么开\"\n}"
+  },
+  {
+    "original_query": "002151趋势",
+    "rewritten_query": "002151趋势",
+    "matched_rule": "",
+    "rewrite_raw": "{\n  \"matched_rule\": \"\",\n  \"rewritten_query\": \"002151趋势\"\n}"
+  },
+  {
+    "original_query": "分时图上出现机构扫货的线那个指标以后是什么意思",
+    "rewritten_query": "什么是分时图上出现机构扫货的线那个指标以后的意思",
+    "matched_rule": "规则 6：知识库类 - 概念询问",
+    "rewrite_raw": "{\n  \"matched_rule\": \"规则 6：知识库类 - 概念询问\",\n  \"rewritten_query\": \"什么是分时图上出现机构扫货的线那个指标以后的意思\"\n}"
+  },
+  {
+    "original_query": "九丰能源明天走势会怎样",
+    "rewritten_query": "请预测和推演九丰能源明天的前景。",
+    "matched_rule": "规则 3：预测类 - 时空穿梭映射",
+    "rewrite_raw": "{\n  \"matched_rule\": \"规则 3：预测类 - 时空穿梭映射\",\n  \"rewritten_query\": \"请预测和推演九丰能源明天的前景。\"\n}"
+  },
+  {
+    "original_query": "高成长高毛利率绩优科技股",
+    "rewritten_query": "请按条件筛选并列出高成长高毛利率绩优科技股板块下的所有成分股名单。",
+    "matched_rule": "规则 2：选股类 - 纯板块映射",
+    "rewrite_raw": "{\n  \"matched_rule\": \"规则 2：选股类 - 纯板块映射\",\n  \"rewritten_query\": \"请按条件筛选并列出高成长高毛利率绩优科技股板块下的所有成分股名单。\"\n}"
+  },
+  {
+    "original_query": "火箭海上回收的股票有几个？",
+    "rewritten_query": "请问查询火箭海上回收这一概念板块包含的股票数量。",
+    "matched_rule": "规则 5：指标查询类 - 指标查询",
+    "rewrite_raw": "{\n  \"matched_rule\": \"规则 5：指标查询类 - 指标查询\",\n  \"rewritten_query\": \"请问查询火箭海上回收这一概念板块包含的股票数量。\"\n}"
+  },
+  {
+    "original_query": "你问，你问什么",
+    "rewritten_query": "你问，你问什么",
+    "matched_rule": "",
+    "rewrite_raw": "{\n  \"matched_rule\": \"\",\n  \"rewritten_query\": \"你问，你问什么\"\n}"
+  },
+  {
+    "original_query": "沪市的高成长高毛利率绩优科技股",
+    "rewritten_query": "请按条件筛选并列出沪市的高成长高毛利率绩优科技股板块下的所有成分股名单。",
+    "matched_rule": "规则 2：选股类 - 纯板块映射",
+    "rewrite_raw": "{\n  \"matched_rule\": \"规则 2：选股类 - 纯板块映射\",\n  \"rewritten_query\": \"请按条件筛选并列出沪市的高成长高毛利率绩优科技股板块下的所有成分股名单。\"\n}"
+  },
+  {
+    "original_query": "手机版指南针软件如何操作",
+    "rewritten_query": "手机版指南针软件如何操作",
+    "matched_rule": null,
+    "rewrite_raw": "{\n  \"matched_rule\": null,\n  \"rewritten_query\": \"手机版指南针软件如何操作\"\n}"
+  },
+  {
+    "original_query": "无穷线是什么意思",
+    "rewritten_query": "什么是无穷线",
+    "matched_rule": "规则 6：知识库类 - 概念询问",
+    "rewrite_raw": "{\n  \"matched_rule\": \"规则 6：知识库类 - 概念询问\",\n  \"rewritten_query\": \"什么是无穷线\"\n}"
+  },
+  {
+    "original_query": "分时图上出现那个潜伏吸筹的黄色柱状代表什么意思",
+    "rewritten_query": "分时图上出现的那个潜伏吸筹的黄色柱状代表什么意思",
+    "matched_rule": "无",
+    "rewrite_raw": "{\n  \"matched_rule\": \"无\",\n  \"rewritten_query\": \"分时图上出现的那个潜伏吸筹的黄色柱状代表什么意思\"\n}"
+  },
+  {
+    "original_query": "沪市的高成长高毛利率低估值绩优科技股",
+    "rewritten_query": "请按条件筛选并列出沪市的高成长高毛利率低估值绩优科技股板块下的所有成分股名单。",
+    "matched_rule": "规则 2：选股类 - 纯板块映射",
+    "rewrite_raw": "{\n  \"matched_rule\": \"规则 2：选股类 - 纯板块映射\",\n  \"rewritten_query\": \"请按条件筛选并列出沪市的高成长高毛利率低估值绩优科技股板块下的所有成分股名单。\"\n}"
+  },
+  {
+    "original_query": "捷成股份明天会高开直线拉升涨停吗",
+    "rewritten_query": "请预测和推演捷成股份明天的前景。",
+    "matched_rule": "规则 3：预测类 - 时空穿梭映射",
+    "rewrite_raw": "{\n  \"matched_rule\": \"规则 3：预测类 - 时空穿梭映射\",\n  \"rewritten_query\": \"请预测和推演捷成股份明天的前景。\"\n}"
+  },
+  {
+    "original_query": "600570股票资金流入情况",
+    "rewritten_query": "请问查询600570股票的资金流入情况这一指标。",
+    "matched_rule": "规则 5：指标查询类 - 指标查询",
+    "rewrite_raw": "{\n  \"matched_rule\": \"规则 5：指标查询类 - 指标查询\",\n  \"rewritten_query\": \"请问查询600570股票的资金流入情况这一指标。\"\n}"
+  },
+  {
+    "original_query": "K线中圈中定是什么意思",
+    "rewritten_query": "什么是K线中圈中定",
+    "matched_rule": "规则 6：知识库类 - 概念询问",
+    "rewrite_raw": "{\n  \"matched_rule\": \"规则 6：知识库类 - 概念询问\",\n  \"rewritten_query\": \"什么是K线中圈中定\"\n}"
+  },
+  {
+    "original_query": "帮我分析一下视觉中国",
+    "rewritten_query": "帮我分析一下视觉中国",
+    "matched_rule": "无",
+    "rewrite_raw": "{\n  \"matched_rule\": \"无\",\n  \"rewritten_query\": \"帮我分析一下视觉中国\"\n}"
+  },
+  {
+    "original_query": "尾盘抢筹+主力资金的股票",
+    "rewritten_query": "请按条件筛选并列出尾盘抢筹+主力资金的股票名单。",
+    "matched_rule": "规则 2：选股类 - 纯板块映射",
+    "rewrite_raw": "{\n  \"matched_rule\": \"规则 2：选股类 - 纯板块映射\",\n  \"rewritten_query\": \"请按条件筛选并列出尾盘抢筹+主力资金的股票名单。\"\n}"
+  },
+  {
+    "original_query": "中远海发",
+    "rewritten_query": "请对中远海发这只股票进行综合评价、基本面和技术面的诊断。",
+    "matched_rule": "规则 1：诊股类 - 纯标的映射",
+    "rewrite_raw": "{\n  \"matched_rule\": \"规则 1：诊股类 - 纯标的映射\",\n  \"rewritten_query\": \"请对中远海发这只股票进行综合评价、基本面和技术面的诊断。\"\n}"
+  },
+  {
+    "original_query": "帮我分析一下中远海能",
+    "rewritten_query": "帮我分析一下中远海能",
+    "matched_rule": "无",
+    "rewrite_raw": "{\n  \"matched_rule\": \"无\",\n  \"rewritten_query\": \"帮我分析一下中远海能\"\n}"
+  },
+  {
+    "original_query": "帮我分析一下东方钽业",
+    "rewritten_query": "帮我分析一下东方钽业",
+    "matched_rule": "无",
+    "rewrite_raw": "{\n  \"matched_rule\": \"无\",\n  \"rewritten_query\": \"帮我分析一下东方钽业\"\n}"
+  },
+  {
+    "original_query": "帮我分析一下三六零",
+    "rewritten_query": "请对三六零这只股票进行综合评价、基本面和技术面的诊断。",
+    "matched_rule": "规则 1：诊股类 - 纯标的映射",
+    "rewrite_raw": "{\n  \"matched_rule\": \"规则 1：诊股类 - 纯标的映射\",\n  \"rewritten_query\": \"请对三六零这只股票进行综合评价、基本面和技术面的诊断。\"\n}"
+  },
+  {
+    "original_query": "浙富控股后市行情如何",
+    "rewritten_query": "请预测和推演浙富控股后市的行情前景。",
+    "matched_rule": "规则 3：预测类 - 时空穿梭映射",
+    "rewrite_raw": "{\n  \"matched_rule\": \"规则 3：预测类 - 时空穿梭映射\",\n  \"rewritten_query\": \"请预测和推演浙富控股后市的行情前景。\"\n}"
+  },
+  {
+    "original_query": "帮我分析一下凯盛科技",
+    "rewritten_query": "帮我分析一下凯盛科技",
+    "matched_rule": "无",
+    "rewrite_raw": "{\n  \"matched_rule\": \"无\",\n  \"rewritten_query\": \"帮我分析一下凯盛科技\"\n}"
+  },
+  {
+    "original_query": "推荐明天买入的股票",
+    "rewritten_query": "推荐明天买入的股票",
+    "matched_rule": "",
+    "rewrite_raw": "{\n  \"matched_rule\": \"\",\n  \"rewritten_query\": \"推荐明天买入的股票\"\n}"
+  },
+  {
+    "original_query": "烽火通信今天涨停的原因",
+    "rewritten_query": "烽火通信今天涨停的原因",
+    "matched_rule": "无",
+    "rewrite_raw": "{\n  \"matched_rule\": \"无\",\n  \"rewritten_query\": \"烽火通信今天涨停的原因\"\n}"
+  },
+  {
+    "original_query": "今天九丰能源今天未能封板的原因是什么",
+    "rewritten_query": "今天九丰能源今天未能封板的原因是什么",
+    "matched_rule": "",
+    "rewrite_raw": "{\n  \"matched_rule\": \"\",\n  \"rewritten_query\": \"今天九丰能源今天未能封板的原因是什么\"\n}"
+  },
+  {
+    "original_query": "宁波华翔后市如何",
+    "rewritten_query": "请预测和推演宁波华翔后市的前景。",
+    "matched_rule": "规则 3：预测类 - 时空穿梭映射",
+    "rewrite_raw": "{\n  \"matched_rule\": \"规则 3：预测类 - 时空穿梭映射\",\n  \"rewritten_query\": \"请预测和推演宁波华翔后市的前景。\"\n}"
+  },
+  {
+    "original_query": "捷超股份明天会高开直线拉升涨停吗",
+    "rewritten_query": "请预测和推演捷超股份明天的前景。",
+    "matched_rule": "规则 3：预测类 - 时空穿梭映射",
+    "rewrite_raw": "{\n  \"matched_rule\": \"规则 3：预测类 - 时空穿梭映射\",\n  \"rewritten_query\": \"请预测和推演捷超股份明天的前景。\"\n}"
+  },
+  {
+    "original_query": "来一只超短股票",
+    "rewritten_query": "来一只超短股票",
+    "matched_rule": "",
+    "rewrite_raw": "{\n  \"matched_rule\": \"\",\n  \"rewritten_query\": \"来一只超短股票\"\n}"
+  },
+  {
+    "original_query": "高成长高毛利率低估值绩优科技股",
+    "rewritten_query": "请按条件筛选并列出高成长高毛利率低估值绩优科技股板块下的所有成分股名单。",
+    "matched_rule": "规则 2：选股类 - 纯板块映射",
+    "rewrite_raw": "{\n  \"matched_rule\": \"规则 2：选股类 - 纯板块映射\",\n  \"rewritten_query\": \"请按条件筛选并列出高成长高毛利率低估值绩优科技股板块下的所有成分股名单。\"\n}"
+  },
+  {
+    "original_query": "火箭海上发射的公司有几个",
+    "rewritten_query": "火箭海上发射的公司有几个",
+    "matched_rule": "无",
+    "rewrite_raw": "{\n  \"matched_rule\": \"无\",\n  \"rewritten_query\": \"火箭海上发射的公司有几个\"\n}"
+  },
+  {
+    "original_query": "卫星充电电源概念股",
+    "rewritten_query": "请按条件筛选并列出卫星充电电源概念股板块下的所有成分股名单。",
+    "matched_rule": "规则 2：选股类 - 纯板块映射",
+    "rewrite_raw": "{\n  \"matched_rule\": \"规则 2：选股类 - 纯板块映射\",\n  \"rewritten_query\": \"请按条件筛选并列出卫星充电电源概念股板块下的所有成分股名单。\"\n}"
+  },
+  {
+    "original_query": "分析一下北矿检测未来的发展趋势。",
+    "rewritten_query": "请预测和推演北矿检测未来的发展趋势。",
+    "matched_rule": "规则 3：预测类 - 时空穿梭映射",
+    "rewrite_raw": "{\n  \"matched_rule\": \"规则 3：预测类 - 时空穿梭映射\",\n  \"rewritten_query\": \"请预测和推演北矿检测未来的发展趋势。\"\n}"
+  },
+  {
+    "original_query": "指南针的股民日记在哪里",
+    "rewritten_query": "指南针的股民日记在哪里",
+    "matched_rule": "",
+    "rewrite_raw": "{\n  \"matched_rule\": \"\",\n  \"rewritten_query\": \"指南针的股民日记在哪里\"\n}"
+  },
+  {
+    "original_query": "风险等级问题",
+    "rewritten_query": "什么是风险等级问题?",
+    "matched_rule": "规则 6：知识库类 - 概念询问",
+    "rewrite_raw": "{\n  \"matched_rule\": \"规则 6：知识库类 - 概念询问\",\n  \"rewritten_query\": \"什么是风险等级问题?\"\n}"
+  },
+  {
+    "original_query": "中电鑫龙后面会怎么样的走势",
+    "rewritten_query": "请预测和推演中电鑫龙后面的走势、表现或前景。",
+    "matched_rule": "规则 3：预测类 - 时空穿梭映射",
+    "rewrite_raw": "{\n  \"matched_rule\": \"规则 3：预测类 - 时空穿梭映射\",\n  \"rewritten_query\": \"请预测和推演中电鑫龙后面的走势、表现或前景。\"\n}"
+  },
+  {
+    "original_query": "国内期货白天和夜盘怎么看",
+    "rewritten_query": "国内期货白天和夜盘怎么看",
+    "matched_rule": null,
+    "rewrite_raw": "{\n  \"matched_rule\": null,\n  \"rewritten_query\": \"国内期货白天和夜盘怎么看\"\n}"
+  },
+  {
+    "original_query": "你真呆",
+    "rewritten_query": "你真呆",
+    "matched_rule": "",
+    "rewrite_raw": "{\n  \"matched_rule\": \"\",\n  \"rewritten_query\": \"你真呆\"\n}"
+  },
+  {
+    "original_query": "机器就是机器",
+    "rewritten_query": "机器就是机器",
+    "matched_rule": "",
+    "rewrite_raw": "{\n  \"matched_rule\": \"\",\n  \"rewritten_query\": \"机器就是机器\"\n}"
+  },
+  {
+    "original_query": "明日润和软件如何操作？",
+    "rewritten_query": "请预测和推演润和软件明日的前景。",
+    "matched_rule": "规则 3：预测类 - 时空穿梭映射",
+    "rewrite_raw": "{\n  \"matched_rule\": \"规则 3：预测类 - 时空穿梭映射\",\n  \"rewritten_query\": \"请预测和推演润和软件明日的前景。\"\n}"
+  },
+  {
+    "original_query": "大盘量能",
+    "rewritten_query": "什么是大盘量能",
+    "matched_rule": "规则 6：知识库类 - 概念询问",
+    "rewrite_raw": "{\n  \"matched_rule\": \"规则 6：知识库类 - 概念询问\",\n  \"rewritten_query\": \"什么是大盘量能\"\n}"
+  },
+  {
+    "original_query": "具体有那些股票",
+    "rewritten_query": "具体有那些股票",
+    "matched_rule": null,
+    "rewrite_raw": "{\n  \"matched_rule\": null,\n  \"rewritten_query\": \"具体有那些股票\"\n}"
+  },
+  {
+    "original_query": "康龙化成。腰骨",
+    "rewritten_query": "康龙化成。腰骨",
+    "matched_rule": "",
+    "rewrite_raw": "{\n  \"matched_rule\": \"\",\n  \"rewritten_query\": \"康龙化成。腰骨\"\n}"
+  },
+  {
+    "original_query": "600150的走势",
+    "rewritten_query": "600150的走势",
+    "matched_rule": "",
+    "rewrite_raw": "{\n  \"matched_rule\": \"\",\n  \"rewritten_query\": \"600150的走势\"\n}"
+  },
+  {
+    "original_query": "方正电机利润为什么涨几千倍",
+    "rewritten_query": "方正电机利润为什么涨几千倍",
+    "matched_rule": "无",
+    "rewrite_raw": "{\n  \"matched_rule\": \"无\",\n  \"rewritten_query\": \"方正电机利润为什么涨几千倍\"\n}"
+  },
+  {
+    "original_query": "分析一下润和软件",
+    "rewritten_query": "请对润和软件这只股票进行综合评价、基本面和技术面的诊断。",
+    "matched_rule": "规则 1：诊股类 - 纯标的映射",
+    "rewrite_raw": "{\n  \"matched_rule\": \"规则 1：诊股类 - 纯标的映射\",\n  \"rewritten_query\": \"请对润和软件这只股票进行综合评价、基本面和技术面的诊断。\"\n}"
+  },
+  {
+    "original_query": "德固特分析一下",
+    "rewritten_query": "请对德固特这只股票进行综合评价、基本面和技术面的诊断。",
+    "matched_rule": "规则 1：诊股类 - 纯标的映射",
+    "rewrite_raw": "{\n  \"matched_rule\": \"规则 1：诊股类 - 纯标的映射\",\n  \"rewritten_query\": \"请对德固特这只股票进行综合评价、基本面和技术面的诊断。\"\n}"
+  },
+  {
+    "original_query": "风险等级A5是最高的吗？",
+    "rewritten_query": "风险等级A5是最高的吗？",
+    "matched_rule": "",
+    "rewrite_raw": "{\n  \"matched_rule\": \"\",\n  \"rewritten_query\": \"风险等级A5是最高的吗？\"\n}"
+  },
+  {
+    "original_query": "一日资金增长在百分之四以上的股票",
+    "rewritten_query": "请按条件筛选并列出一日资金增长在百分之四以上的所有成分股名单。",
+    "matched_rule": "规则 2：选股类 - 纯板块映射",
+    "rewrite_raw": "{\n  \"matched_rule\": \"规则 2：选股类 - 纯板块映射\",\n  \"rewritten_query\": \"请按条件筛选并列出一日资金增长在百分之四以上的所有成分股名单。\"\n}"
+  },
+  {
+    "original_query": "300170能帮我分析一下",
+    "rewritten_query": "请对300170这只股票进行综合评价、基本面和技术面的诊断。",
+    "matched_rule": "规则 1：诊股类 - 纯标的映射",
+    "rewrite_raw": "{\n  \"matched_rule\": \"规则 1：诊股类 - 纯标的映射\",\n  \"rewritten_query\": \"请对300170这只股票进行综合评价、基本面和技术面的诊断。\"\n}"
+  },
+  {
+    "original_query": "你真笨",
+    "rewritten_query": "你真笨",
+    "matched_rule": "",
+    "rewrite_raw": "{\n  \"matched_rule\": \"\",\n  \"rewritten_query\": \"你真笨\"\n}"
+  },
+  {
+    "original_query": "分析一下富瑞特装",
+    "rewritten_query": "请对富瑞特装这只股票进行综合评价、基本面和技术面的诊断。",
+    "matched_rule": "规则 1：诊股类 - 纯标的映射",
+    "rewrite_raw": "{\n  \"matched_rule\": \"规则 1：诊股类 - 纯标的映射\",\n  \"rewritten_query\": \"请对富瑞特装这只股票进行综合评价、基本面和技术面的诊断。\"\n}"
+  },
+  {
+    "original_query": "芒果超媒",
+    "rewritten_query": "请对芒果超媒这只股票进行综合评价、基本面和技术面的诊断。",
+    "matched_rule": "规则 1：诊股类 - 纯标的映射",
+    "rewrite_raw": "{\n  \"matched_rule\": \"规则 1：诊股类 - 纯标的映射\",\n  \"rewritten_query\": \"请对芒果超媒这只股票进行综合评价、基本面和技术面的诊断。\"\n}"
+  },
+  {
+    "original_query": "帮我分析下银轮股份",
+    "rewritten_query": "帮我分析下银轮股份",
+    "matched_rule": "无",
+    "rewrite_raw": "{\n  \"matched_rule\": \"无\",\n  \"rewritten_query\": \"帮我分析下银轮股份\"\n}"
+  },
+  {
+    "original_query": "与火箭发射成绩有关的股票",
+    "rewritten_query": "请按条件筛选并列出与火箭发射成绩有关的股票名单。",
+    "matched_rule": "规则 2：选股类 - 纯板块映射",
+    "rewrite_raw": "{\n  \"matched_rule\": \"规则 2：选股类 - 纯板块映射\",\n  \"rewritten_query\": \"请按条件筛选并列出与火箭发射成绩有关的股票名单。\"\n}"
+  },
+  {
+    "original_query": "行业核心是什么意思",
+    "rewritten_query": "什么是行业核心",
+    "matched_rule": "规则 6：知识库类 - 概念询问",
+    "rewrite_raw": "{\n  \"matched_rule\": \"规则 6：知识库类 - 概念询问\",\n  \"rewritten_query\": \"什么是行业核心\"\n}"
+  },
+  {
+    "original_query": "赵延鑫要晚上挂单量是多少",
+    "rewritten_query": "赵延鑫要晚上挂单量是多少",
+    "matched_rule": null,
+    "rewrite_raw": "{\n  \"matched_rule\": null,\n  \"rewritten_query\": \"赵延鑫要晚上挂单量是多少\"\n}"
+  },
+  {
+    "original_query": "豪能股份",
+    "rewritten_query": "请对豪能股份这只股票进行综合评价、基本面和技术面的诊断。",
+    "matched_rule": "规则 1：诊股类 - 纯标的映射",
+    "rewrite_raw": "{\n  \"matched_rule\": \"规则 1：诊股类 - 纯标的映射\",\n  \"rewritten_query\": \"请对豪能股份这只股票进行综合评价、基本面和技术面的诊断。\"\n}"
+  },
+  {
+    "original_query": "601992股票资金流入还是流出",
+    "rewritten_query": "请问查询601992股票的资金流向这一指标。",
+    "matched_rule": "规则 5：指标查询类 - 指标查询",
+    "rewrite_raw": "{\n  \"matched_rule\": \"规则 5：指标查询类 - 指标查询\",\n  \"rewritten_query\": \"请问查询601992股票的资金流向这一指标。\"\n}"
+  },
+  {
+    "original_query": "金发科技可以继续持有吗",
+    "rewritten_query": "金发科技可以继续持有吗",
+    "matched_rule": "",
+    "rewrite_raw": "{\n  \"matched_rule\": \"\",\n  \"rewritten_query\": \"金发科技可以继续持有吗\"\n}"
+  },
+  {
+    "original_query": "康龙华真的大股东",
+    "rewritten_query": "康龙华真的大股东",
+    "matched_rule": "无",
+    "rewrite_raw": "{\n  \"matched_rule\": \"无\",\n  \"rewritten_query\": \"康龙华真的大股东\"\n}"
+  },
+  {
+    "original_query": "明日热门股",
+    "rewritten_query": "明日热门股",
+    "matched_rule": "无",
+    "rewrite_raw": "{\n  \"matched_rule\": \"无\",\n  \"rewritten_query\": \"明日热门股\"\n}"
+  },
+  {
+    "original_query": "帮我分析一下京东方a",
+    "rewritten_query": "帮我分析一下京东方a",
+    "matched_rule": "无",
+    "rewrite_raw": "{\n  \"matched_rule\": \"无\",\n  \"rewritten_query\": \"帮我分析一下京东方a\"\n}"
+  },
+  {
+    "original_query": "帮我分析一下药明康德",
+    "rewritten_query": "帮我分析一下药明康德",
+    "matched_rule": "无",
+    "rewrite_raw": "{\n  \"matched_rule\": \"无\",\n  \"rewritten_query\": \"帮我分析一下药明康德\"\n}"
+  },
+  {
+    "original_query": "乐普医疗明天适合买吗",
+    "rewritten_query": "请预测和推演乐普医疗明天的前景。",
+    "matched_rule": "规则 3：预测类 - 时空穿梭映射",
+    "rewrite_raw": "{\n  \"matched_rule\": \"规则 3：预测类 - 时空穿梭映射\",\n  \"rewritten_query\": \"请预测和推演乐普医疗明天的前景。\"\n}"
+  },
+  {
+    "original_query": "刚刚强势走强的板块有哪些",
+    "rewritten_query": "刚刚强势走强的板块有哪些",
+    "matched_rule": "",
+    "rewrite_raw": "{\n  \"matched_rule\": \"\",\n  \"rewritten_query\": \"刚刚强势走强的板块有哪些\"\n}"
+  },
+  {
+    "original_query": "600536未来的走势",
+    "rewritten_query": "请预测和推演600536未来的走势、表现或前景。",
+    "matched_rule": "规则 3：预测类 - 时空穿梭映射",
+    "rewrite_raw": "{\n  \"matched_rule\": \"规则 3：预测类 - 时空穿梭映射\",\n  \"rewritten_query\": \"请预测和推演600536未来的走势、表现或前景。\"\n}"
+  },
+  {
+    "original_query": "福安药业",
+    "rewritten_query": "请对福安药业这只股票进行综合评价、基本面和技术面的诊断。",
+    "matched_rule": "规则 1：诊股类 - 纯标的映射",
+    "rewrite_raw": "{\n  \"matched_rule\": \"规则 1：诊股类 - 纯标的映射\",\n  \"rewritten_query\": \"请对福安药业这只股票进行综合评价、基本面和技术面的诊断。\"\n}"
+  },
+  {
+    "original_query": "值在25以上的个股找出来",
+    "rewritten_query": "值在25以上的个股找出来",
+    "matched_rule": "",
+    "rewrite_raw": "{\n  \"matched_rule\": \"\",\n  \"rewritten_query\": \"值在25以上的个股找出来\"\n}"
+  },
+  {
+    "original_query": "600282趋势",
+    "rewritten_query": "600282趋势",
+    "matched_rule": "",
+    "rewrite_raw": "{\n  \"matched_rule\": \"\",\n  \"rewritten_query\": \"600282趋势\"\n}"
+  },
+  {
+    "original_query": "与火箭发射场地有关的股票",
+    "rewritten_query": "请按条件筛选并列出与火箭发射场地有关的股票名单。",
+    "matched_rule": "规则 2：选股类 - 纯板块映射",
+    "rewrite_raw": "{\n  \"matched_rule\": \"规则 2：选股类 - 纯板块映射\",\n  \"rewritten_query\": \"请按条件筛选并列出与火箭发射场地有关的股票名单。\"\n}"
+  },
+  {
+    "original_query": "可以继续持吗",
+    "rewritten_query": "可以继续持吗",
+    "matched_rule": "",
+    "rewrite_raw": "{\n  \"matched_rule\": \"\",\n  \"rewritten_query\": \"可以继续持吗\"\n}"
+  },
+  {
+    "original_query": "洛阳钼业现在可以加仓吗",
+    "rewritten_query": "洛阳钼业现在可以加仓吗",
+    "matched_rule": "",
+    "rewrite_raw": "{\n  \"matched_rule\": \"\",\n  \"rewritten_query\": \"洛阳钼业现在可以加仓吗\"\n}"
+  },
+  {
+    "original_query": "因用股票",
+    "rewritten_query": "请按条件筛选并列出因用股票板块下的所有成分股名单。",
+    "matched_rule": "规则 2：选股类 - 纯板块映射",
+    "rewrite_raw": "{\n  \"matched_rule\": \"规则 2：选股类 - 纯板块映射\",\n  \"rewritten_query\": \"请按条件筛选并列出因用股票板块下的所有成分股名单。\"\n}"
+  },
+  {
+    "original_query": "小米精选策略是什么？",
+    "rewritten_query": "请处理小米精选策略的解析",
+    "matched_rule": "规则 4：策略类 - 策略查询",
+    "rewrite_raw": "{\n  \"matched_rule\": \"规则 4：策略类 - 策略查询\",\n  \"rewritten_query\": \"请处理小米精选策略的解析\"\n}"
+  },
+  {
+    "original_query": "高管增持策略是什么？",
+    "rewritten_query": "请处理高管增持策略的解析",
+    "matched_rule": "规则 4：策略类 - 策略查询",
+    "rewrite_raw": "{\n  \"matched_rule\": \"规则 4：策略类 - 策略查询\",\n  \"rewritten_query\": \"请处理高管增持策略的解析\"\n}"
+  },
+  {
+    "original_query": "费雪创业板低估策略是什么？",
+    "rewritten_query": "请处理费雪创业板低估策略的解析",
+    "matched_rule": "规则 4：策略类 - 策略查询",
+    "rewrite_raw": "{\n  \"matched_rule\": \"规则 4：策略类 - 策略查询\",\n  \"rewritten_query\": \"请处理费雪创业板低估策略的解析\"\n}"
+  },
+  {
+    "original_query": "社保大量持仓策略是什么？",
+    "rewritten_query": "请处理社保大量持仓策略的解析",
+    "matched_rule": "规则 4：策略类 - 策略查询",
+    "rewrite_raw": "{\n  \"matched_rule\": \"规则 4：策略类 - 策略查询\",\n  \"rewritten_query\": \"请处理社保大量持仓策略的解析\"\n}"
+  },
+  {
+    "original_query": "上升三法策略是什么？",
+    "rewritten_query": "请处理上升三法策略的解析",
+    "matched_rule": "规则 4：策略类 - 策略查询",
+    "rewrite_raw": "{\n  \"matched_rule\": \"规则 4：策略类 - 策略查询\",\n  \"rewritten_query\": \"请处理上升三法策略的解析\"\n}"
+  },
+  {
+    "original_query": "戴维斯风格策略是什么？",
+    "rewritten_query": "请处理戴维斯风格策略的解析",
+    "matched_rule": "规则 4：策略类 - 策略查询",
+    "rewrite_raw": "{\n  \"matched_rule\": \"规则 4：策略类 - 策略查询\",\n  \"rewritten_query\": \"请处理戴维斯风格策略的解析\"\n}"
+  },
+  {
+    "original_query": "600570股票资金流入情况",
+    "rewritten_query": "请问查询600570股票的资金流入情况这一指标。",
+    "matched_rule": "规则 5：指标查询类 - 指标查询",
+    "rewrite_raw": "{\n  \"matched_rule\": \"规则 5：指标查询类 - 指标查询\",\n  \"rewritten_query\": \"请问查询600570股票的资金流入情况这一指标。\"\n}"
+  },
+  {
+    "original_query": "博纳影业1日多空资金有多少",
+    "rewritten_query": "请问查询博纳影业的日多空资金这一指标。",
+    "matched_rule": "规则 5：指标查询类 - 指标查询",
+    "rewrite_raw": "{\n  \"matched_rule\": \"规则 5：指标查询类 - 指标查询\",\n  \"rewritten_query\": \"请问查询博纳影业的日多空资金这一指标。\"\n}"
+  },
+  {
+    "original_query": "300803的概念板块是什么",
+    "rewritten_query": "请问查询300803的概念板块这一指标",
+    "matched_rule": "规则 5：指标查询类 - 指标查询",
+    "rewrite_raw": "{\n  \"matched_rule\": \"规则 5：指标查询类 - 指标查询\",\n  \"rewritten_query\": \"请问查询300803的概念板块这一指标\"\n}"
+  },
+  {
+    "original_query": "301299名字是什么？",
+    "rewritten_query": "请问查询301299的名字这一指标",
+    "matched_rule": "规则 5：指标查询类 - 指标查询",
+    "rewrite_raw": "{\n  \"matched_rule\": \"规则 5：指标查询类 - 指标查询\",\n  \"rewritten_query\": \"请问查询301299的名字这一指标\"\n}"
+  },
+  {
+    "original_query": "华西股份发行价格是多少",
+    "rewritten_query": "华西股份发行价格是多少",
+    "matched_rule": "无",
+    "rewrite_raw": "{\n  \"matched_rule\": \"无\",\n  \"rewritten_query\": \"华西股份发行价格是多少\"\n}"
+  },
+  {
+    "original_query": "帮我调一下比亚迪最近三个月的日K线图。",
+    "rewritten_query": "帮我调一下比亚迪最近三个月的日K线图。",
+    "matched_rule": null,
+    "rewrite_raw": "{\n  \"matched_rule\": null,\n  \"rewritten_query\": \"帮我调一下比亚迪最近三个月的日K线图。\"\n}"
+  },
+  {
+    "original_query": "我想看下上证指数去年下半年的历史走势图。",
+    "rewritten_query": "我想看下上证指数去年下半年的历史走势图。",
+    "matched_rule": "",
+    "rewrite_raw": "{\n  \"matched_rule\": \"\",\n  \"rewritten_query\": \"我想看下上证指数去年下半年的历史走势图。\"\n}"
+  },
+  {
+    "original_query": "能给我看一下腾讯控股的周K线走势吗？",
+    "rewritten_query": "能给我看一下腾讯控股的周K线走势吗？",
+    "matched_rule": "",
+    "rewrite_raw": "{\n  \"matched_rule\": \"\",\n  \"rewritten_query\": \"能给我看一下腾讯控股的周K线走势吗？\"\n}"
+  },
+  {
+    "original_query": "发我一下东方财富今年以来的K线图。",
+    "rewritten_query": "发我一下东方财富今年以来的K线图。",
+    "matched_rule": "",
+    "rewrite_raw": "{\n  \"matched_rule\": \"\",\n  \"rewritten_query\": \"发我一下东方财富今年以来的K线图。\"\n}"
+  },
+  {
+    "original_query": "帮我拉一下苹果公司过去五年的月K线形态图。",
+    "rewritten_query": "帮我拉一下苹果公司过去五年的月K线形态图。",
+    "matched_rule": "",
+    "rewrite_raw": "{\n  \"matched_rule\": \"\",\n  \"rewritten_query\": \"帮我拉一下苹果公司过去五年的月K线形态图。\"\n}"
+  },
+  {
+    "original_query": "看看贵州茅台今天的分时图",
+    "rewritten_query": "看看贵州茅台今天的分时图",
+    "matched_rule": "无",
+    "rewrite_raw": "{\n  \"matched_rule\": \"无\",\n  \"rewritten_query\": \"看看贵州茅台今天的分时图\"\n}"
+  },
+  {
+    "original_query": "帮我调出特斯拉昨天开盘到收盘的分时走势。",
+    "rewritten_query": "帮我调出特斯拉昨天开盘到收盘的分时走势。",
+    "matched_rule": "",
+    "rewrite_raw": "{\n  \"matched_rule\": \"\",\n  \"rewritten_query\": \"帮我调出特斯拉昨天开盘到收盘的分时走势。\"\n}"
+  },
+  {
+    "original_query": "我想看一下宁德时代现在的分时图情况。",
+    "rewritten_query": "我想看一下宁德时代现在的分时图情况。",
+    "matched_rule": "",
+    "rewrite_raw": "{\n  \"matched_rule\": \"\",\n  \"rewritten_query\": \"我想看一下宁德时代现在的分时图情况。\"\n}"
+  },
+  {
+    "original_query": "能给我调一下招商银行今天上午的分时波动图吗？",
+    "rewritten_query": "能给我调一下招商银行今天上午的分时波动图吗？",
+    "matched_rule": "",
+    "rewrite_raw": "{\n  \"matched_rule\": \"\",\n  \"rewritten_query\": \"能给我调一下招商银行今天上午的分时波动图吗？\"\n}"
+  },
+  {
+    "original_query": "发一下深证成指今日最新的分时图。",
+    "rewritten_query": "发一下深证成指今日最新的分时图。",
+    "matched_rule": "",
+    "rewrite_raw": "{\n  \"matched_rule\": \"\",\n  \"rewritten_query\": \"发一下深证成指今日最新的分时图。\"\n}"
+  }
+]

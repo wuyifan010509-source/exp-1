@@ -24,7 +24,7 @@ BACKBONE_MODEL = "Qwen2.5-32B-Instruct"
 # BACKBONE_API_URL="http://127.0.0.1:3002/v1"
 # BACKBONE_MODEL = "/Data1/wz_workspace/Qwen2.5-32B-Instruct"
 GOLDEN_TEST_PATH = "/home/iilab9/scholar-papers/experiments/intention/exp-1/wyf-exp1/data/GOLDEN_TEST.csv"
-PROMPT_PATH = "/home/iilab9/scholar-papers/experiments/intention/exp-1/wyf-exp1/data/baselines/intent_gpt.txt"
+PROMPT_PATH = "/home/iilab9/scholar-papers/experiments/intention/exp-1/wyf-exp1/data/baselines/greedy_300.txt"
 
 # 意图类别（中英文对照）
 INTENT_CLASSES = [
@@ -49,7 +49,7 @@ def load_test_data():
         "预测类": "Forecast",
         "知识库类": "Knowledge Base",
         "新闻类": "News",
-        "通用类": "General Chat",
+        # "通用类": "General Chat",
         "推荐类": "Recommendation",
         "策略类": "Strategy",
         "指标查询类": "Indicator Query",
@@ -94,7 +94,7 @@ def classify_query_single(args):
     
 {system_prompt}
 
-
+context:{context}
 
 User Query: {query}
 
@@ -202,7 +202,7 @@ def extract_intent(text):
         "预测类": "Forecast",
         "知识库类": "Knowledge Base",
         "新闻类": "News",
-        "通用类": "General Chat",
+        # "通用类": "General Chat",
         "推荐类": "Recommendation",
         "策略类": "Strategy",
         "指标查询类": "Indicator Query",

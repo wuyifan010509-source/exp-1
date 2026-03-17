@@ -13,7 +13,7 @@ from datetime import datetime
 from collections import defaultdict
 
 # 配置
-BACKBONE_API_URL = "http://172.17.160.46:8080/v1"
+BACKBONE_API_URL = "http://172.17.160.42:8080/v1"
 BACKBONE_MODEL = "Qwen2.5-32B-Instruct"
 GOLDEN_TEST_PATH = "/home/iilab9/scholar-papers/experiments/intention/exp-1/wyf-exp1/data/GOLDEN_TEST.csv"
 PROMPT_PATH = "/home/iilab9/scholar-papers/experiments/intention/exp-1/wyf-exp1/data/baselines/greedy.txt"
@@ -346,6 +346,7 @@ def evaluate_prompt():
     results = []
     all_predictions = []
     all_labels = []
+    rewrite_pairs = []
     
     for i, (query, true_intent, is_bound) in enumerate(zip(queries, intents, is_boundary)):
         print(f"\n{'='*80}")
@@ -357,6 +358,13 @@ def evaluate_prompt():
         rewritten_query, matched_rule, rewrite_raw = rewrite_query(BACKBONE_API_URL, BACKBONE_MODEL, query)
         print(f"[匹配规则] {matched_rule}")
         print(f"[改写后] {rewritten_query}")
+        
+        rewrite_pairs.append({
+            "original_query": query,
+            "rewritten_query": rewritten_query,
+            "matched_rule": matched_rule,
+            "rewrite_raw": rewrite_raw
+        })
         
         # 步骤2：对改写后的查询进行分类
         predicted, classify_raw = classify_query(BACKBONE_API_URL, BACKBONE_MODEL, system_prompt, rewritten_query)
@@ -470,6 +478,12 @@ def evaluate_prompt():
         json.dump(output_data, f, ensure_ascii=False, indent=2)
     
     print(f"\n详细结果已保存: {output_file}")
+    
+    # 单独保存改写模块的输入输出
+    rewrite_output_file = f"rewrite_io_{timestamp}.json"
+    with open(rewrite_output_file, 'w', encoding='utf-8') as f:
+        json.dump(rewrite_pairs, f, ensure_ascii=False, indent=2)
+    print(f"改写模块的输入输出已单独保存: {rewrite_output_file}")
     
     return results
 
