@@ -12,8 +12,13 @@ import pandas as pd
 import requests
 import numpy as np
 import matplotlib.pyplot as plt
+import matplotlib
 import seaborn as sns
 from datetime import datetime
+
+# 设置中文字体
+matplotlib.rcParams['font.sans-serif'] = ['DejaVu Sans', 'SimHei', 'Arial Unicode MS', 'WenQuanYi Micro Hei']
+matplotlib.rcParams['axes.unicode_minus'] = False
 from collections import defaultdict
 from concurrent.futures import ThreadPoolExecutor, as_completed
 import time
