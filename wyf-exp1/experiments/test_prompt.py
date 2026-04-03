@@ -29,7 +29,7 @@ BACKBONE_MODEL = "Qwen2.5-32B-Instruct"
 # BACKBONE_API_URL="http://127.0.0.1:3002/v1"
 # BACKBONE_MODEL = "/Data1/wz_workspace/Qwen2.5-32B-Instruct"
 GOLDEN_TEST_PATH = "/home/iilab9/scholar-papers/experiments/intention/exp-1/wyf-exp1/data/GOLDEN_TEST.csv"
-PROMPT_PATH = "/home/iilab9/scholar-papers/experiments/intention/exp-1/wyf-exp1/data/baselines/intent_gpt.txt"
+PROMPT_PATH = "/home/iilab9/scholar-papers/experiments/intention/exp-1/wyf-exp1/data/baselines/manual_descriptions.txt"
 
 # 意图类别（中英文对照）- 12类
 INTENT_CLASSES = [
@@ -96,15 +96,27 @@ def classify_query_single(args):
     context = """
     用户输入股票名称、股票代码，是在请求系统给出该股票综合评价
     用户输入板块名称，是在请求系统列出该板块成分股
-    用户问题带有“往后”、“未来”、“明天”、“下一步”、“前景”等词汇，且提及了具体的股票。是在对该股票未来的预测请求。如果没有具体股票则肯定不是预测类！
+    用户问题带有“往后”、“未来”、“明天”、“下一步”、“前景”等词汇，且提及了具体的股票。是在对该股票未来的预测请求。如果没有具体股票则肯定不是预测类！如"明天买什么股票"不是预测类，是推荐类
     用户只输入选股条件，是在请求筛选该条件的股票
     用户提及“大盘量能“、”价值决策”，是在询问这个概念的含义
     用户提及“擒龙平台”、“黄金坑”，是在询问软件操作知识
     用户提及“xx策略”，要转为策略类。
-    用户提及“xx(股票）的yy(指标名称）”，是在查询这指标
+    用户提及如“贵州茅台(股票）的板块(指标名称）”,是在查询这指标
 
     """
     
+#     full_user_prompt = f"""
+    
+# {system_prompt}
+
+# 请遵循以下要求:{context}
+
+# User Query: {query}
+
+# Please output the intent class name directly (only output the class name, e.g., "Stock Selection", "Stock Diagnosis", etc., no explanation):
+
+# Intent Class:"""
+
     full_user_prompt = f"""
     
 {system_prompt}
@@ -116,6 +128,7 @@ User Query: {query}
 Please output the intent class name directly (only output the class name, e.g., "Stock Selection", "Stock Diagnosis", etc., no explanation):
 
 Intent Class:"""
+
     
     try:
         import math
