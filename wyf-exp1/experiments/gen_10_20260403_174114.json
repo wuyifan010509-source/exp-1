@@ -1,0 +1,737 @@
+{
+  "prompt_file": "/home/iilab9/scholar-papers/experiments/intention/exp-1/wyf-exp1/data/baselines/greedy_300.txt",
+  "test_file": "/home/iilab9/scholar-papers/experiments/intention/exp-1/wyf-exp1/data/CONTEXT",
+  "total_samples": 13,
+  "correct": 6,
+  "accuracy": 0.46153846153846156,
+  "boundary_samples": 0,
+  "boundary_correct": 0,
+  "boundary_accuracy": 0,
+  "latency_stats": {
+    "average": 0.064,
+    "min": 0.05,
+    "max": 0.089,
+    "total": 0.834
+  },
+  "margin_stats": {
+    "total_samples": 13,
+    "non_zero_margin_samples": 11,
+    "logprobs_availability": "11/13 (84.6%)",
+    "average": 0.9475,
+    "min": 0.7039,
+    "max": 1.0,
+    "low_margin_count": 0,
+    "low_margin_ratio": 0.0,
+    "high_margin_accuracy": 0.5455,
+    "low_margin_accuracy": 0.0
+  },
+  "macro_avg": {
+    "precision": 0.25,
+    "recall": 0.1833,
+    "f1": 0.1944
+  },
+  "weighted_avg": {
+    "precision": 0.8333,
+    "recall": 0.5,
+    "f1": 0.5555
+  },
+  "per_intent_stats": {
+    "Stock Diagnosis": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 2
+    },
+    "Knowledge Base": {
+      "precision": 1.0,
+      "recall": 0.2,
+      "f1": 0.3333,
+      "support": 5
+    },
+    "Recommendation": {
+      "precision": 0,
+      "recall": 0.0,
+      "f1": 0,
+      "support": 2
+    },
+    "Strategy": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 3
+    }
+  },
+  "confusion_matrix": {
+    "Stock Selection": {
+      "Stock Selection": 0,
+      "Stock Diagnosis": 0,
+      "Forecast": 0,
+      "Knowledge Base": 0,
+      "News": 0,
+      "General Chat": 0,
+      "Recommendation": 0,
+      "Strategy": 0,
+      "Indicator Query": 0,
+      "K-line": 0,
+      "Time-sharing": 0,
+      "Identity": 0
+    },
+    "Stock Diagnosis": {
+      "Stock Selection": 0,
+      "Stock Diagnosis": 2,
+      "Forecast": 0,
+      "Knowledge Base": 0,
+      "News": 0,
+      "General Chat": 0,
+      "Recommendation": 0,
+      "Strategy": 0,
+      "Indicator Query": 0,
+      "K-line": 0,
+      "Time-sharing": 0,
+      "Identity": 0
+    },
+    "Forecast": {
+      "Stock Selection": 0,
+      "Stock Diagnosis": 0,
+      "Forecast": 0,
+      "Knowledge Base": 0,
+      "News": 0,
+      "General Chat": 0,
+      "Recommendation": 0,
+      "Strategy": 0,
+      "Indicator Query": 0,
+      "K-line": 0,
+      "Time-sharing": 0,
+      "Identity": 0
+    },
+    "Knowledge Base": {
+      "Stock Selection": 1,
+      "Stock Diagnosis": 0,
+      "Forecast": 0,
+      "Knowledge Base": 1,
+      "News": 0,
+      "General Chat": 0,
+      "Recommendation": 0,
+      "Strategy": 0,
+      "Indicator Query": 2,
+      "K-line": 0,
+      "Time-sharing": 1,
+      "Identity": 0
+    },
+    "News": {
+      "Stock Selection": 0,
+      "Stock Diagnosis": 0,
+      "Forecast": 0,
+      "Knowledge Base": 0,
+      "News": 0,
+      "General Chat": 0,
+      "Recommendation": 0,
+      "Strategy": 0,
+      "Indicator Query": 0,
+      "K-line": 0,
+      "Time-sharing": 0,
+      "Identity": 0
+    },
+    "General Chat": {
+      "Stock Selection": 0,
+      "Stock Diagnosis": 0,
+      "Forecast": 0,
+      "Knowledge Base": 0,
+      "News": 0,
+      "General Chat": 0,
+      "Recommendation": 0,
+      "Strategy": 0,
+      "Indicator Query": 0,
+      "K-line": 0,
+      "Time-sharing": 0,
+      "Identity": 0
+    },
+    "Recommendation": {
+      "Stock Selection": 2,
+      "Stock Diagnosis": 0,
+      "Forecast": 0,
+      "Knowledge Base": 0,
+      "News": 0,
+      "General Chat": 0,
+      "Recommendation": 0,
+      "Strategy": 0,
+      "Indicator Query": 0,
+      "K-line": 0,
+      "Time-sharing": 0,
+      "Identity": 0
+    },
+    "Strategy": {
+      "Stock Selection": 0,
+      "Stock Diagnosis": 0,
+      "Forecast": 0,
+      "Knowledge Base": 0,
+      "News": 0,
+      "General Chat": 0,
+      "Recommendation": 0,
+      "Strategy": 3,
+      "Indicator Query": 0,
+      "K-line": 0,
+      "Time-sharing": 0,
+      "Identity": 0
+    },
+    "Indicator Query": {
+      "Stock Selection": 0,
+      "Stock Diagnosis": 0,
+      "Forecast": 0,
+      "Knowledge Base": 0,
+      "News": 0,
+      "General Chat": 0,
+      "Recommendation": 0,
+      "Strategy": 0,
+      "Indicator Query": 0,
+      "K-line": 0,
+      "Time-sharing": 0,
+      "Identity": 0
+    },
+    "K-line": {
+      "Stock Selection": 0,
+      "Stock Diagnosis": 0,
+      "Forecast": 0,
+      "Knowledge Base": 0,
+      "News": 0,
+      "General Chat": 0,
+      "Recommendation": 0,
+      "Strategy": 0,
+      "Indicator Query": 0,
+      "K-line": 0,
+      "Time-sharing": 0,
+      "Identity": 0
+    },
+    "Time-sharing": {
+      "Stock Selection": 0,
+      "Stock Diagnosis": 0,
+      "Forecast": 0,
+      "Knowledge Base": 0,
+      "News": 0,
+      "General Chat": 0,
+      "Recommendation": 0,
+      "Strategy": 0,
+      "Indicator Query": 0,
+      "K-line": 0,
+      "Time-sharing": 0,
+      "Identity": 0
+    },
+    "Identity": {
+      "Stock Selection": 0,
+      "Stock Diagnosis": 0,
+      "Forecast": 0,
+      "Knowledge Base": 0,
+      "News": 0,
+      "General Chat": 0,
+      "Recommendation": 0,
+      "Strategy": 0,
+      "Indicator Query": 0,
+      "K-line": 0,
+      "Time-sharing": 0,
+      "Identity": 0
+    }
+  },
+  "detailed_results": [
+    {
+      "index": 1,
+      "query": "成分骨有哪些",
+      "expected": "Stock Selection",
+      "predicted": "OOS",
+      "raw_response": "OOS",
+      "latency": 0.056,
+      "margin": 0.0,
+      "top1_prob": 0.3526,
+      "top2_prob": 0.3526,
+      "token_probs": [
+        {
+          "token": "O",
+          "prob": 0.3526
+        },
+        {
+          "token": "知识",
+          "prob": 0.3526
+        },
+        {
+          "token": "选股",
+          "prob": 0.2746
+        },
+        {
+          "token": "通用",
+          "prob": 0.0199
+        },
+        {
+          "token": "身份",
+          "prob": 0.0003
+        }
+      ],
+      "success": true,
+      "rag_used": true,
+      "rag_score": 0.4192,
+      "correct": false,
+      "is_boundary": false
+    },
+    {
+      "index": 2,
+      "query": "景旺电子交易策略。",
+      "expected": "Strategy",
+      "predicted": "Strategy",
+      "raw_response": "策略类",
+      "latency": 0.053,
+      "margin": 1.0,
+      "top1_prob": 1.0,
+      "top2_prob": 0.0,
+      "token_probs": [
+        {
+          "token": "策略",
+          "prob": 1.0
+        },
+        {
+          "token": "策",
+          "prob": 0.0
+        },
+        {
+          "token": " strategies",
+          "prob": 0.0
+        },
+        {
+          "token": "Strategy",
+          "prob": 0.0
+        },
+        {
+          "token": "strategy",
+          "prob": 0.0
+        }
+      ],
+      "success": true,
+      "rag_used": true,
+      "rag_score": 0.5579,
+      "correct": true,
+      "is_boundary": false
+    },
+    {
+      "index": 3,
+      "query": "在哪里查看游资买入资金量",
+      "expected": "Knowledge Base",
+      "predicted": "Indicator Query",
+      "raw_response": "指标查询智能体",
+      "latency": 0.076,
+      "margin": 0.7039,
+      "top1_prob": 0.8519,
+      "top2_prob": 0.148,
+      "token_probs": [
+        {
+          "token": "指标",
+          "prob": 0.8519
+        },
+        {
+          "token": "知识",
+          "prob": 0.148
+        },
+        {
+          "token": "Knowledge",
+          "prob": 0.0
+        },
+        {
+          "token": "选股",
+          "prob": 0.0
+        },
+        {
+          "token": "诊",
+          "prob": 0.0
+        }
+      ],
+      "success": true,
+      "rag_used": true,
+      "rag_score": 0.719,
+      "correct": false,
+      "is_boundary": false
+    },
+    {
+      "index": 4,
+      "query": "股市中GEO概念指的是哪方面",
+      "expected": "Knowledge Base",
+      "predicted": "Stock Selection",
+      "raw_response": "选股类",
+      "latency": 0.05,
+      "margin": 0.9993,
+      "top1_prob": 0.9997,
+      "top2_prob": 0.0003,
+      "token_probs": [
+        {
+          "token": "选股",
+          "prob": 0.9997
+        },
+        {
+          "token": "知识",
+          "prob": 0.0003
+        },
+        {
+          "token": "通用",
+          "prob": 0.0
+        },
+        {
+          "token": "新闻",
+          "prob": 0.0
+        },
+        {
+          "token": "炒股",
+          "prob": 0.0
+        }
+      ],
+      "success": true,
+      "rag_used": true,
+      "rag_score": 0.4654,
+      "correct": false,
+      "is_boundary": false
+    },
+    {
+      "index": 5,
+      "query": "陈小群交易策略",
+      "expected": "Strategy",
+      "predicted": "Strategy",
+      "raw_response": "策略智能体",
+      "latency": 0.064,
+      "margin": 1.0,
+      "top1_prob": 1.0,
+      "top2_prob": 0.0,
+      "token_probs": [
+        {
+          "token": "策略",
+          "prob": 1.0
+        },
+        {
+          "token": "策",
+          "prob": 0.0
+        },
+        {
+          "token": " strategies",
+          "prob": 0.0
+        },
+        {
+          "token": "Strategy",
+          "prob": 0.0
+        },
+        {
+          "token": ".strategy",
+          "prob": 0.0
+        }
+      ],
+      "success": true,
+      "rag_used": true,
+      "rag_score": 0.5167,
+      "correct": true,
+      "is_boundary": false
+    },
+    {
+      "index": 6,
+      "query": "603703能进吗",
+      "expected": "Stock Diagnosis",
+      "predicted": "Stock Diagnosis",
+      "raw_response": "诊股类",
+      "latency": 0.064,
+      "margin": 0.9864,
+      "top1_prob": 0.9931,
+      "top2_prob": 0.0067,
+      "token_probs": [
+        {
+          "token": "诊",
+          "prob": 0.9931
+        },
+        {
+          "token": "预测",
+          "prob": 0.0067
+        },
+        {
+          "token": "诊断",
+          "prob": 0.0002
+        },
+        {
+          "token": "选股",
+          "prob": 0.0
+        },
+        {
+          "token": "Stock",
+          "prob": 0.0
+        }
+      ],
+      "success": true,
+      "rag_used": true,
+      "rag_score": 1.0,
+      "correct": true,
+      "is_boundary": false
+    },
+    {
+      "index": 7,
+      "query": "明天可以入手可控核聚变哪些股票",
+      "expected": "Recommendation",
+      "predicted": "Stock Selection",
+      "raw_response": "选股类",
+      "latency": 0.051,
+      "margin": 1.0,
+      "top1_prob": 1.0,
+      "top2_prob": 0.0,
+      "token_probs": [
+        {
+          "token": "选股",
+          "prob": 1.0
+        },
+        {
+          "token": "推荐",
+          "prob": 0.0
+        },
+        {
+          "token": "预测",
+          "prob": 0.0
+        },
+        {
+          "token": "炒股",
+          "prob": 0.0
+        },
+        {
+          "token": "Stock",
+          "prob": 0.0
+        }
+      ],
+      "success": true,
+      "rag_used": true,
+      "rag_score": 0.5582,
+      "correct": false,
+      "is_boundary": false
+    },
+    {
+      "index": 8,
+      "query": "603817怎么看",
+      "expected": "Stock Diagnosis",
+      "predicted": "Stock Diagnosis",
+      "raw_response": "诊股类",
+      "latency": 0.063,
+      "margin": 1.0,
+      "top1_prob": 1.0,
+      "top2_prob": 0.0,
+      "token_probs": [
+        {
+          "token": "诊",
+          "prob": 1.0
+        },
+        {
+          "token": "诊断",
+          "prob": 0.0
+        },
+        {
+          "token": "Stock",
+          "prob": 0.0
+        },
+        {
+          "token": "診",
+          "prob": 0.0
+        },
+        {
+          "token": "选股",
+          "prob": 0.0
+        }
+      ],
+      "success": true,
+      "rag_used": true,
+      "rag_score": 0.6574,
+      "correct": true,
+      "is_boundary": false
+    },
+    {
+      "index": 9,
+      "query": "游资交易数据哪里看",
+      "expected": "Knowledge Base",
+      "predicted": "Indicator Query",
+      "raw_response": "指标查询智能体",
+      "latency": 0.076,
+      "margin": 0.9253,
+      "top1_prob": 0.9627,
+      "top2_prob": 0.0373,
+      "token_probs": [
+        {
+          "token": "指标",
+          "prob": 0.9627
+        },
+        {
+          "token": "知识",
+          "prob": 0.0373
+        },
+        {
+          "token": "诊",
+          "prob": 0.0
+        },
+        {
+          "token": "选股",
+          "prob": 0.0
+        },
+        {
+          "token": "诊断",
+          "prob": 0.0
+        }
+      ],
+      "success": true,
+      "rag_used": true,
+      "rag_score": 0.6932,
+      "correct": false,
+      "is_boundary": false
+    },
+    {
+      "index": 10,
+      "query": "分时图上出现机构扫货的线那个指标以后是什么意思",
+      "expected": "Knowledge Base",
+      "predicted": "Knowledge Base",
+      "raw_response": "知识库智能体",
+      "latency": 0.077,
+      "margin": 0.8093,
+      "top1_prob": 0.9046,
+      "top2_prob": 0.0953,
+      "token_probs": [
+        {
+          "token": "知识",
+          "prob": 0.9046
+        },
+        {
+          "token": "分",
+          "prob": 0.0953
+        },
+        {
+          "token": "策略",
+          "prob": 0.0
+        },
+        {
+          "token": "Knowledge",
+          "prob": 0.0
+        },
+        {
+          "token": "知",
+          "prob": 0.0
+        }
+      ],
+      "success": true,
+      "rag_used": true,
+      "rag_score": 0.5369,
+      "correct": true,
+      "is_boundary": false
+    },
+    {
+      "index": 11,
+      "query": "来一只超短股票",
+      "expected": "Recommendation",
+      "predicted": "Stock Selection",
+      "raw_response": "选股类",
+      "latency": 0.052,
+      "margin": 0.9982,
+      "top1_prob": 0.9991,
+      "top2_prob": 0.0009,
+      "token_probs": [
+        {
+          "token": "选股",
+          "prob": 0.9991
+        },
+        {
+          "token": "推荐",
+          "prob": 0.0009
+        },
+        {
+          "token": "荐",
+          "prob": 0.0
+        },
+        {
+          "token": "recommend",
+          "prob": 0.0
+        },
+        {
+          "token": "炒股",
+          "prob": 0.0
+        }
+      ],
+      "success": true,
+      "rag_used": true,
+      "rag_score": 0.5334,
+      "correct": false,
+      "is_boundary": false
+    },
+    {
+      "index": 12,
+      "query": "大盘量能",
+      "expected": "Knowledge Base",
+      "predicted": "Time-sharing",
+      "raw_response": "分时图智能体",
+      "latency": 0.089,
+      "margin": 0.0,
+      "top1_prob": 0.4914,
+      "top2_prob": 0.4914,
+      "token_probs": [
+        {
+          "token": "分",
+          "prob": 0.4914
+        },
+        {
+          "token": "新闻",
+          "prob": 0.4914
+        },
+        {
+          "token": "知识",
+          "prob": 0.0116
+        },
+        {
+          "token": "预测",
+          "prob": 0.0038
+        },
+        {
+          "token": "通用",
+          "prob": 0.0008
+        }
+      ],
+      "success": true,
+      "rag_used": true,
+      "rag_score": 0.4913,
+      "correct": false,
+      "is_boundary": false
+    },
+    {
+      "index": 13,
+      "query": "高管增持策略是什么？",
+      "expected": "Strategy",
+      "predicted": "Strategy",
+      "raw_response": "策略智能体",
+      "latency": 0.064,
+      "margin": 1.0,
+      "top1_prob": 1.0,
+      "top2_prob": 0.0,
+      "token_probs": [
+        {
+          "token": "策略",
+          "prob": 1.0
+        },
+        {
+          "token": "策",
+          "prob": 0.0
+        },
+        {
+          "token": " strategies",
+          "prob": 0.0
+        },
+        {
+          "token": "Strategy",
+          "prob": 0.0
+        },
+        {
+          "token": "strategy",
+          "prob": 0.0
+        }
+      ],
+      "success": true,
+      "rag_used": true,
+      "rag_score": 0.5651,
+      "correct": true,
+      "is_boundary": false
+    }
+  ],
+  "rag_config": {
+    "kb_path": "rag_kb.json",
+    "similarity_threshold": 0.2,
+    "top_k": 2,
+    "used_count": 13,
+    "correct_when_used": 6
+  }
+}

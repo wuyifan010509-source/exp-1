@@ -2,6 +2,7 @@
 测试 gen_10_no_oos.txt prompt 在 GOLDEN_TEST.csv 上的准确率
 输出每个题目的对错情况，包含 precision, recall, f1 和混淆矩阵
 支持并发测试以提高速度
+支持RAG模式：在意图识别前先做RAG匹配，将匹配结果作为上下文
 """
 import sys
 import os
@@ -22,14 +23,25 @@ matplotlib.rcParams['axes.unicode_minus'] = False
 from collections import defaultdict
 from concurrent.futures import ThreadPoolExecutor, as_completed
 import time
+import argparse
+
+# 导入RAG模块
+from rag_local_embedding import SimpleRAG, LocalEmbeddingModel
 
 # 配置
 BACKBONE_API_URL = "http://172.17.160.42:8080/v1"
 BACKBONE_MODEL = "Qwen2.5-32B-Instruct"
 # BACKBONE_API_URL="http://127.0.0.1:3002/v1"
 # BACKBONE_MODEL = "/Data1/wz_workspace/Qwen2.5-32B-Instruct"
-GOLDEN_TEST_PATH = "/home/iilab9/scholar-papers/experiments/intention/exp-1/wyf-exp1/data/GOLDEN_TEST.csv"
-PROMPT_PATH = "/home/iilab9/scholar-papers/experiments/intention/exp-1/wyf-exp1/data/baselines/manual_descriptions.txt"
+GOLDEN_TEST_PATH = "/home/iilab9/scholar-papers/experiments/intention/exp-1/wyf-exp1/data/CONTEXT"
+PROMPT_PATH = "/home/iilab9/scholar-papers/experiments/intention/exp-1/wyf-exp1/data/baselines/greedy_300.txt"
+
+# RAG配置（默认关闭）
+RAG_ENABLED = False
+RAG_KB_PATH = None  # RAG知识库路径
+RAG_TOP_K = 1  # 取最相似的1个结果
+RAG_SIMILARITY_THRESHOLD = 0.8  # 相似度阈值，低于此值不采用RAG结果
+RAG_INSTANCE = None  # RAG实例（全局）
 
 # 意图类别（中英文对照）- 12类
 INTENT_CLASSES = [
@@ -47,6 +59,40 @@ INTENT_CLASSES_CN = [
 
 # 英文到中文的映射
 EN_TO_CN = {en: cn for en, cn in zip(INTENT_CLASSES, INTENT_CLASSES_CN)}
+
+
+def init_rag(kb_path: str, embedding_dim: int = 1024):
+    """
+    初始化RAG系统
+    
+    Args:
+        kb_path: RAG知识库文件路径
+        embedding_dim: Embedding维度（bge-m3是1024维）
+    """
+    global RAG_INSTANCE, RAG_ENABLED
+    
+    if not os.path.exists(kb_path):
+        raise FileNotFoundError(f"RAG知识库文件不存在: {kb_path}")
+    
+    print(f"[RAG] 正在加载知识库: {kb_path}")
+    
+    # 初始化Embedding模型
+    model = LocalEmbeddingModel()
+    
+    # 初始化RAG
+    RAG_INSTANCE = SimpleRAG(
+        embedding_model=model,
+        dim=embedding_dim,
+        key_field="query",
+        value_field="answer"
+    )
+    
+    # 加载知识库
+    RAG_INSTANCE.load(kb_path)
+    RAG_ENABLED = True
+    
+    print(f"[RAG] 知识库加载完成，共 {len(RAG_INSTANCE.metadata_list)} 条记录")
+    print(f"[RAG] 相似度阈值: {RAG_SIMILARITY_THRESHOLD}")
 
 
 def load_prompt():
@@ -84,6 +130,52 @@ def load_test_data():
     return queries, intents, is_boundary
 
 
+def get_rag_context(query: str) -> tuple:
+    """
+    获取RAG检索结果作为上下文
+    
+    Args:
+        query: 用户查询
+        
+    Returns:
+        (RAG上下文字符串, 最高相似度)，如果没有匹配结果则返回 ("", 0.0)
+    """
+    global RAG_INSTANCE, RAG_SIMILARITY_THRESHOLD
+    
+    if RAG_INSTANCE is None:
+        return "", 0.0
+    
+    # 搜索最相似的结果（获取多个）
+    results = RAG_INSTANCE.search(query, top_k=RAG_TOP_K, return_metadata=True)
+    
+    if not results:
+        return "", 0.0
+    
+    # 过滤并收集所有符合条件的分析结论
+    answers = []
+    max_score = 0.0
+    
+    for metadata, score in results:
+        # 检查相似度是否超过阈值
+        if score < RAG_SIMILARITY_THRESHOLD:
+            continue
+        
+        # 记录最高相似度
+        if score > max_score:
+            max_score = score
+        
+        # 只提取分析结论
+        answer = metadata.get('answer', '').strip()
+        if answer:
+            answers.append(answer)
+    
+    if not answers:
+        return "", 0.0
+    
+    # 合并所有分析结论，用换行分隔
+    return "\n".join(answers), max_score
+
+
 def classify_query_single(args):
     """单个query分类（用于并发）"""
     idx, query, true_intent, is_bound, api_url, model, system_prompt = args
@@ -93,43 +185,43 @@ def classify_query_single(args):
         "Authorization": "Bearer dummy"
     }
 
-    context = """
+    # 基础上下文规则
+    base_context = """
     用户输入股票名称、股票代码，是在请求系统给出该股票综合评价
-    用户输入板块名称，是在请求系统列出该板块成分股
-    用户问题带有“往后”、“未来”、“明天”、“下一步”、“前景”等词汇，且提及了具体的股票。是在对该股票未来的预测请求。如果没有具体股票则肯定不是预测类！如"明天买什么股票"不是预测类，是推荐类
+    用户输入板块名称，是在请求系统列出该板块成分股，属于选股类
+    用户问题带有"往后"、"未来"、"明天"、"下一步"、"前景"等词汇，且提及了具体的股票。是在对该股票未来的预测请求。如果没有具体股票则肯定不是预测类！如"明天买什么股票"不是预测类，是推荐类
     用户只输入选股条件，是在请求筛选该条件的股票
-    用户提及“大盘量能“、”价值决策”，是在询问这个概念的含义
-    用户提及“擒龙平台”、“黄金坑”，是在询问软件操作知识
-    用户提及“xx策略”，要转为策略类。
-    用户提及如“贵州茅台(股票）的板块(指标名称）”,是在查询这指标
-
+    用户提及"大盘量能"、"价值决策"，是在询问这个概念的含义
+    用户提及"擒龙平台"、"黄金坑"，是在询问软件操作知识
+    用户提及"xx策略"，要转为策略类。
+    用户提及如"贵州茅台(股票）的板块(指标名称）",是在查询这指标
     """
     
-#     full_user_prompt = f"""
+    # 如果启用了RAG，获取RAG上下文
+    rag_context = ""
+    rag_used = False
+    rag_score = 0.0
+    if RAG_ENABLED:
+        rag_context, rag_score = get_rag_context(query)
+        if rag_context:
+            rag_used = True
     
-# {system_prompt}
-
-# 请遵循以下要求:{context}
-
-# User Query: {query}
-
-# Please output the intent class name directly (only output the class name, e.g., "Stock Selection", "Stock Diagnosis", etc., no explanation):
-
-# Intent Class:"""
-
+    # 组合完整的上下文
+    full_context = base_context
+    if rag_context:
+        full_context = f"{rag_context}\n"
+        
     full_user_prompt = f"""
     
 {system_prompt}
 
-
+请遵循以下要求:{full_context}
 
 User Query: {query}
 
 Please output the intent class name directly (only output the class name, e.g., "Stock Selection", "Stock Diagnosis", etc., no explanation):
 
 Intent Class:"""
-
-    
     try:
         import math
         start_time = time.time()
@@ -195,8 +287,8 @@ Intent Class:"""
             print(f"  Logprobs available: {bool(logprobs_content)}")
             if logprobs_content:
                 print(f"  First token top_logprobs: {logprobs_content[0].get('top_logprobs', [])[:3]}")
-        
-        return {
+        print(full_context,"->",query,"->",predicted,"->",true_intent,"\n")
+        result_dict = {
             'index': idx + 1,
             'query': query,
             'expected': true_intent,
@@ -207,8 +299,12 @@ Intent Class:"""
             'top1_prob': round(top1_prob, 4),
             'top2_prob': round(top2_prob, 4),
             'token_probs': all_token_probs,
-            'success': True
+            'success': True,
+            'rag_used': rag_used,
+            'rag_score': round(rag_score, 4) if rag_used else 0.0
         }
+        
+        return result_dict
         
     except Exception as e:
         return {
@@ -218,7 +314,9 @@ Intent Class:"""
             'predicted': "",
             'raw_response': str(e),
             'latency': 0.0,
-            'success': False
+            'success': False,
+            'rag_used': False,
+            'rag_score': 0.0
         }
 
 
@@ -384,17 +482,29 @@ def calculate_metrics(all_predictions, all_labels):
     }
 
 
-def evaluate_prompt(max_workers=10):
+def evaluate_prompt(max_workers=10, rag_kb_path=None, rag_threshold=0.8, rag_top_k=1):
     """
     Evaluate prompt with concurrent requests
     
     Args:
         max_workers: Number of concurrent threads (default: 10)
+        rag_kb_path: RAG知识库路径，如果提供则启用RAG模式
+        rag_threshold: RAG相似度阈值
+        rag_top_k: RAG返回的最相似结果数量
     """
+    global RAG_ENABLED, RAG_KB_PATH, RAG_SIMILARITY_THRESHOLD, RAG_TOP_K
+    
     print("=" * 80)
     print("Testing Prompt on GOLDEN_TEST (Concurrent Mode)")
     print("=" * 80)
     print(f"[Config] Concurrent workers: {max_workers}")
+    
+    # 如果提供了RAG知识库路径，初始化RAG
+    if rag_kb_path:
+        RAG_KB_PATH = rag_kb_path
+        RAG_SIMILARITY_THRESHOLD = rag_threshold
+        RAG_TOP_K = rag_top_k
+        init_rag(rag_kb_path)
     
     # 1. 加载数据
     print("\n[1/3] Loading test data...")
@@ -428,6 +538,10 @@ def evaluate_prompt(max_workers=10):
     total = len(queries)
     boundary_total = sum(is_boundary)
     
+    # RAG统计
+    rag_used_count = 0
+    rag_correct_when_used = 0
+    
     results = []
     all_predictions = []
     all_labels = []
@@ -443,12 +557,19 @@ def evaluate_prompt(max_workers=10):
         query = result['query']
         raw = result['raw_response']
         latency = result['latency']
+        rag_used = result.get('rag_used', False)
         
         is_correct = (predicted == true_intent)
         if is_correct:
             correct += 1
             if is_bound:
                 boundary_correct += 1
+        
+        # RAG统计
+        if rag_used:
+            rag_used_count += 1
+            if is_correct:
+                rag_correct_when_used += 1
         
         # 更新结果字典
         result['correct'] = is_correct
@@ -466,10 +587,10 @@ def evaluate_prompt(max_workers=10):
         if not is_correct:
             status = "✗"
             boundary_mark = "[Boundary]" if is_bound else ""
-            print(f"{idx:3d}. {status} {boundary_mark}")
-            print(f"     Query: {query[:50]}{'...' if len(query) > 50 else ''}")
-            print(f"     Expected: {true_intent} -> Predicted: {predicted}")
-            print(f"     Raw output: {raw[:80]}{'...' if len(raw) > 80 else ''}")
+            # print(f"{idx:3d}. {status} {boundary_mark}")
+            # print(f"     Query: {query[:50]}{'...' if len(query) > 50 else ''}")
+            # print(f"     Expected: {true_intent} -> Predicted: {predicted}")
+            # print(f"     Raw output: {raw[:80]}{'...' if len(raw) > 80 else ''}")
     
     print(f"\n[Speed] Total time: {total_elapsed:.1f}s ({total/total_elapsed:.1f} queries/sec)")
     
@@ -491,6 +612,15 @@ def evaluate_prompt(max_workers=10):
     print("=" * 80)
     print(f"\nOverall Accuracy: {accuracy:.2%} ({correct}/{total})")
     print(f"Boundary Accuracy: {boundary_accuracy:.2%} ({boundary_correct}/{boundary_total})")
+    
+    # 输出RAG统计
+    if RAG_ENABLED:
+        print(f"\n[RAG Statistics]")
+        print(f"  RAG used: {rag_used_count}/{total} ({rag_used_count/total*100:.1f}%)")
+        if rag_used_count > 0:
+            print(f"  Accuracy when RAG used: {rag_correct_when_used}/{rag_used_count} ({rag_correct_when_used/rag_used_count*100:.1f}%)")
+        if total - rag_used_count > 0:
+            print(f"  Accuracy when RAG not used: {(correct-rag_correct_when_used)}/{(total-rag_used_count)} ({(correct-rag_correct_when_used)/(total-rag_used_count)*100:.1f}%)")
     
     # 输出推理延迟统计
     print(f"\n[Inference Latency]")
@@ -514,7 +644,7 @@ def evaluate_prompt(max_workers=10):
         print(f"  Average Margin: {avg_margin:.4f}")
         print(f"  Min Margin:     {min_margin:.4f}")
         print(f"  Max Margin:     {max_margin:.4f}")
-        print(f"  Low Margin (<0.1): {low_margin_count} ({low_margin_count/len(valid_margins):.1%})")
+        print(f"  Low Margin (<0.1): {low_margin_count} ({low_margin_count/len(valid_margins):.1f}%)")
         
         # 按 margin 分组统计准确率
         high_margin_correct = sum(1 for i, r in enumerate(results) 
@@ -621,6 +751,16 @@ def evaluate_prompt(max_workers=10):
         'detailed_results': results
     }
     
+    # 添加RAG相关信息
+    if RAG_ENABLED:
+        output_data['rag_config'] = {
+            'kb_path': RAG_KB_PATH,
+            'similarity_threshold': RAG_SIMILARITY_THRESHOLD,
+            'top_k': RAG_TOP_K,
+            'used_count': rag_used_count,
+            'correct_when_used': rag_correct_when_used
+        }
+    
     with open(output_file, 'w', encoding='utf-8') as f:
         json.dump(output_data, f, ensure_ascii=False, indent=2)
     
@@ -704,4 +844,17 @@ def plot_confusion_heatmap(confusion_matrix, output_path):
 
 
 if __name__ == "__main__":
-    evaluate_prompt(max_workers=1)
+    # 解析命令行参数
+    parser = argparse.ArgumentParser(description='Test prompt on GOLDEN_TEST')
+    parser.add_argument('--max-workers', type=int, default=1, help='并发线程数（默认1）')
+    parser.add_argument('--rag-kb', type=str, default=None, help='RAG知识库路径（启用RAG模式）')
+    parser.add_argument('--rag-threshold', type=float, default=0.8, help='RAG相似度阈值（默认0.8）')
+    parser.add_argument('--rag-top-k', type=int, default=1, help='RAG返回结果数（默认1）')
+    args = parser.parse_args()
+    
+    evaluate_prompt(
+        max_workers=args.max_workers,
+        rag_kb_path=args.rag_kb,
+        rag_threshold=args.rag_threshold,
+        rag_top_k=args.rag_top_k
+    )
